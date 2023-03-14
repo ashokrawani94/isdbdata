@@ -1,0 +1,33 @@
+ Datastructures:
+    
+
+    stacks 
+    Queus
+    Linkedlist
+    double linked Linkedlist 
+    circular 
+    Trees 
+    Graphs 
+    Set 
+    Array
+    Json
+    Map
+
+    ---------------
+
+    Arrays
+    Json
+    Set 
+    Map 
+    
+    ------------------------------
+
+    Arrays is DS
+        1. It is capable of holding more than one value;
+        2. In Js Arrays are hetrogenious
+
+
+        2ways 
+            1. var variablebame = []; // satic way 
+
+            2. var variablename = new Array(); // Dynamic

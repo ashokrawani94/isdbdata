@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Tax</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Please enter you name");
+      var salaryPerMonth = prompt("Enter you salary per month");
+      var gender = prompt("Please enter your gender");
+      var salaryPerYear = parseInt(salaryPerMonth) * 12;
+      var tax15 = (salaryPerYear * 15) / 100;
+      var tax10 = (salaryPerYear * 10) / 100;
+      var tax5 = (salaryPerYear * 5) / 100;
+
+      if (gender == "male") {
+        if (salaryPerYear > 100000) {
+          console.log("Your tax is " + tax15);
+        } else if (salaryPerYear > 50000) {
+          console.log("Your tax is " + tax10);
+        } else if (salaryPerYear > 25000) {
+          console.log("Your tax is " + tax5);
+        } else {
+          console.log("Your tax is 0 ");
+        }
+      } else {
+        if (salaryPerYear > 100000) {
+          console.log("Your tax is " + tax10);
+        } else if (salaryPerYear > 50000) {
+          console.log("Your tax is " + tax5);
+        } else {
+          console.log("Your tax is 0 ");
+        }
+      }
+    </script>
+    <h1>
+      The name of the employee is
+      <span id="employeeName">
+        <script>
+          document.getElementById("employeeName").innerHTML = name;
+        </script>
+      </span>
+    </h1>
+    <h2>
+      Your salary per month is
+      <span id="salarypermonth"
+        ><script>
+          document.getElementById("salarypermonth").innerHTML = salaryPerMonth;
+        </script></span
+      >
+    </h2>
+    <h2>
+      So, your salary per year is
+      <span id="salaryperyear"
+        ><script>
+          document.getElementById("salaryperyear").innerHTML =
+            parseInt(salaryPerMonth) * 12;
+        </script></span
+      >
+    </h2>
+    <h3>
+      Your gender is
+      <span id="gender"
+        ><script>
+          document.getElementById("gender").innerHTML = gender;
+        </script></span
+      >
+    </h3>
+    <h3>
+      Your Tax is
+      <script>
+        document.innerHTML = tax;
+      </script>
+    </h3>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+</head>
+<body>
+
+	<h3> Student data with JSON</h3>
+	<script type="text/javascript">
+		
+		var studentData = {};
+		studentData.name = prompt("Enter the Name");
+		studentData.age= prompt("Enter the  Age");
+		studentData.gender = prompt("Enter the Gender");
+
+		studentData.marks = [];
+		for (var i=0;i<3 ;i++){
+
+			studentData.marks[i] = prompt("Enter value for Sub" +i);
+
+			studentData.marks[i] = parseInt(studentData.marks[i]);
+		}
+		studentData.total = 0;
+
+		for( var i = 0; i< studentData.marks.length; i++){
+			studentData.total = studentData.total + studentData.marks[i];
+		   }
+
+		   studentData.avg = studentData.total / studentData.marks.length;
+
+		   console.log(studentData)
+		   console.log("Student Name :" + studentData.name);
+		   console.log("Student Age :"  + studentData.age);
+		   console.log("Avg is :" + studentData['avg'])
+
+		
+
+	</script>
+
+</body>
+</html>

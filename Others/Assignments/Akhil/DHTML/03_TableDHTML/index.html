@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TableDHTML</title>
+    <style>
+      .oneContainer{
+        border: 1px solid red;
+        width: 300px;
+        padding:40px;
+        float: left;
+      }
+
+      .tableContainer{
+        border: 1px solid red;
+        width: 300px;
+        padding: 40px;
+        float: right;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="oneContainer">
+      <form>
+        <label for="studentName">Student Name : </label>
+        <input type="text" placeholder="Enter student name" id="studentName" name="studentName"><br><br>
+        <label for="studentAge">Student Age : </label>
+        <input type="text" placeholder="Enter student age" id="studentAge" name="studentAge"><br><br>
+        <label for="studentGender">Gender : </label>
+        <input type="radio" id = "Male" name="studentGender" value="Male">
+        <label for="Male"> Male</label>
+        <input type="radio" id = "Female" name="studentGender" value="Female">
+        <label for="Female"> Female</label><br><br>
+        <label for = "studentLocation">Location : </label>
+        <select name = "studentLocation" id = "studentLocation">
+          <optgroup label="Asia">
+            <option>India</option>
+            <option>China</option>
+            <option>Japan</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option>Germany</option>
+            <option>France</option>
+            <option>Italy</option>
+          </optgroup>
+        </select><br><br>
+        <input type="button" value="Register" id = "registerButton" onclick="addRegisterData()">
+      </form>
+    </div>
+    <div class="tableContainer">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Location</th>
+            <th>Operation</th>
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+          
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script>
+    var addRegisterData = function(){
+      document.querySelector('.tableContainer').style.display = "block";
+      var studentName = document.querySelector('#studentName').value;
+      var studentAge = document.querySelector('#studentAge').value;
+      var studentGender = document.querySelector('input[name = "studentGender"]:checked').value;
+      var studentLocation = document.querySelector('#studentLocation').value;
+      var tableBody = document.querySelector(".tableBody");
+      var tableRow = document.createElement('tr');
+      var tableData1 = document.createElement('td');
+      tableData1.innerHTML = studentName;
+      var tableData2 = document.createElement('td');
+      tableData2.innerHTML = studentAge;
+      var tableData3 = document.createElement('td');
+      tableData3.innerHTML = studentGender;
+      var tableData4 = document.createElement('td');
+      tableData4.innerHTML = studentLocation;
+      tableRow.appendChild(tableData1);
+      tableRow.appendChild(tableData2);
+      tableRow.appendChild(tableData3);
+      tableRow.appendChild(tableData4);
+      tableBody.appendChild(tableRow);
+    };
+  </script>
+</html>

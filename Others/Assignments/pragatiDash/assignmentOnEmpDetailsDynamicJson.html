@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Dynamic In Json</title>
+</head>
+<body>
+    <script>
+        var empDetails = {};
+
+    empDetails.name = prompt("Enter employee name");
+    empDetails.age = prompt("Enter employee age");
+    empDetails.gender = prompt("Enter employee gender male/female");
+    empDetails.dept = prompt("Enter employee department");
+    empDetails.basicSal = prompt("Enter basic salary of employee");
+    empDetails.basicSal = parseInt(empDetails.basicSal);
+    empDetails.totalTax = 0;
+
+    empDetails.pf = (empDetails.basicSal * 14) / 100;
+    empDetails.hra = (empDetails.basicSal * 24) / 100;
+    empDetails.totalsalary = empDetails.basicSal + empDetails.pf + empDetails.hra;
+    empDetails.totalsalary = parseInt(empDetails.totalsalary);
+
+
+      if (empDetails.gender == "male") {
+        if (empDetails.totalsalary >= 100000) {
+            empDetails.totalTax = empDetails.totalsalary * (15 / 100);
+        } else if (empDetails.totalsalary >= 50000 && empDetails.totalsalary < 100000) {
+            empDetails.totalTax = empDetails.totalsalary * (10 / 100);
+        } else if (empDetails.totalsalary >= 25000 && empDetails.totalsalary < 50000) {
+            empDetails.totalTax = empDetails.totalsalary * (5 / 100);
+        } else {
+            empDetails.totalTax = 0;
+        }
+      } else if (empDetails.gender == "female") {
+        if (empDetails.totalsalary >= 100000) {
+            empDetails.totalTax = empDetails.totalsalary * (10 / 100);
+        } else if (empDetails.totalsalary >= 50000 && empDetails.totalsalary < 100000) {
+            empDetails.totalTax = empDetails.totalsalary * (5 / 100);
+        } else {
+            empDetails.totalTax = 0;
+        }
+      } else {
+        console.log("Please enter correct gender");
+      }
+
+      console.log(empDetails);
+      console.log("Employee Name is " + empDetails.name);
+      console.log("Employee Age is " + empDetails.age);
+      console.log("Employee Gender is " + empDetails.gender);
+      console.log("Employee Department is " + empDetails.dept);
+      console.log("Employee Basic Salary is " + empDetails.basicSal);
+      console.log("pf is " + empDetails.pf);
+      console.log("hra is " + empDetails.hra );
+      console.log("Total Salary is " + empDetails.totalsalary);
+      console.log("Total Tax is " + empDetails.totalTax);
+    </script>
+    </script>
+</body>
+</html>

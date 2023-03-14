@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+
+    <ul class="formContainer">
+        <li>Account Name: <input type="text" id="aName" onkeypress="return validAccountName(event)"></li>
+        <li>Account Number: <input type="number" id="aNumber" maxlength="10"
+                onkeypress=" return validAccountNumber(event)"></li>
+        <li>Account Password: <input type="password" id="aPass" maxlength="4" onclick="passwordError()"></li>
+        <li>Reenter Password: <input type="password" id="aRepass" maxlength="4"></li>
+        <button>Submit </button>
+    </ul>
+
+    <div id="passwordValidator">
+        <p class="totalLength">*total length should be 8 chars</p>
+        <p class="firstLetter">*first letter should be uppercase</p>
+        <p class="threeChar">*min 3 char should be there</p>
+        <p class="twoSymbols">*min 2 symbols should be there</p>
+        <p class="oneNumber">*should have min one number</p>
+        <p class="endNumber">*should not end with number</p>
+    </div>
+    }
+
+</body>
+
+</html>

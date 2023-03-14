@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    
+}
+/************** container part **************/
+.container{
+    width: 99%;
+    padding: 10px;
+    margin: 10px 10px;
+}
+/************** header part **************/
+.header{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+/************** section part **************/
+.section{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    
+}
+.main{
+    align-self: center;
+    align-items: center;
+    padding-left: 20%;
+}
+.main .img_01{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -170px 320px;
+    background-size: 275px; 
+}
+.main .img_02{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -798px -341px;;
+    background-size: 500px;
+}
+.main .img_03{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -257px 317px;
+    background-size: 260px;
+}
+table, th, td{
+    border-collapse: collapse;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid rgb(6, 6, 6);
+    padding: 5px;
+}
+
+.progress_card{
+    margin: 0px;
+    padding: 0;
+    border-collapse: separate;
+    width: 250px;
+}
+/************** footer part **************/
+.footer{
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 10px;
+}

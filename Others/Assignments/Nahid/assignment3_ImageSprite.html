@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studet Details Page</title>
+    <style>
+        #maincontainer{
+            border:2px solid;
+            width:800px;
+            padding: 5px;
+            margin: auto;
+        }
+        .parentDiv{
+            border:2px solid rgb(243, 13, 13);            
+            background-color: rgb(236, 228, 228);
+            padding: 10px;
+            
+        }
+        .parentDiv div{padding: 5px;}
+        .imageContainer{
+            width:100px;
+            height:100px;
+            border:1px solid;
+            background-image: url("allstudent.png");
+        }
+        h3{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .columnName{
+            color:rgb(48, 12, 179);
+            font-size: 20px;
+        }
+        .columnValue{color:green;}
+        .img1{
+                background-position: 2px 0px;
+                width: 80px;
+            }
+        .img2{background-position: -112px 0px;}
+        .img3{background-position: 415px -9px;}
+        .img4{background-position: -440px -12px;}
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <h3>Student Details</h3>
+        <div class="parentDiv">
+            <div><span class=columnName>Student No:</span><span class="columnValue">1</span></div>
+            <div><span class=columnName>Name:</span><span class="columnValue">Raj</span></div>
+            <div><span class=columnName>Age:</span><span class="columnValue">10</span></div>
+            <div><span class=columnName>Gender:</span><span class="columnValue">Male</span> </div>
+            <div><span class=columnName>Location:</span><span class="columnValue">Hyderabad</span></div>
+            <div class="imageContainer img1"></div>
+        </div>
+            <hr>
+        <div class="parentDiv">
+            <div><span class=columnName>Student No:</span><span class="columnValue">2</span></div>
+            <div><span class=columnName>Name:</span><span class="columnValue">Rani</span></div>
+            <div><span class=columnName>Age:</span><span class="columnValue">10</span></div>
+            <div><span class=columnName>Gender:</span><span class="columnValue">Female</span> </div>
+            <div><span class=columnName>Location:</span><span class="columnValue">Hyderabad</span></div>
+            <div class="imageContainer img2"></div>
+        </div>
+          <hr>
+        <div class="parentDiv">
+            <div><span class=columnName>Student No:</span><span class="columnValue">3</span></div>
+            <div><span class=columnName>Name:</span><span class="columnValue">Teena</span></div>
+            <div><span class=columnName>Age:</span><span class="columnValue">11</span></div>
+            <div><span class=columnName>Gender:</span><span class="columnValue">Female</span> </div>
+            <div><span class=columnName>Location:</span><span class="columnValue">Hyderabad</span></div>
+            <div class="imageContainer img3"></div>
+        </div>
+        <hr>
+        <div class="parentDiv">
+            <div><span class=columnName>Student No:</span><span class="columnValue">4</span></div>
+            <div><span class=columnName>Name:</span><span class="columnValue">Nilesh</span></div>
+            <div><span class=columnName>Age:</span><span class="columnValue">12</span></div>
+            <div><span class=columnName>Gender:</span><span class="columnValue">Male</span> </div>
+            <div><span class=columnName>Location :</span><span class="columnValue">Chandigarh</span></div>
+            <div class="imageContainer img4"></div>
+        </div>        
+    </div>
+</body>
+</html>

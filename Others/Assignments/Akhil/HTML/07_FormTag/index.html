@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Registration</title>
+  <style>
+    .headContainer {
+      border: 3px solid violet;
+      padding: 10px;
+      text-align: center;
+      font-family: sans-serif;
+      color: white;
+      background-color: purple;
+    }
+
+    .mainContainer {
+      margin: 10px 0px;
+      width: auto;
+      height: auto;
+      border: 3px solid violet;
+      position: relative;
+    }
+
+    .smallContainer {
+      border: 3px solid violet;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 10px;
+      width: 150px;
+      height: 20px;
+      background-color: purple;
+      color: white;
+    }
+
+    .smallContainerPositionOne{
+      position: absolute;
+      top: 10px;
+      left: 66px;   
+    }
+
+    .smallContainerPositionTwo{
+      position: absolute;
+      top: 255px;
+      left: 66px;
+    }
+
+    .smallContainerPositionThree{
+      position: absolute;
+      top: 497px;
+      left: 66px;
+    }
+
+    .smallContainerPositionFour{
+      width: 170px;
+      position: absolute;
+      top: 754px;
+      left: 66px;
+    }
+
+    .bigContainer {
+      border: 3px solid violet;
+      height: 209px;
+      margin: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 30px;
+    }
+
+    .leftFloat {
+      float: left;
+      margin-bottom: 10px;
+    }
+
+    .rightFloat {
+      float: right;
+      margin-bottom: 10px;
+    }
+
+    label{
+      font-family: sans-serif;
+      color: purple;
+    }
+
+    input[type = "text"],input[type = "email"],select{
+      border-color: purple;
+      border-radius:25px ;
+      text-align: center;
+      height: 25px;
+      width: 226px;
+      font-family: sans-serif;
+    }
+
+    select{
+      border-width: 3px;
+    }
+
+    input[type = "submit"]{
+      margin: 0px 38px 10px 38px;
+      width: 70px;
+      height: 30px;
+      background-color: purple;
+      color: white;
+      border-radius: 25px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="headContainer">
+    Student Registration Page
+  </div>
+  <div class="mainContainer">
+    <form action="formData.html" method="post">
+      <div class="smallContainer smallContainerPositionOne">
+        Account Details
+      </div>
+      <div class="bigContainer">
+        <ul>
+          <li>
+            <span class="leftFloat">
+              <label for="studentName">Name  </label>
+              <input type="text" id="studentName" name="studentName" placeholder="Enter Student Name">
+            </span>
+            <span class="rightFloat">
+              <label for="accountId">Account ID  </label>
+              <input type="text" id="accountId" name="accountId" maxlength="10" required placeholder="Enter Account ID">
+            </span>
+          </li>
+          <li>
+            <span class="leftFloat" style="clear: both;">
+              <label for="age">Age  </label>
+              <input type="text" id="age" name="age" placeholder="Enter Age">
+            </span>
+            <span class="rightFloat">
+              <label for="accountType">Account Type  </label>
+              <select name="accountType">
+                <optgroup label="Asia">
+                  <option value="India">India</option>
+                  <option value="China">China</option>
+                  <option value="Japan">Japan</option>
+                </optgroup>
+                <optgroup label="Europa">
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Italy">Italy</option>
+                </optgroup>
+              </select>
+            </span>
+          </li>
+          <li style="clear: both;">
+            <label for="gender">Gender  </label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label>
+          </li>
+          <li style="margin-top: 10px;">
+            <label for="emailId">Email Id  </label>
+            <input type="email" id="emailId" name="emailId" placeholder="Enter Email ID">
+          </li>
+        </ul>
+      </div>
+
+      <div class="smallContainer smallContainerPositionTwo">
+        Education Details
+      </div>
+      <div class="bigContainer">
+        <ul>
+          <li>
+            <span class="leftFloat" style="margin: 10px 0px;">
+              <label for="qualification">Qualification  </label>
+              <select name="qualification">
+                <option value="B-Tech">B-Tech</option>
+                <option value="M-Tech">M-Tech</option>
+                <option value="BCA">BCA</option>
+              </select>
+            </span>
+            <span class="rightFloat" style="margin: 10px 0px;">
+              <label for="collegeName">College Name  </label>
+              <input type="text" id = "collegeName" name="collegeName" required placeholder="Enter College Name">
+            </span>
+          </li>
+          <li>
+            <span class="leftFloat" style="clear: both; margin: 10px 0px;">
+              <label for="languageKnown">Language Known  </label>
+              <input type="checkbox" name="languageKnown" id = "English" value="English">
+              <label for="English">English</label>
+              <input type="checkbox" name="languageKnown" id = "Hindi" value="Hindi">
+              <label for="English">Hindi</label>
+              <input type="checkbox" name="languageKnown" id = "Telugu" value="Telugu">
+              <label for="English">Telugu</label>
+            </span>
+
+            <span class="rightFloat" style="margin: 10px 0px;">
+              <label for="Location">Location</label>
+              <select name="Location">
+                <option value="Hyderbad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </span>
+          </li>
+          <li class="leftFloat" style="clear: both; margin: 10px 0px;">
+            <label for="Course">Course Opt For</label>
+            <select name="Course">
+              <option value="CSE">CSE</option>
+              <option value="MECH">MECH</option>
+              <option value="ECE">ECE</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div class="smallContainer smallContainerPositionThree">
+        Address
+      </div>
+      <div class="bigContainer" style="height: 220px;">
+        <ul>
+          <li>
+            <span class="leftFloat">
+              <label for="DRNO">Door Number </label>
+              <input type="text" id = "DRNO" name="DRNO" placeholder="Enter Door Number">
+            </span>
+            <span class="rightFloat">
+              <label for="countryName">Country Name </label>
+              <input type="text" id="countryName" name="countryName" placeholder="Enter Country Name">
+            </span>
+          </li>
+          <li>
+            <span class="leftFloat" style="clear: both;">
+              <label for="StreetName">Street Name </label>
+              <input type="text" id = "StreetName" name="StreetName" placeholder="Enter Street Name">
+            </span>
+            <span class="rightFloat">
+              <label for="countryCode">Country Code </label>
+              <input type="text" id="countryCode" name="countryCode" placeholder="Enter Country Code">
+            </span>
+          </li>
+          <li>
+            <span class="leftFloat" style="clear: both;">
+              <label for="StateName">State Name </label>
+              <input type="text" id = "StateName" name="StateName" placeholder="Enter State Name">
+            </span>
+            <span class="leftFloat" style="clear: both;">
+              <label for="StateCode">State Code  </label>
+              <input type="text" id="StateCode" name="StateCode" placeholder="Enter State Code">
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="smallContainer smallContainerPositionFour">
+        Tell Me About Yourself
+      </div>
+      <div class="bigContainer" style="height: 241px;">
+        <label style = "display: block; margin: 38px 38px 10px 38px;" for="textArea">Tell me About Yourself</label><br>
+        <textarea style = "border-radius:25px;margin: 0px 38px 10px 38px;border-color: purple;border-width:3px;text-align: center;" cols="50" rows="5" name="textArea" id="textArea"></textarea><br>
+        <input type="submit" value="submit">
+      </div>
+      
+    </form>
+  </div>
+</body>
+
+</html>

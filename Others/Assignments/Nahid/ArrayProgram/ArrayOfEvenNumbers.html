@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find the even numbers from an array</title>
+    </head>
+    <body>
+        <script>            
+            var arrList = [3, 6, 522, 45, 55, 6, 8, 10, 11];
+            var evenNoArray = [];           
+            var i = 0;
+            //loop to fetch even number from static array
+            for(var j = 0; j < arrList.length; j++)
+            {
+              if(arrList[j] % 2 == 0)
+              {
+                evenNoArray[i] = arrList[j];
+                i++;
+              }
+            }
+            console.log(arrList);
+            console.log(evenNoArray);
+        </script>    
+    </body>
+</html>

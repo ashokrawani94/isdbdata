@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DHTML Page Example</title>
+        <link rel="stylesheet" href="studentStyle.css">        
+    </head>
+    <body>
+        <form action="">
+        <ul class="mainContainer">
+            <li class="studentEntryForm">
+                <ul>
+                    <li>
+                        <h3>Student Details Entry Form</h3>
+                    </li>
+                    <li>
+                        Student Name:
+                        <input type="text" id="sName">
+                    </li>
+                    <li>
+                        Age:
+                        <input type="text" id="sAge" maxlength="2">
+                    </li>
+                   <li>
+                    Gender:
+                    <input type="radio" id="male" value="male" name="gender">Male
+                    <input type="radio" id="female" value="female" name="gender">Female
+                   </li>
+                   <li>
+                    Location:
+                    <select id="location">
+                        <option value="-1">Select</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                   </li>
+                    <li>
+                        <input type="button" value="Add" id="Add-btn" onclick="addDetails();">
+                        <input type="reset" value="Reset">
+                    </li>
+                </ul>
+            </li>
+            <li class="studentDisplayForm">
+                <ul>
+                    <li><h2 style="color: red;">Display Student Data</h2></li>
+                    <li>
+                        <table id="studentTable" border="1" cellpaddin="0" cellspacing="0">
+                            <tr>
+                                <td>Name</td>
+                                <td>Age</td>
+                                <td>Gender</td>
+                                <td>Location</td>
+                                <td>Operation</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </form>
+        <script src="studentJS.js"></script>
+    </body>
+</html>

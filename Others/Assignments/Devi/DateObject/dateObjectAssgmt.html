@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object Assignment</title>
+</head>
+<body>
+    <script>
+        var showDate =new Date();
+        var months = ['Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec']
+        var dayslist = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+
+        //5/Mar/2023
+        var monthname = months[showDate.getMonth()]
+        var mycustomDate = showDate.getDate() + '/' + monthname + '/' +(showDate.getFullYear()) 
+        console.log(mycustomDate);
+        // console.log(showDate);
+
+        //05th Mar,2023
+        var monthname = months[showDate.getMonth()]
+        var mycustomDate1 = showDate.getDate() + 'th ' + monthname + ', ' + (showDate.getFullYear())
+        console.log(mycustomDate1);
+
+        //5th March, 2023
+        var months1 = ['January','February','March','April','May','June','July','August','September','October','November','December']
+        var monthname = months1[showDate.getMonth()]
+        var mycustomDate2 = showDate.getDate() + 'th ' + monthname + ', ' + (showDate.getFullYear())
+        console.log(mycustomDate2);
+
+        //Sun, 14th Mar 
+        var getDay = dayslist[showDate.getDay()]
+        var monthname = months[showDate.getMonth()]
+        var mycustomDate3 = getDay + ', ' + (showDate.getDate()) + 'th ' + monthname
+        console.log(mycustomDate3);
+
+        //Sunday, 5th March 2023
+        var dayslist1 = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+        var getDay = dayslist1[showDate.getDay()]
+        var monthName = months1[showDate.getMonth()]
+        var mycustomDate4 = getDay + ', ' + (showDate.getDate()) + 'th ' + monthName + ' ' + (showDate.getFullYear())
+        console.log(mycustomDate4);
+
+        //5-Mar-2023
+        var monthname = months[showDate.getMonth()]
+        var mycustomDate5 = (showDate.getDate()) + '-' + monthname + '-' + (showDate.getFullYear())
+        console.log(mycustomDate5); 
+
+        //5-3-2023
+        var mycustomDate6 = (showDate.getDate()) + '-' + (showDate.getMonth()+1) + '-' + (showDate.getFullYear())
+        console.log(mycustomDate6);
+
+        //5th Mar, 2023 10:20:30
+        var monthname = months[showDate.getMonth()]
+        var mycustomDate7 = (showDate.getDate()) + 'th ' + monthname + ', ' + (showDate.getFullYear()) + ' ' + (showDate.getHours()) + ':' + (showDate.getMinutes()) + ':' +(showDate.getSeconds())
+        console.log(mycustomDate7);
+
+        //10 min : 20 sec 
+        var mycustomDate8 = (showDate.getMinutes()) + 'min ' + ': '+ (showDate.getSeconds()) + 'sec'
+        console.log(mycustomDate8);
+
+        //2 hrs, 10min 20sec
+        var mycustomDate9 = (showDate.getHours()) +  ' ' +'hrs' + ', ' + (showDate.getMinutes()) + 'min ' + (showDate.getSeconds()) + 'sec'
+        console.log(mycustomDate9);
+
+  </script>
+    
+</body>
+</html>

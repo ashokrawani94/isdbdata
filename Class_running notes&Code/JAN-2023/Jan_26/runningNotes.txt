@@ -1,0 +1,20 @@
+WAP ename, eage, edep, ebasicsal, calculate the totalsalary of employee 
+totalsal = basicsal + pf + hra
+where
+pf is 14 percent of basicsal
+and
+hra is 25% of basicsa
+-------------------
+
+Variable Hoisting:
+    JS engine, before executing the code, it automatically identifies all the variable declarations with in the application, it moves all the declarations to the starting of the application.
+    While moving the declarations, it only moves the declarations but not the initialized value.
+
+Typecasting:
+    Concept of changing datatype of one variable to other.
+    parseInt()
+    parseFloat()
+    toString()
+----
+
+Reading data from user

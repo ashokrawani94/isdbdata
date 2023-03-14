@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    var empdetails = {}
+
+    empdetails.empname = prompt("Enter Your Name");
+    empdetails.empage = prompt("Enter Your Age");
+    empdetails.empdept = prompt("Enter Your Department");
+    empdetails.empgender = prompt("Enter Your Gender");
+    empdetails.basicsal = prompt("Basic Salary");
+    empdetails.basicsal = parseInt(empdetails.basicsal);
+    empdetails.pf = (empdetails.basicsal * 14) / 100;
+    empdetails.hra = (empdetails.basicsal * 24) / 100;
+    empdetails.totalsal = empdetails.basicsal + empdetails.pf + empdetails.hra;
+
+    console.log("Name : " + empdetails.empname);
+    console.log("Age : " + empdetails['empage']);
+    console.log("Department : " + empdetails.empdept);
+    console.log("Gender : " + empdetails.empgender);
+    console.log("basic_sal : " + empdetails.basicsal);
+    console.log("pf : " + empdetails.pf);
+    console.log("hra : " + empdetails.hra);
+    console.log("Totalsalry : " + empdetails.totalsal);
+
+    if (empdetails.empgender == 'male') {
+        if (empdetails.totalsal >= 100000) {
+            empdetails.tax = (empdetails.totalsal * 15) / 100
+            console.log("Tax is : " + empdetails.tax);
+        } else if (empdetails.totalsal >= 50000) {
+            empdetails.tax = (empdetails.totalsal * 10) / 100
+            console.log("Tax is : " + empdetails.tax);
+        }
+        else if (empdetails.totalsal >= 25000) {
+            empdetails.tax = (empdetails.totalsal * 5) / 100
+            console.log("Tax is : " + empdetails.tax);
+        }
+        else {
+            empdetails.tax = (empdetails.totalsal * 0) / 100
+            console.log("Tax is : " + empdetails.tax);
+        }
+    }
+    else {
+        if (empdetails.empgender == 'female') {
+            if (empdetails.totalsal >= 50000) {
+                empdetails.tax = (empdetails.totalsal * 15) / 100
+                console.log("Tax is : " + empdetails.tax);
+            }
+            else if (empdetails.totalsal >= 30000) {
+                empdetails.tax = (empdetails.totalsal * 10) / 100
+
+                console.log("Tax is : " + empdetails.tax);
+            }
+            else {
+                empdetails.tax = (empdetails.totalsal * 0) / 100
+                console.log("Tax is : " + empdetails.tax);
+            }
+        }
+    }
+
+</script>
+</body>
+
+</html>

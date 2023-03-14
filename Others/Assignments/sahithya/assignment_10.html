@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_10</title>
+</head>
+<body>
+    <script>
+        var emp_Name=prompt("enter the name");
+        var emp_age=prompt("enter the age");
+        var emp_department=prompt("enter the department");
+        var emp_basic_salary=prompt("enter the basic salary");
+        console.log("Name:"+emp_Name);
+        console.log("Age:"+emp_age);
+        console.log("Department:"+emp_department);
+        console.log("basic salary:"+emp_basic_salary);
+        
+        if(emp_basic_salary>100000)
+        {
+        console.log("tax is:"+(100000*15)/100);
+        }
+        else if(emp_basic_salary>=50000)
+        {
+            console.log("tax is:"+(100000*10)/100);
+        }
+        else if(emp_basic_salary>=25000)
+        {
+        
+        console.log("tax is:"(250000*5)/100);
+        }
+        else{
+            console.log(" 0");
+
+        }
+    </script>
+</body>
+</html>

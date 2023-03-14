@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+.leftcontainer {
+  border: 1px solid;
+  width: 400px;
+}
+table {
+  margin: 10px;
+}
+td {
+  width: 200px;
+  text-align: center;
+}
+.rightcontainer {
+  border: 1px solid;
+  width: 800px;
+  padding: 10px;
+  margin-left: 40px;
+}
+.leftcontainer,
+.rightcontainer {
+  float: left;
+}
+#editbutton,
+#deletebtn {
+  float: left;
+}
+#editbutton {
+  width: 50px;
+  margin-left: 20px;
+}
+#deletebtn {
+  width: 50px;
+  margin-left: 20px;
+}

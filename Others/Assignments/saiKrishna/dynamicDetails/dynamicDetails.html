@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Details</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter your name: ");
+var age = prompt("Enter your age: ");
+var department = prompt("Enter your department: ");
+var basicSalary = prompt("Enter your basic salary: ");
+var gender = prompt("Enter your gender (male/female): ");
+
+var totalSalary = parseFloat(basicSalary);
+var tax = 0;
+
+// Check gender
+if (gender === "male") {
+    if (totalSalary > 100000) {
+        tax = totalSalary * 0.15;
+    } else if (totalSalary >= 50000) {
+        tax = totalSalary * 0.1;
+    } else if (totalSalary >= 25000) {
+        tax = totalSalary * 0.05;
+    }
+} else if (gender === "female") {
+    if (totalSalary > 100000) {
+        tax = totalSalary * 0.1;
+    } else if (totalSalary >= 50000) {
+        tax = totalSalary * 0.05;
+    } 
+}
+console.log("Name: " + name);
+console.log("Age: " + age);
+console.log("Department: " + department);
+console.log("Basic Salary: " + basicSalary);
+console.log("Total Salary: " + totalSalary);
+console.log("Tax: " + tax);
+
+    </script>
+    
+</body>
+</html>

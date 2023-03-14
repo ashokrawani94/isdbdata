@@ -1,0 +1,15 @@
+1) wap to list out all the even numbers within an array
+2) wap to find the sum of all the odd numbers within the given array
+3) wap to list out all the prime numbers within the given array
+
+4) wap to find the smallest and largest value within the given array
+5) wap to find the second largest number from the given array
+6) wap to sort the values within the array in ascending and descending order
+
+7) wap to list out all the pallindrome numbers within the given array
+8) wap to list out all the armstrong numbers within the given array
+9) wap to find the lucky number for all the values within a given array
+
+10) wap to read values in array dynamically and return smallest and largest of it
+
+11) wap to read values in to the array dynamically and find the sum of all those

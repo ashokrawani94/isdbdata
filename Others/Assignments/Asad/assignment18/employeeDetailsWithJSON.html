@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        var employeeData = {}
+        employeeData.Name = prompt("Enter Employee Name");
+        employeeData.Age = prompt("Enter Employee Age");
+        employeeData.Gender = prompt("Enter Employee Gender");
+        employeeData.Department = prompt("Enter Employee Department");
+        employeeData.BasicSalary = prompt("Enter Employee Basic Salary");
+        employeeData.BasicSalary = parseInt(employeeData.BasicSalary);
+    
+        employeeData.pf = (employeeData.BasicSalary * 15) / 100;
+        employeeData.pf = parseInt(employeeData.pf);
+        employeeData.hra = (employeeData.BasicSalary * 20) / 100;
+        employeeData.hra = parseInt(employeeData.hra);
+    
+        employeeData.totalSalary = employeeData.BasicSalary + employeeData.pf + employeeData.hra;
+        if (employeeData.Gender == "male"){
+            if (employeeData.totalSalary > 100000){
+               employeeData.tax = (employeeData.totalSalary * 15) / 100;
+               employeeData.tax = parseInt(employeeData.tax);
+            } else if (employeeData.totalSalary > 60000){
+                employeeData.tax = (employeeData.totalSalary * 10) / 100;
+                employeeData.tax = parseInt(employeeData.tax);
+            } else if (employeeData.totalSalary > 30000){
+                employeeData.tax = (employeeData.totalSalary * 5) / 100;
+                employeeData.tax = parseInt(employeeData.tax);
+            }
+        } 
+        if (employeeData.Gender == "female") {
+            if (employeeData.totalSalary > 100000){
+               employeeData.tax = (employeeData.totalSalary * 10) / 100;
+               employeeData.tax = parseInt(employeeData.tax);
+            } else if (employeeData.totalSalary > 60000){
+                employeeData.tax = (employeeData.totalSalary * 5) / 100;
+                employeeData.tax = parseInt(employeeData.tax);
+            } else  (employeeData.totalSalary > 30000)
+                 employeeData.tax = (employeeData.totalSalary * 0) / 100; 
+                 employeeData.tax = parseInt("NO TAX" + employeeData.tax);
+                 console.log("NO TAX");
+            } 
+            
+            console.log(employeeData);
+            
+            console.log("Employee Name  " + employeeData.Name);
+            console.log("Employee Age  " + employeeData.Age);
+            console.log("Employee Gender  " + employeeData.Gender);
+            console.log("Employee Department  " + employeeData.Department);
+            console.log("Employee Basic Salary  " + employeeData.BasicSalary);
+            console.log("Employee PF  " + employeeData.pf);
+            console.log("Employee HRA  " + employeeData.hra);
+            console.log("Employee Total Salary " + employeeData.totalSalary);
+            console.log("Employee Tax  " + employeeData.tax);   
+    </script>
+</body>
+</html>

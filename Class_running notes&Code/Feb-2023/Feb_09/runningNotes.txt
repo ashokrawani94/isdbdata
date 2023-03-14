@@ -1,0 +1,33 @@
+Array Methods
+
+    push()
+    pop()
+    shift()
+    unshift()
+    join()
+    splice
+    .length
+
+    .filter
+    .find 
+    .map 
+    .indexOf
+    etc
+
+    ---------------
+
+    splice method:
+        Used to insert or delete any no. of values from the given array
+
+        Syntax:
+            array.splice(startIndex, total no. of values to be  deleted, optional values to be inserted);
+
+        eg:
+         
+            var data = [....];
+            data.splice(2, 3); -> from starting 2nd position it will delete 3 values from array 
+
+            data.splice(1, 2, 4, 6, 9) -> From starting 1st index deletes 2 values and inserts values "4, 6, 9" at the same position 
+
+
+            data.splice(3, 0, 99, 100)

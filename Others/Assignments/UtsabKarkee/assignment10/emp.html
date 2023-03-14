@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Tax</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      h3 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Javascript Assignment Second</h3>
+    <script>
+      var message = "Enter Employee ",
+        employeeName = prompt(message + "Name: "),
+        employeeAge = parseInt(prompt(message + "Age: ")),
+        employeeDepartment = prompt(message + "Department: "),
+        basicSalary = parseInt(prompt(message + "Basic Salary: ")),
+        pf = 0.14 * basicSalary,
+        hrf = 0.25 * basicSalary,
+        totalSalary = pf + hrf + basicSalary;
+
+      var employeeGender = prompt(message + "Gender: "),
+        totalTax;
+
+      switch (employeeGender) {
+        case "Male": {
+          if (totalSalary > 100000) totalTax = totalSalary * 0.15;
+          else if (totalSalary >= 50000) totalTax = totalSalary * 0.1;
+          else if (totalSalary >= 25000) totalTax = totalSalary * 0.05;
+          else totalTax = 0;
+
+          break;
+        }
+        case "Female": {
+          if (totalSalary > 100000) totalTax = totalSalary * 0.1;
+          else if (totalSalary >= 50000) totalTax = totalSalary * 0.05;
+          else totalTax = 0;
+
+          break;
+        }
+        default:
+          console.log("Incorrect Value");
+          break;
+      }
+
+      console.log(
+        "Employee Name: " +
+          employeeName +
+          "\nEmployee Age: " +
+          employeeAge +
+          "\nTotal Salary: " +
+          totalSalary +
+          "\nEmployee Department: " +
+          employeeDepartment +
+          "\nEmployee Gender: " +
+          employeeGender +
+          "\nTotal Tax: " +
+          totalTax
+      );
+    </script>
+  </body>
+</html>

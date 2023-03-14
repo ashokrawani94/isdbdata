@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html input elements</title>
+        <style>
+            .headcontainer{
+                border: 3px solid ;
+                text-align: center;
+                padding: 7px;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: yellow;
+            }
+            .maincontainer{
+                border: 2px solid;
+                width: 99%;
+                height: 1400px;
+                margin-left: 5px;
+                margin-top: 10px;
+                background-color:pink;
+              
+            }
+            .footer{
+                border: 3px solid;
+                padding: 5px;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: yellow;
+            }
+            .detailscontainer{
+                border: 2px dashed;
+                width: 96%;
+                height: 250px;
+                margin-top: 50px;
+                margin-left: 11px;
+                margin-right: 11px;
+                background-color:aquamarine;
+
+            }
+            .smallconatainer{
+                border:3px dotted;
+                width: 250px;
+                height: 30px;
+                text-align: center;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                position:relative;
+                top: -20px;
+                left: 120px;
+                background-color: rgb(240, 128, 231);
+                text-decoration:underline;
+
+            }
+            .label{
+                position: relative;
+                top: -155px;
+                left: 600px;
+            }
+            .accounttype{
+                position: relative;
+                top: -155px;
+                left: 600px;
+            }
+            #about{
+                height:300px ;
+            }
+            .yourself{
+                position: relative;
+                left: 200px;
+                background-color:azure;
+                color:red;
+            }
+            .submit{
+                position: relative;
+                top:25px;
+                right: -47%;
+                color: black;
+                background-color: antiquewhite;
+                font-weight: bold;
+             }
+             li{
+                color: rgb(3, 64, 125);
+                font-size: 16px;
+                font-weight: bold;
+                list-style-type:none;
+             }
+             input{
+                color:RED;
+                background-color:white;
+             }
+            body{
+                overflow:auto;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="www.abc.com">
+        <div class="headcontainer">-: STUDENT REGISTRATION PAGE :-</div>
+        <div class="maincontainer">
+            <div class="detailscontainer">
+                <div class="smallconatainer">STUDENT DETAILS</div><br>
+                <ul>
+                    <li>
+                        <label>NAME :</label>
+                        <input type="text" placeholder="max lenth is 15" maxlength="15">
+                    </li><br>
+                    <li>
+                        <label>DATE OF BIRTH :</label>
+                        <input type="date">
+                    </li><br>
+                    <li>
+                        <label>GENDER :</label>
+                        <input type="radio" gender="abc" style="input">male
+                        <input type="radio" gender="abc" style="input">female
+                    </li><br>
+                    <li>
+                        <label>GMAIL ID :</label>
+                        <input type="text" placeholder="....................">
+                    </li><br>
+                    <li class="label">
+                        <label >ACCOUNT ID :</label>
+                        <input type="text">
+                    </li><br>
+                    <br><li class="accounttype">
+                        <label >ACCOUNT TYPE :</label>
+                        <select>
+                            <option>........</option>
+                            <option>current</option>
+                            <option>kcc</option>
+                            <option>savings</option>
+                        </select>
+                    </li>
+                
+            </div>
+            <div class="detailscontainer">
+                <div class="smallconatainer">EDUCATIONAL DETAILS</div><br>
+                <ul>
+                    <li>
+                        <label>QUALIFICATION :</label>
+                        <select>
+                            <option>........</option>
+                            <option>inter</option>
+                            <option>b.tech</option>
+                            <option>degree</option>
+                            <option>10th</option>
+
+                        </select>
+                    </li><br>
+                    <br>
+                    <li>
+                        <label>LANGUAGES KNOWN :</label>
+                        <input type="checkbox" >english
+                        <input type="checkbox" >telugu
+                        <input type="checkbox" >hindi
+                    </li><br>
+                    <br><li>
+                        <label>COURSE OPTING FOR :</label>
+                        <input type="text">
+                    </li><br>
+                    <li class="label">
+                        <label >COLLEGE NAME :</label>
+                        <input type="text">
+                    </li><br>
+                    <br><li class="accounttype">
+                        <label >LOCATION :</label>
+                        <input type="text">
+                        
+                    </li>
+                
+            </div>
+            <div class="detailscontainer">
+                <div class="smallconatainer">ADDRESS</div><br>
+                <ul>
+                    <li>
+                        <label>D.NO :</label>
+                        <input type="text">
+                    </li><br>
+                    <li>
+                        <label>STREET NAME :</label>
+                        <input type="text">
+                    </li><br>
+                    <li>
+                        <label>STATE NAME :</label>
+                        <select>
+                            <option>........</option>
+                            <option>maharashtra</option>
+                            <option>telangana</option>
+                            <option>tamilnadu</option>
+                            <option>karnataka</option>
+                            <option>andhra pradesh</option>
+                        </select>
+                    </li><br>
+                    <li>
+                        <label>PINCODE :</label>
+                        <input type="text">
+                    </li><br>
+                    <li class="label">
+                        <label >COUNTRY CODE :</label>
+                        <input type="text">
+                    </li><br>
+                    <br><li class="accounttype">
+                        <label >COUNTRY NAME :</label>
+                        <select>
+                            <option>........</option>
+                            <option>USA</option>
+                            <option>canada</option>
+                            <option>africa</option>
+                            <option>india</option>
+                        </select>
+                    </li>
+                
+            </div>
+            <div class="detailscontainer" id="about">
+                <div class="smallconatainer">ABOUT YOUR SELF</div>
+                <ul>
+                    <li>
+                        <label>WRITE ABOUT YOUR SELF :</label><br>
+                        <br><textarea cols="70" rows="10" class="yourself" placeholder="write something......"></textarea>
+                    </li>
+            </div><br>
+            <input type="checkbox">please click above entered details are correct.<br>
+            <br><input type="checkbox">Do you follow terms & conditions.
+
+            <br><input type="submit" value="REGISTER" class="submit" >
+        </div>
+    </form>
+        <div class="footer">copyright@2023</div>
+    
+    </body>
+</html>

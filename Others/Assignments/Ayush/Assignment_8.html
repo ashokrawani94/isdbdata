@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border: 2px solid black;
+            margin: 5px 80px;
+            padding: 5px;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: #fbdfad;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin: 10px 80px;
+            padding: 5px;
+            background-color: #fbdfad;
+        }
+
+        footer {
+            border: 2px solid black;
+            margin: 10px 80px;
+            padding: 5px;
+            height: 100%;
+            text-align: center;
+            background-color: #fbdfad;
+        }
+
+        .content1 {
+            position: relative;
+            border: 2px solid black;
+            margin: 10px 10px;
+            padding: 5px;
+            width: auto;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .content3 {
+            position: relative;
+            border: 2px solid black;
+            margin: 10px 10px;
+            padding: 5px;
+            width: auto;
+            height: 220px;
+        }
+
+        .content2 {
+            position: relative;
+            border: 2px solid black;
+            margin: 10px 10px;
+            padding: 5px;
+            width: auto;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .abc {
+            margin-top: 20px;
+        }
+
+        .move {
+            margin: 12px;
+
+        }
+
+        .move1 {
+            position: absolute;
+            top: 40px;
+            right: 266px;
+        }
+
+        .move2 {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+        }
+
+        .move22 {
+            position: absolute;
+            top: 40px;
+            right: 77px;
+            width: 160px;
+
+        }
+
+        .move3 {
+            position: absolute;
+            top: 85px;
+            right: 250px;
+        }
+
+        .move4 {
+            position: absolute;
+            top: 85px;
+            right: 55px;
+            width: 160px;
+        }
+
+        .move34 {
+            position: absolute;
+            top: 85px;
+            right: 297px;
+        }
+
+        .move344 {
+            position: absolute;
+            top: 85px;
+            right: 270px;
+        }
+
+        .move44 {
+            position: absolute;
+            top: 85px;
+            right: 105px;
+            width: 160px;
+        }
+
+        .move444 {
+            position: absolute;
+            top: 85px;
+            right: 70px;
+        }
+
+
+        .block {
+            position: absolute;
+            border: 2px solid black;
+            width: 154px;
+            text-align: center;
+            height: 23px;
+            top: -9px;
+            left: 44px;
+            background-color: black;
+            color: white;
+        }
+
+        .button {
+            text-align: center;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            margin-left: 500px;
+            border-radius: 30px;
+            height: 40px;
+            width: 90px;
+            font-size: 18px;
+        }
+
+        .text1 {
+            margin-top: 30px;
+        }
+
+        .ayu {
+            position: relative;
+            bottom: 62px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <strong>Student Registration Page</strong>
+    </header>
+    <div class="container">
+        <div class="content1">
+            <div class="block">
+                Account Details
+            </div>
+            <form class="abc" method="get" action="Submit">
+                <label class="move" for="name"><b>Name:</b></label>
+                <input class="move" type="text" name="name"><br>
+                <label class="move" for="age"><b>Age:</b></label>
+                <input class="move" type="text" name="age"><br>
+                <label class="move" for="gender"><b>Gender:</b></label>
+                <input class="move" type="radio" name="gender">Male
+                <input class="move" type="radio" name="gender">Female <br>
+                <label class="move" for="mail.id"><b>Mail ID:</b></label>
+                <input class="move" type="text" name="mail.id"><br>
+                <label class="move1" for="accid"><b>Account ID:</b></label>
+                <input class="move2" type="text" name="accid"><br>
+                <label class="move3" for="acc.ty"><b>Account Type:</b></label>
+                <select name="accty" id="" class="move4">
+                    <option>select</option>
+                    <option>Current Account</option>
+                    <option>Saving Account</option>
+                </select>
+
+            </form>
+        </div>
+
+        <div class="content2">
+            <div class="block">
+                Education Details
+            </div>
+            <form class="abc" method="get" action="Submit">
+                <label class="move" for="name"><b>Qualification:</b></label>
+                <input class="move" type="text" name="name"><br>
+                <label class="move" for="lang"><b>Language known:</b></label>
+                <input class="move" type="checkbox" name="lang">English
+                <input class="move" type="checkbox" name="lang">Marathi
+                <input class="move" type="checkbox" name="lang">Hindi <br>
+                <label class="move" for="course"><b>Course:</b></label>
+                <select name="course" id="" class="move">
+                    <option>Select</option>
+                    <option>UI Developer</option>
+                    <option>Software Testing</option>
+                    <option>Sales Force</option>
+                    <option>Software Developer</option>
+                </select>
+                <label class="move1" for="clgn"><b>College Name:</b></label>
+                <input class="move2" type="text" name="clgn"><br>
+                <label class="move34" for="loc"><b>Location:</b></label>
+                <select name="loc" id="" class="move44">
+                    <option>select</option>
+                    <option>Nagpur</option>
+                    <option>Mumbai</option>
+                    <option>Pune</option>
+                </select>
+
+            </form>
+        </div>
+
+        <div class="content1">
+            <div class="block">
+                Address
+            </div>
+            <form class="abc" method="get" action="Submit">
+                <label class="move" for="name"><b>Address:</b></label>
+                <input class="move" type="text" name="name"><br>
+                <label class="move" for="str"><b>Street Name:</b></label>
+                <input class="move" type="text" name="str"><br>
+                <label class="move" for="state"><b>State Name:</b></label>
+                <input class="move" type="text" name="state"><br>
+                <label class="move" for="code"><b>State Code:</b></label>
+                <input class="move" type="text" name="code"><br>
+                <label class="move1" for="cn"><b>Country Name:</b></label>
+                <select name="cn" id="" class="move22">
+                    <option>select</option>
+                    <option>India</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                </select>
+                <label class="move344" for="cc"><b>Country Code:</b></label>
+                <input class="move444" type="text" name="cc">
+
+            </form>
+        </div>
+
+        <div class="content3">
+            <div class="block">
+                About Yourself
+            </div>
+            <b class="ayu">About Yourself -</b>
+            <textarea class="text1" name="Write something" id="" cols="100" rows="9"></textarea> <br>
+            <input class="button" type="button" value="Submit">
+        </div>
+    </div>
+    <footer>
+        <strong>&copy; copy Rights 2023</strong>
+    </footer>
+
+</body>
+
+</html>

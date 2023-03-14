@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong List from an Array</title>
+</head>
+<body>
+    <h3>check the number is armstrong number or not in Array.</h3>
+    <script>
+    var arr = [11, 8, 9, 13, 153, 20, 370, 371];
+    var rem=0, sum=0, count = 0;
+    var armstrongNoArr = [];
+    
+    console.log(arr);
+
+    var m = 0;
+
+    //loop to check each value of array as a astrong number or not 
+     for(var i = 0; i < arr.length; i++)
+     {
+        var remArr = [];
+        n = arr[i];
+
+        //loop to fetch all digits of number and it's length
+        for(var k=0; n>0 ; k++)
+        {
+          rem = n%10;
+          n = n/10;
+          n = parseInt(n);
+          remArr[k] = rem;
+          count++;
+        }
+        
+        //loop to calculate sum of exponential of all digits of each number
+        for(var j = 0; j < remArr.length; j++)
+        {
+            sum = sum + remArr[j] ** count;
+        }
+        
+        if(sum == arr[i])
+        {
+            armstrongNoArr[m] = arr[i];//armstrong number array preparation
+            m++;
+        }
+
+        count=0; sum = 0;
+    }
+    console.log("armstrong number array is ");
+    console.log(armstrongNoArr);
+    </script>
+</body>
+</html>

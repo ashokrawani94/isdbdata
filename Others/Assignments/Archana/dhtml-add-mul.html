@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            border: 1px solid;
+           margin:  auto;
+           padding: 15px;
+            width: 450px;
+           
+        }
+        li{
+            border: 1px solid ;
+            border-color: burlywood;
+            margin: 20px;
+            padding: 10px;
+            list-style: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            Enter first value:
+            <input type="text" id="fval">
+        </li>
+        <li>
+            Enter second value:
+            <input type="text" id="sval">
+        </li>
+        <li>
+            select option
+            <select id="selection">
+                <option >Add</option>
+                <option >Sub</option>
+                <option >Mul</option>
+                <option >div</option>
+
+            </select>
+            
+        </li>
+        <li>
+            <input type="button" value="Submit"  onclick="goforresult()">
+        </li>
+        <li>
+            The result is: <span id="Answer"></span>
+        </li>
+    </ul>
+    <script>
+        var goforresult=()=>{
+            alert("tetst")
+            var a1=document.querySelector("#fval").value;
+            a1=parseInt(a1);
+            var a2=document.querySelector("#sval").value;
+            a2=parseInt(a2);
+            var option= document.querySelector("#selection").value;
+            var result=0;
+            if(option=="Add"){
+                result=a1+a2
+            }else if(option=='sub'){
+                result=a1-a2
+            }else if(option=='Mul'){
+                result=a1*a2
+            }else{
+                result=a1/a2
+            }
+            document.querySelector("#Answer").innerHTML=result;
+
+        }
+    </script>
+</body>
+</html>

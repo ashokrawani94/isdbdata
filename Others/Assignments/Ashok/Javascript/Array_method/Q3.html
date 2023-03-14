@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <h3>function to reverse the string and check whether string is pallindrome or not</h3>
+    <script>
+        var fnToCheckPallindrome = (par) =>{
+        var str = '';
+        for(var i = par.length-1; i >= 0; i--){
+            str = str + par[i];
+        }
+       if(str == par){
+        console.log("Given String '"+par+"' is a Pallindrome");
+       }else{
+        console.log("Given String '"+par+"' is not a Pallindrome");
+       
+         console.log("Reverse of String '"+par+"' is " + str); 
+       }
+    }
+       fnToCheckPallindrome('name');   //align
+    </script>
+</body>
+</html>

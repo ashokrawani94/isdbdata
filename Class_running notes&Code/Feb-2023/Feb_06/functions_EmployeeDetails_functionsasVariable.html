@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Employee Details.. With functions
+        </title>
+    </head>
+    <body>
+        <h3>Demonstrating functions - Employee Details
+        </h3>
+        <script>
+            var ename, eage, eGender, basicSal, totalSal, pf, hra, totalTax;
+            var taxPercent;
+            // Reading datafrom user
+            var readEmployeeDetails = function() {
+                ename = prompt("Enter name of employee");
+                eage = prompt("Age");
+                eGender = prompt("Gender");
+                basicSal = prompt("Basic salary");
+                basicSal = parseInt(basicSal);
+                calPfAndHra();
+                
+            }
+
+            var calPfAndHra = () => {
+                pf = (14 * basicSal) / 100;
+                hra = (25 * basicSal) / 100;
+                totalSal = pf + hra + basicSal;
+                calTotalTax();
+            }
+
+            var calTotalTax = function() {
+                if (eGender == 'male') {
+                    if (totalSal >= 300000) {
+                        taxPercent = 10;
+                    } else {
+                        taxPercent = 5;
+                    }
+                } else { // Female
+                    if (totalSal >= 300000) {
+                        taxPercent = 5;
+                    } else {
+                        taxPercent = 0;
+                    }
+                }
+                totalTax = (totalSal * taxPercent) / 100;
+                displayEmployeeDetails();
+            }
+
+            var displayEmployeeDetails = () => {
+                console.log("Employee details");
+                console.log("Gender " + eGender);
+                console.log("Age " + eage);
+                console.log("Total Sal " + totalSal);
+                console.log("Tax to be paid " + totalTax);
+            }
+
+            readEmployeeDetails();
+            
+        </script>
+    </body>
+</html>

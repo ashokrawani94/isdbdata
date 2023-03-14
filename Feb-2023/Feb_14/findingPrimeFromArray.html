@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding prime from array
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var data = [34, 55, 67, 89, 23, 11];
+
+            for (var j = 0; j < data.length; j++) {
+                var n = data[j];
+                var count = 0;
+                for (var i = 2; i < n; i++) {
+                    if (n % i == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0) {
+                    console.log("its prime " + n);
+                } else {
+                    console.log("its NOT prime " + n);
+                }
+            }*/ 
+            /*
+            var data = [34, 55, 67, 89, 23, 11];
+            
+            for (var j = 0; j < data.length; j++) {
+                checkForPrime(data[j]);                
+            }
+
+            function checkForPrime(n) {
+                var count = 0;
+                for (var i = 2; i < n; i++) {
+                    if (n % i == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0) {
+                    console.log("its prime " + n);
+                } else {
+                    console.log("its NOT prime " + n);
+                }
+            } */ 
+
+            var data = [34, 55, 67, 89, 23, 11];
+            var primeList = [];
+            
+            for (var j = 0; j < data.length; j++) {
+                var isPrime = checkForPrime(data[j]);      
+                if (isPrime) {
+                    primeList.push(data[j]);
+                }
+            }
+            console.log(primeList);
+
+            function checkForPrime(n) {
+                var count = 0;
+                for (var i = 2; i < n; i++) {
+                    if (n % i == 0) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } 
+
+
+        </script>
+    </body>
+</html>

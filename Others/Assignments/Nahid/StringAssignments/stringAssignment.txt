@@ -1,0 +1,13 @@
+wap to read a string from user and return total number of words within it
+
+wap a program to find out total number of spaces within it
+
+wap to find out whther the given string is pallindrome or not
+
+wap to read a string from user and return total number of vowels inside it
+
+wap to read a string from user and return a given string is available or not
+
+wap to find out total number of characters within given string without using prdefined length property
+
+wap to find the reverse of any given string

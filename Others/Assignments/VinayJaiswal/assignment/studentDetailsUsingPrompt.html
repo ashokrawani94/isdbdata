@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width: device-width, initial-scale=1.0">
+        <title>Student Details Using Prompt method</title>
+    </head>
+    <body>
+        <script>
+            /* Reading Data from the User */
+            var studentName = prompt("Enter Your Name");
+            var studentClass = prompt("Enter your class");
+            var age = prompt("Enter your age");
+            var rollNo = prompt("Enter Roll No.");
+            var gender = prompt("Gender?");
+
+            alert("Now enter your marks");
+            var m1 = prompt("Enter telugu marks");
+            m1 = parseInt(m1);
+            var m2 = prompt("Enter hindi marks");
+            m2 = parseInt(m2);
+            var m3 = prompt("Enter english marks");
+            m3 = parseInt(m3);
+            var m4 = prompt("Enter maths marks");
+            m4 = parseInt(m4);
+            var m5 = prompt("Enter science marks");
+            m5 = parseInt(m5);
+            var m6 = prompt("Enter social marks");
+            m6 = parseInt(m6);
+
+            var total = m1 + m2 + m3 + m4 + m5 + m6;
+            var avg = total/6;
+
+            /* Show result to the user */
+            console.log("Here are the details");
+            console.log("Student Name: " + studentName);
+            console.log("Student Class: " + studentClass);
+            console.log("Student Roll No.: " + rollNo);
+            console.log("Telugu: " + m1);
+            console.log("Hindi: " + m2);
+            console.log("English: " + m3);
+            console.log("Maths: " + m4);
+            console.log("Science: " + m5);
+            console.log("Socail: " + m6);    
+            console.log("Total: " + total);
+            console.log("Average: " + avg);        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sDetails_DynamicInJson</title>
+    </head>
+    <body>
+        <h3>Student Details taking Dynamic Data in Json</h3>
+        <script>
+           var empDetails = {};
+           empDetails.name = prompt("Enter emp Name");
+           empDetails.age = prompt("Enter emp Age");
+           empDetails.gender = prompt("Enter emp Gender");
+           empDetails.dept = prompt("Enter emp Department");
+           empDetails.basicSal = prompt("Enter emp Basic Sal");
+           empDetails.basicSal = parseInt(empDetails.basicSal);
+           empDetails.totalTax = '';
+
+           empDetails.pf = (10 * empDetails.basicSal) / 100;
+           empDetails.hra = (20 * empDetails.basicSal) / 100;
+           empDetails.totalSal = empDetails.basicSal + empDetails.pf + empDetails.hra;
+           empDetails.totalSal = parseInt(empDetails.totalSal);
+           console.log(empDetails);
+
+           if(empDetails.gender == 'male'){
+                    if(empDetails.totalSal >= 100000){
+                        empDetails.taxPercent = 15;
+                    }else if(empDetails.totalSal >= 50000){
+                        empDetails.taxPercent = 10;
+                    }else if(empDetails.totalSal >= 25000){
+                        empDetails.taxPercent = 5;
+                    }else{
+                        empDetails.taxPercent = 0;
+                    }
+                }else{
+                    if(empDetails.totalSal >= 100000){
+                        empDetails.taxPercent = 10;
+                    }else if(empDetails.totalSal >= 50000){
+                        empDetails.taxPercent = 5;
+                    }else{
+                        empDetails.taxPercent = 0;
+                    }
+                }
+            empDetails.totalTax = (empDetails.totalSal * empDetails.taxPercent)/100;
+
+           console.log("Emp name is "+ empDetails.name );
+           console.log("Emp age is "+ empDetails.age );
+           console.log("Emp gender is "+ empDetails.gender );
+           console.log("Emp dept is "+ empDetails.dept );
+           console.log("Emp total sal is "+ empDetails.totalSal);
+           console.log("Emp total Tax to be paid is "+ empDetails.totalTax);
+
+
+
+
+        </script>
+    </body>
+</html>

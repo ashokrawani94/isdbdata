@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmployeeDetailsJson</title>
+    <script>
+      var empDetails = {};
+      empDetails.empName = prompt("give employee Name");
+      empDetails.empAge = prompt("give Employee Age");
+      empDetails.empGender = prompt("give Employee Gender");
+      empDetails.empBasicSalary = prompt("Employee salary");
+      empDetails.empBasicSalary = parseInt(empDetails.empBasicSalary);
+      var pf = 14;
+      var hra = 25;
+      var pfTax = (empDetails.empBasicSalary * pf) / 100;
+      var hraTax = (empDetails.empBasicSalary * hra) / 100;
+      empDetails.empTotalTax = pfTax + hraTax;
+      empDetails.empTotalSalary =
+        empDetails.empTotalSalary + empDetails.empTotalTax;
+      console.log(empDetails);
+    </script>
+  </head>
+  <body>
+    EmployeeDetailsJson
+  </body>
+</html>

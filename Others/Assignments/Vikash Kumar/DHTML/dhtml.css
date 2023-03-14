@@ -1,0 +1,19 @@
+h2{
+	text-align: center;
+	text-shadow: 2px 2px blue;
+	
+}
+ul{
+	border: 3px solid green;
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	width: 400px;
+	text-align: center;
+    margin: auto;
+   
+}
+li{
+	margin: 5px;
+	padding: 5px;
+}

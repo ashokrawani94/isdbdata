@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Registration Page</title>
+    <link rel="stylesheet" href="assignment8.css">
+</head>
+<body>
+        <h2>Student's Registration Page</h2>
+<div class="mainContainer border">
+    <form method="GET" action="">
+        <div class="accSecHead">Account Details</div>
+        <ul class="accSec Border">
+            <li style="float: left;">
+                <div class="label">
+                    <label for="textAccName">Name : </label>
+                </div>
+                <input type="text" name="textAccName">
+            </li>
+           
+            <li style="float: right;">
+                <div class="label">
+                    <label for="textAccId">Account Id : </label>
+                </div>
+                    <input type="text" name="textAccId">
+            </li>
+            <li style="clear: both; float: left;">
+                <div class="label">
+                    <label for="textAge">Age : </label>
+                </div>
+                    <input type="text" name="textAge" style="width: 50px ;"maxlength="3">
+            </li>
+            <li style="float: right;">
+                <div class="label">
+                    <label for="textAccType">Account Type : </label>
+                </div>
+            <select name="textAccType" style="width: 175px;">
+                <option>Select</option>
+                <option>SB Account</option>
+                <option>Current Account</option>
+            </select>
+            </li>
+            <li style="clear:both;float: left;">
+            <div class="label">
+                <label for="radiobtn">Gender: </label>
+            </div>
+            <input type="radio" name="radiobn" value="Male">Male
+            <input type="radio" name="radiobn" value="Female">Female
+            </li>
+            <li style="clear: both; float: left;">
+                <div class="label">
+                    <label for="textmail">Mail Id : </label>
+                </div>
+                <input type="text" name="textmail">
+            </li>
+        </ul>
+        <!--Account Details Closed-->
+        <!--Education Details Started-->
+        <div class="eduDetailsSecHead">Education Details</div>
+   
+    <ul class="eduSec Border">
+        
+        <li style="float: left;">
+            <div class="label">
+                <label for="Qualification">Qualification : </label>
+            </div>
+            <select name="list" style="width: 175px">
+            <option>Select</option>
+            <option>MSC</option>
+            <option>MA</option>
+            <option>MBA</option>
+            <option>MCA</option>
+        </select>
+        </li>
+
+        <li style="float: right;">
+            <div class="label">
+                <label for="collegeName">College Name : </label>
+            </div>
+                <input type="text" name="CollegeName" >
+        </li>
+
+        <li style="clear: both; float: left;">
+            <div class="label">
+                <label for="radiobtn">Languages Known : </label>
+            </div>
+            <input type="radio" name="radiobtn" value="English">English
+            <input type="radio" name="radiobtn" value="Hindi">Hindi
+            <input type="radio" name="radiobtn" value="Telugu">Telugu
+            <input type="radio" name="radiobtn" value="Urdu">Urdu
+        </li>
+
+        <li style="float: right;">
+            <div class="label">
+                <label for="Location">Location : </label>
+            </div>
+                <input type="text" name="Location" >
+        </li>
+
+
+        <li style="clear: both; float: left;">
+                <div class="label">
+                    <label for="courseopt">Course Opting For : </label>
+                </div>
+            <select name="course opt" style="width: 175px;">
+                <option>Select</option>
+                <option>UI</option>
+                <option>Java</option>
+                <option>.Net</option>
+                <option>Core Java</option>
+            </select>
+        </li>
+    </ul>
+        <!--Education Details Completed-->
+        <!--Address Details Started-->
+        
+    <div class="addDetailsHead">Address Details</div>
+    <ul class="addSec Border">
+        <li style="float: left;">
+            <div class="label">
+                <label for="doorNo">D.No : </label>
+            </div>
+                <input type="text" name="D.No" >
+        </li>
+        <li style="float: right;">
+            <div class="label">
+                <label for="street">Street Name : </label>
+            </div>
+                <input type="text" name="Street Name" >
+        </li>
+        <li style="float: left;">
+            <div class="label">
+                <label for="area">Area Name : </label>
+            </div>
+                <input type="text" name="area" >
+        </li>
+        <li style="float: right;">
+            <div class="label">
+                <label for="Disrict">District Name : </label>
+            </div>
+                <input type="text" name="District" >
+        </li>
+        <li style="float: left;">
+            <div class="label">
+                <label for="state">State Name : </label>
+            </div>
+                <input type="text" name="state" >
+        </li>
+        <li style="clear: both;  float: left;">
+            <div class="label">
+                <label for="Pincode">Pincode : </label>
+            </div>
+                <input type="number" name="pincode" >
+        </li>
+    </ul>
+
+    <!--Address Details Completed-->
+    <!--Discription Started-->
+
+    <div class="discriptionHead">Discription</div>
+    <ul class="disrSec Border">
+        <li style="clear: both;  float: left;">
+            <div class="label">
+                <label for="textArea" class="setPosition">About Yourself : </label>
+            </div>
+            <textarea id="textArea" name="textArea" cols="10" rows="10"></textarea>
+        </li>
+        <li>
+        <input type="submit" Text="Register" class="submitBtn">
+        </li>
+    </ul>
+    </form> 
+
+<h3> @Copy rights 2023</h3> 
+</div> 
+      
+
+</body>
+</html>

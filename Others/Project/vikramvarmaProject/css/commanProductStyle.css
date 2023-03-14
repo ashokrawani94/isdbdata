@@ -1,0 +1,91 @@
+body {
+  overflow: hidden;
+  background-color: rgba(150, 152, 151, 0.118);
+}
+.headersection {
+  border: 2px solid;
+  background-color: black;
+  margin: 5px;
+  height: 50px;
+}
+.navlist {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: oblique;
+  position: relative;
+  top: -8px;
+}
+.anc {
+  color: white;
+
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#search {
+  border-radius: 8px;
+  width: 500px;
+  height: 30px;
+}
+.key {
+  float: left;
+}
+.p1 {
+  position: relative;
+  left: 50px;
+}
+.p2 {
+  position: relative;
+  left: 75px;
+}
+.p3 {
+  position: relative;
+  left: 550px;
+}
+.p4 {
+  position: relative;
+  left: 575px;
+}
+.p5 {
+  position: relative;
+  left: 600px;
+}
+.container {
+  border: 2px solid;
+  padding: 5px;
+  margin: 5px;
+  height: 648px;
+  overflow-y: auto;
+}
+
+.picContainer {
+  border: 2px solid;
+  padding: 5px;
+  width: 210px;
+}
+.prodetail {
+  border: 2px solid;
+  margin: 5px;
+  text-align: center;
+}
+#position1,
+#position2,
+#position3,
+#position4,
+#position5,
+#position6,
+#position7,
+#position8,
+#position9,
+#position10,
+#position11,
+#position12 {
+  float: left;
+  margin: 10px;
+}
+
+img {
+  margin-left: 5px;
+}

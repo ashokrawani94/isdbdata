@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+<body>
+    <script>
+        var empName = prompt("Enter employee name..");
+        var empAge = prompt("Enter employee Age..");
+        var empGender = prompt("Enter employee Gender..");
+        var empDept = prompt("Enter employee Department..");
+        var empBasicsalary = prompt("Enter employee Basic Salary..");
+        document.write(empBasicsalary);
+
+         //empBasicSalary = (empBasicSalary);
+        var pf = empBasicsalary*14/100;
+        var hra = empBasicsalary*24/100;
+        var totalSalary = pf + hra + empBasicsalary;
+
+
+        console.log('----====== Employee Details======----');
+        console.log("Employee name " + empName);
+        console.log("Employee age " + empAge);
+        console.log("Employee gender " + empGender);
+        console.log("Employee basic salary " + empBasicsalary);
+        console.log("Employee departmnt " + empDept);
+        console.log("PF " + pf);
+        console.log("HRA " + hra);
+        console.log("Total salary " + totalSalary);
+
+        // this code to appear the details on the screen directly..
+
+        document.write("Employee details..");
+        document.write('<br/>');
+        document.write('<br/>');
+        document.write("Employee name " + empName);
+        document.write('<br/>');
+        document.write("Employee age " + empAge);
+        document.write('<br/>');
+        document.write("Employee gender " + empGender);
+        document.write('<br/>');
+
+
+        document.write("Employee basic salary " + empBasicsalary);
+        document.write('<br/>');
+        document.write("Employee department " + empDept);
+        document.write('<br/>');
+        document.write("PF " + pf);
+        document.write('<br/>');
+        document.write("HRA " + hra);
+        document.write('<br/>');
+        document.write("Total salary " + totalSalary);
+
+    </script>
+    
+</body>
+</html>

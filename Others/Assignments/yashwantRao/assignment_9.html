@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <h3>Employee details</h3>
+        <script>
+            var ename = prompt("Enter the employee name");
+            var eage = prompt("Enter the age of employee");
+            var egender = prompt("Enter the gender of employee");
+            var edept = prompt("Enter the department");
+            var ebasicsal = prompt("Enter the basic salary");
+            ebasicsal = parseInt(ebasicsal);
+            var pf = (ebasicsal*14)/100;
+            var hra = (ebasicsal*24)/100;
+            var totalSal = (pf+hra+ebasicsal);
+            console.log('-------Emplpyee details');
+            console.log("Employee's name " + ename);
+            console.log("Age " +eage);
+            console.log("Gender " + egender);
+            console.log("Department "+ edept);
+            console.log("Basic salary " + ebasicsal);
+            console.log("PF " + pf);
+            console.log("HRA " + hra);
+            console.log("Total salary " + totalSal);
+
+        </script>
+    </body>
+</html>

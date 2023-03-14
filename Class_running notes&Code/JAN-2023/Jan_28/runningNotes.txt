@@ -1,0 +1,49 @@
+Control Structures:
+    Conditional CS
+        if 
+        if else 
+        else if
+        nested if 
+        nested if else 
+        
+
+    Looping CS 
+        for 
+        while loop 
+        do while 
+        for each 
+        for of 
+        for in
+
+    Case CS 
+        switch case 
+
+        ------------------
+
+"if" Conditional CS
+
+    Syntax 
+        if (<condition>) {
+            .... 
+            ....
+            ....
+        }
+    Example 
+        ....
+        age = 17;
+        if (age < 21) {
+            ..
+            .
+          
+        }
+        ...
+        ...
+'if else' Condittional CS:
+    Syntax:
+        if (condition) {
+            ..
+            ..
+        } else { // this block gets automatically gets executed if provided if condition is false, else execution of this this block will be skipped.
+            ...
+            ..
+        }

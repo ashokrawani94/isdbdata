@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        .std{
+            height:60px;
+            width:auto;
+            border:2px solid;
+            text-align:center;
+            text-decoration:underline;
+            font-size: large;
+        }
+        /* .container{
+            height: 900px;
+            width:1245px;
+            border:2px solid;
+            margin:2px;
+        } */
+        body{
+           margin:10px; 
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="std">
+        <h2>Student Details</h2>
+    </div>
+   <table  border="2px solid"cellspacing="0px" cellpadding="0px" width="1265px">
+    <tr text-align="center">
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Picture</th>
+        <th>Class</th>
+        <th>Location</th>
+        <th>Progress Card</th>
+
+    </tr>
+        <tr>
+            <td>1</td>
+            <td>Mounika</td>
+            <td>10</td>
+            <td><img src="data:image/jpeg;base64,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"></td>
+        <td>3rd</td>
+        <td>hyderabad</td>
+        <td>
+            <table align="center" border="1px solid"cellspacing="0px" cellpadding="0px" width="300px">
+                <tr>
+                    <th>Subject</th>
+                    <th>Max Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>100</td>
+                    <td>70</td>
+                    <td>Pass</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td>100</td>
+                    <td>30</td>
+                    <td>Fail</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>100</td>
+                    <td>90</td>
+                    <td>Pass</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Munny</td>
+            <td>10</td>
+            <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAGYAZgMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAABAUGBwMC/8QANRAAAQMCAwUFBwMFAAAAAAAAAQACAwQRBRIhBhMxQVEiYXGBoQcjMkJSkbGCweEUJTRTcv/EABkBAQEAAwEAAAAAAAAAAAAAAAADAQIEBf/EACIRAAICAgICAgMAAAAAAAAAAAABAgMRIRIxBEETIhQyYf/aAAwDAQACEQMRAD8A7iiIgCi1NbDTX3pIA6C6g1mKyRVBZC2OSMkNBzWdm1v48vuoFNHJXPmnkawuDzHre3ZPrqPBctnkYeIlY1e5E2LaCKV793A97Gu0c08RzOvfopdPi9FUOjZHN25ODbFUU8NeIHsibSOjtYROYW5h/wBXNvsqKOpD5jHRxup5GERzQyAlzH3vwBsRa1iPVS/IsSz2V+GL6OkosrhGMupskT3SVELnWDyCCzW3Pjy+61DHtkbmY4Ob1Buuuq1WLKITg4PZ9IiKhoEREAREQBeFbI2Omkc8XbaxXuvmRgexzTwIsViSytGV2YiaoeRlhAyMAm0fmeSLdnXh18lIhjranCxUwSPZNOTKI89mjM7QHQ2GXoNSouI0c9JWTROcWxaEkfNGBw4afypeD1l8IiEZbnibu3McenD0svKq1NqR6EknFNHnUjEWk/0lUXMIJzOYHAkEWbp1115W71QVFHiEuOw1EggltCWyOJcwNs4Fh7PE3uLd6tTWvYSwMjp4WA6Mfmv+LLMVOKCWsljke5zXjsBsuXK5uuY9y2swl9UbKL9kuSaOofmqJZGztJeLAss7wt42PKwWr2BqKncy0csgyQa7txzObm1bY9LXXO24gcu9la2TPEW9iSxGtrO+oceK3ns5gnIqKicTM7DGt3gA3lxfN4WsBc9eqeNy+RE70uBt0RF6hwBERAEREAREQHlVU0VVA+GoYHxP+Jp5rLV+zZpZ95hjHiOXSSNlrN1+LU8uimbT4lPTPbBTymK7cxcOKymG7V440zPh3ddRslDTvNHnrldwt43WJ+MrFktXKcdogbSUmK0jhBSU76meTRgjYXW7yFHw3YrHaymsxjYN7E1z56rRxdx0sDz9NFa4ztJi0rc+ExNoX2tJMZWyED6ctuPBUmIY17gVQqHia2Z0mezmuHHVaw8FyX2Zd2y9GwwL2dUtLOypxWcVb2tHug20d+pvx9FtaeCOnibFC0NY0WaByCzdNtK6l2Ow3FKyJ9RVVTWMihj0dPI7RtvHivbZXFMfxOSofjODNw6Bp9zeQl7u4g/nRZjWodHLJyltmjREWxoEREAREQBERAZ/bPCBiOEVElPC59fHE4U5bJl1ItrqAeN9Viab+24LSU9RZs0cLRJcW7XP1XScXqW0tDLK82a1pJ8lz7EKF7t1/UvfviC6RulgTrby4eSpVN8uJaHRTV9bHFBKS4dt+b4QOSgbE4DNiW0tJihmiNDBUNL4Je0Hki3w2t0I715YrT52G+azrkrS7DCOLBJJGdmSEuZJ4jttP2cR+lW8lyjXlG+E9G2xXCzXbR4PUGcCGh3km4yaOcW2BvflccloAqrD5DU4jNI4WyRgEdCTw9Farji8rJCWtBERbGoREQBERAERedRKIYXSO4NF0CKXHJRNUR09rxR2mm8Aey3zdbyBWdrXbx7nu1JNyVe4tC+nwwyv0mnlDpO4WNm+X5uszUyENt39VSiOsl4/wzuKNBceQXjs9iAw7EzHM/JS1QDJXnURn5XkdxJB7iV917+2b3vZU1QQXEXC7nFSjxZlnbtmoXU1PLDM8PnzZnvHzcr/AHa4eV+auVz72aYw+rpXQTPJkpnCMk/63DsX8C0j9S6CvOceD4kJZzsIiLBgIiIAiIgPCrrKajidLVzxQRtFy+V4aAPErKw1kG1u0tM/D6l0mF4UN6+SMlommd8Le8AC/wBuRVxtHs/Dj8UMNVI4RRuLsmUEONjYnwOU24acOFrSnp4qdrmwRMja5xeQxoALjqT4rKMp4Kvaf/AYB9f7LF1WoPjyW32mZmwwkfK4FYSocDm48VerorX0Z+usbjlbp+yqXt7RVrW/EfNVpbdh58OVwuxGzJezb62mZVVtBWGJ7w6PdhrbG2rSbgkEOF9Oi7FspUVNVgVPNWzb2clwc61uDiFyTZ8Nlwx8VM2SeVoOdsMbpCwm5ANgba/jqF1PY4TMoJY54ZYve5mCWMsJBA5Edy4LXmWSdnov0RFImEREAREQBERAQ8XZvMNqGn6L/bVc2qjYuCIr0lazP1lyfMqI0XYTy9URdi6Nzd+xuFrKHFZBxfUNB8m/yuioi4Lf3ZCXYREUzAREQBERAf/Z"></td>
+        <td>3rd</td>
+        <td>hyderabad</td>
+        <td>
+            <table align="center" border="1px solid"cellspacing="0px" cellpadding="0px" width="300px">
+                <tr>
+                    <th>Subject</th>
+                    <th>Max Marks</th>
+                    <th>Obtained Marks</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>100</td>
+                    <td>35</td>
+                    <td>Pass</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td>100</td>
+                    <td>62</td>
+                    <td>Pass</td>
+                </tr>
+                <tr>
+                    <td>Social</td>
+                    <td>100</td>
+                    <td>90</td>
+                    <td>Pass</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+
+
+
+
+
+
+
+
+   </table>
+</body>
+</html>

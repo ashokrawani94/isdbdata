@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date object</title>
+</head>
+
+<body>
+    <script>
+        var myDate = new Date();
+        console.log(myDate);
+
+        var option = ' 1) 16/feb/2023 \n 2) 16th feb, 2023 \n 3) 16th february, 2023\n 4) Tue, 16th feb 2023 \n 5) Tuesday, 16th february 2023 \n 6) 16-feb-2023 \n 7) 16-02-2023 \n 8) 16th feb, 2023 hrs:min:sec \n 9) min:sec \n10) hrs, min  sec \n';
+
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        var fullMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        var fullDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        var date = prompt('Enter number between 1-10 \n' + option);
+        var date = parseInt(date);
+        var monthName;
+
+        switch (date) {
+            case 1:
+                monthName = myDate.getDate() + '/' + months[myDate.getMonth()] + '/' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 2:
+                monthName = myDate.getDate() + 'th' + ' ' + months[myDate.getMonth()] + ',' + ' ' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 3:
+                monthName = myDate.getDate() + 'th' + ' ' + fullMonth[myDate.getMonth()] + ',' + ' ' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 4:
+                monthName = days[myDate.getDay()] + ',' + ' ' + myDate.getDate() + 'th' + ' ' + months[myDate.getMonth()] + ' ' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 5:
+                monthName = fullDays[myDate.getDay()] + ',' + ' ' + myDate.getDate() + 'th' + ' ' + fullMonth[myDate.getMonth()] + ' ' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 6:
+                monthName = myDate.getDate() + '-' + months[myDate.getMonth()] + '-' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 7:
+                monthName = myDate.getDate() + '-' + '0' + [myDate.getMonth() + 1] + '-' + myDate.getFullYear()
+                console.log(monthName);
+                break;
+            case 8:
+                monthName = myDate.getDate() + 'th' + ' ' + months[myDate.getMonth()] + ',' + ' ' + myDate.getFullYear() + ' ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' + myDate.getSeconds()
+                console.log(monthName);
+                break;
+            case 9:
+                monthName = myDate.getMinutes() + 'min' + ' ' + ':' + ' ' + myDate.getSeconds() + 'sec'
+                console.log(monthName);
+                break;
+            case 10:
+                monthName = myDate.getHours() + 'hrs' + ',' + ' ' + myDate.getMinutes() + 'min' + ' ' + myDate.getSeconds() + 'sec'
+                console.log(monthName);
+                break;
+            default:
+                console.log("You entered a wrong number...");
+        }
+    </script>
+</body>
+
+</html>

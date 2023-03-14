@@ -1,0 +1,307 @@
+*
+{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+em{
+	color: red;
+}
+.button{
+	height: 40px;
+	width: 100px;
+	border: none;
+	color:red;
+}
+
+.button:hover{
+	height: 40px;
+	width: 100px;
+	border: none;
+	color:red;
+	background-color: black;
+	border-radius: 10px;
+	
+}
+
+.button2{
+	height: 30px;
+	width: 120px;
+	border-width: 0.5px;
+	border-color: white;
+	color:#f2f2f2;
+	background-color: rgb(97, 7, 7);
+}
+
+.button2:hover{
+	height: 30px;
+	width: 120px;
+	border: none;
+	color:rgb(97, 7, 7);
+	background-color: black;
+	
+	
+}
+
+.button3{
+	height: 30px;
+	width: 120px;
+	border-width: 0.5px;
+	border-color: rgb(97, 7, 7);
+	color: rgb(97, 7, 7);
+	background-color: white;
+}
+
+.button3:hover{
+	height: 30px;
+	width: 120px;
+	border: none;
+	color:rgb(97, 7, 7);
+	background-color: black;
+	
+	
+}
+
+{
+	background-image :url(noida.jpg);
+	background-size :cover;
+	background-position:center;
+	box-sizing:border-box;
+	font-family: sans-serif; 
+} 
+.menu-bar
+{
+	background: rgb(26, 24, 24);
+	text-align:center;
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: rgb(207, 36, 36);
+}
+.menu-bar ul li
+{
+	width: 120px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: rgb(160, 20, 20);
+	
+}
+
+.active, .menu-bar ul li:hover
+{
+	background: rgba(14, 13, 13, 0.979);
+	border-radius : 10px;
+}
+/*
+.menu-bar .fa
+{
+	margin-right: 8px;
+}   */
+
+.sub-menu-1
+{
+	display: none;
+	z-index: 50;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: #181a18;
+	margin-top: 10px;
+	margin-left: -15px;
+	text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 100%;
+	padding: 5px;
+	border-bottom: 1px dotted rgb(153, 12, 12);
+	background: transparent;
+	border-radius: 0px;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color: #000000;
+}
+
+.sub-menu-2
+{
+	display: none;
+}
+
+.hover-me .sub-menu-2
+{
+	display: block;
+	position: absolute;
+	background: #181a18;
+	margin-top: 0px;
+	margin-left: 190px;
+	text-align: left;
+	width: 100%;
+}
+
+
+
+/* Slide show container  */
+
+.slide {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+/* hide the images default  */
+.mySlide {
+	display: none;
+}
+/*  Next and previous buttons */
+
+.prev .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.7s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Postion of next button to right  */
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover,  add a black background color with a little bit see-through  */
+
+.prev:hover, .next:hover {
+	background-color: rgba(0, o, 0, 0.8);
+}
+
+/*  Caption Text */
+
+.text {
+	color: #aa0f0f;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+
+}
+
+/*  number text (1/4) */
+
+.numbertext {
+	color: #a11f1f;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+
+}
+
+/* the dots */
+
+.dot {
+	cursor:	pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover  {
+	background-color: #717171;
+
+}
+
+/* fading animation */
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+
+}
+@keyframes fade {
+	from {opacity: .4}
+	to{opacity: 1}
+
+}  
+.h2{
+	color: rgb(97, 7, 7);
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+.p1{
+	text-align: center;
+	font-family: arial;
+	font-size: 13px;
+}
+
+.frame{
+	margin-left: 180px;
+	margin-right: 180px;
+	display: flex;
+	gap: 50px;
+}
+.frame1{
+	height: 300px;
+	width: 500px;
+	
+}
+.frame2{
+	height: 300px;
+	width: 500px;
+}
+
+/*=========================
+    animation coounter
+==========================*/
+
+.section-work-data{
+	background-color: white;
+	text-align: center;
+	transition: all 0.5s linear;
+	color: rgb(97, 7, 7);
+	
+	margin-left: 190px;
+	margin-right: 180px;
+}
+
+.counter-number{
+	font-size: 40px;
+	text-transform: capitalize;
+}
+

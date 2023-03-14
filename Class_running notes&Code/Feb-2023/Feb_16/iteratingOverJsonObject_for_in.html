@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating for in looping CS
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [
+                "raj",
+                'male',
+                20,
+                "hyderabad"
+            ];
+
+
+            // for (var i = 0 ; i < data.length; i++) {
+            //     console.log(data[i]);
+            // }
+
+            var userInfo = {
+                name: 'Raj',
+                age: 20,
+                gender: 'Male',
+                location: 'Hyderabad'
+            };
+
+
+            for (var tempKey in userInfo)  {
+                console.log(tempKey);
+                console.log(userInfo[tempKey])
+            }
+        </script>
+    </body>
+</html>

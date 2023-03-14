@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_9</title>
+    
+</head>
+<body>
+    <script>
+        var emp_name=prompt("enter the emp_name");
+        var emp_age=prompt("enter the emp_age");
+        var emp_department=prompt("enter the emp_department");
+        var emp_basic_salary=prompt("enter the basic salary");
+        emp_basic_salary=parseInt(emp_basic_salary);
+        var pf=(emp_basic_salary*14)/100;
+        var hra=(emp_basic_salary*25)/100;
+        var totalsalary=pf+emp_basic_salary+hra;
+        console.log("**employee details**");
+        console.log("Name:"+emp_name);
+        console.log("Age:"+emp_age);
+        console.log("Department:"+emp_department);
+        console.log("Basic Salary"+emp_basic_salary);
+        console.log("pf value:"+pf);
+        console.log("hra value:"+hra);
+        console.log("total salary:"+totalsalary);
+    </script>
+</body>
+</html>

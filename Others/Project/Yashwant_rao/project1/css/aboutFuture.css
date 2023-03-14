@@ -1,0 +1,178 @@
+/* this CSS file contains the styles of aboutFuture.html and FIET.html pages */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+.header {
+    
+    z-index: 1;
+}
+.image1 {
+ width: 100%;   
+ 
+}
+.imagediv {
+    width: 100%;
+}
+.preClass {
+    font-size: 32px;
+    color: rgb(160, 20, 20);
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, white, rgb(160, 20, 20));
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.aboutFuture{
+    color: rgb(94, 7, 7);
+    font-size: 15px;
+    width: 70%;
+    margin: 0px auto;
+    line-height: 30px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutFuture p {
+    color: rgb(97, 7, 7);
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutFuture p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(97, 7, 7);
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image2 {
+    margin: 40px auto;
+    border: 0px solid red;
+    width: 70%;
+    height: 340px;
+    background-image: url("/UI full stack developement/webApplicatoin/public/Project1/image/img2.jpeg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.heading1 {
+    color: rgb(97, 7, 7);
+    width: 70%;
+    margin: 0px auto;
+    line-height: 30px;
+    
+}
+.hr1 {
+    width: 7%;
+    margin-top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgFlex {
+    width: 70%;
+    height: 300px;
+    margin: 20px auto;
+    border: 0px solid red;
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imgFlex div {
+    margin: 5px;
+    border: 1px solid rgb(172, 154, 154);
+    height: 280px;
+    width: 24%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgFlex div img {
+    width: 100%;
+    height: 85%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.imgFlex div p{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: rgb(97, 7, 7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*body h2 {
+    color: rgb(97, 7, 7);
+    margin: 1px auto;
+    width: 70%;
+}*/
+
+hr {
+    margin-left: 15%;
+    margin-top: 5px;
+    width: 6%;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.infoFIET, .infoFIMS, .infoFIPFIMS, .infoFIMS2, .infoFIAMS{
+    font-size: small;
+    width: 330px;
+    height: auto;
+    border: 0px solid red;
+    margin: 10px auto;
+    background: linear-gradient(to right, rgb(193 102 102), rgb(168 40 40));
+    position: absolute;
+    top: 460px;
+    right: 9%;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    color: white;
+    
+}
+.FIMS {
+    margin-top: 101px;
+}
+.FOPFIMS {
+    margin-top: 65px;
+}
+
+.FIMS2 {
+    margin-top: 69px;
+}
+.FIAMS {
+    margin-top: 60px;
+}
+.infoBody {
+    margin: 1px auto;
+    width: 70%;
+    display: flex;
+    gap: 2%;
+    color: rgb(97, 7, 7);
+}
+.infoPageFiet {
+    width: 65%;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.infoPageImg {
+    border: 2px solid rgb(97, 7, 7);
+    width: 33%;
+    height: auto;
+}
+
+.subInfoPageImg {
+    border: 2px solid rgb(97, 7, 7);
+    margin: 5px;
+    height: 245px;
+    width: 298px;
+ 
+}

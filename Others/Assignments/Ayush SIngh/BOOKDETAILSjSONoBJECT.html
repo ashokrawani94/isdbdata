@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details Using JSON Object</title>
+</head>
+<body>
+    <script>
+        var bookdetails = {
+            
+            getbookdetails() {
+                this.name = prompt("Enter Book NAme");
+                this.author = prompt ("Enter author name");
+                this.price = prompt ("Enter Book price");
+                this.price = parseInt(this.price);
+                this.discountOnBooks();
+            },  
+            discountOnBooks() {
+                this.discountPerc = prompt("Enter discount percentage");
+                this.discountPerc = parseInt(this.discountPerc);
+                this.discountAmt = (this.price * this.discountPerc) / 100;
+                this.newPrice = this.price - this.discountAmt;
+                console.log("Price after discount" + this.newPrice); 
+                
+            }
+            
+        };
+        bookdetails.getbookdetails();
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+CSS Positions
+
+    top 
+    right
+    bottom
+    left
+
+    using above 4 css properties, we could able to move any dom element to any required position without changing dimenstions of the dom element.
+
+    The above 4 css properties can only be applied to the dom elements which are positioned with non static value.
+
+-------------
+
+Any dom element with position non static, will automatically move from default x, y axis to z axis.
+
+-------------------------------
+position: static/relative/absolute/fixed/sticky;
+
+    position: static;
+        1. By default every dom element rendering on the page has default css position as static.
+        2. Means, the dom element cannot change its default position - It will not consider css positions like top, left, right or bottom properties.        
+        3. It always falls under default x y axis
+-----------------------------------------------------------
+
+Position: relative;
+    1. Element is capable of moving to any required position within the page.  (it considers css properties like top, left right and bottom )
+    2. The relative element while moving to z axis, it doesnt loose its original space been occupied under x y axis.

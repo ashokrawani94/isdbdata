@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiLevel inheritance</title>
+</head>
+<body>
+    <h1>Multi level inheritance University Data</h1>
+    <script>
+         class UniversityDetails {
+                constructor () {
+                    // console.log("Frm parent class const")
+                    this.universityName = "BPUT";
+                    this.universityLoc = "Rourkela";
+                }
+            }
+
+            class CollegeDetails extends UniversityDetails {
+                constructor () {
+                    super();
+                    console.log("Frm parent class const")
+                    this.collegeName = "REC";
+                    this.collegeLoc = "Bhubaneswar";
+                }
+                displayCollegeRating() {
+                    console.log("College Rating is 4.6/5");
+                    
+                }
+            }
+
+            class StudentDetails extends CollegeDetails {
+                constructor (data) {
+                    super();   //constructor for parent class
+                    // console.log("Frm child class constructor")
+                    this.sname = data.name;
+                    this.sage = data.age;
+                    this.gender = data.gender;
+                    this.location = data.location;
+                }
+                displayStudentDetails() {
+                   
+                    console.log("Student Name " + this.sname);
+                    console.log("Age" + this.sage);
+                    console.log("Gender " + this.gender);
+                    console.log("Location "+ this.location)
+                    console.log("College name is " + this.collegeName);
+                    console.log("College Location " + this.collegeLoc);
+                    console.log("University Name is "+ this.universityName);
+                    console.log("University Location is "+ this.universityLoc);
+                    this.displayCollegeRating();
+                }
+            }
+
+            var s1 = new StudentDetails({name: 'Krish', age: 10, gender: 'Male', location: 'Jharkhand'});
+            s1.displayStudentDetails();
+            var s2 = new StudentDetails({name: 'Teena', age: 11, gender: 'Female',location:'West Bengal'});
+            s2.displayStudentDetails();
+
+
+    </script>
+    
+</body>
+</html>

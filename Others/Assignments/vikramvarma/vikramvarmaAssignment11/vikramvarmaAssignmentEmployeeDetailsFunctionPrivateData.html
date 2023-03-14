@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function private Data Employee Details</title>
+    <script>
+      var inputData = function () {
+        empName = prompt("Enter Employee Name");
+        empAge = prompt("Enter Employee Age");
+        empGender = prompt("Enter Employee Gender 'male' or 'female'");
+        empDept = prompt("Enter Employee Department");
+        empSalary = prompt("Enter Employee Salary");
+        empSalary = parseInt(empSalary);
+        pfHra(empSalary);
+      };
+      var pfHra = function (empSalary) {
+        pfTax = 14;
+        hraTax = 25;
+        pf = (pfTax * empSalary) / 100;
+        hra = (hraTax * empSalary) / 100;
+        fivePercent = (5 * empSalary) / 100;
+        tenPercent = (10 * empSalary) / 100;
+        fifteenPercent = (15 * empSalary) / 100;
+        totalTax(pf, hra, fivePercent, tenPercent, fifteenPercent);
+      };
+      var totalTax = function (
+        pf,
+        hra,
+        fivePercent,
+        tenPercent,
+        fifteenPercent
+      ) {
+        if (empGender == "male") {
+          if (empSalary >= 100000) {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 15% " + fifteenPercent);
+          } else if (empSalary >= 50000) {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 10% " + tenPercent);
+          } else if (empSalary >= 25000) {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 5% " + fivePercent);
+          } else {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 0% ");
+          }
+        } else if (empGender == "female") {
+          if (empSalary >= 100000) {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 10% " + tenPercent);
+          } else if (empSalary >= 50000) {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 5% " + fivePercent);
+          } else {
+            console.log("Employee Salary is " + empSalary);
+            console.log("The Tax is 0% ");
+          }
+        } else {
+          console.log("Enter Gender properly");
+        }
+      };
+      inputData();
+    </script>
+  </head>
+  <body
+    style="text-align: center; font-size: 100px; position: relative; top: 200px"
+  >
+    <div>Function</div>
+    <div>Employee Details</div>
+  </body>
+</html>

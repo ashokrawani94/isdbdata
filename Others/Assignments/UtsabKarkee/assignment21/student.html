@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <ul>
+        <li>
+          <label>Student Name:</label>
+          <input type="text" id="name" />
+          <span id="errorName"></span>
+        </li>
+
+        <li>
+          <label>Student Age:</label>
+          <input type="number" id="age" />
+          <span id="errorAge"></span>
+        </li>
+
+        <li>
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="Male" id="gender1" />
+          <label>Male</label>
+          <input type="radio" name="gender" value="Female" id="gender2" />
+          <label>Female</label>
+          <span id="errorGender"></span>
+        </li>
+
+        <li>
+          <label for="location">Location:</label>
+
+          <select name="location" id="place">
+            <option value="LOCATION">Location</option>
+            <option value="HYDERABAD">HYDERABAD</option>
+            <option value="DELHI">DELHI</option>
+            <option value="MUMBAI">MUMBAI</option>
+            <option value="JAIPUR">JAIPUR</option>
+            <option value="GWALIOR">GWALIOR</option>
+          </select>
+          <span id="errorLocation"></span>
+        </li>
+        <li>
+          <input type="hidden" id="sid" />
+        </li>
+        <li>
+          <input type="button" value="Register" id="save" />
+          <input type="button" value="Edit" id="aedit" />
+        </li>
+      </ul>
+    </div>
+    <!-- just for testing-->
+    <div class="students">
+      <table class="center"></table>
+    </div>
+    <script src="svalidation.js"></script>
+  </body>
+</html>

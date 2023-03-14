@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employe details is read from user with input elements and Dhtml</title>
+    <link rel="stylesheet" href="empDataInJsClass.css">
+</head>
+<body>
+    <ul id="dataentercontainer">
+        <li class="titleofemp">
+            Employe details
+        </li>
+        <li>
+            <label>Employe name : </label>
+            <input type="text" id="ename">
+        </li>
+        <li>
+            <label>Employe age : </label>
+            <input type="text" id="eage">
+        </li>
+        <li>
+            <label>Gender : </label>
+            <input type="radio" name="gender" value="male" >male
+            <input type="radio" name="gender" value="female">female
+        </li>
+        <li>
+            <label>Department  : </label>
+            <select id="edept">
+                <option>....</option>
+                <option>Electricity</option>
+                <option>I T</option>
+                <option>Revenue</option>
+                <option>Police</option>
+            </select>
+        </li>
+        <li>
+            <label>Basic salary  : </label>
+            <input type="text" id="ebsalary">
+        </li>
+        <li>
+            <label>Pf in percent  : </label>
+            <input type="text" id="epf">
+        </li>
+        <li>
+            <label>Hra in percent : </label>
+            <input type="text" id="ehra">
+        </li>
+        <li>
+            <input type="button" id="getDetails" value="GetDetails"  onclick="readdata();">
+        </li>
+    </ul>
+    <ul id="salaryData">
+        <li id="salaryshow">
+            Salary Details
+        </li>
+        <li>
+            Employe name : <span id="empname"></span>
+        </li>
+        <li>
+            Employe age : <span id="empage"></span>
+        </li>
+        <li>
+            Employe gender : <span id="empgender"></span>
+        </li>
+        <li>
+            Employe Department : <span id="empdept"></span>
+        </li>
+        <li>
+            Employe basicSalary : <span id="empbsalary"></span>
+        </li>
+        <li>
+            Employe pf in % : <span id="emppf"></span>
+        </li>
+        <li>
+            Employe hra in % : <span id="emphra"></span>
+        </li>
+        <li>
+            Total Salary  : <span id="empTsalary"></span>
+        </li>
+        <li>
+            Paid tax is  : <span id="empTax"></span>
+        </li>
+    </ul>
+    <script src="empDataInJsClass.js"></script>
+</body>
+</html>

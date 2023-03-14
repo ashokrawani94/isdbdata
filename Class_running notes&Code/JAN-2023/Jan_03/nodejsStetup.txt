@@ -1,0 +1,34 @@
+Steps to create a node server with express framework:
+    Step 1: Check whether node is installed in system or not -> node --version
+
+    Step 2: install express and express-generator packages through npm command
+
+            npm install express -g
+            npm install express-generator -g
+    Step 3:
+        Within cmd prompt, redirect to to the folder where you want to create a 
+        project
+        Give teh below command to create folder structure for server
+
+            express <server name>
+            eg:
+                express webapplication (or) express sampleApp
+
+    Step 4:
+        Edit existing app.js file, by adding below lines of code at line 24
+            
+            app.listen(8081, () => {
+                console.log('Server is listing at 8081');
+            });
+
+    Step 5:
+        Go into the server folder through command prompt, and run the below command
+
+        npm install    -> to install dependency node modules for current project.
+
+    Step 6:
+        Start the server through  command "npm start"
+
+    Step 7: 
+
+        Check the server running through url - http://localhost:8081/

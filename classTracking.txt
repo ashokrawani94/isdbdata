@@ -1,0 +1,236 @@
+
+  -UI FULL STACK WEB DEVELOPMENT COURSE by Mr.Durga prasad (@ 7AM)Batch
+
+   Front end
+	HTML 4
+	CSS 2
+	JAVA SCRIPT (JSON,XML,DHTML,DS,Control SWtructure)
+	ADV J5
+	JQUERRY
+	HTML 5
+	CSS 3
+	ECMA 6
+	BOOTSTRAP latest
+
+	Server End
+	NODE JS
+	EXPRESS JS
+	WEB SERVICES/REST API/END POINTS
+	CLUSTING
+	SOCKETING
+	SESSIONS,POST/GET communications
+
+	Data base
+	MONGO DB
+
+  Tools
+	DEBUGGING TOOL
+	MONGO COMPASS TOOL
+	GIT HUB
+	POSTMAN
+
+  Editors
+	VisualStudeo CODE
+	SUBLINE TEXT EDITOR
+
+
+  UI FULL STACK WEB DEVELOPMENT COURSE by Mr.Durga prasad (@ 7AM)Batch
+
+ class-1 (15-12-22)
+ what is Ui full stack and course topics coverd
+
+ class-2 (16-12-22)
+ Mean,Mern developer topic and visual studeo installation and github Sinup
+
+ class-3 (20-12-22)
+ explanation of all softwares covered this full stack course
+
+ class-4 (21-12-22)
+ HTML structure, tags - br,p,h1-h6
+
+ class-5 (23-12-22)
+ Html Attributes explain and syntex, examples
+
+ class-6 (24-12-22)
+ CSS, color Attribute, types of applying colors, applying border
+
+ class-7 (26-12-22)
+ Class attribute, syntax, examples and code repository from github
+
+ class-8 (27-12-22)
+ title tag, hr tag, title attribute, cloning the github, color applying concepts-inlineCSS,class,id,tag
+
+ class-9 (28-12-22)
+ Dom structure, debugging tool, CSS priority chain concepts, Assignment-1(debugging tool)
+
+ class-10 (29-12-22)
+ anchor tag(a), image tag, syntax and examples, relativepath, absolutepath 
+
+ class-11 (30-12-22)
+ elements, types-inline,Blocklevel, CSS overflow, Assignment-2(student details)
+
+ class-12 (02-01-23)
+ Css overflow, margin, padding, Css box model, node js install
+
+ class-13 (03-01-23)
+ create web server
+
+ class-14 (04-01-23)
+ background image, icon image adding in header part, image spirting, image position, Assignment-3(image spirting)
+
+ class-15 (05-01-23)
+ pseudo class, assignment-3
+
+ class-16(06-01-23)
+ pseudo element, CSS disply property, floating property, Assignment-4(floating blocks)
+
+ class-17(07-01-23)
+ Revision all classes
+
+ class-18(11-01-23)
+ ul tags and ol tags, Assignment-5(list of students)
+
+ class-19(12-01-23)
+ description tag (dt,dl and dd), Table tags,Assignment-6(table)
+
+ class-20(17-01-23)
+ Assignment explanation
+
+ class-21(18-01-23)
+ CSS Positions (Static and Relative)
+
+ class-22(19-01-23)
+ CSS Positions (Absolute,Fixed,Sticky) and Z-index Property, Assignment-7(positions)
+
+ class-23(20-01-23)
+ HTML input Elements (text, password, date, radio, checkbox, text area)
+
+ class-24(23-01-23)
+ HTML input Elements (button, submit), HTML Form tags(Method, Action),
+ types of Communications(GET, POST)
+------------------------------------------------------------------------------------------------------------------
+
+ class-25(24-01-23)
+ CSS Opacity property, Data Types in JavaScript
+
+ class-26(25-01-23)
+ Type of Method with Examples
+
+ class-27(26-01-23)
+ Variable Hoisting, type Casting, Dynamic data
+
+ class-28(28-01-23)
+ Control Structure, if condition, else condition, else if condition, Examples
+
+ class-29(30-01-23)
+ difference between(=, ==, ===), Looping control structures with examples
+
+ class-30(31-01-23)
+ for loop control structure with examples
+
+ class-31(01-02-23)
+ while loop control structure with examples
+
+ class-32(02-02-23)
+ do while loop control structure with examples
+
+ class-33(03-02-23)
+ switch case control structure with examples, js function with examples
+
+ class-34(06-02-23)
+ different ways to creating functions and examples, Global and Local variables with examples, 
+ limitations of local variables
+
+ class-35(07-02-23)
+ Passing parms, returning values, both passing parms & returning values with examples
+
+ class-36(08-02-23)
+ Data Structures and explaining Array with examples
+
+ class-37(09-02-23)
+ Array examples and Methods of Array structure with examples 
+
+ class-38(10-02-23)
+ Argument keyword, function overloading, String & predefined properties and examples
+
+ class-39 (14-02-23)
+ Example: Finding prime number from an array, JS Date Object and it's pre-defined properties.
+ JSON data structure's concept introduction.
+
+ Class-40 (15-02-23)
+ Explained json expamles, Assigining project work, Different ways to access data from json object,
+ how memory allocation will happens for function,object elements in the webpage's internal memory.
+
+ class-41 (16-02-23)
+ for in loop control structure and example, create a structure for complex json object and 
+ How to retrive data from that with a example, implimented both concepts with in a single example.
+ Recursive method concept.
+
+ Class-42 (17-02-23)
+ Binding multiple objects and functions in to single Object, this key (predefined), implimented and
+ explained both by an example.
+------------------------------------------------------------------------------------------------------------------ 
+
+ Class-43 (20-02-23)
+ set Time out, set Time Interval.
+ DHTML started: predefined Dhtml commands for.. Finding elements in js and apply them in to html,
+ create elements(tags) in js by dhtml.
+
+ Class-44 (21-02-2023)
+ Created a webpage with an example; How to create external CSS & External JS and
+ how to use them in html code; predefined input way to give data dynamically;
+ wt is Event & Event handling and how it works with a example.
+
+ Class-45 (22-02-2023)
+
+
+ Class-46 (23-02-2023)
+ Gave a assignment; Static event handling & it's ways, predefined Event Object and it's use;
+ Dynamic event handling,use of pre-defined AddeventListner, wt is call back method;
+ how to validate user's input data -- onkeypress; Gave an Assigment on these.
+
+ Class-47 (24-02-2023)
+ How to generate random numbers, how to generate with in a range by using Math.Random, Math.Floor,
+ How to generate  a OTP with random values; how to generate a capcha,
+
+ Class-48 (27-02-2023)
+ OOps concept inroduction & features; how to create and what is use of Class feature of JS
+ With an example.
+
+ Class-49 (01-03-2023)
+ creating Class for static object data & Dynamic object data examples; Inheritance feature & types--
+ Single level inheritance and Multi level,how to Exteds the class & super constructor into Child class,
+ When to use Class and Inheritace, .__prompt__ operator.
+
+ Class-50 (2-03-2023)
+ Exception handling-- What are Compile & Runtime errors and difference,System defined exceptions,
+ What is the use and How to use the try() & catch blocks. 
+
+ Class-51 (3-03-2023)
+ User Created erorrs and handled them by using IfElse Retun conditions, How Try & Catch are different
+ form IfElse conditions; How Throws oparator used in exception handlig, Throw " ..... " ;
+ What is the use of Finally block and it works; Closure intro, How to declare closure.
+
+ Class-52 (4-03-2023)
+ Created a form on webpage as an example, How to ceate a js Library with some properties & functionality,
+ How to link JS library in JS code, What are the condion difficulties when we link the Library to Jscode
+ and How solution for that; What is the use of the Closure in JsLibrary and how to use it; How to access
+ the data within the Closure to Outside of the Clousre (3 steps).
+
+----------------------------------------------------------------------------------------------------------------------
+ Class-53 (6-03-2023)
+ ECMA 6 has started :-  Const; Let; String Literals; ForEach loop control structure; what is Call back function;
+ 3 ways and it's diference to Declare & Call a function; What is Call Stack and How it works,
+ How Arrow funcion is works when compared to normal function and What is the use of the Arrow function.
+
+ Class-54 (7-03-2023)
+
+
+ Class-55 (9-03-2023)
+
+
+ Class-56 (10-03-2023)
+ What is the use of Jquery Library,how to link & use the Jquery libraries into JScode; What is Minification
+ of code and it's use,How to write minify jScode manually, Write and minify jScode by using some Jquery feaurtes, 
+ Code minification by using external tools; How request & Response will happen between client and server.
+ 

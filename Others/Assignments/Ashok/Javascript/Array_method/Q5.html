@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find total character</title>
+</head>
+<body>
+    <h3>function to find total characters of a string without using length property</h3>
+    <script>  
+        var str = prompt("enter a string");
+        var size = 0;
+        function findCharacters(str){
+            var arr = str.split("");        
+        while(arr.pop() != undefined){
+            size++;
+        }
+        console.log("Length of '" + str + "' String is: " + size);
+        }
+        findCharacters(str);
+    </script>
+</body>
+</html>

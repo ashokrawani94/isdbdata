@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+}
+body{
+    background-color: rgb(82, 242, 95);
+}
+.container{
+    width: 80%;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-color: blue red rgb(243, 255, 75) rgb(246, 33, 193);
+}
+.section{
+    width: 100%;
+    height: 750px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-color: blue red rgb(243, 255, 75) rgb(246, 33, 193);
+}
+.block{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-color: blue red rgb(243, 255, 75) rgb(246, 33, 193); 
+    position: relative;   
+}
+.block_1{
+    position: relative;
+    float: left;
+}
+.block_2{
+    position: absolute;
+    top: 155px;
+    left: 105px;
+}
+.block_3{
+    float: right;
+    top: 105x;
+    position: relative;
+}
+.block_4{
+    float: right;
+    top: 50px;
+    right: -55px;
+    position: relative;
+}
+.block_5{
+    position: absolute;
+    top: 52%;
+    left: 32%;
+
+}
+.block_6{
+    position: absolute;
+    top: 52%;
+    left: 42%;
+}
+.block_7{
+    position: absolute;
+    top: 71%;
+    left: 32%;
+}
+.block_8{
+    position: absolute;
+    top: 71%;
+    left: 42%;
+}
+.block_9{
+    position: absolute;
+    top: 62%;
+    left: 37%;
+}
+.block_10{
+    top: 740px;
+    float: left;
+    position: absolute;
+
+}
+.block_11{
+    position: absolute;
+    top: 690px;
+    left: 105px;
+}
+.block_12{
+    float: right;
+    top: 740px;
+    right: 320px;
+    position: absolute;
+}
+.block_13{
+    float: right;
+    position: absolute;
+    top: 690px;
+    right: 370px;
+}
+.footer{
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-color: blue red rgb(243, 255, 75) rgb(246, 33, 193);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML Input elements
+        </title>
+        <style>
+            .regBlock {
+                border: 1px solid;
+                width: 600px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                padding: 5px;
+                margin: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="regBlock">
+            Student Registration page
+            <ul>
+                <li>
+                    
+                    <input type="text" name="username" maxlength="5" placeholder="Enter User Name" >
+                </li>
+                <li>
+                    <label for="acctId">User Acccount Id</label>
+                    <input type="text" name="acctId" value="TESTING">
+                </li>
+                <li>
+                    <label for="acctPwd">User Acccount Password</label>
+                    <input type="password" name="acctPwd" maxlength="8">
+                </li>
+                <li>
+                    User Gender:
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </li>
+                <li>
+                    Languages: 
+                    <input type="checkbox" >English
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">Hindi
+                </li>
+                <li>
+                    Country Name: 
+                    <select >
+                        <option>Kenya      </option>
+                        <optgroup label="Asian Countries">
+                            <option>India</option>
+                            <option>China</option>
+                        </optgroup>
+                        <option>USA</option>
+                        <option>WestIndies</option>
+                        <option>Japan</option>
+                    </select>
+                </li>
+                <li>
+                    Tell about urself 
+                    <textarea name="" id="" cols="60" rows="10" maxlength="300"></textarea>
+                </li>
+                <li>
+                    <input type="button" value="Register">
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

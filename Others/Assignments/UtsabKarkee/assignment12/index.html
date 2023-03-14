@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Tax By Using If Condition</title>
+  </head>
+  <body>
+    <h2>Employee Details Page</h2>
+    <script>
+      function getEmployeeDetails(message) {
+        return prompt(message);
+      }
+
+      function displayEmployeeDetails(key, value) {
+        console.log(key + value);
+      }
+
+      function getPFOrHRA(basicSalary, type) {
+        var total = 0;
+        switch (type) {
+          case "PF":
+            total = basicSalary * 0.14;
+            break;
+          case "HRA":
+            total = basicSalary * 0.25;
+            break;
+          default:
+            console.log("Unknown value");
+        }
+        return total;
+      }
+
+      function calculateTotalSalary(basicSalary, pfa, hra) {
+        return basicSalary + pfa + hra;
+      }
+
+      function totalTaxCalculate(totalSalary, gender) {
+        var totalTax = 0;
+        switch (gender) {
+          case "Male": {
+            if (totalSalary > 100000) totalTax = totalSalary * 0.15;
+            else if (totalSalary >= 50000) totalTax = totalSalary * 0.1;
+            else if (totalSalary >= 25000) totalTax = totalSalary * 0.05;
+            else totalTax = 0;
+            break;
+          }
+          case "Female": {
+            if (totalSalary > 100000) totalTax = totalSalary * 0.1;
+            else if (totalSalary >= 50000) totalTax = totalSalary * 0.05;
+            else totalTax = 0;
+            break;
+          }
+          default:
+            console.log("Incorrect Value");
+        }
+        return totalTax;
+      }
+
+      //collecting inputs
+      var employeeName = getEmployeeDetails("Enter Employee Name : "),
+        age = parseInt(getEmployeeDetails("Enter Employee Age : ")),
+        department = getEmployeeDetails("Enter Employee Department : "),
+        gender = getEmployeeDetails("Enter Employee Gender : "),
+        basicSalary = parseInt(
+          getEmployeeDetails("Enter Employee Basic Salary : ")
+        ),
+        pf = getPFOrHRA(basicSalary, "PF"),
+        hra = getPFOrHRA(basicSalary, "HRA"),
+        totalSal = calculateTotalSalary(basicSalary, pf, hra),
+        taxTotal = totalTaxCalculate(totalSal, gender);
+
+      //displaying output
+      displayEmployeeDetails("Employee Name : ", employeeName);
+      displayEmployeeDetails("Employee Age : ", age);
+      displayEmployeeDetails("Employee Gender : ", gender);
+      displayEmployeeDetails("Employee Department : ", department);
+      displayEmployeeDetails("Employee Basic Salary : ", basicSalary);
+      displayEmployeeDetails("Employee Total Salary : ", totalSal);
+      displayEmployeeDetails("Total Tax is : ", taxTotal);
+    </script>
+  </body>
+</html>

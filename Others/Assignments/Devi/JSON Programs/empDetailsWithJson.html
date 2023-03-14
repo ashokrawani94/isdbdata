@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details with JSON</title>
+</head>
+<body>
+    <script>
+        var empData ={};
+
+        function getEmpDetails() {
+            empData.ename = prompt("enter emp name");
+            empData.eage = prompt("enter emp age");
+            empData.egender = prompt("enter emp gender");
+            empData.eDept = prompt("enter emp Dept");
+            empData.ebasicSalary = prompt("enter basic Salary");
+
+            caltotalSal(empData.ebasicSalary);
+            calTax(empData.egender, empData.totalSalary);
+            displayEmpDetails(empData);
+        }
+
+        function caltotalSal(){
+
+        var ebasicSalary = parseInt(empData.ebasicSalary);
+        empData.pf = (14 * ebasicSalary) / 100 ;
+        empData.hra = (12 * ebasicSalary) /100 ;
+        empData.totalSalary = empData.pf + empData.hra + ebasicSalary ;
+
+        }
+
+        function calTax(egender, totalSalary)
+        {
+
+            var taxpercent = 0;
+            if(egender == "male")
+            {
+                if(totalSalary > 500000)
+                {
+                    taxpercent = 15;
+                }
+                else if(totalSalary > 300000)
+                {
+                    taxpercent = 10; 
+                }else
+                {
+                    taxpercent = 5;
+                }
+            }
+            else if (egender == "female"){
+                if (totalSalary > 500000){
+                    taxpercent = 10;
+                }
+                else if(totalSalary > 300000){
+                    taxpercent = 5;
+                }
+                else {
+                    taxpercent = 0;
+                }
+
+            }
+
+            totaltax = (taxpercent * totalSalary) / 100;
+            empData.tax = totaltax;
+        }
+
+        function displayEmpDetails(empData){
+
+            console.log("employee name is: " + empData.ename);
+            console.log("employee age is: " + empData.eage);
+            console.log("employee gender is: " + empData.egender);
+            console.log("employee dept is: " + empData.eDept);
+            console.log("employee basicSalary is: " + empData.ebasicSalary);
+            console.log("employee PF is: " + empData.pf);
+            console.log("employee HRA is: " + empData.hra);
+            console.log("employee total salary is: " + empData.totalSalary);
+            console.log("employee total tax is: " + empData.tax);
+
+        }
+        getEmpDetails();
+
+        
+    </script>
+    
+</body>
+</html>

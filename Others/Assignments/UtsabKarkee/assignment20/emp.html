@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generating Progress card through reading data from user.</title>
+    <link rel="stylesheet" href="emp.css" />
+    <script src="emp.js"></script>
+  </head>
+  <body>
+    <h3>Employee Details</h3>
+    <ul class="formContainer">
+      <li>Employee Name: <input type="text" id="ename" /></li>
+      <li>Employee Salary: <input type="number" id="esalary" /></li>
+      <li>Employee DOB: <input type="date" id="edob" /></li>
+      <li>
+        Employee Department:
+        <select name="" id="empDepartment">
+          <option value="Acting">Acting</option>
+          <option value="IT">IT</option>
+          <option value="Music">Music</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Astrology">Astrology</option>
+        </select>
+      </li>
+
+      <li>
+        Employee Gender:
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Male" /> Male
+      </li>
+
+      <li>
+        <input type="button" value="Employee Report" onclick="readEmpData()" />
+      </li>
+    </ul>
+
+    <ul class="progressCardBlock">
+      <li class="progressTitle">Employee Report</li>
+      <li>Employee Name: <span id="name"></span></li>
+      <li>Employee Age: <span id="age"></span></li>
+      <li>Employee Gender: <span id="gender"></span></li>
+      <li>Employee Department: <span id="department"></span></li>
+      <li>Employee Basic Salary: <span id="salary"></span></li>
+      <li>Employee PFA: <span id="pfa"></span></li>
+      <li>Employee HRA: <span id="hra"></span></li>
+      <li>Employee Total Salary: <span id="totalSalary"></span></li>
+      <li>Employee Total Tax: <span id="totalTax"></span></li>
+    </ul>
+  </body>
+</html>

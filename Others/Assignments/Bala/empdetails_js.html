@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var eno=prompt("enter employee number");
+        var ename= prompt("enter employee Name");
+        var  eage= prompt("enter employee age");
+        var  edepartment= prompt("enter employee department");
+        var Gender=prompt("enter employee Gender");
+        var basicSal=prompt("enter employee basic salary");
+        basicSal=parseInt(basicSal);
+        var pf=prompt("enter the pf percentage");
+        pf=parseInt(pf);
+        var hra=prompt("enter the hra precentage");
+        hra=parseInt(hra);
+        pf=(basicSal *pf)/100;
+        hra =(basicSal * hra)/100;
+        var totalSalary = basicSal + pf + hra;
+        console.log("---------EMPLOYEE DETAILS--------")
+        console.log("eNo="+ eno);
+        console.log("enter employee Name="+ename);
+        console.log("eage="+ eage);
+        console.log("Gender="+ Gender);
+        console.log("employeeDepartment="+ edepartment);
+        console.log("basicSalary=" + basicSal);
+        console.log("pf value =" +pf);
+        console.log("hra value=" +hra);
+        console.log("Total salary="+totalSalary);
+    </script>
+</body>
+</html>

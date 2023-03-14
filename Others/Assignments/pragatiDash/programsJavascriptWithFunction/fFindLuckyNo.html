@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Lucky Number of a given Number</title>
+  </head>
+  <body>
+    <script>
+      var num,
+        num1,
+        sumOfNumbers = 0;
+
+      function readDataOfNumber() {
+        num = prompt("Enter a number to find lucky number");
+        num = parseInt(num);
+        num1 = num;
+        findLuckyNumber();
+      }
+
+      function findLuckyNumber() {
+        while (num != 0) {
+          sumOfNumbers = sumOfNumbers + (num % 10);
+          num = num / 10;
+          num = parseInt(num);
+
+          if (num == 0 && sumOfNumbers > 9) {
+            num = sumOfNumbers;
+            sumOfNumbers = 0;
+          }
+        }
+
+        console.log(" Lucky number for " + num1 + " is: " + sumOfNumbers);
+      }
+
+      readDataOfNumber();
+    </script>
+  </body>
+</html>

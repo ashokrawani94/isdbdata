@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sum of odd numbers from the values of an array</title>
+    </head>
+    <body>
+        <script>
+            var count = prompt("enter size of array");
+            var arrList = [];
+            var sum=0;
+
+            //for loop to create array dynamically
+            for(var i=0;i<count;i++)
+            {
+              arrList[i] = parseInt(prompt("enter number" + (i+1)));                      
+            }
+            console.log(arrList);
+
+            //loop to check odd numbers from array and getting the sum
+            for(var j = 0; j < arrList.length; j++)
+            {
+              if(arrList[j] % 2 != 0 && arrList[j] > 1)
+              {                
+                sum = sum + arrList[j];
+              }
+            }
+            
+            console.log("Sum of Odd Numbers: "+ sum);
+        </script>    
+    </body>
+</html>

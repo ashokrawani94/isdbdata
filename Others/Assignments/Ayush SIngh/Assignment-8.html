@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <style>
+        .reg{
+            width:100%;
+            height:40px;
+            background-color: white;
+            border: 2px black solid;
+            margin: 20px 0px;
+            text-align:center;
+        }
+        .AccDet{
+            width:150px;
+            height:25px;
+            background-color: white;
+            border: 2px black solid;
+            MArgin: 10px;
+            text-align: center;
+            position:absolute;
+            top:100px;
+            left:20px;
+        }
+        .AccDetMAin{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: 2px black solid;
+            margin: 60px 0px;
+
+        }
+        .EdDet{
+            width:150px;
+            height:25px;
+            background-color: white;
+            border: 2px black solid;
+            Margin:10px;
+            position:absolute;
+            top: 365px;
+            left:20px;
+            text-align: center;
+
+        }
+        .EdDetMAin{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: 2px black solid;
+            margin: 60px 0px;
+
+        }
+        .Address{
+            width:150px;
+            height:25px;
+            background-color: white;
+            border: 2px black solid;
+            text-align:center;
+            margin:10px;
+            position: absolute;
+            top: 630px;
+            left:20px;
+
+        }
+        .AddressMain{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: 2px black solid;
+            margin: 60px 0px;
+        }
+        .about{
+            width:150px;
+            height:25px;
+            background-color: white;
+            border: 2px black solid;
+            text-align:center;
+            margin:10px;
+            position:absolute;
+            top: 890px;
+            left:20px;
+        }
+        .aboutMain{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: 2px black solid;
+            margin: 60px 0px;
+        }
+        ul{
+            list-style: None;
+        }
+        li{
+            padding:10px 10px;
+        }
+        .IDType{
+            float:right;
+            position: absolute;
+            right:100px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <form method="get" action="abcduvw.com">
+        <div class="reg">
+            Student Registration Page
+        </div>
+        <div class="AccDet">
+            Account Details
+        </div>
+        <div class="AccDetMAin">
+            <ul>
+                <div class="IDType">
+                    <li>    
+                        <label for="AccID">
+                            Account ID:
+                            <input type="text" Name="AccID" >
+                        </label>
+                    </li>
+                    <li>    
+                        Account Type:
+                        <select>
+                            <option>User</option>
+                            <option>Manager</option>
+                        </select>
+                    </li>
+                </div>
+                <li>    
+                    <label for="Name">
+                        Name:  
+                        <input type="text"  Name="Name" MAxlength="25">
+                    </label>
+                </li>
+                <li>    
+                    <label for="Age">
+                        Age:  
+                        <input type="text"  Name="Age" MAxlength="2">
+                    </label>
+                </li>
+                <li>    
+                    <label for="Gender">
+                        Gender:
+                        <input type="radio"  Name="Gender"> Male
+                        <input type="radio"  Name="Gender"> Female
+                    </label>
+                </li>
+                <li>    
+                    <label for="Mail">
+                        Mail ID:  
+                        <input type="text" Name="Age" >
+                    </label>
+                </li>
+                
+            </ul>
+        </div>
+        <div Class="EdDet">
+            Education Details
+        </div>
+        <div class="EdDetMAin">
+            <ul>
+                <div class="IDType">
+                    <li>    
+                        <label for="ClgNm">
+                            College Name:
+                            <input type="text" Name="ClgNm" >
+                        </label>
+                    </li>
+                    <li>    
+                        Location:
+                        <select>
+                            <option>Maharashtra</option>
+                            <option>Rajasthan</option>
+                        </select>
+                    </li>
+                </div>
+                <li>    
+                    Qualification:
+                    <select>
+                        <option>B.tech</option>
+                        <option>B.A.</option>
+                        <option>B.Arch</option>
+                        <option>B.Com</option>
+                    </select>
+                </li>
+                <li>    
+                        Languages Known:
+                        <input type="checkbox">Hindi
+                        <input type="checkbox">English
+                        <input type="checkbox">French
+                        <input type="checkbox">German
+                </li>
+                <li>    
+                    Course Opting For:
+                        <select>
+                            <option>M.A</option>
+                            <option>M.Tech</option>
+                            <option>M.Com</option>
+                        </select>
+                </li>
+            </ul>
+        </div>
+        <div class="Address">
+            Address
+        </div>
+        <div class="AddressMain">
+            <ul>
+                <div class="IDType">
+                    <li>    
+                        Country Name:
+                        <select>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Brazil</option>
+                            <option>China</option>
+                            <option>Bhutan</option>
+                        </select>
+                    </li>
+                    <li>    
+                        Country Code:
+                        <select>
+                            <option>+91</option>
+                            <option>+01</option>
+                            <option>+90</option>
+                            <option>+002</option>
+                        </select>
+                    </li>
+                </div>
+                <li>    
+                    <label for="HNo">
+                        House No.:
+                        <input type="text"  Name="HNo" MAxlength="25">
+                    </label>
+                </li>
+                <li>    
+                    <label for="StNm">
+                        Street Name:
+                        <input type="text"  Name="StNm" >
+                    </label>
+                </li>
+                <li>    
+                    <label for="State">
+                        State Name:
+                        <input type="Text"  Name="State">
+                    </label>
+                </li>
+                <li>    
+                    <label for="Code">
+                        State Code
+                        <input type="text" Name="Code" >
+                    </label>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="about">
+            About Yourself
+        </div>
+        <div class="aboutMain">
+            <textarea name="abt" ID="AboutUser" cols="165" rows="12" maxlength="300"></textarea>
+        </div>
+        <div>
+            <input type="submit" Value="Register">
+            <input type="reset" value="reset"
+        </div>
+    </form>
+</body>
+</html>

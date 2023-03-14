@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Details assignment using tables</title>
+        <style>
+            .header, .footer {
+                text-align: center;
+                border: 1px solid;
+                font-size: 23px;
+                font-weight: bold;
+                padding: 7px;
+                margin: 7px auto;
+
+                background-color: rgb(147, 205, 205);
+            }
+            table {
+                width: 100%;
+            }
+            .container {
+                border: 1px solid;
+                padding: 7px;
+                margin: 7px auto;
+                background-color: peachpuff ;
+            }
+            td {
+                text-align: center;
+            }
+            img {
+                height: 140px;
+                width: 140px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            Student Details
+        </div>
+
+        <div class="container">
+            <table border="1px solid" cellspacing="0" cellpadding="5px" width="1000px" >
+                <thead style="background: rgb(221, 246, 164);">
+                    <tr>
+                        <th>Sno.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Picture</th>
+                        <th>Class</th>
+                        <th>Location</th>
+                        <th>Progress Card</th>
+                     </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Raj</td>
+                        <td>12</td>
+                        <td><img src="images/std1.png" alt="student1"></td>
+                        <td>10th</td>
+                        <td>Chennai</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td rowspan="2">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>27</td>
+                                    <td>Fail</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ajay</td>
+                        <td>10</td>
+                        <td><img src="images/std2.png" alt="student2"></td>
+                        <td>9th</td>
+                        <td>Pune</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>75</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>30</td>
+                                    <td rowspan="2">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sania</td>
+                        <td>13</td>
+                        <td><img src="images/std3.png" alt="student3"></td>
+                        <td>11th</td>
+                        <td>Mumbai</td>
+                        <td><table style="background:rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>15</td>
+                                    <td>Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>92</td>
+                                    <td rowspan="2">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>55</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Purvi</td>
+                        <td>10</td>
+                        <td><img src="images/std4.png" alt="student4"></td>
+                        <td>9th</td>
+                        <td>Kolkata</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>77</td>
+                                    <td rowspan="3">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>57</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sam</td>
+                        <td>11</td>
+                        <td><img src="images/std5.png" alt="student5"></td>
+                        <td>10th</td>
+                        <td>Delhi</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td rowspan="2">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>17</td>
+                                    <td>Fail</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Tina</td>
+                        <td>14</td>
+                        <td><img src="images/std6.png" alt="student6"></td>
+                        <td>12th</td>
+                        <td rowspan="2">Hyderabad</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>99</td>
+                                    <td rowspan="3">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>110</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Manik</td>
+                        <td>13</td>
+                        <td><img src="images/std7.png" alt="student7"></td>
+                        <td>11th</td>
+                        
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>16</td>
+                                    <td rowspan="3">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>27</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Rashmi</td>
+                        <td>14</td>
+                        <td><img src="images/std8.png" alt="student8"></td>
+                        <td>12th</td>
+                        <td>New Delhi</td>
+                        <td><table style="background: rgb(194, 194, 235);"border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>23</td>
+                                    <td rowspan="2">Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>74</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Harsh</td>
+                        <td>9</td>
+                        <td><img src="images/std9.png" alt="student9"></td>
+                        <td>10th</td>
+                        <td>Kerala</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>84</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>18</td>
+                                    <td>Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>27</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Diya</td>
+                        <td>11</td>
+                        <td><img src="images/std10.png" alt="student10"></td>
+                        <td>11th</td>
+                        <td>Mumbai</td>
+                        <td><table style="background: rgb(194, 194, 235);" border="1px solid" cellspacing="0" cellpadding="5px" 
+                             width="700px">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max. Marks</th>
+                                    <th>Obtained Marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>21</td>
+                                    <td>Fail</td>
+                                </tr>
+                                <tr>
+                                    <td>Sciene</td>
+                                    <td>110</td>
+                                    <td>78</td>
+                                    <td rowspan="2">Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>120</td>
+                                    <td>112</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="footer">
+            &copy CopyRights 2023</div>
+    </body>
+</html>

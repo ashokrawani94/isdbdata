@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="emp.js"></script>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <ul class="form_container">
+        <li>
+            Employee Name: <input type="text" id="eName">
+        </li>
+        <li>
+            Department:
+            <Select id="eDepartment">
+                <option>IT</option>
+                <option>Finance</option>
+                <option>Law</option>
+                <option>HR</option>
+            </Select>
+        </li>
+        <li>
+            Language Employee Knows:
+            JAVA <input type="checkbox" value="java" id="java">
+            Javascript <input type="checkbox" value="js" id="js">
+            C++ <input type="checkbox" value="cpp" id="cpp">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li>
+            Salary: <input type="text" id="salary">
+        </li>
+        <li>
+            <input type="button" value="Generate Employee Report" onclick="readUserData()">
+        </li>
+    </ul>
+    <ul class="progress">
+        <li id="progress_title">Employee Report</li>
+        <li>Employee Name: <span id="peName"></span></li>
+        <li>Employee Department: <span id="peDept"></span></li>
+        <li>Languages: <span id="peLang"></span></li>
+        <li>Gender: <span id="peGender"></span></li>
+        <li>salary: <span id="peSalary"></span></li>
+        <li>P.F : <span id="pePf"></span></li>
+        <li>HRA : <span id="peHra"></span></li>
+        <li>Tax: <span id="peTax"></span></li>
+    </ul>
+</body>
+</html>

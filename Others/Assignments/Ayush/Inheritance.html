@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Using Inheritance</title>
+</head>
+
+<body>
+    <script>
+        class UniversityDetails {
+            constructor(data) {
+                this.universityName = data.universityName
+                this.universityLocation = data.universityLocation
+            }
+        }
+
+        class CollegeDetails extends UniversityDetails {
+            constructor(data) {
+                super({ universityName: data.universityName, universityLocation: data.universityLocation })
+                this.collegeName = data.collegeName
+                this.collegeLocation = data.collegeLocation
+            }
+        }
+
+        class StudentDetails extends CollegeDetails {
+            constructor(data) {
+                super({ collegeLocation: data.collegeLocation, collegeName: data.collegeName,universityName: data.universityName, universityLocation: data.universityLocation})
+                this.name = data.name
+                this.age = data.age
+                this.gender = data.gender
+            }
+
+            displayStudentData() {
+                console.log("Student Name : " + this.name)
+                console.log("Student Age : " + this.age)
+                console.log("Student Gender : " + this.gender)
+                console.log("University Name : " + this.universityName)
+                console.log("University Location : " + this.universityLocation)
+                console.log("College Name : " + this.collegeName)
+                console.log("College Location : " + this.collegeLocation)
+                console.log("")
+            }
+        }
+
+        var obj1 = new StudentDetails({ name: 'Aniket', age: 21, gender: 'Male', collegeLocation: 'Yerla, Nagpur', collegeName: 'SB Jain', universityName: 'RTMNU, Nagpur', universityLocation: 'Nagpur' })
+        obj1.displayStudentData()
+
+        var obj2 = new StudentDetails({ name: 'Aman', age: 23, gender: 'Male', universityName: 'RTMNU, Nagpur', universityLocation: 'Nagpur', collegeLocation: 'Yerla, Nagpur', collegeName: 'SB Jain' })
+        obj2.displayStudentData()
+
+        // var obj3 = new CollegeDetails({collegeName:'sb jain', collegeLocation:'yerla', universityLocation:'nagpur',universityName:'rtmnu'})
+        // console.log(obj3)
+    </script>
+</body>
+
+</html>

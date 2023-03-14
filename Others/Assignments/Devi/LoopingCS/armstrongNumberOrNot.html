@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number Or Not</title>
+</head>
+<body>
+    <script>
+        var sum = 0, rem = 0, temp = 0;
+        var number = prompt("enter a number");
+        console.log("number is" +number);
+        var numberOfdigits = number.length;
+        var sum = 0;
+        temp = 0;
+        var temp = number;
+        while (temp > 0) {
+            rem = temp % 10;
+            sum += rem ** numberOfdigits;
+            temp = temp / 10;
+            temp = parseInt(temp);
+
+        }
+        console.log("Sum of " + number + " is " + sum);
+        if( sum == number ){
+            console.log("Armstrong Number" + number);
+        }else {
+            console.log("not an Armstrong Number" + number);
+        }
+
+    </script>
+</body>
+</html>

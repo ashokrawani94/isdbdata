@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var emp_name = prompt('enter employee name');
+        var emp_dep = prompt('enter employee department');
+        var emp_age = prompt('enter employee age');
+        emp_age = parseInt(emp_age);
+        var emp_gender = prompt('enter employee gender');
+        var emp_basicsal = prompt('enter employee basic salary');
+        emp_basicsal = parseInt(emp_basicsal);
+        var hra;
+        hra = (30* emp_basicsal)/100;
+        var pf;
+        pf = (15* emp_basicsal)/100;
+        var total_sal;
+        total_sal = (emp_basicsal + hra + pf);
+        var p1 = (15* total_sal)/100;
+        var p2 = (10* total_sal)/100;
+        var p3 = (5* total_sal)/100;
+        var p4 = (0);
+       
+        
+        
+        console.log('enter employee name' + emp_name);
+        console.log('enter employee age' + emp_age);
+        console.log('enter employee department' + emp_dep);
+        console.log('enter employee basic salary' + emp_basicsal);
+        console.log('enter employee gender' + emp_gender);
+        console.log('enter total salary' + total_sal);
+        console.log('enter hra' + hra);
+        console.log('enter pf' + pf);
+        if(emp_gender == 'male'){
+            if(emp_basicsal > 100000){
+                console.log(p1)
+            }
+            else if(emp_basicsal > 50000){
+            console.log(p2)}
+            else if(emp_basicsal > 25000){
+            console.log(p3)}
+            else{
+                console.log(p4)
+            }
+        }
+        if(emp_gender == 'female'){
+            if(emp_basicsal > 100000){
+                console.log(p2)
+            }
+            else if(emp_basicsal > 50000){
+                console.log(p3)
+            }
+            else{
+                console.log(p4)
+            }
+        }
+        
+       
+    </script>
+</body>
+</html>

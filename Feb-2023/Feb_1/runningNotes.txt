@@ -1,0 +1,15 @@
+while looping CS
+
+    for (initilization; condition check; increment/decrment) {
+        ... 
+        ... 
+        ... 
+    }
+
+
+    while(<conditiion>) {
+        ... 
+        ..
+        ..
+        ..
+    }

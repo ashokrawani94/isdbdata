@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Date_format</title>
+    </head>
+    <body>
+        <h3>Different Date format using date object</h3>
+        <script>
+            var mydate = new Date();
+            var customFormat;
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'jul', 'Aug', 'Sept','Oct', 'Nov', 'Dec'];
+
+            var months1 = ['January', 'February', 'March', 'April', 'May', 'June','july', 'August', 'September','Octuber','November', 'December'];
+
+            var dayList = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+            var dayList1 = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+            var monthName = months[mydate.getMonth()];
+            var monthName1 = months1[mydate.getMonth()];
+            
+           
+
+            // var myCustmFormat2 = mydate.getDate() + 'th' + ' ' + monthName + ', ' + mydate.getFullYear(); 
+            // console.log(myCustmFormat2);
+
+            var userSelection = prompt("Enter your selection 1/2/3/4/5/6/7/8/9/10");
+            userSelection = parseInt(userSelection);
+
+            switch(userSelection){
+                case 1:    // 14/Feb/2023
+                     customFormat = mydate.getDate() + '/' + monthName + '/' + mydate.getFullYear(); 
+                     console.log(customFormat); 
+                    break;
+
+                case 2:    
+                    customFormat = mydate.getDate() + 'th' + ' ' + monthName + ',' + ' ' + mydate.getFullYear();
+                    console.log(customFormat);  
+                    break;
+                
+                case 3:    
+                    customFormat = mydate.getDate() + 'th' + ' ' + monthName1 + ',' + ' ' + mydate.getFullYear();
+                    console.log(customFormat);  
+                    break;
+
+                case 4:
+                    customFormat = dayList1[mydate.getDay()] + ',' + ' ' + mydate.getDate() + 'th' +  ' ' + monthName;
+                    console.log(customFormat);  
+                    break;
+
+                 case 5: 
+                    customFormat = dayList[mydate.getDay()] + ','+ ' ' + mydate.getDate() + 'th' + ' ' + monthName1 + ' '+  mydate.getFullYear();
+                    console.log(customFormat);  
+                    break;
+
+                case 6:    
+                    customFormat = mydate.getDate() + '-' + monthName + '-' + mydate.getFullYear(); 
+                    console.log(customFormat); 
+                    break;
+
+                case 7:    
+                    customFormat = mydate.getDate() + '-' + (mydate.getMonth() + 1)  + '-' + mydate.getFullYear();
+                    console.log(customFormat);  
+                    break;
+
+                case 8:   
+                    customFormat = mydate.getDate() + 'th' + ' ' + monthName + ',' + ' ' + mydate.getFullYear() + mydate.getHours();
+                    console.log(customFormat);
+                    break;
+
+                case 9:   
+                    customFormat = mydate.getMinutes() + 'min :' + mydate.getSeconds() + 'sec';
+                    console.log(customFormat); 
+                    break;
+
+                case 10:    
+                   customFormat = mydate.getHours() + 'hrs' + ',' + ' ' + mydate.getMinutes() + ' ' + 'min ' + mydate.getSeconds() + 'sec';
+                    console.log(customFormat);  
+                    break;
+                
+                default:
+                    console.log("wrong date formate");
+                
+                
+             
+
+
+
+            }
+        </script>
+    </body>
+</html>

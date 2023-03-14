@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky Number</title>
+    </head>
+    <body>
+        <script>
+            // to find the lucky number 
+            var n = prompt("Enter the number");
+            var sumNumber = 0;
+            n = parseInt(n);
+            var numb = n;
+                // for (var i = 1; i <= n; i++)
+                 while (n > 0) 
+                {
+                    var rem = n % 10;
+                    sumNumber += rem;
+                    n = n / 10;
+                    n = parseInt(n);
+                
+                    if (n == 0 && sumNumber > 9)
+                    {
+                        n = sumNumber;
+                        sumNumber = 0;
+                    }
+                }
+                console.log("The lucky number of " + numb + " is " + sumNumber);
+             
+        </script>
+        
+    </body>
+</html>

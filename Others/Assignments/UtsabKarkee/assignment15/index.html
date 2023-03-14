@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment About String</title>
+  </head>
+  <body>
+    <script>
+      var generateSentence = () => {
+        var sentence = prompt("Enter a Sentence or Word To Search");
+        return sentence;
+      };
+
+      var wordCount = function (text) {
+        var words = text.match(/\S+/g);
+        return words.length;
+      };
+
+      var display = function (message, count) {
+        console.log(message + count);
+      };
+
+      var spaceCount = function (text) {
+        return text.replace(/\S+/g, "").length;
+      };
+
+      var reverseString = function (text) {
+        var result = "";
+        for (var size = text.length, index = size - 1; index >= 0; index--) {
+          result += text.charAt(index);
+        }
+        return result;
+      };
+
+      var isPalindrome = function (text) {
+        return text == reverseString(text);
+      };
+
+      var vowelCount = function (text) {
+        return text.replace(/[^aeiou]/gi, "").length;
+      };
+
+      var isAvailableWithin = function (text, search) {
+        return text.includes(search);
+      };
+
+      var totalCharacters = function (text) {
+        var words = text.split(""),
+          size = -1;
+        do {
+          size += 1;
+        } while (words.pop() != undefined);
+        return size;
+      };
+
+      var showOutput = function () {
+        display("Word Count : ", wordCount(generateSentence()));
+        display("Space Count : ", spaceCount(generateSentence()));
+        display("Palindrome : ", isPalindrome(generateSentence()));
+        display("Vowel Count : ", vowelCount(generateSentence()));
+        display(
+          "Word Available Within The Sentence : ",
+          isAvailableWithin(generateSentence(), generateSentence())
+        );
+        display(
+          "Characters Count Without Length: ",
+          totalCharacters(generateSentence())
+        );
+        display("Reverse : ", reverseString(generateSentence()));
+      };
+      // testing
+
+      showOutput();
+    </script>
+  </body>
+</html>

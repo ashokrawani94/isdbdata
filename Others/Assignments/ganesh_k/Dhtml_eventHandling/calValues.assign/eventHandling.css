@@ -1,0 +1,27 @@
+#input{
+    list-style: none;
+    border: 2px solid black;
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+
+}
+li{
+    padding: 10px;
+}
+#resul{
+    border: 3px solid blue;
+    color: red;
+}
+label{
+    font-weight: bold;
+}
+#enter{
+    font-weight: bold;
+    margin: 3px;
+    background-color: aqua;
+}

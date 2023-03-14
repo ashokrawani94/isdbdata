@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var EmployeeName = prompt("Employee Name");
+        var EmployeeAge = prompt("Employee Age");
+        var EmployeeDepartment = prompt("Department Name");
+        var EmployeeSalary = prompt("Employee Salary");
+        var pf=(14* EmployeeSalary)/100;
+        var hra=(25* EmployeeSalary)/100;
+        var total;
+        total=parseInt(EmployeeSalary)+ parseInt(pf) + parseInt(hra);
+        console.log("Employee Name " + EmployeeName);
+        console.log("Employee Age " + EmployeeAge);
+        console.log("Employee Departement " + EmployeeDepartment);
+        console.log("Total Salary " + total);
+        console.log("PF " + pf);
+        console.log("HRA " + hra);
+
+
+    </script>
+</body>
+</html>

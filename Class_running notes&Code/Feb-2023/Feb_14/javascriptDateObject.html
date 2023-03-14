@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Date object.
+        </title>
+    </head>
+    <body>
+        <input type="date">
+        <script>
+
+
+            var mydate1 = new Date("Mar 09 2023");
+            var mydate = new Date();
+
+            console.log(mydate1 - mydate);
+
+            console.log(mydate1)
+
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
+            var daysList = ['Sunday', 'Mon', 'Tuesday', 'Wednesday']
+
+            
+            console.log(mydate);
+
+            console.log(mydate.getDate());
+            console.log(mydate.getFullYear());
+            console.log(mydate.getMonth());
+            console.log(mydate.getDay());
+
+            14/2/2023
+
+            var myCustmFormat = mydate.getDate() + '/' + (mydate.getMonth() + 1) + '/' + mydate.getFullYear()
+            console.log(myCustmFormat);
+
+            // 14th Feb, 2023
+            var monthName = months[mydate.getMonth()]
+            var myCustmFormat2 = mydate.getDate() + 'th' + ' ' + monthName + ', ' + mydate.getFullYear(); 
+            console.log(myCustmFormat2);
+
+            // -> Tuesday, Feb 14th, 2023
+            console.log(daysList[mydate.getDay()])
+
+            console.log(mydate.getMinutes())
+            console.log(mydate.getHours())
+            console.log(mydate.getSeconds())
+        </script>
+    </body>
+</html>

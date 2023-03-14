@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Getting student and employee details using the javascript console and prompt</title>
+    </head>
+    <body>
+        <script>
+            console.log("------------------Employee Details-----------------------");
+            var eName = prompt("Enter employee name");
+                 eName = eName.toString();
+            var eAge = prompt("Enter employee age");
+                 eAge = parseInt(eAge);
+            var eDepartment = prompt("Enter employee department");
+                 eDepartment = eDepartment.toString();
+            var basicSalary = prompt("Enter the basic salary of employee");
+                 basicSalary = parseFloat(basicSalary);
+            var totalSalary;
+            var pf = (14 * basicSalary) / 100;
+            var hra = (25 * basicSalary) / 100;
+                 totalSalary = basicSalary + pf + hra;
+                console.log("Name of employee is " + eName);
+                console.log("Age of employee is " + eAge);
+                console.log("Department of employee is " + eDepartment);
+                console.log("Total salary of employee is " + totalSalary);
+                console.log("------------------------------------------------------------");
+
+            console.log("---------------------Student Details---------------------------");
+            var sName = prompt("Enter student name");
+                sName = sName.toString();
+            var sAge = prompt("Enter student age");
+                sAge = parseInt(sAge);
+            var sGender = prompt("Enter student gender");
+            var sClass = prompt("Enter student class");
+            var maths, science, english, french, hindi;
+                maths = prompt("Enter maths marks");
+                science = prompt("Enter science marks");
+                english = prompt("Enter english marks");
+                french = prompt("Enter french marks");
+                hindi = prompt("Enter hindi marks");
+                var totalMarks;
+            var avgMarks;
+                totalMarks = maths + science + english + french + hindi;
+                avgMarks = totalMarks / 5;
+                 console.log("Name of student is " + sName);
+                 console.log("Age of student is " + sAge);
+                 console.log("Gender of student is " + sGender);
+                 console.log("Marks of student in maths is " + maths);
+                 console.log("Marks of student in science is " + science);
+                 console.log("Marks of student in english is " + english);
+                 console.log("Marks of student in french is " + french);
+                 console.log("Marks of student in hindi is " + hindi);
+                 console.log("Total marks of student is " + totalMarks);
+                 console.log("Avg marks of student is " + avgMarks);
+                 console.log("-------------------------------------------------------------")
+
+
+        </script>
+        
+    </body>
+</html>

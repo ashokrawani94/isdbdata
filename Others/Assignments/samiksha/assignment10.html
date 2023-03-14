@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script>
+     //Employee Details
+     var ename, eage,basicsal,pf,hra,totalsal,tax,gender;
+        
+        ename=prompt("Enter employee name")
+        console.log("Employee name is "+ename);
+        eage=prompt("Enter employee age")
+        console.log("Employee age is "+eage);
+        gender=prompt("Enter gender ");
+        console.log("Gender:"+gender);
+        basicsal=prompt("Enter employee's basic salary");
+        console.log("basic salary is "+basicsal);
+        pf = (14 * parseInt(basicsal)) / 100;
+        console.log("PF="+pf);
+        hra = (25 * parseInt(basicsal)) / 100;
+        console.log("HRA= "+hra);
+        totalsal = pf + hra + parseInt(basicsal);
+        console.log("Total salary is "+totalsal);
+    
+        //male employee
+        if(gender=="male"){
+        if(totalsal>100000){
+            tax=(15*totalsal)/100;
+    
+            
+        }
+        else if(totalsal>=50000){
+            tax=(10*totalsal)/100;
+        
+            
+        }
+        else if(totalsal>=25000){
+            tax=(5*totalsal)/100;
+            
+        }
+        else{tax=0;}
+    }
+        //female employee
+        if(gender=="female"){
+
+    
+        if(totalsal>100000){
+            tax=(10*totalsal)/100;
+        
+            
+        }
+        else if(totalsal>=50000){
+            tax=(5*totalsal)/100;
+            
+        }
+        else{tax=0;}
+    }
+    console.log("Tax is "+tax);
+
+        
+</script>
+    
+</body>
+</html>

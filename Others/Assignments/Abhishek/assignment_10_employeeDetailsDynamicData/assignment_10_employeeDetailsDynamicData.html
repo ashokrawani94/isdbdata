@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details Dynamic data</title>
+</head>
+<body>
+    <script>
+         var empName = prompt("Enter employee name");
+         var empAge = prompt("Enter employee Age");
+         var empGender = prompt("Enter employee gender male/female");
+         var empDep = prompt("Enter employee department");
+         var empBasicSal = prompt("Enter employee basic salary");
+
+         empBasicSal = parseInt(empBasicSal);
+         //document.write(empBasicSal);
+        
+         var pf = (empBasicSal*14)/100;
+         var hra = (empBasicSal*24)/100;
+
+        // pf = parseInt(pf);
+         //hra = parseInt(hra);
+
+         var totalSal = empBasicSal + pf + hra;
+
+         document.write("Employee name is " + empName +"<br>");
+         document.write("Employee age is " + empAge +"<br>");
+         document.write("Employee gender is " + empGender +"<br>");
+         document.write("Employee department is " + empDep +"<br>");
+         document.write("Employee basic salary is " + empBasicSal +"<br>");
+         document.write("Employee total salary is " + totalSal +"<br>");
+
+        if(empGender == "male"){
+            if(totalSal >= 100000){
+                document.write('tax is ' + (totalSal * 15)/100);
+            }
+            else if(totalSal >= 50000){
+                document.write('tax is ' + (totalSal * 10)/100);
+            }
+            else if(totalSal >= 25000){
+                document.write('tax is ' + (totalSal * 5)/100);
+            }
+            else{
+                document.write('tax is 0');
+            }
+        }
+        else if(empGender == "female"){
+            if(totalSal >= 100000){
+                document.write('tax is ' + (totalSal * 10)/100);
+            }
+            else if(totalSal >= 50000){
+                document.write('tax is ' + (totalSal * 5)/100);
+            }
+            else{
+                document.write('tax is 0');
+            }
+        }
+    </script>
+</body>
+</html>

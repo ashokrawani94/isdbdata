@@ -1,0 +1,8 @@
+minified/Compresssed
+
+Nonminified/Non compressed js files :
+
+    Minifinication process:
+        1. removes all the extra line breaks, documentation
+        2. replace all the larger variable names with smaller
+        3. replaces largers instructions with smaller

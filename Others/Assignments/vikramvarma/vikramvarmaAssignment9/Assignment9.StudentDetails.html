@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logging student details</title>
+    <style>
+      .tile {
+        font-size: 200px;
+        text-align: center;
+        text-decoration: underline;
+        position: relative;
+        top: 200px;
+      }
+      .text {
+        font-size: 85px;
+        text-align: center;
+        position: relative;
+        top: 200px;
+      }
+    </style>
+    <script>
+      var studentName = prompt("Give name of student");
+      var studentAge = prompt("Give Age of student");
+      var studentGender = prompt("Give student Gender");
+      var m1Marks = parseInt(prompt("subject 1 marks"));
+      var m2Marks = parseInt(prompt("subject 2 marks"));
+      var m3Marks = parseInt(prompt("subject 3 marks"));
+      var totalMarks = m1Marks + m2Marks + m3Marks;
+      var avgMarks = totalMarks / 3;
+      console.log("The Name of student is " + studentName);
+      console.log("The Age of student is " + studentAge);
+      console.log("The students gender is " + studentGender);
+      console.log("The student total Marks was " + totalMarks);
+      console.log("The Average of his marks " + avgMarks);
+    </script>
+  </head>
+  <body>
+    <div class="tile">JAVASCRIPT</div>
+    <div class="text">Printing Student details in colsole</div>
+  </body>
+</html>

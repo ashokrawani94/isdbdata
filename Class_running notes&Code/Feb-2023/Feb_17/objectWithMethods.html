@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstratin Json object
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var studentData = {
+                name: '',
+                age: ''
+            };
+            var empName = 'PRasad';
+            var getStudentData = () => {
+                studentData.name = prompt("Enter name of student");
+                studentData.age = prompt("Enter age");
+                studentData.marks = [];
+                for (var i = 0 ; i < 5; i++) {
+                    studentData.marks[i] = prompt("enter value for sub " + i);
+                    studentData.marks[i] = parseInt(studentData.marks[i]);
+                }
+                getTotalAndAvg();
+            }
+
+            var getTotalAndAvg  = () => {
+                studentData.total = 0;
+                for (var i = 0 ; i < 5; i++) {
+                    studentData.total = studentData.marks[i] + studentData.total
+                }
+                studentData.avg = studentData.total/studentData.marks.length;
+                getGrade();
+            }   
+
+            var getGrade = () => {
+                if (studentData.avg >= 40) {
+                    studentData.grade = 'Passed';
+                } else {
+                    studentData.grade = 'You have a surprise';
+                }
+                displayStudentData();
+            }
+
+            var displayStudentData = () => {
+                console.log(studentData)
+                console.log("Student details");
+                console.log("STudent name " + studentData.name);
+                console.log("Student age  " + studentData.age);
+                console.log("Avg is " + studentData.avg);
+                console.log("Grade " + studentData.grade);
+            }
+
+            getStudentData();
+            */
+
+
+
+        </script>
+
+        <script>
+            var epdata = {
+                ename: 'Teena',
+                dispalyEmpData:function() {
+                    console.log("name is " + epdata.ename)
+                    console.log("name is " + this.ename)
+                }
+            }
+            var studentData = {
+                name: '',
+                age: '',
+                getStudentData() {
+                    this.name = prompt("Enter name of student");
+                    studentData.age = prompt("Enter age");
+                    this.marks = [];
+                    for (var i = 0 ; i < 5; i++) {
+                        studentData.marks[i] = prompt("enter value for sub " + i);
+                        this.marks[i] = parseInt(this.marks[i]);
+                    }
+                    studentData.getTotalAndAvg();
+                },
+                getTotalAndAvg: function() {
+                    this.total = 0;
+                    for (var i = 0 ; i < 5; i++) {
+                        this.total = studentData.marks[i] + this.total
+                    }
+                    this.avg = studentData.total/this.marks.length;
+                    this.getGrade();
+                },
+                getGrade: function() {
+                    if (studentData.avg >= 40) {
+                        studentData.grade = 'Passed';
+                    } else {
+                        studentthisData.grade = 'You have a surprise';
+                    }
+                    this.displayStudentData();
+                },
+                displayStudentData: function() {
+                    console.log(studentData)
+                    console.log("Student details");
+                    console.log("STudent name " + studentData.name);
+                    console.log("Student age  " + this.age);
+                    console.log("Avg is " + this.avg);
+                    console.log("Grade " + this.grade);
+                }
+            };
+           
+
+            studentData.getStudentData();
+        </script>
+    </body>
+</html>

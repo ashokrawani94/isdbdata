@@ -1,0 +1,60 @@
+Inheritance:
+    Btwn Two static objects:
+
+        var obj1 = {...}
+        var obj2 = {...}
+
+        obj1.__proto__ = obj2 
+
+    Btwn two classes:
+
+        class A {
+
+        }
+        class B extends A {}
+
+    A static Obj and a Dynamic objects  
+
+        var obj1 = {...}
+
+        var obj2 = Object.create(obj1);
+--------------------------------------------
+
+OOPS:
+    class
+    Object 
+    Inheritance
+    Polymorphism
+    Data Abstraction  - public, private, protected
+    Data Encapsulation
+
+    --------------
+
+    
+JAVA:
+class MyData {
+    public int b;
+    private int c; 
+    protected int d;
+}
+
+Javascript:
+class MyData {
+    myname = "ABC"
+    displayinfo() {
+        var a = 90;
+        var sample = () => {
+            
+        }
+    }
+}
+---------------------------------------------
+
+Exception Handling:
+
+    Exception / Error: 
+
+        1. Compile time errors 
+                eg: syntactical errors
+        2. Runtime errors/Exceptions
+                

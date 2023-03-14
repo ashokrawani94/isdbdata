@@ -1,0 +1,87 @@
+a {
+  text-decoration: none;
+  color: #2874f0;
+  padding: 60px;
+  position: relative;
+  left: 800px;
+  font-size: 20px;
+}
+
+div.top {
+  height: 50px;
+}
+
+div.image-one {
+  width: 300px;
+  height: 200px;
+  background: red;
+  margin: 80px;
+
+}
+
+div.product {
+  border: 2px solid black;
+  height: 900px;
+}
+
+div.image-two {
+  width: 200px;
+  height: 100px;
+  background: yellow;
+  margin: 20px;
+
+}
+
+div.image-three {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  position: relative;
+  left: 250px;
+  bottom: 120px;
+
+}
+
+div.image-four {
+  width: 200px;
+  height: 100px;
+  background: purple;
+  position: relative;
+  left: 480px;
+  bottom: 220px;
+
+}
+
+div.point {
+  border: 2px solid black;
+  width: 70%;
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul li{
+  list-style: none;
+}
+
+div.product-info{
+  border: 3px solid black;
+  width: 50%;
+  position: relative;
+  left: 510px;
+  bottom : 705px;
+}
+
+input[type=submit]{
+  background: #2874f0;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  bottom : 200px;
+  left: 970px;
+}

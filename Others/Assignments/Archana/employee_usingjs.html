@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Employee Details</h1>
+
+    <script>
+
+        /*var ename ='archana';
+        var eage =25;
+        var edepartment = 'cso' ;
+        var basicsalary = 25000;
+        var pf = (14*basicsalary)/100;
+        var Hra = (25*basicsalary)/100;
+        var totalsalary = basicsalary+pf+Hra ;
+        console.log("Employee details "+ ename);
+        console.log('Age '+ eage);
+        console.log('Department '+ edepartment);
+        console.log('Basic salary ' + basicsalary);
+        console.log('Total salary '+ totalsalary);*/
+
+        var ename = prompt('Enter employee name');
+        var eage = prompt('Enter Age');
+        var egender = prompt('Enter Gender');
+        var edepartment = prompt('Enter Department');
+        var basicsalary = prompt('Enter salary');
+        basicsalary = parseInt(basicsalary)
+        var pf = (14 * basicsalary) / 100;
+        var Hra = (25 * basicsalary) / 100;
+        var totalsalary = basicsalary + pf + Hra;
+        var totalTaxtobepaid , taxpercentage =0;
+       
+        
+        if (egender == 'male') {
+            if (totalsalary >= 100000) {
+                taxpercentage = 15;
+            } else if (totalsalary >= 50000) {
+                taxpercentage = 10;
+            } else if (totalsalary >= 25000) {
+                taxparcentage = 5;
+            } else {
+                taxpercentage = 0;
+            }
+
+        }
+        
+        else if (egender=='female'){
+            if(totalsalary>=100000){
+                taxpercentage=10;
+           }
+           else if(totalsalary>=50000){
+            taxpercentage=5;
+           }
+           else{
+            taxpercentage=0;
+           }
+        }
+
+        var totalTaxtobepaid =(totalsalary*taxpercentage)/100;
+        console.log("Employee details " + ename);
+        console.log('Age ' + eage);
+        console.log('Department ' + edepartment);
+        console.log('Gender' + egender);
+        console.log('Basic salary ' + basicsalary);
+        console.log('Total salary ' + totalsalary);
+        console.log('tax paid' + totalTaxtobepaid);
+
+        
+
+    </script>
+</body>
+
+</html>

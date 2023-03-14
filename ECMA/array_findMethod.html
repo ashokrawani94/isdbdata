@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            new predefined methods supported on Arrays - filter
+        </title>
+    </head>
+    <body>
+        <script>
+
+
+            var productDetails = [
+                {
+                    name: 'laptop',
+                    price: 2000,
+                    manufacturer: 'Sony'
+                },
+                {
+                    name: 'TV',
+                    price: 1000,
+                    manufacturer: 'Sony'
+                },
+                {
+                    name: 'mobile',
+                    price: 5000,
+                    manufacturer: 'Sony'
+                }
+            ];
+
+            var productData = productDetails.find((data) => {
+                if (data.price == 3456) {
+                    return true;
+                }
+            });
+
+            console.log(productData)
+
+            // var data = [ 34, 55, 78, 90, 12, 56];
+            
+            // console.log(data.includes(78))
+
+
+            // var result = data.find((value) => {
+            //     if (value == 78) {
+            //         return true;
+            //     }
+            // });
+
+            // console.log(result)
+
+
+        </script>
+    </body>
+</html>

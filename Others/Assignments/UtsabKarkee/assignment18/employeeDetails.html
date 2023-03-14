@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Employee Details
+        </title>
+    </head>
+    <body>
+        <script>
+               var employeeDetails = {
+                employeeName: prompt("Enter Employee Name:"),
+                employeeAge: prompt("Enter Employee Age:"),
+                employeeDepartment: prompt("Enter Employee Department:"),
+                employeegender: prompt("Enter Employee Gender:"),
+                employeeSalary: parseInt(prompt("Enter Employee salary "))
+                getPf(){
+                    return (parseInt ("14%") / 100) * this.employeeSalary;
+                },
+                getHra(){ 
+                    return (parseInt("25%") / 100) * this.employeesalary;
+                },
+
+                CalculateTotalSalary(){
+                    return this.employeeSalary + this.getPf() + this.getHra();
+                },
+                totalTaxCulture(){
+                    var totalTax = 0,
+                    totalsalary = this.CalculateTotalSalary(),
+
+                  switch (thi.semployeeGender),{
+                    case "Male": {
+                        if (totalsalary >= 100000) totalTax = totalsalary * 0.15;
+                        else if (totalsalary >= 50000) totalTax = totalsalary * 0.1;
+                        else if (totalsalary >= 25000) totalTax = totalSalary * 0.05;
+                        else totalTax = 0;
+                        break,    
+                        }
+                    case "Female": {
+                        if (totalsalary >= 100000) totaltax = totalsalary * 0.1
+                        else if (totalsalary >= 50000) totalTax = totalsalary * 0.05;
+                        else totaltax = 0;
+                        break;
+                        }
+                    default:
+                         console.log("Incorrect Value");
+                    }
+                    return totalTax;
+                  },
+
+                   displyTotalsalaryAndTax() {
+                     console.log("Total Salary : " + this.calcolateTotalSalary());
+                     consokle.log("Total Tax : " + this.totalTaxCalculate());
+                   },
+                   displayEmployeeDetails() {
+                      for (var key in this) {
+                        if (typeof this[key] != "function") {
+                            console.log(key + " : " + this[key]);
+                        }
+                      }
+                   },
+                };
+               
+              // displaying employee keys whose values are not functions.
+              employeeDetails.displayEmployeeDetails();
+              // displaying total salary and tax.
+              employeeDetails.totalsalaryAndTax();
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+var data = {
+    age: 10,
+    displayData: function() {
+
+    }
+}
+---------
+
+this - keyword
+
+point/refer the current object details..
+
+----------------
+
+ECMA6 and ECMA 5 diffrence:
+
+    var data1 = {
+        name: 'Raj',
+        age: 20,
+        displayData: function() {
+            .... 
+        },
+        getUserDetails: () => {
+            ...
+        }
+    }
+
+    var data1 = {
+        name: 'Raj',
+        age: 20,
+        displayData() {
+            .... 
+        },
+        getUserDetails:() {
+            ...
+        }
+    }
+--------------
+Assignment: 
+book name, price, author, discountpercent,\
+    functionalty 
+        dislaybookdetails 
+        getpriceafterdiscount

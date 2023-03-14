@@ -1,0 +1,89 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payslip</title>
+    <link rel="stylesheet" type="text/css" href="employeePayslip_generator.css">
+    <script src="employeePayslip_generator.js"></script>
+</head>
+<body>
+    <h2>Company Name: XYZ Technologies </h2>
+    <h3>Salary slip for Feb 2023</h3>
+    <ul class="container">
+        <li>
+            Employee Name:<input type="text" id="ename">
+        </li>
+        <li>
+            Employee No:<input type="text" id="eno">
+        </li>
+        <li>
+            Bank Name:<input type="text" id="ebank">
+            Account Number:<input type="number" id="eacno">
+        </li>
+        <li>
+            Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </li>
+        <li>
+            Employee Dept:
+            <select name="" id="edept">
+                <option>Project Manager</option>
+                <option>Team Leader</option>
+                <option>Team Member</option>
+            </select>
+            
+        </li>
+        <li>
+            Employee Basic Salary: <input type="number" id="ebasicsal">
+        </li>
+        <li>
+            <input type="button" value="Generate Payslip" id="submit" onclick="readUserData();">
+        </li>
+        
+
+    </ul>
+    <ul class="payslip_block">
+        <li class="payslip_Title">
+            Salary slip for Feb 2023
+        </li>
+        <li>
+            Employee Name is : <span id="rname"></span>
+        </li>
+        <li>
+            Employee Number is : <span id="rno"></span>
+        </li>
+        <li>
+            Bank Name is : <span id="rbank"></span>
+        </li>
+        <li>
+            Bank Account Number is : <span id="racno"></span>
+        </li>
+        <li>
+            Employee Gender is : <span id="rgender"></span>
+        </li>
+        <li>
+            Employee Department is : <span id="rdept"></span>
+        </li>
+        <li>
+            Employee BasicSalary is : <span id="rbsal"></span>
+        </li>
+        <li>
+            Employee PF : <span id="rpf"></span>
+        </li>
+        <li>
+            Employee HRA : <span id="rhra"></span>
+        </li>
+        <li>
+            Employee TotalSalary is : <span id="rtotalSal"></span>
+        </li>
+        <li>
+            Employee Totaltax to be paid is: <span id="rtotalTax"></span>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+           <script>
+             var empDetails = {};
+           empDetails.name = prompt("Enter employee Name");
+           empDetails.age = prompt("Enter employee Age");
+           empDetails.gender = prompt("Enter employee Gender");
+           empDetails.dept = prompt("Enter employee Department");
+           empDetails.basicSal = prompt("Enter employee Basic Sal");
+           empDetails.basicSal = parseInt(empDetails.basicSal);
+           empDetails.totalTax = '';
+
+           empDetails.pf = (10 * empDetails.basicSal) / 100;
+           empDetails.hra = (20 * empDetails.basicSal) / 100;
+           empDetails.totalSal = empDetails.basicSal + empDetails.pf + empDetails.hra;
+           empDetails.totalSal = parseInt(empDetails.totalSal);
+           console.log(empDetails);
+
+           if(empDetails.gender == 'male'){
+                    if(empDetails.totalSal >= 100000){
+                        empDetails.taxPercent = 15;
+                    }else if(empDetails.totalSal >= 50000){
+                        empDetails.taxPercent = 10;
+                    }else if(empDetails.totalSal >= 25000){
+                        empDetails.taxPercent = 5;
+                    }else{
+                        empDetails.taxPercent = 0;
+                    }
+                }else{
+                    if(empDetails.totalSal >= 100000){
+                        empDetails.taxPercent = 10;
+                    }else if(empDetails.totalSal >= 50000){
+                        empDetails.taxPercent = 5;
+                    }else{
+                        empDetails.taxPercent = 0;
+                    }
+                }
+            empDetails.totalTax = (empDetails.totalSal * empDetails.taxPercent)/100;
+
+           console.log("Employee name is "+ empDetails.name );
+           console.log("Employee age is "+ empDetails.age );
+           console.log("Employee gender is "+ empDetails.gender );
+           console.log("Employee dept is "+ empDetails.dept );
+           console.log("Employee total sal is "+ empDetails.totalSal);
+           console.log("Employee total Tax to be paid is "+ empDetails.totalTax);
+           </script> 
+        </body>
+</html>

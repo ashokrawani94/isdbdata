@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MultiLevelInheritence</title>
+  </head>
+  <body>
+    MultiLevelInheritence
+  </body>
+  <script>
+    class UnivercityDetails {
+      constructor() {
+        this.Uname = 'JNTUK';
+        this.Uloc = 'Kakinada';
+        this.Upricipal = 'raja';
+      }
+    }
+    class CollegeDetails extends UnivercityDetails {
+      constructor() {
+        super();
+        this.Cname = 'Srinivasa';
+        this.Cloc = 'Amalapuram';
+        this.Cpricipal = 'Ranganath';
+      }
+    }
+    class StudentDetaisl extends CollegeDetails {
+      constructor() {
+        super();
+        this.sname = 'vikram';
+        this.sage = 24;
+        this.sgrade = 'A+';
+      }
+      showDetails() {
+        console.log(`The Student name is ${this.sname}`);
+        console.log(`The Student Age is ${this.sage}`);
+
+        console.log(`The student college is ${this.Cname}`);
+        console.log(`The student college Location ${this.Cloc}`);
+
+        console.log(`The student college Afflieated to ${this.Uname}`);
+      }
+    }
+    var stu = new StudentDetaisl();
+    stu.showDetails();
+  </script>
+</html>

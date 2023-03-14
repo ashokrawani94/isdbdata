@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List out Prime Numbers from Array</title>
+    </head>
+    <body>
+     <script>       
+       var count = 0, m = 0;
+       var arrLength = prompt("enter size of array");
+
+       var arrList = [];
+       var PrimeNoArray = [];
+
+       //loop to prepare dynamic array
+        for(var i = 0; i <arrLength; i++)
+        {
+            var n = parseInt(prompt((i+1) + ". enter the number"));   
+            arrList[i] = n;           
+        }
+        console.log(arrList);
+      //end of loop
+
+      //loop to fetch prime number from array
+      for(var j = 0; j < arrList.length; j++)
+      {
+        //loop to check whether number is prime or not 
+            for(i = 2; i < arrList[j]; i++)
+            {
+                if(arrList[j] % i == 0)
+                {
+                    count++;
+                }
+            }
+            if(count==0)
+            {
+                PrimeNoArray[m] = arrList[j];
+                m++;
+            }
+            count = 0;     
+       }
+
+      console.log(PrimeNoArray);
+    </script>
+    </body>
+</html>

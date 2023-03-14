@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 8</title>
+    <link rel="icon" type="image/x-icon" href="images/forms.png" />
+    <style>
+      .common {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .border {
+        border: 2px solid black;
+      }
+      h3 {
+        text-align: center;
+        padding: 20px;
+      }
+      .footer {
+        padding: 15px;
+        text-align: center;
+      }
+      .account {
+        position: relative;
+        margin: 25px;
+      }
+      .form-details {
+        /*height: 1000px;*/
+        margin-bottom: 10px;
+      }
+      ul li {
+        list-style: none;
+        padding: 5px;
+      }
+      .right {
+        position: relative;
+        left: 700px;
+        bottom: 165px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 250px;
+        height: 20px;
+        margin-left: 30px;
+      }
+      input[type="number"] {
+        width: 100px;
+        height: 40px;
+        margin-left: 40px;
+      }
+      input[type="radio"] {
+        margin-left: 20px;
+        padding: 5px;
+      }
+      input[type="email"] {
+        margin-left: 10px;
+        height: 30px;
+        width: 250px;
+      }
+      select {
+        margin-left: 10px;
+        padding: 10px;
+        width: 260px;
+      }
+      div.acct-edu-add-your {
+        width: 180px;
+        height: 30px;
+        position: relative;
+        left: 85px;
+        bottom: 18px;
+        text-align: center;
+        background: white;
+        text-decoration: underline;
+      }
+      input[type="checkbox"] {
+        margin-left: 28px;
+      }
+      #one {
+        vertical-align: top;
+      }
+      input[type="submit"] {
+        padding: 10px;
+        margin-left: 1200px;
+        background-color: bisque;
+        border: 1px solid grey;
+        border-radius: 13px;
+      }
+      label {
+        color: maroon;
+      }
+      #bottom-one {
+        bottom: 135px;
+      }
+      #bottom-two {
+        bottom: 145px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="border common">Student Registration Page</h3>
+    <div class="form-details border">
+      <form action="#" method="#">
+        <div class="account border">
+          <div class="acct-edu-add-your border">Account Details</div>
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li>
+              <label for="age">Age:</label>
+              <input type="number" name="age" required min="1" max="140" />
+            </li>
+            <li>
+              Gender:
+              <input type="radio" name="female" value="Female" />
+              <label for="female">Female</label>
+              <input type="radio" name="male" value="Female" />
+              <label for="male">Male</label>
+            </li>
+            <li>
+              <label for="email">Email Id:</label>
+              <input type="email" size="50" required />
+            </li>
+            <li class="right">
+              <label for="accountid">Account Id:</label>
+              <input type="password" name="accountid" minlength="12" required />
+            </li>
+            <li class="right">
+              <label for="accountype">Account Type:</label>
+
+              <select name="accountype">
+                <option value="">Select Account Type</option>
+                <option value="savingaccount">Saving Account</option>
+                <option value="checkingaccount">Checking Account</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <!---->
+        <div class="account border">
+          <div class="acct-edu-add-your border">Education Details</div>
+          <ul>
+            <li>
+              <label for="qualification">Qualification:</label>
+              <select name="qualification">
+                <option value="">Select Qualification</option>
+                <option value="ba">BA</option>
+                <option value="ma">MA</option>
+                <option value="me">ME</option>
+              </select>
+            </li>
+            <li>
+              Language:
+              <input type="checkbox" name="english" />
+              <label for="english">English</label>
+              <input type="checkbox" name="hindi" />
+              <label for="hindi">Hindi</label>
+              <input type="checkbox" name="telugu" />
+              <label for="telugu">Telugu</label>
+            </li>
+            <li>
+              <label for="courses">Courses Opt:</label>
+              <select name="courses">
+                <option value="">Select Courses</option>
+                <option value="javascript">Javascript</option>
+                <option value="typescript">TypeScript</option>
+                <option value="angular">Angular</option>
+              </select>
+            </li>
+
+            <li class="right" id="bottom-one">
+              <label for="name">College Name:</label>
+              <input
+                type="text"
+                name="name"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li class="right" id="bottom-one">
+              <label for="loc">Locations Present:</label>
+
+              <select name="loc">
+                <option value="">Select Location</option>
+                <option value="del">Delhi</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="luck">Lucknow</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+
+        <!---->
+        <div class="account border">
+          <div class="acct-edu-add-your border">Address Details</div>
+          <ul>
+            <li>
+              <label for="dno">dnum:</label>
+              <input
+                type="text"
+                name="dno"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li>
+              <label for="stname">Street:</label>
+              <input
+                type="text"
+                name="stname"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li>
+              <label for="sdname">States:</label>
+              <input
+                type="text"
+                name="sdname"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li>
+              <label for="sdcode">Scode:</label>
+              <input
+                type="text"
+                name="sdcode"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li class="right" id="bottom-two">
+              <label for="cname">Country Name:</label>
+              <input
+                type="text"
+                name="cname"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+            <li class="right" id="bottom-two">
+              <label for="ccode">Country Codes:</label>
+
+              <input
+                type="text"
+                name="ccode"
+                required
+                minlength="8"
+                maxlength="28"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <!---->
+        <div class="account border">
+          <div class="acct-edu-add-your border">About Yourself</div>
+          <ul>
+            <li>
+              <label for="your" id="one">About Yourself:</label>
+
+              <textarea id="story" name="your" rows="25" cols="170"></textarea>
+            </li>
+            <li><input type="submit" value="Register" /></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="footer border common">@Copyright 2023</div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_9</title>
+</head>
+<body>
+    <h4>Student Details</h4>
+   <script>
+    
+    var totalMarks,age;
+    var name_Student1= prompt("Enter Student name:");
+    var student1_Marks1=parseInt(prompt("Enter Student marks1:"));
+    var student1_Marks2= parseInt(prompt("Enter Student marks2:"));
+    totalMarks=student1_Marks1+student1_Marks2;
+    age=parseInt(prompt("Enter Student age:"));
+
+    
+    var avg=totalMarks/2;
+    avg=parseFloat(avg);
+
+    console.log(name_Student1);
+    console.log(student1_Marks1);
+    console.log(student1_Marks2);
+    console.log("The Total marks of Student is:"+ totalMarks);
+    console.log("The avg marks of student is:" +avg);
+    console.log("The age of the student:" +age);
+
+
+
+
+   </script>
+  <h4>Employee Details</h4>
+   <script>
+    var empName,empSal,empGender,empPf,empBasicSal,empTotalSal;
+
+    empName=prompt('Enter Employee name:');
+    console.log("The Employee name is:"+ empName);
+    empGender=prompt("Gender:");
+    console.log(empGender);
+    empSal= parseFloat(prompt("The employee HRA:")); 
+    console.log(empSal);  
+    empBasicSal=parseInt(prompt("The basic salary is:"));
+    console.log(empBasicSal);
+    empPf=parseFloat((empBasicSal*14)/100);
+    console.log("The Pf of employee is:" +empPf);
+    empTotalSal=parseFloat(empSal+empBasicSal+empPf);
+    console.log("The Total salary of employee is:"+empTotalSal);
+
+ 
+   </script>
+    
+</body>
+</html>

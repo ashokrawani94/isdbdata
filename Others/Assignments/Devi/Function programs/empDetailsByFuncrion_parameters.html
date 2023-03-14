@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Using Functions and Parameters</title>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <script>
+
+        //function created to take employee inputs by prompt
+    function getEmpDetails() {
+        var ename, eage, eDept, egender, basicSalary,  totalSalary;
+
+        ename = prompt ("enter employee name");
+        eage = prompt ("enter age of the employee");
+        eDept = prompt ("department of the employee");
+        egender = prompt ("enter the gender employee");
+        basicSalary = prompt ("enter Salary");
+        basicSalary = parseInt(basicSalary);
+
+        var totalSalary =  calTotalSal(basicSalary);
+        var tax =  calcTax(egender, totalSalary);
+
+        dispalyEmpDetails(ename, eage, eDept, egender, basicSalary,  totalSalary, tax);
+    }
+        //function created to calculate pf, hra and totalsal
+    function calTotalSal(basicSalary) 
+    {
+        var pf, hra,totalSalary;
+        pf  = (14 * basicSalary) / 100;
+        hra = ( 12 * basicSalary) / 100;
+        totalSalary = pf + hra + basicSalary;
+
+        return totalSalary;
+    }
+
+        //function created to cal tax
+    function calcTax(egender, totalSal)
+    {
+        var taxpercent=0;
+        if(egender== "male")
+        {
+            if(totalSal > 300000){
+                taxpercent = 15;
+            }
+            else if(totalSal > 200000){
+                taxpercent = 10;
+            }
+            else if(totalSal > 100000){
+                taxpercent = 5
+            }
+            else
+            {
+                taxpercent = 0;
+            }
+        }
+        else if(egender=="female")
+        {
+            if(totalSal > 300000)
+            {
+                taxpercent = 10;
+            }
+            else if(totalSal > 200000)
+            {
+                taxpercent = 5;
+            }
+            else 
+            {
+                taxpercent = 0
+            }
+        }
+        taxToBePaid = (totalSal * taxpercent) / 100;
+        return taxToBePaid;
+    }
+    //fuction created to display all details of employee
+    function dispalyEmpDetails(ename, eage, eDept, egender, basicSalary,pf,hra, totalSalary, taxToBePaid)
+    {
+        console.log("Employee name: " +ename);
+        console.log("Employee age: " +eage);
+        console.log("Employee department: " +eDept);
+        console.log("Employee gender: " +egender);
+        console.log("Employee basicSalary: " +basicSalary);
+        console.log(" PF :" +pf);
+        console.log("HRA :" +hra);
+        console.log("total salary :" + totalSalary);
+        console.log("total tax is :" + taxToBePaid);
+    }
+    //calling function to take employee details and showing the result
+    getEmpDetails();
+    </script>
+    
+</body>
+</html>

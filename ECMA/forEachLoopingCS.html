@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating new forEach Looping CS
+        </title>
+    </head>
+    <body>
+        <script>            
+            var data = [23, 44, 55, 67];
+            var sum = 0;
+            /*for (var i = 0 ; i < data.length; i++) {
+                sum += data[i];
+            }*/
+
+            data.forEach((value, index) => {
+                if (index >= 2) {
+                    console.log(value);
+                    console.log(index);
+                    sum += value;
+                }
+            });
+
+            console.log(sum)
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Table</title>
+    <style>
+        .header,
+        .footer {
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(127, 115, 112);
+            color: white;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .tableContainer {
+            border: 2px solid;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgb(127, 115, 112);
+        }
+
+        .table1 tr,
+        th,
+        td {
+            border: 2px solid rgb(35, 35, 31);
+            margin: 10px;
+            padding: 10px;
+            width: 1455px;
+            background-color: rgb(182, 150, 35);
+            color: white;
+            font-size: large;
+            text-align: center;
+        }
+        .table1 th{
+            color: black;
+        }
+
+        .imgContainer {
+            border: none;
+            height: 150px;
+            background-image: url('studentsImg.png');
+        }
+
+        .student1 {
+            background-position: 749px 607px;
+        }
+
+        .student2 {
+            background-position: 546px 607px;
+        }
+
+        .student3 {
+            background-position: 366px 612px;
+        }
+
+        .student4 {
+            background-position: 174px 606px;
+        }
+
+        .student5 {
+            background-position: 754px 415px;
+        }
+
+        .student6 {
+            background-position: 559px 414px;
+        }
+
+        .student7 {
+            background-position: 381px 425px;
+        }
+
+        .student8 {
+            background-position: 188px 414px;
+        }
+
+        .student9 {
+            background-position: 784px 207px;
+        }
+
+        .student10 {
+            background-position: 609px 212px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Students Details</div>
+    <div class="tableContainer">
+        <table border="1" class="table1">
+            <thead>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Picture</th>
+                    <th>Class</th>
+                    <th>Location</th>
+                    <th>Progress Card</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Yash</td>
+                    <td>19</td>
+                    <td>
+                        <div class="imgContainer student1"></div>
+                    </td>
+                    <td>B.com</td>
+                    <td>Mumbai</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aditi</td>
+                    <td>20</td>
+                    <td>
+                        <div class="imgContainer student2"></div>
+                    </td>
+                    <td>BSc</td>
+                    <td>Delhi</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Raj</td>
+                    <td>24</td>
+                    <td>
+                        <div class="imgContainer student3"></div>
+                    </td>
+                    <td>B.tech</td>
+                    <td>Chennai</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Malhar</td>
+                    <td>22</td>
+                    <td>
+                        <div class="imgContainer student4"></div>
+                    </td>
+                    <td>BSc</td>
+                    <td>Pune</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kriti</td>
+                    <td>21</td>
+                    <td>
+                        <div class="imgContainer student5"></div>
+                    </td>
+                    <td>B.com</td>
+                    <td>Hyderabad</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Shiv</td>
+                    <td>23</td>
+                    <td>
+                        <div class="imgContainer student6"></div>
+                    </td>
+                    <td>BBA</td>
+                    <td>Thane</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Shweta</td>
+                    <td>19</td>
+                    <td>
+                        <div class="imgContainer student7"></div>
+                    </td>
+                    <td>BA</td>
+                    <td>Bangluru</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Gautam</td>
+                    <td>24</td>
+                    <td>
+                        <div class="imgContainer student8"></div>
+                    </td>
+                    <td>MSc</td>
+                    <td>Karnataka</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Shruti</td>
+                    <td>20</td>
+                    <td>
+                        <div class="imgContainer student9"></div>
+                    </td>
+                    <td>LLD</td>
+                    <td>Delhi</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Shreya</td>
+                    <td>21</td>
+                    <td>
+                        <div class="imgContainer student10"></div>
+                    </td>
+                    <td>MBA</td>
+                    <td>Mumbai</td>
+                    <td>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Max Marks</th>
+                                    <th>Obtained marks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>100</td>
+                                    <td>60</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>100</td>
+                                    <td>70</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Computer</td>
+                                    <td>100</td>
+                                    <td>90</td>
+                                    <td>Pass</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">&copy; copyright 2023</div>
+</body>
+
+</html>

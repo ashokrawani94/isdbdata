@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort the given array and find largest and smallest number</title>
+</head>
+<body>
+    <script>       
+       var arrList = [];
+       var OriginalArray = [];
+       var smallNo, largeNo, temp, secondLargeNumber;
+
+       OriginalArray = [2,5,1,3,10,7,6,8,4,9];
+       console.log("Original Array");
+       console.log(OriginalArray);
+
+      //copying data to a new array for sorting
+      arrList = OriginalArray;
+
+       for(var i = 0; i < arrList.length; i++)
+       {        
+         for(var j = 0; j < arrList.length; j++)
+         {
+            if(arrList[j] > arrList[j+1])
+            {
+                temp = arrList[j];
+                arrList[j] = arrList[j+1];
+                arrList[j+1] = temp;                
+            }            
+         }       
+       }
+
+      console.log("Sorted Array");
+      console.log(arrList);
+
+      smallNo = arrList[0];
+      largeNo = arrList[arrList.length-1];
+      secondLargeNumber = arrList[arrList.length-2];
+
+      console.log("Smallest Number is " + smallNo);
+      console.log("Largest number is " + largeNo);
+      console.log("Second Largest Number is " + secondLargeNumber);
+    </script>  
+</body>
+</html>

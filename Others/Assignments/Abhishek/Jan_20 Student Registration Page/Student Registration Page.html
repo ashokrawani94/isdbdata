@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+]
+
+    <style>
+        body{
+            background-color: rgb(60, 106, 115);
+        }
+        form{
+            width: 500px;
+            height: 320px;
+            margin: 50px;
+            padding: 20px;
+            border: 2px solid transparent;
+            background-image: linear-gradient(to bottom right,  rgb(37, 248, 51), yellow, rgb(73, 194, 250));
+        }
+        h1{
+            text-align: center;
+            margin-top: -10px;
+        }
+        .empty{
+            background: transparent;
+            border: 1px solid rgb(10, 10, 10);
+        }
+        .empty:hover{
+            border-radius: 2px;
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Student Registration form</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First name</label>
+                </td>
+                <td>:
+                    <input type="text" name="fname" id="fname" class="empty" placeholder="First name..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname">Last name</label>
+                </td>
+                <td>:
+                    <input type="text" name="lname" id="lname" class="empty" placeholder="Last name..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="accId">User Account Id</label>
+                </td>
+                <td>:
+                    <input type="text" name="accId" id="accId" class="empty" placeholder="Enter your id here..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd">User Account Password</label>
+                </td>
+                <td>:
+                    <input type="password" name="pwd" id="pwd" class="empty" placeholder="Enter your passsword here..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender:</label>
+                </td>
+                <td>:
+                    <input type="radio" name="gender" id="gender">Male
+                    <input type="radio" name="gender" id="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lang">Languages:</label>
+                </td>
+                <td>:
+                    <input type="checkbox" name="lang" id="lang">Telugu
+                    <input type="checkbox" name="lang" id="lang">English
+                    <input type="checkbox" name="lang" id="lang">Hindi
+                </td>
+            </tr>
+            <tr><form action="action.php" method="post">
+                <td>
+                    <label for="cities">Select your city</label>
+                </td>
+                <td>:
+                    <select name="cities" class="empty" id="cities">
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </td>
+                </form>
+                <tr>
+                    <td>
+                        <label for="about">Tell about yourself</label>
+                    </td>
+                    <td>
+                        <textarea name="about" class="empty" id="about" cols="25" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>

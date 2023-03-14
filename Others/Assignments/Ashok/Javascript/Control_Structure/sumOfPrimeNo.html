@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sum of prime no.</title>
+</head>
+
+<body>
+    <h2>Sum of Prime no between 200 to 18.</h2>
+    <script>
+        var sumOfNumber=0;
+        for (var i = 200; i >= 18; i--) {
+            var n = i;
+            var isItsPrime;
+            var temp = 0;
+            for (var j = 1; j <= n; j++) {
+                var rem = n % j;
+                if (rem == 0) {
+                    temp++;
+                }
+            }
+            if (temp == 2) {
+                // console.log(n);
+                sumOfNumber= sumOfNumber + n;   
+            }
+        }
+        console.log("the sum of all prime no between 200 to 18 is "+ sumOfNumber);
+    </script>
+</body>
+
+</html>

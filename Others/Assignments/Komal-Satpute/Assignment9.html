@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>control if else statment</title>
+</head>
+
+<body>
+    <script>
+        var empname, empage, empdept, empgender, basicsal, totalsal, tax;
+        empname = prompt("Enter Your Name");
+        empage = prompt("Enter Your Age");
+        empdept = prompt("Enter Your Department");
+        empgender = prompt("Enter Your Gender");
+        basicsal = prompt("Basic Salary");
+        basicsal = parseInt(basicsal);
+        pf = (basicsal * 14) / 100;
+        hra = (basicsal * 24) / 100;
+        totalsal = basicsal + pf + hra;
+        console.log("Name : " + empname);
+        console.log("Age : " + empage);
+        console.log("Department : " + empdept);
+        console.log("Gender : " + empgender);
+        console.log("basic_sal : " + basicsal);
+        console.log("pf : " + pf);
+        console.log("hra : " + hra);
+        console.log("Totalsalry : " + totalsal);
+
+        if (empgender == 'male') {
+            if (totalsal >= 100000) {
+                tax = (totalsal * 15) / 100
+                console.log("Tax is : " + tax);
+            } else if (totalsal >= 50000) {
+                tax = (totalsal * 10) / 100
+                console.log("Tax is : " + tax);
+            }
+            else if (totalsal >= 25000) {
+                tax = (totalsal * 5) / 100
+                console.log("Tax is : " + tax);
+            }
+            else {
+                tax = (totalsal * 0) / 100
+                console.log("Tax is : " + tax);
+            }
+        } else {
+            if (empgender == 'female') {
+                if (totalsal >= 50000) {
+                    tax = (totalsal * 15) / 100
+                    console.log("Tax is : " + tax);
+                }
+                else if (totalsal >= 30000) {
+                    tax = (totalsal * 10) / 100
+                    console.log("Tax is : " + tax);
+                }
+                else {
+                    tax = (totalsal * 0) / 100
+                    console.log("Tax is : " + tax);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

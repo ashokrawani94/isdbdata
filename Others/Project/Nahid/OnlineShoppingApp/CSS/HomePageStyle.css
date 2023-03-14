@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parentContainer{
+    height: 100vh;
+    width:98vw;
+    background-color: rgba(247, 213, 213,0.8);
+    display: grid;
+    grid-template-rows: 70px 3fr 30px;
+    row-gap: 5px;
+}
+
+.header, .footer{
+    background-color: rgb(223, 235, 252);
+    color:rgb(19, 1, 1);
+}
+
+.maincontent{   
+     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(253, 249, 249, 0.3)),url("../Images/aa.jpg") ;
+     background-repeat: no-repeat;
+     background-position:center;
+     background-size: cover;
+     height: 100%;
+     width:100%;
+   }
+
+   .header{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header div{
+        padding-left:25px ;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .header a{
+        color: rgb(46, 2, 2);
+        text-decoration: none;
+    }
+
+    .footer p{
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .search{
+        background-color: white;
+        width: 300px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }    
+
+    .search input{
+        border: none;
+        padding-left: 20px;
+    }
+
+    .logo img{
+        width:60px;
+        height: 60px;
+        padding: 2px;
+        border-radius: 49%;
+    }
+
+
+    /* .maincontent{
+       position: relative;
+       left: 50%;
+    } */
+
+    .loginDiv{
+        /* border: 1px solid rgb(214, 17, 17); */
+        border-radius: 10px;
+        background-color: rgba(247, 245, 245,1);
+        width : 350px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        left:200px;
+        top:100px;
+    }
+
+    .inputTypes{
+        padding: 5px;
+    }
+
+    .signUpDiv{
+        border-radius: 10px;
+        background-color: rgba(247, 245, 245, 0.8);
+        width : 400px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        left:200px;
+        top:100px;
+    }

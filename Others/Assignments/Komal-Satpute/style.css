@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.productDetails>li{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+ul{
+   
+    margin: 5px;
+    padding: 5px;
+}
+.container>li{
+border: 1px solid;
+padding: 5px;
+margin: 5px;
+width: 420px;
+float: left;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+li{
+    list-style:none
+}
+h1{
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}

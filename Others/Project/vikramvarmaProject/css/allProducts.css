@@ -1,0 +1,131 @@
+body {
+  overflow: hidden;
+  background-color: rgba(150, 152, 151, 0.118);
+}
+.headersection {
+  border: 2px solid;
+  margin: 5px;
+  height: 50px;
+  background-color: black;
+}
+.navlist {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: oblique;
+  position: relative;
+  top: 8px;
+}
+.anc {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+#search {
+  border-radius: 8px;
+  width: 500px;
+  height: 30px;
+}
+.key {
+  float: left;
+}
+.p1 {
+  position: relative;
+  left: 50px;
+}
+.p2 {
+  position: relative;
+  left: 75px;
+}
+.p3 {
+  position: relative;
+  left: 550px;
+}
+.p4 {
+  position: relative;
+  left: 575px;
+}
+.p5 {
+  position: relative;
+  left: 600px;
+}
+.leftcontainer {
+  border: 2px solid;
+  padding: 5px;
+  margin: 5px;
+  height: 670px;
+  width: 300px;
+}
+.rightcontainer {
+  border: 2px solid;
+  padding: 5px;
+  margin: 5px;
+  height: 670px;
+  width: 1215px;
+}
+.leftcontainer,
+.rightcontainer {
+  float: left;
+}
+li {
+  list-style: none;
+  text-align: center;
+}
+.btn {
+  border: 2px solid;
+  padding: 10px;
+  margin: 8px;
+  width: 220px;
+  box-shadow: 2px 3px;
+}
+.productBdr {
+  border: 2px solid;
+  width: 20%;
+  height: 30%;
+}
+.imgBdr {
+  border: 2px solid;
+  margin: 5px 15px 5px 15px;
+  height: 65%;
+}
+.picContainer {
+  border: 2px solid;
+  padding: 5px;
+  width: 210px;
+}
+.prodetail {
+  border: 2px solid;
+  margin: 5px;
+  text-align: center;
+}
+
+#position1,
+#position2,
+#position3,
+#position4 {
+  float: left;
+  margin: 20px;
+}
+#position5 {
+  clear: left;
+}
+#position5,
+#position6,
+#position7,
+#position8 {
+  float: left;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+}
+.view1 {
+  position: absolute;
+  left: 1383px;
+  top: 200px;
+}
+.view2 {
+  position: absolute;
+  left: 1383px;
+  top: 500px;
+}

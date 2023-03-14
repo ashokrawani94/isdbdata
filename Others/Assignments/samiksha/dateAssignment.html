@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="date">
+    <script>
+         var mydate = new Date();
+         var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June']
+         var fullmonth = ['January','February','March','April','May','June']
+         var daysList = ['Sunday', 'Mon', 'Tuesday', 'Wednesday']
+         var days = ['Sun','Mon','Tue']
+            //14/Feb/2023
+            var monthName = months[mydate.getMonth()]
+            var myCustmFormat = mydate.getDate() + '/' + monthName + '/' + mydate.getFullYear()
+            console.log(myCustmFormat);
+
+            //14th Feb, 2023
+            var myCustmFormat2 = mydate.getDate() + 'th' + ' ' + monthName + ', ' + mydate.getFullYear(); 
+            console.log(myCustmFormat2);
+
+            //14th February, 2023
+            var monthsname = fullmonth[mydate.getMonth()]
+            var myCustomFormat3 = mydate.getDate() + 'th' + ' ' + monthsname + ', '  + mydate.getFullYear();
+            console.log(myCustomFormat3);
+
+            //Tue, 14th Feb
+            var daysname = days[mydate.getMonth()]
+            var myCustomFormat4 = daysname +', ' + mydate.getDate()  +'th '+ monthName;
+            console.log(myCustomFormat4);
+
+            //Tuesday, 14th February 2023
+            var DaysName = daysList[mydate.getDay()]
+            var myCustomFormat5 = DaysName +',  '+ mydate.getDate()  + 'th ' + monthsname + ' '+ mydate.getFullYear();
+            console.log(myCustomFormat5);
+
+            //14-Feb-2023
+            var myCustomFormat6 = mydate.getDate() +'-'+ monthName +'-'+mydate.getFullYear();
+            console.log(myCustomFormat6);
+
+            //14-02-2023
+            var myCustomFormat7 = mydate.getDate()+'-'+'0'+(mydate.getMonth() + 1)+'-' +mydate.getFullYear();
+            console.log(myCustomFormat7);
+
+            //14th Feb, 2023 10:20:30
+            var myCustomFormat8 = mydate.getDate()+'th '+monthName+' '+mydate.getFullYear();
+            console.log(myCustomFormat8+' '+mydate.getHours()+':'+mydate.getMinutes()+':'+mydate.getSeconds());
+
+            //10 min : 20 sec
+            console.log(mydate.getMinutes()+' min : '+mydate.getSeconds()+' sec');
+
+            //2 hrs, 10min 20sec
+            console.log(mydate.getHours() + ' hrs, '+mydate.getMinutes() +'min '+ mydate.getSeconds() +'sec');
+        
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

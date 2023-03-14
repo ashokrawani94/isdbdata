@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            background: url(https://img.freepik.com/free-vector/colored-hacker-code-realistic-composition-with-person-creates-codes-hacking-stealing-information-vector-illustration_1284-18005.jpg?w=2000) no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .container {
+            position: absolute;
+            border: 3px solid black;
+            width: 600px;
+            height: 200px;
+            border-radius: 36%;
+            margin-top: 215px;
+            margin-left: 408px;
+            background-color: gray;
+            text-align: center;
+        }
+
+        li {
+            padding: 5px;
+            margin: 5px;
+            display: grid;
+        }
+
+        .element {
+            margin: 6px;
+            padding: 4px;
+            text-align: center;
+            width: 376px;
+            content: center;
+            margin-left: 95px;
+            border: 2px solid black;
+            border-radius: 45%;
+        }
+
+        .element1 {
+            margin: 6px;
+            padding: 4px;
+            text-align: center;
+            width: 61px;
+            content: center;
+            margin-left: 252px;
+            border: 0px solid black;
+            border-radius: 39%;
+            background-color: black;
+            color: white;
+        }
+
+        h2 {
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content"></div>
+    <div class="container">
+        <h2><b>Registration Form</b></h2>
+        <ul>
+            <li>
+                <input class="element" type="text" name="username" maxlength="25" placeholder="Enter User Name">
+                <input class="element" type="password" name="password" maxlength="10" placeholder="Enter Your Password">
+                <input class="element" type="tel" name="number" maxlength="10 number" placeholder="Enter Your Number">
+                <input class="element1" type="button" value="Submit">
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

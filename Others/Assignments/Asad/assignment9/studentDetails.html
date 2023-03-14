@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details
+        </title>
+    </head>
+    <body>
+        <script>
+         
+
+            var userName = prompt("Enter Your Name");
+            var userAge = prompt("Enter Your Age");
+            var userGender = prompt("Enter Your Gender");
+            var studentClass = prompt("Enter Your CLASS");
+            var m1 = prompt("Enter the Marks of HINDI");
+            var m2 = prompt("Enter the Marks of ENGLISH");
+            var m3 = prompt("Enter the Marks of SCIENCE");
+            var m4 = prompt("Enter the Marks of COMPUTER")
+            var m5 = prompt("Enter the Marks of HISTORY")
+            var total, avg;
+
+            total = Number(m1)+ Number(m2) +  Number(m3) + Number(m4) +Number(m5);
+            
+            avg = total / 5;
+            
+            
+
+            
+
+         
+            console.log("Student Name " + userName);
+            console.log("Age " + userAge);
+            console.log("Gender " + userGender);
+            console.log("Total of marks" + total);
+            console.log("Avg is " + avg);
+
+        </script>
+    </body>
+</html>

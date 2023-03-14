@@ -1,0 +1,42 @@
+Iterating Over json object
+
+    Using for in looping Control structure.
+
+
+var data = [
+    "raj",
+    'male',
+    20,
+    "hyderabad"
+];
+
+
+for (var i = 0 ; i < data.length; i++) {
+    console.log(data[i]);
+}
+
+Syntax:
+
+    for (tempkey in <objectname>) {
+        ... 
+        .... 
+        .....
+    }
+
+    var data = {
+        name: 'Raj',
+        gender:' male',
+        loc: 'Hyd',
+        key: 
+    };
+
+    data.name -> 
+    data.gender -> 
+    var key = 'gender';
+    data[key] -> data['gender'] -> 'male'
+
+
+    data.name -> 'Raj'
+
+    var tempkey = 'name'
+    data[tempkey] -> data['name'] -> 'Raj'

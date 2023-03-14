@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var formate;
+
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var Fullmonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        var Fullday = ['Sunday', 'Monday', 'Tuseday', 'Wednesday', 'Thursday', 'Firday', 'Saturday'];
+
+        var monthsname = months[date.getMonth()];
+        var Fmonthsname = Fullmonths[date.getMonth()];
+        var select = prompt("Enter Your Selection 1/2/3/4/5/6/7/8/9/10");
+        select = parseInt(select);
+
+        switch (select) {
+            case 1:  // 17/Feb/2023
+               customFormat = date.getDate() + '/' + monthsname + '/' + date.getFullYear();
+               console.log(customFormat); 
+            break;
+
+            case 2: // 17th February, 2023
+              customFormat = date.getDate() + 'th' + ' ' + Fmonthsname + ',' + ' ' + date.getFullYear();
+              console.log(customFormat);
+            break;
+
+            case 3: // 17th Feb, 2023
+              customFormat = daye.getDate() + 'th' + ' ' + monthsname + ',' + ' ' + date.getFullYear();
+              console.log(customFormat);
+            break;
+            
+            case 4: //Thu, 17th Feb
+              customFormat = day[date.getDay()] + ',' + ' ' + date.getDate() + 'th' + ' ' + monthsname;
+              console.log(customFormat);
+            break;
+
+            case 5: // Thu, 17th February 2023 
+              customFormat = day[date.getDay()] + ',' + ' ' + date.getDate() + 'th' + ' ' + Fmonthsname + ' ' + date.getFullYear();
+              console.log(customFormat);
+            break;
+
+            case 6: //17-Feb-2023
+               customFormat = date.getDate() + '-' + monthsname + '-' + date.getFullYear();
+               console.log(customFormat);
+            break;
+
+            case 7: //17-2-2023
+              customFormat = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+              console.log(customFormat);
+            break;
+
+            case 8: //17 Feb, 2023 11 hrs
+              customFormat = date.getDate() + 'th' + ' ' + monthsname + ',' + ' ' + date.getFullYear() + ' ' + date.getHours() + ' ' + 'hrs';
+              console.log(customFormat);
+            break;
+
+            case 9 : // 8min : 45sec
+              customFormat = date.getMinutes() + 'min :' + date.getSeconds() + 'sec';
+              console.log(customFormat);
+            break;
+
+            case 10: //  8hrs, 10 min 54sec
+              customFormat = date.getHours() + 'hrs' + ',' + ' ' + date.getMinutes() + ' ' + 'min' + date.getSeconds() + 'sec';
+              console.log(customFormat);
+            break;
+
+            default:
+                console.log("Worng Formate");
+        }
+
+    </script>
+</body>
+</html>

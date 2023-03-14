@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrating promt method and function (student details)</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ename = prompt ("Enter Student Name");
+        var eage = prompt ("Enter Your Age");
+        var egender= prompt ("Enter Your Gender");
+        var eclass = prompt ("Enter Class");
+        var m1 = prompt("English Marks");
+        var m2 = prompt ("Science Marks");
+        var m3 = prompt ("maths Marks");
+        var m4 = prompt ("hindi Marks");
+        var m5 = prompt ("sanskrit marks")
+        var total, avg;
+        total = parseInt(m1) + parseInt (m2) + parseInt (m3) + parseInt (m4) + parseInt (m5);
+        avg = total / 5
+        console.log("student details");
+        console.log("Name" + ename);
+        console.log("Age" + eage);
+        console.log("gender"+ egender);
+        console.log("Class"+ eclass);
+        console.log("Total Mark"+ total);
+        console.log("Avg Number"+ avg);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            new predefined methods supported on Arrays - filter
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = [ 34, 55, 78, 90, 12, 56];
+            // filter, map, find,
+            var tempArray = [];
+            
+            //ECMA 5
+            for (var i = 0 ; i < data.length; i++) {
+                if (data[i] % 2 == 0) {
+                    tempArray.push(data[i])
+                }
+            }
+
+            var sample = data.filter((value) => {
+                if (value % 2 == 0) {
+                    return value;
+                }
+            });
+
+
+
+            console.log(sample)
+        </script>
+    </body>
+</html>

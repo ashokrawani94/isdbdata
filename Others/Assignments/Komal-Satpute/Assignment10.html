@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+</head>
+
+<body>
+    <script>
+        var ename, eage, edept, gender, basicsalary, pg, hra, totalsalary
+        var totaltax = 0
+        //method to read employee data
+        function readEmployeeData() {
+            ename = prompt("enter a name")
+            eage = prompt("enter a age")
+            edept = prompt("enter a department")
+            gender = prompt("enter a gender")
+            basicsalary = prompt("enter a basic salary")
+        }
+
+        //method to convert integer
+        function basicsalaryInteger() {
+            basicsalary = parseInt(basicsalary)
+        }
+
+        //method to calculate totalsalary & avg
+        function employeeTotalSalary() {
+            pf = (20 * basicsalary) / 100
+            hra = (15 * basicsalary) / 100
+            totalsalary = basicsalary + pf + hra
+        }
+
+        //method to calculate employee grade
+        function employee_gender() {
+            if (gender == "male") {
+                if (totalsalary >= 100000) {
+                    tax = 15
+                } else if (totalsalary >= 50000) {
+                    tax = 10
+                } else if (totalsalary >= 25000) {
+                    tax = 5
+                } else {
+                    tax = 0
+                }
+            }
+            if (gender == "female") {
+                if (totalsalary >= 100000) {
+                    tax = 15
+                } else if (totalsalary >= 50000) {
+                    tax = 10
+                } else {
+                    tax = 0
+                }
+            }
+        }
+
+        //method to calculate employee tax
+        function employee_tax() {
+            totaltax = (tax * totalsalary) / 100
+        }
+
+        //method to display the employee details
+        function display_employee_details() {
+            console.log("----------Employee Details----------")
+            console.log("Name : " + ename)
+            console.log("Age : " + eage)
+            console.log("Department : " + edept)
+            console.log("Gender : " + gender)
+            console.log("Totalsalary : " + totalsalary)
+            console.log("Tax paid to be : " + totaltax)
+        }
+
+        //method to call function
+        readEmployeeData()
+        basicsalaryInteger()
+        employeeTotalSalary()
+        employee_gender()
+        employee_tax()
+        display_employee_details()
+    </script>
+</body>
+
+</html>

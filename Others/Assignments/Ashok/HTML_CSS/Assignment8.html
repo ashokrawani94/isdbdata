@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student_Registration_Details</title>
+        <style type="text/css">
+            .header,.footer{
+                border:2px solid black;
+                height:50px;
+                background-color:#1b1b32;
+                color:white;
+                text-align:center;
+                font-size:30px;
+                font-weight:bold;
+                padding:10px;
+                margin:10px;
+                border-radius:20px;
+            }
+            .footer{
+                height:40px;
+                font-size:20px;
+            }
+            .main{
+                border:2px solid black;
+                height:auto;
+                border-radius:20px;
+                padding:10px;
+                margin:10px;
+            }
+            fieldset{
+                position:relative;
+                margin-bottom:20px;
+                
+            }
+            .box{
+                border:1px solid;
+                width:250px;
+                height:20px;
+                position:absolute;
+                left:35px;
+                top:-10px;
+                background-color:white;
+                text-align:center;
+            }
+            li{
+                margin:20px;
+            }
+            ul{
+                list-style:none;
+            }
+            span{
+                color:tomato;
+            }
+            .button{
+                text-align:center;
+                font-weight:bold;
+                font-size:20px;
+            }
+            body{
+                background-color:aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">Student Registration Page</div>
+        <div class="main">
+            <form action="http://akccc.com" method="POST">
+                <fieldset>
+                    <div class="box">Account Details</div>
+                    <ul>
+                        <li><span>Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="userName" id="userName" value="" placeholder="Enter Name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Account Id:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></li>
+
+                        <li><span>Age:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="userAge" id="userAge" value="" placeholder="Enter Age" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Account Type:</span>&nbsp;&nbsp;&nbsp;<select>
+                            <option>Select Acc.type</option>
+                            <option>Saving Account</option>
+                            <option>Current Account</option>
+                        </select>
+
+                        <li><span>Gender:</span>&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" checked>Male<input type="radio" name="gender">Female</li>
+
+                        <li><span>Email:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" id="email" value="" required></li>
+
+                    </ul>
+
+                </fieldset>
+                <fieldset>
+                    <div class="box">Education Details</div>
+                    <ul>
+                        <li><span>Qualification:</span>&nbsp;&nbsp;&nbsp;&nbsp;<select required>
+                            <option>Select an option</option>
+                            <option>Matriculation</option>
+                            <option>Higher Secondary</option>
+                            <option>Graduation</option>
+                            <option>Post Graduation</option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>College Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+                        </li>
+                        <li><span>Language:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" checked>English<input type="checkbox">Hindi<input type="checkbox">Telgu
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span>Location:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select>
+                                <option>Select an option</option>
+                                <option>Hyderabad</option>
+                                <option>Banglore</option>
+                                <option>Delhi</option>
+                                <option>Chennai</option>
+                                <option>Pune</option>
+                                <option>Kolkata</option>
+                                <option>Mumbai</option>
+                                <option>Ranchi</option>
+
+                            </select>
+                        </li>
+                        <li><span>Course opting for:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select>
+                                <option>Select an option</option>
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>JavaScript</option>
+                                <option>Bootstrap</option>
+                                <option>Mongo DB</option>
+                                <option>React Js</option>
+                                <option>Angular</option>
+                                <option>ECMA 6</option>
+                            </select>
+                            
+                        </li>
+                        
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <div class="box">Address</div>
+                    <ul>
+                        <li><span>D No:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Country Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select>
+                                <option>Select an option</option>
+                                <option>India</option>
+                                <option>Other</option>
+                            </select>
+                        </li>
+                        <li><span>Street Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Country Code:</span>&nbsp;&nbsp;&nbsp;&nbsp;<select>
+                            <option>Select an option</option>
+                            <option>+91</option>
+                            <option>93</option>
+                            <option>344</option>
+                        </select>
+                        </li>
+                        <li><span>State Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></li>
+                        <li><span>State Code:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <div class="box">Tell About Yourself</div>
+                    <ul>
+                        <li><span>Tell about yourself:</span>&nbsp;&nbsp;
+                            <textarea minlength="100" maxlength="1000" rows="25" cols="100"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="button"><button type="submit">Register</button></div>
+            </form>
+        </div>
+        <div class="footer">&copy;Copyright 2023</div>
+    </body>
+</html>

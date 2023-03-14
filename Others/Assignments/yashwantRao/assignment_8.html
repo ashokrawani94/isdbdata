@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 8</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        h2 {
+            margin: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 2px solid black;
+            padding: 5px;
+            text-transform: capitalize;
+            text-align: center;
+            color: red;
+        }
+        h4 {
+            padding: 10px;
+            border: 2px solid;
+            width: 200px;
+            background-color: rgb(133, 59, 7);
+        }
+        .accntDetails, .eduDetails, .add, .aboutYorself {
+            margin: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 2px solid black;
+            padding: 5px;
+            padding-top: 20px;
+            margin-top: 20px;
+            position: relative;
+            line-height: 20%;
+            
+        }
+        .copyright {
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 2px solid black;
+        }
+        h3 {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .stRePa {
+            position: absolute;
+            top: -17px;
+            left: 50px;
+            
+        }
+        
+        .aboutYorself {
+            height: 230px;
+        }
+        .abyose {
+            float: left;
+        }
+        #textArea {
+            float: right;
+        }
+        label, input, select {
+            margin: 5px;
+            padding: 3px;
+        }
+        select {
+            width: 181px;
+        }
+        .name {
+            margin-left: 50px;
+            color: blue;
+        }
+        .accntID {
+            position: absolute;
+            top: 20px;
+            left: 60%;
+            color: aqua;
+        }
+        .accntType {
+            position: absolute;
+            top: 58px;
+            left: 60%;
+            color: blueviolet;
+        }
+        .age {
+            margin-left: 61px;
+        }
+        .accountNumber{
+            margin-left: 19px;
+        }
+        .gender{
+            margin-left: 40px;
+        }
+        .email {
+            margin-left: 27px;
+        }
+        .eduDe{
+            position: absolute;
+            top: -15px;
+            left: 50px;
+        }
+        .collegename{
+            position: absolute;
+            top: 20px;
+            left: 60%;
+        }
+        .loca {
+            position: absolute;
+            left: 60%;
+            top: 56px;
+        }
+        .location {
+            margin-left: 54px;
+        }
+        .clgName {
+            margin-left: 20px;
+        }
+        .course {
+            margin-left: 13px;
+        }
+        .qualification {
+            margin-left: 35px;
+        }
+        .stateName {
+            position: absolute;
+            top: 55px;
+            left: 60%;
+        }
+        .counName {
+            position: absolute;
+            top: 20px;
+            left: 60%;
+        }
+        .address {
+            position: absolute;
+            top: -15px;
+            left: 50px;
+        }
+        .state {
+            margin-left: 29px;
+        }
+        .HNo {
+            margin-left: 54px;
+        }
+        .area {
+            margin-left: 92px;
+        }
+        .streetName {
+            margin-left: 39px;
+        }
+        .distname{
+            margin-left: 28px;
+        }
+        .aboutYo {
+            position: absolute;
+            top: -15px;
+            left: 50px;
+        }
+        .button {
+            clear: both;
+            position: absolute;
+            top: 184px;
+            left: 39%;
+            width: 200px;
+            padding: 5px;
+            background-color: whitesmoke;
+            font-size: 17px;
+        }
+    </style>
+    <body>
+       <h2>student registration page</h2>
+       <form action="#">
+       <div class="accntDetails">
+        <label for="name">name: </label>
+        <input type="text" name="name" class="name"><br>
+        <span class="accntID"><label for="accntID">account No: </label>
+        <input type="number" name="accntID" class="accountNumber" maxlength="14"></span><br>
+        <label for="age">Age: </label>
+        <input type="number" class="age"><br>
+        <span class="accntType"><label for="accntType">account type: </label>
+        <select name="accntType" id="accntType">
+            <option></option>
+            <option>Current Account</option>
+            <option>Saving Account</option>
+            <option>Salaried Account</option>
+        </select></span><br>
+        <label for="gender">gender: </label>
+        <input type="radio" name="gender" class="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female 
+        <input type="radio" name="gender">Other <br>
+        <label for="mail">Email iD: </label>
+        <input type="email" id="email" name="email" class="email">
+        <h4 class="stRePa">account details</h4>
+       </div>
+
+       <div class="eduDetails">
+        <label for="qualification">Qualification: </label>
+        <input type="qualification" class="qualification"> <br>
+        <span class="collegename"> <label for="clgName">college name: </label>
+        <input type="text" name="clgName" class="clgName"> </span><br>
+        <label for="langKnown">language known: </label>
+        <input type="checkbox" name="langKnown">english 
+        <input type="checkbox" name="langKnown">hindi 
+        <input type="checkbox" name="langKnown">Telugu <br>
+        <span class="loca"> <label for="location">location: </label>
+        <input type="text" name="location" class="location"></span> <br>
+        <label for="course">cource OPT for: </label>
+        <select name="course" class="course">
+            <option></option>
+            <option>B.tech</option>
+            <option>BCA</option>
+            <option>Polytechnic</option>
+            <option>BBA</option>
+            <option>MCA</option>
+            <option>MBA</option>
+            <option>BA</option>
+            <option>MA</option>
+            <option>B.Sc</option>
+            <option>LLB</option>
+            <option>B.COM</option>
+            
+        </select>
+        <h4 class="eduDe">education details</h4>
+       </div>
+
+       <div class="add">
+            <h4 class="address">address</h4>
+            <label for="HNo">House No: </label>
+            <input type="text" name="HNo" class="HNo"><br>
+            <label for="area">area</label>
+            <input type="text" name="area" class="area"> <br>
+            <span class="counName"><label for="countryName">country Name: </label>
+            <input type="text" name="countryName" class="countryName"></span> <br>
+            <label for="streetName">street name: </label>
+            <input type="text" name="streetName" class="streetName"> <br>
+            <label for="distname">District Name: </label>
+            <input type="text" name="distname" class="distname"><br>
+            <span  class="stateName"> <label for="stateName">state name</label>
+            <select name="stateName" class="state">
+                <option></option>
+                <optgroup label="States">
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujrat</option>
+                    <option>Haryana</option>
+                    <option>himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharasthra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttrankhand</option>
+                    <option>Uttar Pradesh</option>
+                    <option>West bengal</option>
+                </optgroup>
+                <optgroup label="Union Territories">
+                    <option>Andaman and Nicobar Islands(Port Blair)</option>
+                    <option>Dadra and Nagar Haveli and Daman & Diu</option>
+                    <option>Jammu & Kashmir</option>
+                    <option>Lakshadweep </option>
+                    <option>Chandigarh</option>
+                    <option>The Government of NCT of Delhi</option>
+                    <option>Ladakh</option>
+                    <option>Panducherry</option>
+                </optgroup>
+                <option>Others</option>     
+            </select></span> <br>
+            
+       </div>
+
+       <div class="aboutYorself">
+        <h4 class="aboutYo">about yourself</h4>
+        <label for="aboutYourself" class="abyose">about yourself</label><br>
+        <textarea name="aboutYourself" id="textArea" cols="106" rows="10"></textarea>
+        <button class="button">Submit</button>
+       </div>
+    </form>
+    <div class="copyright"><h3>@copy right 2023 &copy</h3></div>
+    </body>
+</html>

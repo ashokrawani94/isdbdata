@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating jquery lib
+        </title>
+        <script src="mathutil.js "></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+        <script src="jqueryLib.js"></script>
+        <style>
+            .container {
+                border: 1px solid;
+                text-align: center;
+            }
+            .highlight {
+                font-weight: bold;
+                font-size: 20px;
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Highlight Element" onclick="highlightElement()">
+        <div class="container " id="block">
+            Hello every one
+        </div>
+        
+        <script>
+            var highlightElement = () => {
+                // var element = document.querySelector("#block");
+                // var existingClass = element.getAttribute("class");
+                // var newClass = existingClass + ' ' + 'highlight';
+                // element.setAttribute("class", newClass);
+
+                // $("#block").addClass('highlight');
+
+                document.querySelector("#block").classList.add('highlight');
+
+            }
+        </script>
+    </body>
+</html>

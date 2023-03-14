@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>student_Registration form</title>
+        <link rel="stylesheet" href="stdReg.css">
+       
+    </head>
+    <body>
+        <h3>Student Registration Page</h3>
+            <ul class="formContainer">
+                <li>
+                    Student Name: <input type="text" id="sname">
+                </li>
+                <li>
+                    Student Age: <input type="number" id="sage">
+                </li>
+                <li>
+                    Gender: 
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+
+                </li>
+                <li>
+                    Location:
+                    <select name="" id="loc">
+                        <option>Select an option</option>
+                        <option>Hyderbad</option>
+                        <option>Banglore</option>
+                        <option>Chnnai</option>
+                        <option>Delhi</option>
+                        <option>Pune</option>
+                        <option>Kolkata</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="button" id="btn" value="Register" onclick="stdData()">
+                    <!-- <button>Register</button> -->
+                </li>
+            </ul>
+
+            <ul class="tableContainer">
+                <table class="list" id="stdList" border="1">
+                   <thead>
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Location</th>
+                        <th>Operation</th>
+                    </tr>
+                   </thead>
+                   <tbody>
+
+                   </tbody>
+                </table>
+                
+            </ul>
+            <script src="stdRegis.js"></script>
+    </body>
+</html>

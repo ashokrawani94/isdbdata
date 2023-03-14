@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table Tag</title>
+        <style>
+            h2{
+                border: 2px solid black;
+                background-color: darksalmon;
+                color: darkblue;
+                text-align: center;
+                font-family: cursive;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                border: 2px solid black;
+                background-color: rgb(207, 186, 244);
+                margin: 2px;
+                overflow-y: scroll;
+            }
+            .mainheading{
+                margin: 2px;
+                border: 1px solid;
+                padding: 2px;
+                background-color: rgb(124, 88, 190);
+
+            }
+            td{
+                text-align: center;
+            }
+            img{
+                border-radius: 50% 50%;
+            }
+            #childTable th{
+                background-color: burlywood;
+            }
+            .report1{
+                background-color: green;
+            }
+            .report2{
+                background-color: rgb(198, 5, 5);
+            }
+            footer{
+                border: 2px solid black;
+                height: 20px;
+                width: auto;
+                text-align: center;
+                background-color: darksalmon;
+                font-family: cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><u>Students Report</u></h2>
+        <div class="container">
+        <table border="2px solid" cellpadding="10" cellspacing="10" width="100%">
+            <tr>
+                <th class="mainheading">S.No</th>
+                <th class="mainheading">Name</th>
+                <th class="mainheading">Age</th>
+                <th class="mainheading">Photo</th>
+                <th class="mainheading">Class</th>
+                <th class="mainheading">Location</th>
+                <th class="mainheading">ProgressCard</th>
+            </tr>
+            <tr>    
+                <td>1</td>
+                <td>Nani</td>
+                <td>11</td>
+                <td><img src="images/img1.png" width="100px" height="100px"></td>
+                <td>6th</td>
+                <td>Ameerpet</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>75</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>78</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rani</td>
+                <td>10</td>
+                <td><img src="images/img2.jpg" width="100px" height="100px"></td>
+                <td>5th</td>
+                <td>S R Nagar</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>95</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>34</td>
+                            <td class="report2">Fail</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Priya</td>
+                <td>10</td>
+                <td><img src="images/img3.jpg" width="100px" height="100px"></td>
+                <td>5th</td>
+                <td>Kukatpally</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>80</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>70</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>65</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Venky</td>
+                <td>11</td>
+                <td><img src="images/img4.jpg" width="100px" height="100px"></td>
+                <td>6th</td>
+                <td>Panjagutta</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>70</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>60</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>72</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pinky</td>
+                <td>10</td>
+                <td><img src="images/img5.jpg" width="100px" height="100px"></td>
+                <td>5th</td>
+                <td>Lingampally</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>35</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>45</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>50</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rahul</td>
+                <td>11</td>
+                <td><img src="images/img6.jpg" width="100px" height="100px"></td>
+                <td>6th</td>
+                <td>Uppal</td>
+                <td>
+                    <table border="5" cellpadding="0" cellspacing="0" align="center" id="childTable">
+                        <tr>
+                            <th>Subjects</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>100</td>
+                            <td>70</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>100</td>
+                            <td>67</td>
+                            <td class="report1">Pass</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <footer>AcademicYear2022-2023</footer>
+        
+    </body>
+    </html>

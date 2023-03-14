@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h2{
+            text-align: center;
+            border:2px solid;
+        }
+        .footer{
+            border:2px solid;
+            text-align: center;
+            margin-top:5px;
+            height: 20px;
+        }
+        .container{
+            height: 1100px;
+            border: 2px solid;
+            
+            
+        }
+        .block1{
+            height: 200px;
+            border:2px solid;
+            margin:10px;
+        }
+        .block2{
+            height: 200px;
+            border:2px solid;
+            margin:10px;
+        }
+        .block3{
+            height: 200px;
+            border:2px solid;
+            margin:10px;
+        }
+        .block4{
+            height: 400px;
+            border:2px solid;
+            margin:10px;
+        }
+        .abt{
+            position:relative;
+            left:90px;
+            top:-300px;
+        }
+        .acct{
+            border:2px solid;
+            height: 20px;
+            width:140px;
+            position:relative;
+            left:50px;
+            top:-10px;
+            background-color: white;
+        }
+        .acctid{
+            position: relative;
+            left:750px;
+            top:-20px;
+        }
+        .nam{
+            position:relative;
+            left:20px;
+        }
+    li{
+        list-style: none;
+    }
+    .box{
+        border:1px solid;
+        height:10px;
+    }
+    .txtarea{
+        position: relative;
+        left:100px;
+    }
+    .register{
+        border:2px solid ;
+        height: 30px;
+        width:100px;
+        position:relative;
+        left:450px;
+        top:20px;
+        border-radius: 10px;
+        
+    }
+    </style>
+</head>
+<body>
+    <h2>
+        Student Registration Page
+    </h2>
+    <div class="container">
+        <div class="block1">
+            <div class="acct">
+                Account Details
+            </div>
+          <ul>
+            <li>
+                <span class="nam"> Name:<input type="text" maxLength="15" placeholder="Enter your name"></span>
+            </li>
+            <li class="acctid">
+                <label>Account Id</label>
+          <input type="text" name="accountId"placeholder="Enter your account Id">
+            </li>
+            <li class="nam">
+                <label>Age:</label>
+                <input type="text" placeholder="Enter age" name="age">
+            </li>
+            <li class="acctid">
+                <label>Account Type:</label>
+                <select>
+                    <option></option>
+                    <option>Savings</option>
+                    <option>Current</option>
+                </select>
+            </li>
+            <li class="nam">
+                <label>Gender:</label>
+                <input type="radio" name="gender" >Male
+                <input type="radio" name="gender" >Female
+                <input type="radio" name="gender" >Others
+            </li>
+            <br>
+            <li class="nam" >
+                <label>Email Id</label>
+                <input type="text" placeholder="Email" required>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="block2">
+            <div class="acct">
+                Education Details
+            </div>
+            <ul>
+                <li class="nam">
+                    <label>Qualification:</label>
+                    <select>
+                        <option></option>
+                        <option>B.tech</option>
+                        <option>Degree</option>
+                        <option>pHD</option>
+                    </select>
+                </li>
+                <li class="acctid">
+                    <label>College Name</label>
+              <input type="text" name="accountId"placeholder="college">
+                </li>
+                <li class="nam">
+                    <label>Languages:</label>
+                    <input type="checkbox" multiple="false">Telugu
+                    <input type="checkbox" multiple="false">English
+                    <input type="checkbox" multiple="false">Hindi
+                    <input type="checkbox" multiple="false">Marati
+                </li>
+                <li class="acctid">
+                    <label>Location:</label>
+                    <select>
+                        <option></option>
+                        <option>Hyderabad</option>
+                        <option>Mumbai</option>
+                        <option>kolkata</option>
+                        <option>Gujarath</option>
+                    </select>
+                </li>
+                <li class="nam">
+                    <label>Course Opting For:</label>
+                    <select>
+                        <option></option>
+                        <option>C and C++</option>
+                        <option>Java</option>
+                        <option>Angular</option>
+                        <option>Fullstack</option>
+                    </select>
+                </li>
+            
+              </ul>
+              
+        </div>
+        <div class="block3">
+            <div class="acct">
+                Address
+            </div>
+          <ul>
+            <li>
+                <span class="nam"> Dno:<input type="text" maxLength="15" ></span>
+            </li>
+            <li class="acctid">
+                <label>Village</label>
+          <input type="text" name="village">
+            </li>
+            <li class="nam">
+                <label>Mandal:</label>
+                <input type="text" name="village">
+            </li>
+            <li class="acctid">
+                <label>District:</label>
+                <select>
+                    <option></option>
+                    <option>Warangal</option>
+                    <option>Rajamundry</option>
+                    <option>RangaReddy</option>
+                    <option>Anathapur</option>
+                    <option>Vizag</option>
+                </select>
+            </li>
+            <li class="nam">
+                <label>State:</label>
+                <select>
+                    <option></option>
+                    <option>Andhrapradesh</option>
+                    <option>Tamilnadu</option>
+                    <option>Telangana</option>
+                    <option>Luknow</option>
+
+                </select>
+            </li>
+            <br>
+            <li class="nam" >
+                <label>Phone No
+                    <span class="box">+91</span>
+                </label>
+                <input type="text" placeholder="mobile number" >
+            </li>
+          </ul>
+          
+        </div>
+        <div class="block4">
+            <div class="acct">
+                About Yourself
+            </div>
+            <label class="abt">About Yourself</label>
+            <textarea type="text" class="txtarea"cols="60" rows="20" maxlength="300"></textarea>
+            <input class="register" type="submit">
+        </div>
+        
+
+    </div>
+    <div class="footer">
+        @copyright 2023
+    </div>
+</body>
+</html>

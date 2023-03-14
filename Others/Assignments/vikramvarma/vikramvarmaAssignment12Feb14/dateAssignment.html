@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dateAssignment</title>
+    <script>
+      var fullDate = new Date();
+      var myDate = fullDate.getDate();
+      var myYear = fullDate.getFullYear();
+      var myMonthInNumber = fullDate.getMonth();
+      var myDayInNumber = fullDate.getDay();
+      var myHours = fullDate.getHours();
+      var myMunites = fullDate.getMinutes();
+      var mySeconds = fullDate.getSeconds();
+      var monthsFull = [
+        "January",
+        "Februvary",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "Augest",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      var monthsShort = [
+        "jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      var dayInFull = [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thusday",
+        "friday",
+        "saturday",
+      ];
+      var dayInShort = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+      var n = prompt(
+        "select your number 1. 14/Feb/2023 2.14th Feb, 2023 3.14th February, 2023 4.Tue, 14th Feb 5.Tuesday, 14th February 2023 6.14-Feb-2023 7.14-02-2023 8.14th Feb,2023 10:20:30 9.10 min : 20 sec 10.2 hrs, 10min 20sec"
+      );
+      var allFormats = [
+        `${myDate}/${monthsShort[myMonthInNumber]}/${myYear}`,
+        `${myDate}th ${monthsShort[myMonthInNumber]}, ${myYear}`,
+        `${myDate}th ${monthsFull[myMonthInNumber]}, ${myYear}`,
+        `${dayInShort[myDayInNumber]}, ${myDate}th ${monthsShort[myMonthInNumber]}`,
+        `${dayInFull[myDayInNumber]}, ${myDate}th ${monthsFull[myMonthInNumber]} ${myYear}`,
+        `${myDate}-${monthsShort[myMonthInNumber]}-${myYear}`,
+        `${myDate}-0${myMonthInNumber + 1}-${myYear}`,
+        `${myDate}th ${monthsShort[myMonthInNumber]}, ${myYear} ${myHours}:${myMunites}:${mySeconds}`,
+        `${myMunites} min : ${mySeconds} sec`,
+        `${myHours} hrs, ${myMunites}min, ${mySeconds}sec`,
+      ];
+
+      console.log(allFormats[n]);
+    </script>
+  </head>
+  <body>
+    dateAssignment
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>find the prime number from an array</title>
+    </head>
+    <body>
+        <h4> find the prime number/s from the given array</h4>
+
+        <script>
+            var data = [];
+            var n = prompt("Enter the size of an array");
+            var primeData = [];
+            var newdata = [];
+            for(i = 0; i < n; i++) {
+                data[i] = prompt("Enter the value on place "+ i);
+                data[i] = parseInt(data[i]);
+            }
+            console.log(data);
+
+            for (j = 0; j < data.length; j++) {
+                var n = data[j];
+                var count = 0;
+
+                for(k = 1; k <= n; k++) {
+                    var result = data[j] % k;
+                    if(result==0) {
+                        count++;
+                    }
+                }
+
+                if(count==2) {
+                    console.log("Prime number is = " + data[j]);
+                    primeData.push(data[j]);
+                } else {
+                    console.log("this is not a prime number = " +data[j]);
+                    newdata.push(data[j]);
+                }
+                
+            }
+            console.log("Prime number are : "+ primeData);
+            console.log("Rest of the number are : "+ newdata);
+            
+        </script>
+    </body>
+</html>

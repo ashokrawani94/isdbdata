@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Pallindrome Numbers from an Array</title>
+</head>
+<body>
+    <h3>check the number is palindrome or not in Array</h3>
+    <script>
+        var arr = [11, 23, 13, 121, 32123, 45, 22, 67];
+        var rem = 0, reverse = 0, temp = 0, ind = 0;
+        var newArr = [];
+
+        //loop to check each value of array as pallindrome or not
+        for(var i = 0; i < arr.length; i++)
+        {
+            originalNo = arr[i];            
+            temp = arr[i];
+            console.log(typeof(arr[i]));
+            
+            //loop to check whether the number is pallindrome or not
+            while(temp > 0)
+            {
+                rem = temp % 10;           
+                temp = temp/10;
+                temp = parseInt(temp);
+                reverse = (reverse*10) + rem;
+            }       
+            if(reverse === parseInt(originalNo))
+            {
+                newArr[ind] = originalNo;
+                ind++;
+            }
+
+            originalNo = 0;
+            temp = 0;
+            reverse = 0;    
+        }
+
+        console.log("original array is");
+        console.log(arr)
+        console.log("Pallindrom Numbers array is"); 
+        console.log(newArr)                       
+    </script>
+</body>
+</html>

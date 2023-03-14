@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+
+<body>
+    <h1
+        style="border:2px solid black; text-align: center; margin: 5px; padding: 5px; background-color: gray; color: white;">
+        <b>Employee Details</b>
+    </h1>
+    <p style="font-size: 2rem; margin:15px 410px;"> We Are Writting Some Employee Details</p>
+
+    <script>
+        
+        var ename = prompt("Enter your name");
+        var eage = prompt("Enter your age");
+        var edep = prompt("Enter departement");
+        var gender = prompt("Enetr your gender");
+        var ebasicsal = prompt("Enter your salary");
+        ebasicsal = parseInt(ebasicsal);
+        var pf = (ebasicsal * 14) / 100;
+        var totalsal = ebasicsal + pf;
+        tax1 = (totalsal * 15) / 100;
+        tax2 = (totalsal * 10) / 100;
+        tax3 = (totalsal * 5) / 100;
+
+
+        console.log("-----Empolyee Details-----");
+        console.log("Name: " + ename);
+        console.log("Age: " + eage);
+        console.log("Departement: " + edep);
+        console.log("Gender: " + gender);
+        console.log("Salary: " + ebasicsal);
+        console.log("Total salary is: " + totalsal);
+
+        if (gender == 'male') {
+            if (totalsal >= 100000) {
+                console.log("Your tax is: " + tax1);
+            }
+            else if (totalsal >= 50000) {
+                console.log("Your Tax is: " + tax2);
+            }
+            else if (totalsal >= 25000) {
+                console.log("Your Tax is: " + tax3)
+            }
+            else {
+                console.log("you do not need to pay tax")
+            }
+        } else {
+            if (totalsal >= 100000) {
+                console.log("Your Tax is: " + tax2);
+            }
+            else if (totalsal >= 50000) {
+                console.log("Your Tax is: " + tax3);
+            }
+            else {
+                console.log("you do not need to pay tax")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

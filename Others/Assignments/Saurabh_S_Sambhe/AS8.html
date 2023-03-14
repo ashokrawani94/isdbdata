@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registraion Form</title>   
+    <style>
+        .header,.maincontainer,.footer{
+            border: 1px solid black;
+            margin: 0;
+            padding:0;
+            width: 100%;
+        }
+        .header,.footer{
+            height: 30px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .maincontainer{
+            height: 1500px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .subcontain1,.subcontain2,.subcontain3,.subcontain4{
+            border: 1px solid black;
+            height: 350px;
+            margin: 20px;
+        }
+        .child1,.child2,.child3,.child4{
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            position: absolute;
+        }
+        .child1{
+            top: 50px;
+            left: 80px;
+        }
+        .child2{
+            top: 420px;
+            left: 80px;
+        }
+        .child3{
+            top: 795px;
+            left: 80px;
+        }
+        .child4{
+            top: 1165px;
+            left: 80px;
+        }
+        .box{
+            margin: 10px;
+            padding: 10px;
+            float: left;
+        }
+       #feedback{
+        margin: 50px;
+        width: 1200px;
+        height: 250px;
+       }
+       .register{
+        position: relative;
+        float: right;
+        padding: 5px;
+        right: 20px;
+        bottom: 45px;
+       }
+    </style>  
+</head>
+<body>
+    <form action="">
+        <div class="header">Student Registration Form</div>
+        <div class="maincontainer">
+            <div class="subcontain1">
+                <div class="child1">Account Details</div>
+                <div class="box box1"><label for="Name">Name: <input type="text"></label></div>
+                <div class="box box1"><label for="Age">Age: <input type="text"></label></div>
+                <div class="box box1">Gender:<input type="radio" value="Male" name="Gender" id="Male">
+                <label for="Male">Male</label>
+                <input type="radio" value="Female" name="Gender" id="Female">
+                <label for="Female">Female</label></div>
+                <div class="box box1"><label for="Male id">Mail id: <input type="text"></label></div>
+                <div class="box box1"><label for="Account id">Account id: <input type="text"></label></div>
+                <div class="box box1"><label for="Account Type">Account Type</label>
+                <select name="" id="type">
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                </select>
+                </div>
+            </div>
+            <div class="subcontain2">
+                <div class="child2">Education Details</div>
+                <div class="box box1"><label for="">Qualification:
+                    <select name="Degree" id="Degree">
+                        <option value="SSC">SSC</option>
+                        <option value="HSC">HSC</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BE">BE</option>
+                        <option value="MCA">MCA</option>
+                        <option value="ME">ME</option>
+                    </select>
+                </label></div>
+                <div class="box box1"><label for="Age">College Name: <input type="text"></label></div>
+                <div class="box box1"><label for="Gender">Languages Known: <input type="checkbox">English
+                                                                            <input type="checkbox">Telugu
+                                                                            <input type="checkbox">Hindi</label></div>
+                <div class="box box1"><label for="location">Location:
+                    <select name="" id="location">
+                        <option value="Amravati">Amravati</option>
+                        <option value="Morshi">Morshi</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </label></div>
+                <div class="box box1"><label for="Account id">Course Opting For:
+                    <select name="" id="Account id">
+                        <option value="Full Stack UI">Full Stack UI</option>
+                        <option value="Full Stack Java">Full Stack Java</option>
+                        <option value="Front end">Front end</option>
+                        <option value="Back end">Back end</option>
+                        <option value=".Net dev">.Net dev</option>
+                    </select>
+                </label></div>
+            </div>
+            <div class="subcontain3">
+                <div class="child3">Address</div>
+                <div class="box box1"><label for="Name">D no.: <input type="text"></label></div>
+                <div class="box box1"><label for="Age">Country Name: <input type="text"></label></div>
+                <div class="box box1"><label for="Gender">Country Code: <input type="text"></label></div>
+                <div class="box box1"><label for="Male id">Street Name: <input type="text"></label></div>
+                <div class="box box1"><label for="Account id">State Name: <input type="text"></label></div>
+            </div>
+            <div class="subcontain4">
+                <div class="child4">About Yourself</div>
+                <textarea name="About" id="feedback" placeholder="Write About Yourself"></textarea>
+                <button class="register">Register</button>
+            </div>
+        </div>
+        <div class="footer">@copyrights 2023</div>
+    </form>
+</body>
+</html>

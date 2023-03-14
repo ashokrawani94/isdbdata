@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details Dynamic In Json</title>
+</head>
+
+<body>
+    <script>
+        var empDetails = {
+            readEmpDetails() {
+                this.name = prompt("Enter employee name")
+                this.age = prompt("Enter employee age")
+                this.gender = prompt("Enter employee gender male/female")
+                this.dept = prompt("Enter employee department")
+                this.basicSal = prompt("Enter basic salary of employee")
+                this.totalTax = 0
+                this.totalTaxCalculation()
+            },
+            totalTaxCalculation() {
+                this.basicSal = parseInt(this.basicSal);
+                this.pf = (this.basicSal * 14) / 100;
+                this.hra = (this.basicSal * 24) / 100;
+                this.totalsalary = this.basicSal + this.pf + this.hra;
+                this.totalsalary = parseInt(this.totalsalary);
+
+                if (this.gender == "male") {
+                    if (this.totalsalary >= 100000) {
+                        this.totalTax = 15
+                    } else if (this.totalsalary >= 50000) {
+                        this.totalTax = 10
+                    } else if (this.totalsalary >= 25000) {
+                        this.totalTax = this.totalsalary * (5 / 100);
+                    } else {
+                        this.totalTax = 0;
+                    }
+                } else if (this.gender == "female") {
+                    if (this.totalsalary >= 100000) {
+                        this.totalTax = 10
+                    } else if (this.totalsalary >= 50000) {
+                        this.totalTax = 5
+                    } else {
+                        this.totalTax = 0;
+                    }
+                } else {
+                    console.log("Please enter correct gender");
+                }
+                this.calculateTax()
+            },
+            calculateTax() {
+                this.totalTax = (this.totalsalary * this.totalTax) / 100
+                this.displayEmployeeDetails()
+            },
+            displayEmployeeDetails() {
+                console.log("Employee Name  " + this.name);
+                console.log("Age " + this.age);
+                console.log(" Gender  " + this.gender);
+                console.log(" Department  " + this.dept);
+                console.log(" Basic Salary  " + this.basicSal);
+                console.log("Total Salary is " + this.totalsalary);
+                console.log("Tax to be paid " + this.totalTax);
+            }
+        }
+        empDetails.readEmpDetails();
+    </script>
+</body>
+
+</html>

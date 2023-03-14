@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8</title>
+    <style>
+        h3 {
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            
+
+        }
+
+        .container {
+            border: 1px solid;
+            height: 1300px;
+            margin: 10px;
+
+        }
+        .loc{
+             color:skyblue;
+        }
+
+        .box1 {
+            border: 1px solid;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .box2 {
+            border: 1px solid;
+            height: 200px;
+            margin: 10px;
+
+        }
+
+        .box3 {
+            border: 1px solid;
+            height: 300px;
+            margin: 10px;
+
+        }
+
+        .box4{
+            border: 1px solid;
+            height: 500px;
+            margin: 10px;
+
+        }
+
+        .AD {
+
+
+            position: relative;
+            top: -25px;
+
+        }
+
+        li {
+            list-style: none;
+
+        }
+        .name{
+              color:greenyellow;
+        }
+
+        .nameSearch {
+            position: absolute;
+            top: 90px;
+            left: 120px;
+
+        }
+
+        .age {
+            position: absolute;
+            top: 120px;
+            color:blueviolet;
+            
+        }
+
+        .ageSearch {
+            position: absolute;
+            top: 120px;
+            left: 120px;
+        }
+
+        .gender {
+            position: absolute;
+            top: 150px;
+            left: 70px;
+            color:turquoise;
+
+
+        }
+
+        .genderDetails {
+            position: absolute;
+            top: 150px;
+            left: 120px;
+        }
+
+        .mailId {
+            position: absolute;
+            top: 170px;
+            left: 70px;
+            color:blueviolet;
+
+        }
+        .DNo{
+             color:pink;
+        }
+
+        .mailSearch {
+            position: absolute;
+            top: 170px;
+            left: 120px;
+
+        }
+
+        .accountID {
+            position: absolute;
+            right: 300px;
+            color:yellow;
+        }
+
+        .accountIdSearch {
+            float: right;
+            position: absolute;
+            right: 100px;
+
+
+        }
+
+        .accountType {
+            float: right;
+            position: absolute;
+            top: 150px;
+            left: 970px;
+            color:#ddd;
+
+        }
+
+        .accountTypeSearch {
+            float: right;
+            position: absolute;
+            top: 150px;
+            left: 1070px;
+
+        }
+        .Qual{
+               color:chocolate;
+        }
+
+        .QualSearch {
+            float: right;
+            position: absolute;
+            top: 300px;
+            left: 160px;
+            
+
+        }
+
+        .langDetail {
+            position: absolute;
+            top: 320px;
+            left: 200px;
+        }
+
+        .courseLooking {
+            position: absolute;
+            top: 340px;
+            left: 205px;
+
+        }
+
+        .clgName {
+            float: right;
+            position: absolute;
+            top: 300px;
+            right: 300px;
+
+        }
+
+        .clgNameSearch {
+            float: right;
+            position: absolute;
+            top: 300px;
+            right: 100px;
+
+        }
+
+        .loc {
+            float: right;
+            position: absolute;
+            top: 350px;
+            left: 951px;
+        }
+
+        .locSearch {
+            position: absolute;
+            top: 350px;
+            left: 1055px;
+
+        }
+
+        .add {
+            position: relative;
+            top: -25px;
+
+
+        }
+        .DNo{
+        
+            
+          margin-left:10px;
+
+          }
+        .StreetName{
+                   margin: 10px;
+                   color:#ddd;
+
+                   }
+        .StateName
+                    {
+                        margin:10px;
+                        color:sienna;
+
+                    }
+        .StateCode{
+                   margin: 10px;
+                   color:blanchedalmond;
+        }
+        .CountryName{
+                     float:right;
+                     position:absolute;
+                     top:500px;
+                     right:300px;
+                     color:red;
+                     
+        }
+        .CountryCode{
+                     float:right;
+                     position:absolute;
+                     top:600px;
+                     right:300px;
+                     color: yellow;
+        }
+        .about{
+            position: relative;
+            top: -25px;
+
+
+        }
+        .area{
+              margin-left: 90px;
+              margin-bottom: 300px;
+        }
+        .Abouturself{
+                     margin-top:50px;
+                     color:seagreen;
+        }
+        .txtara{
+                position: absolute;
+                top:880px;
+
+        }
+        
+        button
+                        {
+                            margin-top: 320px;
+                            margin-left:635px;
+                            color:gray;
+
+                        }
+        .lang{
+               color:tomato;
+        }
+
+        .footer{
+                 border:1px solid;
+                 text-align: center;
+                 margin: 10px;
+                 
+        }
+        .course
+                    {
+                        color:springgreen
+
+                    }
+        .clgName
+                  {
+                    color:slateblue;
+                  }
+                  
+        
+                    
+        
+        
+    </style>
+</head>
+
+<body>
+    <h3>Student Registration Page</h3>
+    <div class="container">
+        <div class="box1">
+            <form>
+                <ol>
+                    <li class="AD">
+                        <input type="text" value="Account Details">
+                    </li>
+                    <li>
+                        <div class="name">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="nameSearch">
+                            <input type="text">
+                        </div>
+                        <div class="age">
+                            <label for="name">Age:</label>
+                        </div>
+                        <div class="ageSearch">
+                            <input type="num">
+
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <div class="gender">
+
+                            <label for="gender">Gender:</label>
+
+                        </div>
+                        <div class="genderDetails">
+                            <input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
+                        </div>
+
+
+
+
+                    </li>
+                    <li>
+                        <div class="mailId">
+                            <label for="mailID">mail Id:</label>
+                        </div>
+                        <div class="mailSearch">
+                            <input type="mail" name="mailID">
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="accountID">
+                            <label for="accountID">Account Id:</label>
+                        </div>
+                        <div class="accountIdSearch">
+                            <input type="mail">
+
+                        </div>
+
+
+
+                    </li>
+                    <li>
+                        <div class="accountType">
+                            <label for="accountType">Account Type:</label>
+                        </div>
+                        <div class="accountTypeSearch">
+                            <input type="mail">
+
+                        </div>
+
+
+
+
+
+                    </li>
+
+
+
+                </ol>
+            </form>
+
+        </div>
+        <div class="box2">
+            <form>
+                <ol>
+
+                    <li class="AD">
+                        <input type="text" value="Education Details">
+                    </li>
+                    <li>
+                        <div class="Qual">
+                            <label for="Qual">Qualification:</label>
+
+
+
+                        </div>
+
+
+                        <div class="QualSearch">
+                            <select>
+                                <option>M.tech</option>
+
+                                <option>B.tech</option>
+
+                                <option>MCA</option>
+
+                                <option>BCA</option>
+
+
+
+
+
+                            </select>
+
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lang">
+                            <label for="lang">Language Known:</label>
+                        </div>
+                        <div class="langDetail">
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">English
+                            <input type="checkbox">Telgu
+
+
+                        </div>
+
+
+
+
+
+                    </li>
+                    <li>
+                        <div class="course">
+                            <label>Course Looking For:</label>
+
+                        </div>
+                        <div class="courseLooking">
+                            <select>
+                                <option>JAVA</option>
+                                <option>Python</option>
+                                <option>UI Full Stack</option>
+
+
+
+
+                            </select>
+
+
+
+
+                        </div>
+
+
+
+
+                    </li>
+                    <li>
+                        <div class="clgName">
+
+                            <label>College Name:</label>
+                        </div>
+                        <div class="clgNameSearch">
+                            <input type="text">
+
+
+                        </div>
+
+
+
+
+                    </li>
+                    <li>
+                        <div class="loc">
+
+                            <label>Location:</label>
+                        </div>
+                        <div class="locSearch">
+                            <select>
+                                <option>Delhi</option>
+                                <option>Mumbai</option>
+                                <option>Chennai</option>
+                                <option>Kolkata</option>
+
+
+                            </select>
+
+
+                        </div>
+
+
+
+                    </li>
+                </ol>
+        </div>
+        <div class="box3">
+            <form>
+                <ol>
+                    <li class="add">
+                        <input type="text" value="Address">
+                    </li>
+                    <li>
+                        <div class="DNo">
+                            <label>D.No:</label>
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="StreetName">
+                            <label>StreetName:</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="StateName">
+                            <label>StateName:</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="StateCode">
+                            <label>State Code</label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="CountryName">
+                            <label>Country Name:</label>
+
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="CountryCode">
+                            <label>Country Code:</label>
+                        </div>
+
+                    </li>
+                </ol>
+            </form>
+        </div>
+        <div class="box4">
+            <form>
+                <ol>
+                    <li class="about">
+                        <input type="text" value="About urself">
+                    </li>
+                    <li>
+                        <div class="Abouturself">About ur self:</div>
+                        <div class="txtara">
+                        <textarea rows="20"cols="80" class="area"></textarea>
+                        </div>
+                        
+
+                    </li>
+                    
+                    
+            <button type="button">Register</button>
+
+                </ol>
+
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        </form>
+
+    </div>
+
+    </div>
+    <div class="footer">&copy;copy rights 2023</div>
+
+</body>
+
+</html>

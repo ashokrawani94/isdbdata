@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var studentname,
+        age,
+        gender,
+        classname,
+        maths,
+        english,
+        science,
+        physics,
+        chemistry,
+        total,
+        avg;
+
+      function readDataFromUser() {
+        studentname = prompt("Enter Student Name");
+        age = prompt("Enter Age");
+        gender = prompt("Enter Gender");
+        classname = prompt("Enter Classname");
+        maths = prompt("Enter Maths Marks");
+        maths = parseInt(maths);
+        english = prompt("Enter English Marks");
+        english = parseInt(english);
+        science = prompt("Enter Science Marks");
+        science = parseInt(science);
+        physics = prompt("Enter Physics Marks");
+        physics = parseInt(physics);
+        chemistry = prompt("Enter chemistry Marks");
+        chemistry = parseInt(chemistry);
+        calculateTotalAndAverage();
+      }
+
+      function calculateTotalAndAverage() {
+        total = maths + english + science + physics + chemistry;
+        avg = total / 5;
+        printStudentDetails();
+      }
+
+      function printStudentDetails() {
+        console.log(" Student Name is: " + studentname);
+        console.log(" Age is: " + age);
+        console.log(" Gender is: " + gender);
+        console.log(" Classname is: " + classname);
+        console.log(" Maths mark is: " + maths);
+        console.log(" English mark is: " + english);
+        console.log(" Science mark is: " + science);
+        console.log(" Physics mark is: " + physics);
+        console.log(" Chemistry mark is: " + chemistry);
+
+        console.log(" Total marks is: " + total);
+        console.log("Average mark is:" + avg);
+      }
+
+      readDataFromUser();
+    </script>
+  </body>
+</html>

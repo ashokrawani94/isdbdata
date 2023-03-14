@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment8</title>
+    <style>
+      .header {
+        border: 2px solid;
+        margin: 20px;
+        padding: 5px;
+        text-decoration: underline;
+        text-align: center;
+      }
+      .footer {
+        border: 2px solid;
+        margin: 20px;
+        padding: 5px;
+      }
+
+      .footer {
+        text-align: center;
+      }
+      .body1,
+      .body2,
+      .body3,
+      .body4 {
+        border: 2px solid;
+        margin: 20px;
+        padding: 5px;
+      }
+      .body1,
+      .body3 {
+        height: 200px;
+      }
+      .body2 {
+        height: 160px;
+      }
+      .body4 {
+        height: 500px;
+      }
+      .accHeading {
+        border: 2px solid;
+        padding: 5px;
+        margin: 10px;
+        position: relative;
+        bottom: 15px;
+        background-color: white;
+      }
+      .accTab1 {
+        float: left;
+      }
+      .accTab2 {
+        float: left;
+        position: relative;
+        left: 500px;
+      }
+      .eduTab1 {
+        float: left;
+      }
+      .eduTab2 {
+        float: left;
+        position: relative;
+        left: 400px;
+      }
+      .addTab1 {
+        float: left;
+      }
+      .addTab2 {
+        float: left;
+        position: relative;
+        left: 466px;
+      }
+      .reg {
+        width: 137px;
+        height: 38px;
+      }
+      .regist {
+        position: relative;
+        left: 1150px;
+      }
+      .your {
+        position: relative;
+        bottom: 188px;
+      }
+      .headcolor {
+        color: red;
+      }
+      .bodycolor {
+        color: rgb(187, 206, 23);
+      }
+      .footcolor {
+        color: rgb(77, 180, 77);
+      }
+      .contentcolor {
+        color: rgb(3, 109, 123);
+      }
+    </style>
+  </head>
+  <body>
+    <div name="head" class="header headcolor">Student Detail</div>
+    <div class="body1">
+      <a class="accHeading bodycolor">Account Details</a>
+      <div>
+        <table cellspacing="20px" class="accTab1">
+          <tr>
+            <td><div class="contentcolor">Name:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Age:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Gender</div></td>
+            <td>
+              <div>
+                <input type="radio" name="gender" />Male
+                <input type="radio" name="gender" />Female
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Email Id</div></td>
+            <td>
+              <div><input type="email" /></div>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="20px" class="accTab2">
+          <tr>
+            <td><div class="contentcolor">Account Id:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Account Type:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="body2">
+      <a class="accHeading bodycolor">Education Details</a>
+      <div>
+        <table cellspacing="20px" class="eduTab1">
+          <tr>
+            <td><div class="contentcolor">Qualification:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Languages Known:</div></td>
+            <td>
+              <div>
+                <input type="checkbox" />Telugu <input type="checkbox" />Hindi
+                <input type="checkbox" />English
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Course opting for:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="20px" class="eduTab2">
+          <tr>
+            <td><div class="contentcolor">College Name:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Location:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="body3">
+      <a class="accHeading bodycolor">Address</a>
+      <div>
+        <table cellspacing="20px" class="addTab1">
+          <tr>
+            <td><div class="contentcolor">D/No:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Street Name:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">State Name</div></td>
+            <td>
+              <div>
+                <input type="text" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">State Code</div></td>
+            <td>
+              <div><input type="email" /></div>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="20px" class="addTab2">
+          <tr>
+            <td><div class="contentcolor">Country Name:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td><div class="contentcolor">Country Code:</div></td>
+            <td>
+              <div><input type="text" /></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="body4">
+      <a class="accHeading bodycolor">About Your Self</a>
+      <div>
+        <table cellspacing="20px">
+          <tr>
+            <td><div class="your contentcolor">Your Self</div></td>
+            <td>
+              <div><textarea cols="170" rows="25"></textarea></div>
+            </td>
+          </tr>
+        </table>
+        <div class="regist">
+          <input type="submit" value="Register" class="reg contentcolor" />
+        </div>
+      </div>
+    </div>
+    <div name="tail" class="footer footcolor">@copyright2023</div>
+  </body>
+</html>

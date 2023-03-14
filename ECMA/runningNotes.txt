@@ -1,0 +1,64 @@
+ECMA -> 
+
+ES6 
+
+java:
+
+    final int a = 90;
+Javascript
+    const a = 90
+
+foreach 
+
+
+looping:
+    for 
+    while 
+    dowhile 
+    for in 
+    for Each     
+    for of
+
+forEach: 
+
+    array.forEach(callbackfunction);
+
+    (or)
+
+    array.forEach((value, index) => {
+        ... 
+        ...
+    })
+
+
+ArrowFunction:
+    addvalue()
+    function addvalue() {
+
+    }
+    addvalue()
+
+Second way: 
+    addvalue(); // error
+    var addvalues = function() {
+
+    }
+    addvalue(); //works
+
+Thrid way: 
+
+    addvalue(); // error
+    var addvalues = () => {
+
+    }
+    addvalue(); //works
+
+    ----------------
+
+Set 
+Map 
+
+new methods on top of array 
+find 
+map 
+filter 

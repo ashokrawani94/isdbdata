@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reading and Displaying Employee Data Dynamically</title>
+        <link rel="stylesheet" href="./css/EmployeeCSS.css">
+    </head>
+    <body>
+        <h3>Employee Details</h3>
+        <ul id="mainlist">
+            <li>
+                Employee Name: <input type="text" id="ename">
+            </li>
+            <li>
+                Gender: 
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </li>
+            <li>
+                Department: <input type="text" id="department">
+            </li>
+            <li>
+                Salary: <input type="text" id="salary">
+            </li>
+            <li>
+                <input type="button" Value="Generate Pay Slip" onclick="ReadEmployeeDaya()">
+            </li>
+        </ul>
+        <ul class="paySlipContainer">
+            <li id="payslipId">Employee Pay Slip</li>
+            <li>
+                Employee Name: 
+                <span id="empname"></span>
+            </li>
+            <li>
+                Gender: 
+                <span id="empgender"></span>
+            </li>
+            <li>
+                Department: 
+                <span id="empdept"></span>
+            </li>
+            <li>
+                Salary: 
+                <span id="empSalary"></span></li>
+            <li>
+                PF: 
+                <span id="pf"></span>
+            </li>
+            <li>
+                HRA: 
+                <span id="hra"></span>
+            </li>
+            <li>
+                Total Salary: 
+                <span id="totalSalary"></span>
+            </li>
+            <li>
+                Total Tax: 
+                <span id="totalTax"></span>
+            </li>
+        </ul>
+        <script src="./js/EmployeeJS.js"></script>
+    </body>
+</html>

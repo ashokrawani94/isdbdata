@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Revers Of Number</title>
+</head>
+<body>
+    <script>
+        var number = prompt('Enter A Number');
+        var rem = 0, Reverse = 0;
+        originalNo = number;
+
+        while(number > 0){
+            rem = number % 10;
+            number = number / 10;
+            number = parseInt(number);
+            Reverse = (Reverse * 10) + rem;
+        }
+
+        console.log("orginal no is " + originalNo);
+        console.log("reverse of given number is " + Reverse);
+    </script>
+</body>
+</html>

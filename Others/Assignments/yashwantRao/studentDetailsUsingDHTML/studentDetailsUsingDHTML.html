@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width= , initial-scale=1.0">
+        <title>
+            demonstration on student details
+        </title>
+        <style>
+            .studentDetails {
+                list-style-type: none;
+            }
+            .mainBlock, .resultBlock {
+                border: 2px solid blueviolet;
+                width: 400px;
+            }
+
+            .resultBlock{
+                float: right;
+                margin: 50px;                
+            }
+            .mainBlock {
+                float: left;
+                margin: 50px;
+            }
+            .mainBlock h3, .resultBlock h3 {
+                text-align: center;
+                text-decoration: underline;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>student details using DHTML</h2>
+    <div class="mainBlock">
+        <h3>student details</h3>
+        <ul class="studentDetails">
+            <li>student name : <input type="text" id="name"></li><br>
+            <li>Class : <input type="number" id="class"></li><br>
+            <li>Age : <input type="text" id="age"></li><br>
+            <li>Gender : <input type="text" id="gender"></li><br>
+        </ul>
+    </div>
+
+    <div class="resultBlock">
+        <h3>student details</h3>
+        <table >
+            <thead>
+                <th>Student Name</th>
+                <th>Class</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Yashwant Rao</td>
+                    <td>12th</td>
+                    <td>23</td>
+                    <td>male</td>
+                </tr>
+                <tr>
+                    <td>ravindra</td>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>male</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

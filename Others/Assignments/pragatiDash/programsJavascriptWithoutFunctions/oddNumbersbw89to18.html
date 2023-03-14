@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd numbers between 89 to 18</title>
+  </head>
+  <body>
+    <script>
+      var output = "";
+
+      for (i = 89; i >= 18; i--) {
+        if (i % 2 != 0) {
+          console.log(i + " is a odd number ");
+          output = output + " " + i;
+        }
+      }
+      console.log("Odd numbers are: " + output);
+    </script>
+  </body>
+</html>

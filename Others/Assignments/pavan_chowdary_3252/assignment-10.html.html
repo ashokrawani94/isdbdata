@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        tax calculation/male and female
+    </title>
+</head>
+<body>
+    <script>
+        var employename =prompt("employe name");
+        var age=prompt("enter age");
+        var gender=prompt("gender");
+        var basicsalary=prompt("basic salary")
+        salary=parseInt(basicsalary);
+        var pf=prompt("pf in %");
+        pf=parseInt(pf);
+        var hra=prompt("hra in %");
+        hra=parseInt(hra);
+        total=((pf*basicsalary)/100)+((hra*basicsalary)/100)+basicsalary;
+        console.log("employe name"+  employename);
+        console.log("employe age"+  age);
+        console.log("gender"+  gender);
+        console.log("pf"+  pf);
+        console.log("hra"+  hra);
+        if(total>=100000){
+            console.log((15*total)/100)
+        } else if(total>=50000){
+            console.log((10*total)/100)
+        } else if(total>=250000){
+            console.log((5*total)/100)
+        } else{
+            console.log("zero")
+        };
+        if(total>=100000||gender=="male"){
+            console.log((10*total)/100)
+        }else if(total>=100000||gender=="female"){
+            console.log((5*total)/100)
+        }else {
+            console.log("zero")
+        };
+        
+        </script>
+    
+</body>
+</html>

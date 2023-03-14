@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logging student details</title>
+    <style>
+      .tile {
+        font-size: 200px;
+        text-align: center;
+        text-decoration: underline;
+        position: relative;
+        top: 200px;
+      }
+      .text {
+        font-size: 85px;
+        text-align: center;
+        position: relative;
+        top: 200px;
+      }
+    </style>
+    <script>
+      var empName = prompt("Give Employee Name");
+      var empAge = prompt("Give Employee Age");
+      var empDept = prompt("Give Employee Department");
+      var empSalary = parseInt(prompt("Salary of Employee"));
+      var pfPercent = parseInt(prompt("PF percent in salary"));
+      var hraPercent = parseInt(prompt("HRA percent in salary"));
+      var pf = (pfPercent * empSalary) / 100;
+      var hra = (hraPercent * empSalary) / 100;
+      var totalSalary = empSalary + pf + hra;
+
+      console.log("The Name of Employee is " + empName);
+      console.log("The Age of Employee is " + empAge);
+      console.log("The Employee Department is " + empDept);
+      console.log("The standerd Employee salary is " + empSalary);
+      console.log("The PF cut is " + pf);
+      console.log("The HRA cut is " + hra);
+      console.log("The Total salary including PF & HRA is " + totalSalary);
+    </script>
+  </head>
+  <body>
+    <div class="tile">JAVASCRIPT</div>
+    <div class="text">Printing Employee details to colsole</div>
+  </body>
+</html>

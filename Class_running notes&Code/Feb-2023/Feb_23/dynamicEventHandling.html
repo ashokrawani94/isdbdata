@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating - Dynamic event Handling
+        </title>
+    </head>
+    <body>
+        <input id="abc" type="button" value="Click me">
+        <div id="container">
+        </div>
+        <!-- <input id="abc" type="button" value="Click me" onclick="showmsg()"> -->
+
+        <script>
+            // document.querySelector("#abc").addEventListener("click", () => {
+            //     console.log("event got fired");
+            // });
+
+            var showmsg = () => {
+                console.log("event got fired");
+            }
+
+            var spanElement = document.createElement("span");
+            spanElement.innerHTML = "Hello i got created";
+            spanElement.addEventListener("mouseover", () => {
+                console.log("Span click happend");
+            });
+
+            document.querySelector("#container").append(spanElement);
+        </script>
+       
+    </body>
+</html>

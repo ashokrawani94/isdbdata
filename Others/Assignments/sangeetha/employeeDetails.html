@@ -1,0 +1,67 @@
+<html>
+    <head> 
+        <title>javascript</title>
+        <style>
+            h2{
+        
+            }
+        </style>
+    </head>
+    <bodby>
+        <script>
+            var ename = prompt("Enter name");
+            var eage= prompt("Enter age");
+            var edepart= prompt("Entre department ");
+            var egender=prompt("entre gender");
+            var tax;
+            var esalary=prompt("entre salary");
+           esalary= parseInt(esalary);
+           var epf=(esalary*14)/100;
+           var ehra=(esalary*25)/100;
+           var etotal= esalary+epf+ehra;
+           console.log("Entre the employee name "+ename);
+           console.log("Entre the employee age "+eage);
+           console.log("Entre the employee department "+edepart);
+           console.log("Entre the employee basic salary "+esalary);
+           console.log(" total tax  ");
+           console.log("Entre the employee gender  "+egender);
+           if (egender=="male")
+           {
+            if(etotal=>100000)
+           {
+             var s10=(etotal*15)/100;
+             console.log("Entre the employee total tax  "+s10);
+           }
+           else if (etotal=>50000)
+           {
+             var s50=(etotal*10)/100;
+             console.log("Entre the employee total tax  "+s50);
+           }else if(etotal=>25000)
+           {
+            var s25=(etotal*5 )/100;
+            console.log("Entre the employee total tax  "+e25);
+           }
+           else
+           {
+            console.log("employee tax zero  ");
+           }
+        }
+          if (egender=="female")
+           {
+            if(etotal=>100000)
+           {
+             var s10=(etotal*10)/100;
+             console.log("Entre the employee total tax  "+s10);
+           }
+           else if (etotal=>50000)
+           {
+             var s50=(etotal*5)/100;
+             console.log("Entre the employee total tax  "+s50);
+           }else if( etotal=>25000)
+           {
+            console.log(" employee total tax zero  ");
+           }
+           }
+            </script>
+    </bodby>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check User Input Number is prime or Not</title>
+    </head>
+    <body>
+        <script>
+            var input = prompt("enter a number");
+            var count = 0;
+            for(var i=2; i<input; i++)
+            {
+                if(input%i==0)
+                {
+                    count++;
+                }                
+            }
+            if(count==0)            
+                console.log(input + " is a prime number")
+            else
+                console.log(input + " is a not a prime number");
+        </script>
+    </body>
+</html>

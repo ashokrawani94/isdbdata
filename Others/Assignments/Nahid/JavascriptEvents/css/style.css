@@ -1,0 +1,14 @@
+img{
+    width:100px;
+    height: 100px;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+}
+
+.mainContainer li{
+    border: 1px solid #eee;
+    width: 450px
+}

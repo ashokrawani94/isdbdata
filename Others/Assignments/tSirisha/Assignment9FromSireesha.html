@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-9</title>
+    </head>
+    <body>
+        <h1>check in console for Details</h1>
+        <script>
+            var empname = prompt("Enter emp name");
+            var empage = prompt("Enter emp age");
+            var empdept= prompt("Enter department name");
+            var gender=prompt("Enter employee Gender");
+           
+            var basicSal = prompt("Enter basic sal");
+            basicSal = parseInt(basicSal);
+            console.log("Emp name is " + empname);
+            console.log("Emp age is " + empage);
+            console.log("Emp department is " + empdept);
+            console.log("emp basicSalary is: "+basicSal);
+
+            var pf = (basicSal * 14 ) / 100;
+            pf=parseInt(pf)
+            console.log("Pf is: "+pf);
+
+            var hra = (basicSal * 24) / 100;
+            hra=parseInt(hra)
+            console.log("hra is: "+hra);
+
+            var totalSal = basicSal - pf + hra;
+            totalSal=parseInt(totalSal);
+            console.log("Total is: "+totalSal);
+
+           
+           
+        </script>
+    </body>
+</html>

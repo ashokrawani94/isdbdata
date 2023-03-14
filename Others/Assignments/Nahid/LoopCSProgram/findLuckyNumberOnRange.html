@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find the Lucky Number</title>
+    </head>
+    <body>
+        <script>
+         var reminder=0, sum=0, n = 0;           
+        
+         for(var j=900;j<=911;j++)
+         {
+            n=j;        
+            while(n>0)//loop to fetch last digit
+            {
+                reminder = n%10;
+                n = n/10;
+                n = parseInt(n);
+                sum = sum + parseInt(reminder);
+                if(n==0 && sum>9) 
+                {
+                    n=sum;
+                    sum=0;
+                }            
+            }
+            console.log("for " + j +" lucky number is "+sum);
+            reminder=0, sum=0;
+          }            
+        </script>
+    </body>
+</html>

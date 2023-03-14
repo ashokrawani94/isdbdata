@@ -1,0 +1,77 @@
+.topcontainer
+        {
+            padding: 5px;
+            margin: 5px;
+            width: 35cm;
+            height: 38px;
+            border: 1px solid rgb(235, 226, 226);
+            position: relative;
+            left: 10px;
+            z-index: 1;
+            background-color: rgb(156, 3, 87);
+            color: rgb(218, 213, 216);
+            text-decoration: solid;
+            border-radius: 18cm;
+            text-align: center;
+            font-size:x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            box-shadow: inset;
+        }
+        ul{
+            text-align: center;
+            list-style: none;
+            border: #ddd solid snow;
+            position: relative;
+            top: -1.5ch;
+          }
+
+
+        
+        .maincontainer
+        
+        {
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+            top: 30px;
+            height: 12cm;
+            width: 35cm;
+             border: 1px ;
+            border-radius: 1px red;
+            background-image:url(https://png.pngtree.com/thumb_back/fh260/back_our/20190614/ourmid/pngtree-happy-shopping-light-spot-poster-background-image_122448.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 1cm;
+            box-shadow: 5px 10px 18px rgb(207, 108, 14);
+            
+           
+           
+        }
+        
+          
+       
+        footer
+        {
+            padding: 5px;
+            text-align: center;
+            margin: 5px;
+            position:absolute;
+            top:588px;
+            color: rgb(71, 4, 4);
+            border: 1px solid rgb(216, 144, 204);
+            border-radius: 1px rgb(218, 132, 132);
+            background-color: rgb(185, 40, 89);
+            width:35cm;
+            border-radius: 18cm;
+            text-decoration: solid;
+            
+
+            
+        }
+        .container{
+            background-color: black;
+        }
+       
+
+       

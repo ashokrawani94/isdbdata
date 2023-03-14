@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List out all Armstrong Numbers in Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = [],
+        output = "";
+
+      var s = prompt("Enter size of the array");
+      s = parseInt(s);
+      var i,
+        temp,
+        rem,
+        reverse,
+        totalNoOfDigits,
+        armstrongNumber = 0,
+        output1 = "",
+        output2 = "";
+
+      for (i = 0; i < s; i++) {
+        arr[i] = prompt("Enter element on index " + i);
+
+        //arr[i] = parseInt(arr[i]);
+        console.log("arr[" + i + "] :" + arr[i]);
+        output1 = output1 + " " + arr[i];
+      }
+      console.log("Array is: [" + output1 + " ]");
+
+      function checkForArmstrongNumber() {
+        for (i = 0; i < s; i++) {
+          totalNoOfDigits = arr[i].length;
+          arr[i] = parseInt(arr[i]);
+          temp = arr[i];
+          armstrongNumber = 0;
+
+          while (arr[i] > 0) {
+            rem = arr[i] % 10;
+            arr[i] = arr[i] / 10;
+            arr[i] = parseInt(arr[i]);
+            armstrongNumber = armstrongNumber + rem ** totalNoOfDigits;
+          }
+          if (temp == armstrongNumber) {
+            output2 = output2 + " " + temp;
+          }
+        }
+
+        console.log("Armstrong numbers are: [" + output2 + " ]");
+      }
+
+      checkForArmstrongNumber();
+    </script>
+  </body>
+</html>

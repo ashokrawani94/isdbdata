@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even Number</title>
+    </head>
+    <body>
+        <h3>Even Number using Array</h3>
+        <script>
+            var data= [];
+            var n = prompt("enter the size of array");
+            n = parseInt(n);
+            for(var i=0; i<n; i++){
+                // console.log(i);
+                data[i] = prompt("enter the value at position "+ i);
+                data[i] = parseInt(data[i]);
+            }
+            var sum = 0;
+            for(var i =0; i < data.length; i++){
+                if(data[i] % 2 == 0){
+                    sum = sum + data[i];
+                }
+            }
+            console.log(data);
+            console.log("the sum of even is "+ sum);
+
+        </script>
+    </body>
+</html>

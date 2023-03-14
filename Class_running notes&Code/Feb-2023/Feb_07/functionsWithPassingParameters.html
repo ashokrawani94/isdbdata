@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Passing parameters to functions
+        </title>
+    </head>
+    <body>
+        <script>
+            var readDataFromUser = function() { // callling function 
+                var a1, a2;
+                a1 = prompt("Enter value of first variable"); // 20
+                a1 = parseInt(a1);
+                a2 = prompt("Enter value of second variable"); // 30
+                a2 = parseInt(a2);
+                getTotal(a1, a2);   // getTotal(20, 30), a1 a2 are actual params
+                console.log("Done")
+            }
+
+            
+            var getTotal = (a1, a2) => { // p1, p2 formal params // Called function
+                var result = p1 + p2;
+                console.log("The sum is " + result);
+            }
+            readDataFromUser();
+        </script>
+    </body>
+</html>

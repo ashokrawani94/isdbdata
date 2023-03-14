@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      // read a number from usercard check whether it is prime or not.
+      var number = parseInt(prompt("Enter a number to check prime")),
+        message1 = "Prime Number.",
+        message2 = "Not Prime Number.",
+        isPrime = true;
+      if (number > 1) {
+        for (var i = 2, stop = parseInt(Math.sqrt(number)); i <= stop; i++) {
+          if (number % i === 0) {
+            console.log(message2);
+            isPrime = false;
+            break;
+          }
+        }
+        if (isPrime) console.log(message1);
+      } else {
+        console.log(message2);
+      }
+      //End
+
+      //to display all the prime numbers between 1 to 100
+      var start = 1,
+        end = 100;
+
+      for (start; start <= end; start++) {
+        isPrime = true;
+        for (var i = 2, stop = parseInt(Math.sqrt(start)); i <= stop; i++) {
+          if (start % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (start > 1 && isPrime) {
+          console.log(start);
+        }
+      }
+
+      //End
+
+      //sum of all prime numbers between 200 to 18
+      var start = 200,
+        end = 18,
+        sumPrime = 0,
+        isPrime;
+      for (start; start >= end; start--) {
+        isPrime = true;
+        for (var i = 2, stop = parseInt(Math.sqrt(start)); i <= stop; i++) {
+          if (start % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (start > 1 && isPrime) {
+          sumPrime += start;
+        }
+      }
+      console.log("Sum Of Prime Numbers : " + sumPrime);
+      //End
+
+      //read a number from user and find the sum of individual digits of given number
+      var number1 = Math.abs(parseInt(prompt("Enter a number to sum digits."))),
+        sum = 0;
+      while (number1 != 0) {
+        sum = sum + (number1 % 10);
+        number1 = parseInt(number1 / 10);
+      }
+      console.log("Sum of digits : " + sum);
+      //end
+
+      //lucky number of given number
+      var luckyNumber = parseInt(
+        prompt("Enter a number to find lucky number.")
+      );
+      if (luckyNumber >= 100 && luckyNumber <= 999) {
+        var total = 0;
+        while (luckyNumber != 0) {
+          total = total + (luckyNumber % 10);
+          luckyNumber = parseInt(luckyNumber / 10);
+        }
+        console.log("Lucky Number : " + total);
+      } else {
+        console.log("Not Lucky Number");
+      }
+      //end
+
+      //armstrong number
+      var armstrong = parseInt(prompt("Enter a number to find armstrong")),
+        num = armstrong;
+      var armTotal = 0;
+      while (armstrong != 0) {
+        armTotal = armTotal + (armstrong % 10) ** 3;
+        armstrong = parseInt(armstrong / 10);
+      }
+      console.log(num === armTotal ? "Armstrong" : "Not Armstrong");
+      //end
+
+      //reverse of a number
+      var reverse = parseInt(prompt("Enter number to reverse")),
+        reverseNumber = 0;
+      while (reverse != 0) {
+        reverseNumber = reverseNumber * 10 + (reverse % 10);
+        reverse = parseInt(reverse / 10);
+      }
+      console.log("Reverse Number : " + reverseNumber);
+      //end
+
+      //check palindrome number
+      var reverse1 = parseInt(prompt("Enter number to check palindrome")),
+        numb1 = reverse1,
+        reverseNumber1 = 0;
+      while (reverse1 != 0) {
+        reverseNumber1 = reverseNumber1 * 10 + (reverse1 % 10);
+        reverse1 = parseInt(reverse1 / 10);
+      }
+      console.log(numb1 === reverseNumber1 ? "Palindrome" : "Not Palindrome");
+      //end
+
+      //lucky number between 1 to 1000.
+      for (var one = 1; one <= 1000; one++) {
+        if (one >= 100 && one <= 999) {
+          var total1 = 0,
+            anumber = one;
+          while (anumber != 0) {
+            total1 = total1 + (anumber % 10);
+            anumber = parseInt(anumber / 10);
+          }
+          console.log("Lucky Number Of " + one + " : " + total1);
+        }
+      }
+      //end
+    </script>
+  </body>
+</html>

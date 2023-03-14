@@ -1,0 +1,52 @@
+var abc = 'Raj'
+var isFeepaid = true;
+
+var userAge = 90;
+
+------------
+
+var data = [];
+
+var userData_obj = {
+   "userAge": 20,
+   "userGender": 'male', 
+   "name" : 'Raj',
+   "feepaid": true
+};
+
+var userData_arr = [20, 'Male', 'Raj', true]; // userData_arr[2] -> 'Raj'
+
+var userData = {
+    name: 'Raj'
+}
+... 
+
+userData.age = 90;
+
+userData = {
+    name: 'Raj',
+    age: 90
+}
+--------------
+
+var bookInfo = {
+    name: '',
+    authros: []
+}; 
+
+
+bookInfo.name = 'My Dreams0';
+
+bookInfo.bookPrice = '$200';
+
+bookInfo.Authors = ['ABNc', 'pqr', 'Prasad', 'Jayanth']
+
+
+bookInfo.Authors.push("tst");
+
+bookInfo.bookPrice = '$230'
+
+bookInfo.data = {}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DHTML with Events</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h3>Evaluate the Numbers</h3>
+        <ul>
+            <li>
+                Enter First Value:
+                <input type="text" id="firstValue">
+            </li>
+            <li>
+                Enter Second Value:
+                <input type="text" id="secondValue">
+            </li>
+            <li>
+                Select an Operation:
+                <select id="userOperation">
+                    <option>Add</option>
+                    <option>Sub</option>
+                    <option>Mul</option>
+                    <option>Div</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Evaluate" onclick="getValue();">
+            </li>
+            <li><span id="res"></span></li>
+        </ul>
+        <script src="./js/userOp.js"></script>
+    </body>
+</html>

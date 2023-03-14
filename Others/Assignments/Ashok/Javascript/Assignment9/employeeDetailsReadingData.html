@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Details Reading Data using Js</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var empName= prompt("Enter Name");
+            var empAge= prompt("Enter Age");
+            var empDept= prompt("Enter Department");
+            var empBasicSal= prompt("Enter Basic Sal");
+
+            empBasicSal= parseInt(empBasicSal);
+            var totalSal,PF,HRA;
+
+            PF= (empBasicSal*14)/100;
+            HRA= (empBasicSal*10)/100;
+            totalSal= empBasicSal + PF + HRA;
+
+            console.log("Employee Name is "+ empName);
+            console.log("Employee Age is "+ empAge);
+            console.log("Employee Department is "+ empDept);
+            console.log("Employee Basic Sal is "+ empBasicSal);
+            console.log("Employee Pf is "+ PF);
+            console.log("Employee HRA is "+ HRA);
+            console.log("Employee total Salary is "+ totalSal);
+
+        </script>
+    </body>
+</html>

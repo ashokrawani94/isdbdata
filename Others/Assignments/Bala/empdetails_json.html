@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Employee Details</title>
+</head>
+<body>
+    <script>
+        var eno=prompt("enter emp no");
+        var ename=prompt("enter emp name");
+        var eage=prompt("enter emp age");
+        var egender=prompt("enter emp gender");
+        var edept=prompt("enter emp department");
+        var salary=prompt("enter emp salary");
+        salary= parseInt(salary);
+            var totalSal,PF,HRA;
+            var tax= 0;
+
+            PF=(salary*14)/100;
+            HRA= (salary*10)/100;
+            totalSal= salary + PF + HRA;
+            console.log("Employee No is "+ eno);
+            console.log("Employee Name is "+ ename);
+            console.log("Employee Age is "+ eage);
+            console.log("Employee Gender is "+ egender);
+            console.log("Employee Department is "+ edept);
+            console.log("Employee Basic Sal is "+ salary);
+            console.log("Employee Pf is "+ PF);
+            console.log("Employee HRA is "+ HRA);
+            console.log("Employee total Salary is "+ totalSal);
+            if(egender=='male'){
+                if(totalSal > 100000){
+                    tax= (totalSal * 15)/100;
+                    console.log("Tax amount is "+ tax);
+                }else if(totalSal >= 50000){
+                    tax= (totalSal * 10)/100;
+                    console.log("Tax amount is "+ tax);
+                }else if(totalSal >=25000){
+                    tax= (totalSal * 5)/100;
+                    console.log("Tax amount is "+ tax);
+
+                }
+                else{
+                    console.log("NO TAX PAY");
+                }
+
+            }else{
+                if(egender=="female"){
+                    if(totalSal > 100000){
+                        tax= (totalSal * 10)/100;
+                        console.log("Tax amount is "+ tax);
+                    }else if(totalSal >= 50000){
+                        tax= (totalSal * 5)/100;
+                        console.log("Tax amount is "+ tax);
+                    }else{
+                        console.log("NO TAX PAY");
+                    }
+                }
+            } 
+                    
+                
+                
+
+
+            
+
+        </script>
+    </body>
+</html>

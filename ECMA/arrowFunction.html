@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            DEmonstrating arrow functions
+        </title>
+    </head>
+    <body>
+        <script>
+            class Sample {
+                constructor() {
+                    this.name = 'Prasad';
+                    this.age = 90;
+                }
+                // this.showData = function() {
+
+                // }
+                showData() {
+                    console.log("USername is " + this.name)
+                    console.log("User age  is " + this.age)
+
+                    setTimeout(() => {
+                        console.log("USername is " + this.name)
+                        console.log("User age  is " + this.age)
+                    }, 3000);
+                }
+            }
+
+            var s1 = new Sample();
+            s1.showData();
+        </script>
+    </body>
+</html>

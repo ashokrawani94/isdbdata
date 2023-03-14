@@ -1,0 +1,34 @@
+difference between =, == and ===
+    var a = 90; // assignment operator 
+
+    a == 90; // comparision true / false
+    var a = 90;
+    var b = 99;
+    a == b -> // false 
+
+    var a = 90;
+    var b = "90";
+    a == b -> // True  // It checks only for value equality not for datatype equality
+
+    a === b // False Will check for both value and datatype equality
+
+    Looping Control STructures  
+        for 
+            Syntax:
+                for ( intilization   ;  conditioncheck  ; increment/decrement ) {
+                    ... 
+                    .... 
+                    .....
+                }
+        while 
+        dowhile 
+
+        for Each
+        for of 
+        for in 
+----
+increment and decrement operator 
+    var a = 90;
+    a = a + 1;
+    a += 1;
+    a++;

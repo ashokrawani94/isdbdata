@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <style>
+        .form{
+            border: 1px solid;
+            margin: 0px auto;
+            width: 500px;
+        }
+        #container > li{
+            list-style: none;
+            margin: 10px;
+            border: 1px solid;
+            padding: 10px;
+        }
+        #pwMsg li{
+            padding: 5px;
+            color: red;
+        }
+        #pwMsg{
+            margin: 5px;
+        }
+    </style>
+    <script src="validate.js"></script>
+</head>
+<body>
+    <div class="form">
+        <ul id="container">
+            <li>Account Name:
+                <input type="text"  id="accName" onkeypress="return validateAccountName(event)" >
+            </li>
+            <li>
+                Account Number:
+                <input type="text" id="accNum" onkeypress=" return validateAccountNumber(event)">
+            </li>
+            <li>
+                Account Password: 
+                <input type="text"  id="accPass" oninput="validateAccountPw(event)">
+                <ul id="pwMsg">
+                    <li id="span1">Total Password Length should be 8</li>
+                    <li id="span2">First Letter Should Be Upper Case</li>
+                    <li id="span3">Minimum 3 characters required</li>
+                    <li id="span4">Minimum 2 symbols required</li>
+                    <li id="span5">Minimum 1 digit required</li>
+                    <li id="span6">Should not end with number</li>
+                    
+                </ul>
+            </li>
+            <li>
+                <input type="button" value="Submit">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

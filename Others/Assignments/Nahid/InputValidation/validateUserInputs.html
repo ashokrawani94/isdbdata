@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .mainContainer{
+                border:1px solid;
+                margin:10px auto;
+                width:650px;
+            }
+            .mainContainer > li{
+                list-style: none;
+                padding: 10px;
+                border:1px solid #ccc;
+                margin: 10px;
+            }
+            #heading{
+                text-align: center;
+                color: blue;
+                text-decoration: underline;
+            }
+            .passwordField{
+                width:250px;
+                float: left;
+            }
+            .msgContainer{
+                float: left;
+            }
+            .passwordContainer{
+                height: 150px;
+            }
+
+            .msgContainer li{
+                color: red;
+            }
+            #accId, #accNo{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="mainContainer">
+            <li id="heading">Account Details</li>
+            <li>
+                Account Name: 
+                <input type="text" onkeypress="return validateAccountName(event);" maxlength="30">
+                <span id="accId">*Only Characters Allow without space</span>
+            </li>
+            <li>
+                Account Number: 
+                <input type="text" maxlength="10" onkeypress="return validateAccountNumber(event);">
+                <span id="accNo">*Only Characters Allow without space</span>
+            </li>
+            <li class="passwordContainer">               
+                <div class="passwordField">
+                    Password:
+                    <input type="text" id="pwdText" onmouseleave="validatePassword();">
+                </div>
+                <ul class="msgContainer">
+                    <li id="span1">Total Password Length should be 8</li>
+                    <li id="span2">First Letter Should Be Upper Case</li>
+                    <li id="span3">Minimum 3 characters required</li>
+                    <li id="span4">Minimum 2 symbols required</li>
+                    <li id="span5">Minimum 1 digit required</li>
+                    <li id="span6">Should not end with number</li>
+                </ul>
+            </li>
+            <li>
+                <input type="button" value="Submit">
+            </li>
+        </ul>
+        <script src="validateInputs.js"></script>
+    </body>
+</html>

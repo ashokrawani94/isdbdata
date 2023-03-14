@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Iterating Data Over Json
+        </title>
+</head>
+<body>
+    <script>
+        var contactDetails = {
+            gender: 'male',
+            martialStatus: 'UM',
+            profilepic: 'pqr,png',
+            name:{
+                fname: 'pathan sameer',
+                lname: 'pathan',
+                middlename: 'khan'
+            },
+            contactNumber: {
+                office: '+919022200367',
+                personal: '+919158709185'
+            },
+            address: {
+                office: {
+                    aeria: 'uppal piller no 212',
+                    buildingno: 'B12A',
+                    city: 'Hyderabad',
+                    state: 'Telangana',
+                    officespace: 'Mindspace'
+                },
+                personal: {
+                    dno: '34B',
+                    stateinfo: {
+                        statecode: '500004',
+                        name: 'Pathan Sameer'
+                    },
+                    country: 'India'
+                }
+            },
+               emailId: { 
+                office: 'khansame1436@gmail.com'
+               },
+               personal: ['pathansameer8558@gmail.com', 'khasame1436@gmail.com'],
+               socialid: {
+                    instagram: '_itzpathan_sameer',
+                    twitter: 'khansameer8558',
+                    linkid: 'sameer',
+                    fbid: 'sameer khan'
+
+               }
+
+        }
+            
+            function retriveDataFromObject(data) {
+                for (var temp in data) {
+                    if (typeof(data[temp]) == 'object') {
+                        retriveDataFromObject(data[temp]);
+                    } else {
+                        console.log (temp + ' -> ' + data[temp]);
+                    }
+                }
+            }
+              retriveDataFromObject(contactDetails);
+    </script>
+
+</body>
+</html>

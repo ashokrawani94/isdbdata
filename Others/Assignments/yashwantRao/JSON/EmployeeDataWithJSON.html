@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee details</title>
+    </head>
+    <body>
+        <h4>
+            employee details with the use of JSON object
+        </h4>
+
+        <script>
+            var totalSalary, hra, pf, basicSal, gender;
+            var empDetails = {
+                name : prompt("Please enter the name"),
+                age : prompt("please enter the age"),
+                gender : prompt("please enter gender"),
+                deptt : prompt("please enter the department"),
+                basicSal : prompt("enter the basic salary"),
+            }
+            basicSal = parseInt(empDetails.basicSal);
+            hra = (basicSal*12) / 100;
+            pf = (basicSal*14) / 100;
+            totalSalary = basicSal + pf + hra;
+
+            if(empDetails.gender == "male") {
+                if(totalSalary>100000){
+                    var tax = (totalSalary*15) /100;
+                }
+                else if(totalSalary>50000) {
+                    tax = (totalSalary*10) /100;
+                }
+                else if(totalSalary>25000) {
+                    tax = (totalSalary*5) / 100;
+                }
+                else {
+                    tax = 0;
+                }
+            } else {
+                if(totalSalary>100000){
+                    var tax = (totalSalary*10) /100;
+                }
+                else if(totalSalary>50000) {
+                    tax = (totalSalary*5) /100;
+                }
+                else {
+                    tax = 0;
+                }
+            }
+            
+            console.log(empDetails.name);
+            console.log(empDetails.age);
+            console.log(empDetails.gender);
+            console.log(empDetails.deptt);
+            console.log(empDetails.basicSal);
+            console.log(totalSalary);
+            console.log(tax);
+        </script>
+    </body>
+</html>

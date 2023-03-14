@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enpolyee Details Using JSON</title>
+</head>
+
+<body>
+    <script>
+        var empdetails = {};
+
+        empdetails.ename = prompt("Enter your name")
+        empdetails.eage = prompt("Enter your age")
+        empdetails.gender = prompt("Enter your gender")
+        empdetails.edep = prompt("Enter your departement")
+        empdetails.basicSalary = prompt("Enter your salary")
+        empdetails.basicSalary = parseInt(empdetails.basicSalary);
+
+        empdetails.pf = (10 * empdetails.basicSalary) / 100
+        empdetails.pf = parseInt(empdetails.pf);
+        empdetails.hra = (23 * empdetails.basicSalary) / 100
+        empdetails.hra = parseInt(empdetails.hra);
+
+        empdetails.totalSalary = empdetails.basicSalary + empdetails.pf + empdetails.hra
+
+        var taxValue = 0;
+
+        if (empdetails.gender == 'male') {
+            if (empdetails.totalSalary > 100000) {
+                taxValue = 15;
+            } else if (empdetails.totalSalary > 50000) {
+                taxValue = 10;
+            } else if (empdetails.totalSalary > 25000) {
+                taxValue = 5;
+            } else {
+                taxValue = 0;
+            }
+        } else {
+            if (empdetails.totalSalary > 100000) {
+                taxValue = 10;
+            } else if (empdetails.totalSalary > 50000) {
+                taxValue = 5;
+            } else {
+                taxValue = 0;
+            }
+        }
+
+        empdetails.totalTax = (taxValue * empdetails.totalSalary) / 100;
+
+        console.log("------Empolyee Details------")
+        console.log("Name : " + empdetails.ename)
+        console.log("Age : " + empdetails.eage)
+        console.log("Gender : " + empdetails.gender)
+        console.log("Departement : " + empdetails.edep)
+        console.log("Salary : " + empdetails.basicSalary)
+        console.log("Total salary : " + empdetails.totalSalary)
+        console.log("Total Tax : " + empdetails.totalTax)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details Dynamic In Json</title>
+  </head>
+  <body>
+    <script>
+      var empDetails = {
+        name: prompt("Enter employee name"),
+        age: prompt("Enter employee age"),
+        gender: prompt("Enter employee gender male/female"),
+        dept: prompt("Enter employee department"),
+        basicSal: prompt("Enter basic salary of employee"),
+        totalTax: 0,
+
+        totalTaxCalculation() {
+          this.basicSal = parseInt(this.basicSal);
+          this.pf = (this.basicSal * 14) / 100;
+          this.hra = (this.basicSal * 24) / 100;
+          this.totalsalary = this.basicSal + this.pf + this.hra;
+          this.totalsalary = parseInt(this.totalsalary);
+
+          if (this.gender == "male") {
+            if (this.totalsalary >= 100000) {
+              this.totalTax = this.totalsalary * (15 / 100);
+            } else if (this.totalsalary >= 50000 && this.totalsalary < 100000) {
+              this.totalTax = this.totalsalary * (10 / 100);
+            } else if (this.totalsalary >= 25000 && this.totalsalary < 50000) {
+              this.totalTax = this.totalsalary * (5 / 100);
+            } else {
+              this.totalTax = 0;
+            }
+          } else if (this.gender == "female") {
+            if (this.totalsalary >= 100000) {
+              this.totalTax = this.totalsalary * (10 / 100);
+            } else if (this.totalsalary >= 50000 && this.totalsalary < 100000) {
+              this.totalTax = this.totalsalary * (5 / 100);
+            } else {
+              this.totalTax = 0;
+            }
+          } else {
+            console.log("Please enter correct gender");
+          }
+
+          this.displayEmployeeDetails();
+        },
+
+        displayEmployeeDetails() {
+          console.log(this);
+          console.log("Employee Name is " + this.name);
+          console.log("Employee Age is " + this.age);
+          console.log("Employee Gender is " + this.gender);
+          console.log("Employee Department is " + this.dept);
+          console.log("Employee Basic Salary is " + this.basicSal);
+          console.log("pf is " + this.pf);
+          console.log("hra is " + this.hra);
+          console.log("Total Salary is " + this.totalsalary);
+          console.log("Total Tax is " + this.totalTax);
+        },
+      };
+      empDetails.totalTaxCalculation();
+    </script>
+  </body>
+</html>

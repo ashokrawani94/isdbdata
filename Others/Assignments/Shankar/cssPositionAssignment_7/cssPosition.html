@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating css position
+    </title>
+
+    <style>
+        .footer, h3 {
+            border: 2px solid black;
+            text-align: center;
+            padding: 4px;
+            margin-top: 10px;
+        }
+        .mainContainer {
+            border: 2px solid black;
+            text-align: center;
+            padding: 4px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .box {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .block1 {
+            background-color: red;
+            position: ;
+        }
+        .block2 {
+            background-color: green;
+            position: relative;
+            left: 50px;
+            bottom: 50px;
+        }
+        .block3 {
+            background-color: hotpink;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        .block4 {
+            background-color: yellow;
+            position: absolute;
+            right: 50px;
+            top: 60px;
+        }
+        .block5 {
+            background-color: yellowgreen;
+            position: relative;
+            left: 700px;
+            top: 40px;   
+        }
+        .block6 {
+            background-color: brown;
+            position: absolute;
+            left: 850px;
+            bottom: 400px;
+        }
+        .block7 {
+            width: 150px;
+            height: 130px;
+            background-color: blue;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            z-index: 6;
+        }
+        .block8 {
+            background-color: purple;
+            position: relative;
+            left: 850px;
+            bottom: 50px;
+        }
+        .block9 {
+            background-color: blueviolet;
+            position: absolute;
+            right: 700px;
+            top: 400px;
+        }
+        .block10 {
+            background-color: skyblue;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+        .block11 {
+            background-color: aquamarine;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+        }
+        .block12 {
+            background-color: tomato;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .block13 {
+            background-color: gold;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h3>Block Game</h3>
+
+  <div class="mainContainer">
+    <div class="box block1">BOX1</div>
+    <div class="box block2">BOX2</div>
+    <div class="box block3">BOX3</div>
+    <div class="box block4">BOX4</div>
+    <div class="box block5">BOX5</div>
+    <div class="box block6">BOX6</div>
+    <div class="box block7">BOX7</div>
+    <div class="box block8">BOX8</div>
+    <div class="box block9">BOX9</div>
+    <div class="box block10">BOX10</div>
+    <div class="box block11">BOX11</div>
+    <div class="box block12">BOX12</div>
+    <div class="box block13">BOX13</div>
+</div>
+
+<div class="footer">
+    @ COPY RIGHT - 2023
+</div>
+</body>
+</html>

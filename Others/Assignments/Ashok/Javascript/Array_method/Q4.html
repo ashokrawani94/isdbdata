@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel number</title>
+</head>
+<body>
+    <h3>function to count no of vowels present in given string</h3>
+    <script>
+        var fnToCountVowels = (str) => {      
+        var count = 0;
+        for(var i = str.length-1; i >= 0; i--){
+        if(str[i] == "A" || str[i] == "E" || str[i] == "I" || str[i] == "O" || str[i] == "U"){
+            count++;
+        }else if(str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u"){
+            count++;
+         }
+        }
+        return count;
+       }
+
+     //calling fnToCountVowels function
+       var str1 = "Ashok Rawani";
+       var cnt = fnToCountVowels(str1);
+       console.log("No of Vowels present in string '" +str1+"' is: " + cnt);
+    </script>
+</body>
+</html>

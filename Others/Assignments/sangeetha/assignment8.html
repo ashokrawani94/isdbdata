@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>assignment8
+        </title>
+        <style>
+            h2{
+                border: 3px solid black;
+                text-align: center;
+                padding: 10px;
+                margin: 3px;
+                background-image: url(image/imgbank.jpg);
+                background-repeat: no-repeat; 
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .block{
+                margin-top: 8px;
+                border: 3px solid;
+                width: auto;
+                height: 1111px;
+                overflow: auto;
+               background-image: url(image/imgbank.jpg);
+                background-repeat: no-repeat; 
+                background-attachment: fixed;
+                background-size: cover;
+             }
+             .block1{
+                width:88%;
+                height: 284px;
+                border: 2px solid;
+               margin: auto;
+               margin-top: 25px;
+                position: relative;
+                background-image:url(image/imglogo2.webp);
+                background-repeat: no-repeat;
+                background-position: 45%;
+                /*background-color: white;*/
+
+             }
+             .minblock{
+                width: 150px;
+                height: 25px;
+                text-align: center;
+                border: 2px solid;
+                position: relative;
+                bottom: 4%;
+                left: 10%;
+                background-color:paleturquoise;
+                font-size: 20px;
+             }
+             li{
+                  list-style: none;
+                padding: 5px;
+                margin: 10px;
+                font-size: 25px;
+             }
+            
+          .block4{ position: absolute; 
+             right: 40%;
+             top:80%; 
+             background-color: blue;
+             
+             height: 30px;
+             width: 62px;
+             border-radius: 10px;
+          }
+
+            </style>
+    </head>
+    <body>
+        <h2>STUDENT REGISTRATION PAGE</h2>
+        <div class="block">
+            <div class="block1">
+                <div class="minblock"> Account Details</div>
+                <ul>
+                   <li style="float: left;">NAME:
+                        <input type="text"  maxlength="15" required>
+                   </li>
+                     <li style="float: right; margin-right: 27%;">Account Id:
+                    <input type="text" value="1212268GN0" min="10">
+                    </li>
+                    <li style="float: left; clear:both;">AGE:  
+                        <input type="text" style="width:55px" maxlength="2" >
+                    </li>
+                    <li style=" float: right; margin-right: 27%;">Account Type:
+                      <select>
+                        <option>Current account </option>
+                        <option> Savings account</option>
+                        <option>  Salary account</option>
+                        <option> Fixed deposit account</option>
+                        <option> NRI accounts</option>
+                       </select>
+                     </li> 
+                    <li style="float: left; clear: both;"> Gender:
+                      <input type="radio" name="GENDER" value="female">Female
+                      <input type="radio" name="GENDER" value="male">Male
+                     </li>
+                     <li style="float: left; clear: both;">Mail id: 
+                       <input type="email" value="@gmail.com">
+                      </li>
+                </ul>
+          </div>
+           <div class="block1">
+            <div class="minblock">Education Details</div>
+            <ul>
+            <li style="float: left;">Qualification:
+                <select>
+                    <option>SSC </option>
+                    <option> Intermediate</option>
+                    <option>  Undergraduate (UG)</option>
+                    <option> Postgraduate (PG)</option>
+                    <option>Other</option>
+                   </select>
+            </li>
+            <li style="float: right; margin-right: 25%;">College Name:  
+                <input type="text" >
+            </li>
+            <li style="float: left; clear:both;">Lanuage Known:  
+             <input type="checkbox" style="width: 15px;">English
+             <input type="checkbox">Hindi
+             <input type="checkbox">Telugu
+            </li>
+            <li style=" float: right; margin-right: 29%;">Location:
+                <select>
+                    <option>Saroornagar</option>
+                    <option>Vanasthalipuram </option>
+                    <option> Charminar</option>
+                    <option>Secunderabad </option>
+                    <option>Miyapur</option>
+                   </select>
+            </li>
+            <li style="float: left; clear:both;" >Course Opting For:   
+                <select >
+                    <option>MCA</option>
+                    <option>MBA </option>
+                    <option> Msc(Maths)</option>
+                    <option>MSC(Computer) </option>
+                    <option>Msc(phys)</option>
+                </select>
+            </li>
+            </ul>
+           </div>
+           <div class="block1">
+            <div class="minblock">Address Details</div>
+            <ul>
+            <li style="float: left;">Door Number:
+           <input type="text" >
+             </li>
+             <li style="float: right; margin-right: 25%;">Country Name:  
+            <input type="type">
+            </li>
+            <li style="float: left; clear:both;">Street Name:  
+            <input type="text">    
+            </li>
+            <li style=" float: right; margin-right: 25%;">Country Code :
+                <input type="text">
+                </li>
+                <li style="float: left; clear:both;"> State Name:  
+                    <input type="text">    
+                    </li>
+                    <li style="float: left; clear:both;">State Code:  
+                        <input type="text">    
+                        </li>
+            </ul>
+           </div>
+           <div class="block1" style="height: 333px;">
+            <div class="minblock">About urself</div>
+           <ul>     
+             <li> <div style="position: relative; top: 40px;">About Yourself:</div>
+              <div style="position: absolute; left: 230px;bottom: 103px; ">
+                <textarea name="abot urself"  cols="60" rows="11" maxlength="300">
+                </textarea></div> 
+                </li>
+                <li>
+                    <li> 
+                        <div class="block4">
+                            <input type ="submit" value="sumbit">
+                        </div>
+                </li>
+        </ul>
+           </div>
+        </div>
+           <h2 style="font-size: 25px ;color: white"> @copy right 2023</h2>
+         
+    </body>
+</html>

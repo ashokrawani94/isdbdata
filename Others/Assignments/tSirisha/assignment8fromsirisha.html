@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment-8
+        </title>
+        <style>
+            
+            .head{
+                border:2px solid;
+                text-align: center;
+                width: 1000px;
+                margin:10px auto;
+                background-color: chartreuse;
+                
+            }
+            .headingsBorder{
+                
+                border: 1px solid;
+            }
+            
+            .regBlock {
+               background-color: aqua;
+                width: 1000px;
+                overflow: auto;
+                
+            }
+            .sideHeading
+            
+            {
+                width:200px;
+                height: 25px;
+                margin:2px;                
+                text-align: center;
+                background-color:rgb(247, 231, 231);
+                position: relative;
+                top: 20px;
+                left: 80px;
+                
+            }   
+            .SectionDetails
+           
+            {
+              padding: 5px;
+              height: 200px; 
+              width: 870px;
+              margin: 10px auto;
+            }         
+            .floatl{
+              float:left;
+             
+            }
+            .floatr{
+              float:right;
+             
+            }
+            .clear{
+                clear:both;
+                
+            }
+               
+           
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                padding: 5px;
+                margin: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3 class="head">Student Registration page Assignment-8 </h3>
+        <div class="regBlock headingsBorder">
+           
+            <form method="GET" action="">
+                <div class="sideHeading headingsBorder">Account Details</div>
+                <ul class="SectionDetails headingsBorder">
+                    <li class="floatl" >
+                        <label for="Name">Name: </label>
+                        <input type="text" name="username" maxlength="10" >
+                    </li>
+                    <li class="floatr">
+                        <label for="acctId">User Acccount Id</label>
+                        <input type="text" name="acctId" value="TESTING">
+                    </li> <br/>
+                    <li class="floatl clear">
+                        <label for="Age">Age:  </label>
+                        <input type="text" name="Age"max="50" >
+                    </li>
+                    <li class="floatr clear">
+                        Acccounttype: 
+                        <select name="Acccounttype">
+                            <option>current </option>
+                            <option>savings </option>
+                    </li>
+                    
+                  
+                    <li class="floatl clear">
+                        User Gender:
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </li>
+                    <li class="floatl" >
+                        <label for="MailId">email: </label>
+                        <input type="text" name="username"  >
+                    </li>
+                </ul>
+                    <div class="sideHeading headingsBorder">Education Details</div>
+                    <ul class="SectionDetails headingsBorder">
+                        <li class="floatl">
+                        
+                                Qualification: 
+                                <select name="Qualification"; style="width: 200px">
+                                    <option>PostGraduation</option>
+                                   
+                                    <option>Graduation</option>
+                                    <option>Btech</option>
+                                   
+                                    <option>Intermediate</option>
+                                    <option>ssc</option>
+                                    
+                                </select>
+                            
+
+                        </li>
+                        <li class="floatr" >
+                            <label for="CollegeName">CollegeName: </label>
+                            <input type="text" name="College Name"  >
+                        </li>
+                        <li class="floatl clear">
+                            Languages: 
+                            <input type="checkbox" name="lng_eng" >English
+                            <input type="checkbox" name="lng_tel">Telugu
+                            <input type="checkbox" name="lng_hin">Hindi
+                        </li>
+                        <li class="floatr ">
+                            Location: 
+                            <select name="Location" style="width: 200px;">
+                                
+                                <optgroup label="Telangana" >
+                                    <option>Hyderabad</option>
+                                    <option>Rangaredy</option>
+                                    <option>Kadapa</option>
+                                </optgroup>
+                                <optgroup label="AndhraPradesh"></optgroup>
+                                    <option>Guntur</option>
+                                    <option>WestGodavari</option>
+                                    <option>eastGodavari</option>
+                                    <option>Krishna</option>
+                            </select>
+                        </li>
+                        <li class="floatl clear">
+                            Course: 
+                            <select name="CourseOptingFor" style="width: 200px;">
+                                <optgroup label="UI FullStack" >
+                                    <option>Html</option>
+                                    <option>CSS</option>
+                                    <option>Java Script </option>
+                                    <option>MangoDb </option>
+                                </optgroup>
+                                <optgroup label="Python FullStack"></optgroup>
+                                    <option>Python</option>
+                                    <option>AdvPython</option>
+                                    <option>AI</option>
+                                    <option>DJango</option>
+                            </select>
+                        </li>
+
+
+                    </ul>
+                    <div class="sideHeading headingsBorder">Address</div>
+                    
+                    <ul class="SectionDetails headingsBorder">
+                        <li class="floatl clear">
+                             <label for="Dno">DNO</label>
+                                <input type="text" name="Dno" maxlength="10">
+                        </li>    
+                    
+                        <li class="floatr ">
+                            Country Name: 
+                            <select name="countryName"style="width:200px;">
+                               
+                                <option>India</option>
+                                <option>Uk</option>
+                                <option>Africa</option>
+                                <option>USA</option>
+                                <option>WestIndies</option>
+                                <option>Japan</option>
+                                <option>China</option>
+                                <option>Europe</option>
+                        </select>
+                    </li>
+                    <li class="floatl clear">
+                        <label for="txtStreetName">Street : </label>
+                           <input type="text" name="Street" maxlength="10">
+                   </li> 
+                   <li class="floatr ">
+                    <label for="CountryCode">Countr Code : </label>
+                       <input type="text" name="Country" maxlength="10" style="width:200px;">
+               </li> 
+                    <li class="floatl clear">
+                        State: 
+                        <select name="StateName" style="width:200px;"">
+                           
+                            <option>AndhraPradesh</option>
+                            <option>Assam</option>
+                            <option>Telangana</option>
+                            <option>odisha</option>
+                            <option>punjab</option>
+                            <option>Rajastan</option>
+                            <option>Jammu&Kashmir</option>
+                            <option>Gujarat</option>
+                    </select>
+                </li>
+                <li class="floatl clear">
+                    <label for="State Code">State Code</label>
+                        <input type="text" name="" maxlength="10"
+                </li>
+            </ul>
+            <div class="sideHeading headingsBorder">About Yourself</div>
+            <ul class="SectionDetails headingsBorder">
+                <li>
+                        Tell about urself 
+                        <textarea name="aboutUser" id="" cols="60" rows="10" maxlength="300"></textarea>
+                </li>
+            </ul>
+                <ul>
+                    <li>
+                        
+                        <input type="submit" value="Register" style="background-color: blue; color: antiquewhite;">
+                        <input type="reset" value="Reset   " style="background-color: blue; color: antiquewhite;">             
+                    </li>
+                </ul>
+            </form>
+            
+            
+        </div>
+        <h3 class="head">&copy copyright 2023 </h3>
+    </body>
+</html>

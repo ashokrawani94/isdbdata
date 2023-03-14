@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrating students details in table</title>
+    <style>
+        thead tr,th {
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        thead tr ,th:hover{
+            background-color: tomato;
+            cursor:pointer;
+        }
+        tbody tr,th:hover{
+            background-color: rgb(134, 89, 176);
+            color: white;
+        }
+        table,th,td,tr{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .backchange{
+            background-color: blue;
+        }
+        .backchange2{
+            background-color: hotpink;
+        }
+        .imgspace{
+            padding: 5px;
+        }
+        .progressRow{
+            padding: 5px;
+            background-color: #ccc;
+        }
+        .border{
+            border: 2px solid red;
+            text-align: center;
+            padding: 10px;
+            margin: 10px auto;
+            width: 860px;
+            background-color:purple ;
+            color: white;
+            border-radius: 5px;
+        }
+        .border:hover{
+            background-color:yellow ;
+            cursor:pointer ;
+        }
+        table{
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="border">Students Details in List Tag</h2>
+    <table table="1px solid" cellspacing="0" cellpadding="0">
+<thead>
+<tr>
+  <th> SL.No </th>
+  <th>NAME</th>
+  <th>AGE</th>
+  <th>PICTURE</th>
+  <th>CLASS</th>
+  <th>LOCATION</th>
+  <th>PROGRESS CARD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>RAHUL</td>
+  <td>14</td>
+  <td class="imgspace"> <img src="img/boy1.PNG" alt="" width="100PX" height=80OPX"></th>
+  <td>10TH</td>
+  <td>Pune</td>
+  <td class="progressRow">
+  <table cellspacing="0px" cellpadding="5px">
+<tr>
+   <th>Subject</th>
+   <th>MAX Marks</th>
+   <th>Obtained Mark</th>
+   <th>Status</th>
+</tr>
+   
+</tr>
+<tr>
+   <td class="backChange2">Math</td>
+   <td class="backChange2">100</td>
+   <td class="backChange2">20</td>
+   <td class="backChange2">Fall</td>
+</tr>
+
+<tr>
+   <td class="backChange2">Scince</td>
+   <td class="backChange2">100</td>
+   <td class="backChange2">20</td>
+   <td class="backChange2">Fall</td>
+</tr>
+<tr>
+   <td class="backChange">Computer</td>
+   <td class="backChange">100</td>
+   <td class="backChange">70</td>
+   <td class="backChange">Pass</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+   <td>2</td>
+   <td>SOHIL</td>
+   <td>13</td>
+   <td class="imgspace"> <img src="img/boy2.PNG" alt="" width="100PX" height=80OPX"></th>
+   <td>10TH</td>
+   <td>Mumbai</td>
+   <td class="progressRow">
+   <table cellspacing="0px" cellpadding="5px">
+<tr>
+   <th>Subject</th>
+   <th>MAX Marks</th>
+   <th>Obtained Mark</th>
+   <th>Status</th>
+</tr>
+<tr>
+   <td class="backChange2">Math</td>
+   <td class="backChange2">100</td>
+   <td class="backChange2">20</td>
+   <td class="backChange2">Fall</td>
+</tr>
+<tr>
+    <td class="backChange">Scince</td>
+    <td class="backChange">100</td>
+    <td class="backChange">70</td>
+    <td class="backChange">pass</td>
+</tr>
+<tr>
+    <td class="backChange2">Computer</td>
+    <td class="backChange2">100</td>
+    <td class="backChange2">70</td>
+    <td class="backChange2">Pass</td></table>
+</td>
+</tr>
+<tr>
+   <td>3</td>
+   <td>Teena</td>
+   <td>14</td>
+   <td class="imgspace"> <img src="img/girl1.PNG" alt="" width="100PX" height=80OPX"></th>
+   <td>10TH</td>
+   <td>Kolkata</td>
+   <td class="progressRow">
+   <table cellspacing="0px" cellpadding="5px">
+<tr>
+  <th>Subject</th>
+  <th>MAX Marks</th>
+  <th>Obtained Mark</th>
+  <th>Status</th>
+</tr>
+<tr>
+   <td class="backChange">Math</td>
+   <td class="backChange">100</td>
+   <td class="backChange">80</td>
+   <td class="backChange">pass</td>
+</tr>
+<tr>
+   <td class="backChange2">Scince</td>
+   <td class="backChange2">100</td>
+   <td class="backChange2">70</td>
+   <td class="backChange2">pass</td>
+</tr>
+<tr>
+   <td class="backChange">Computer</td>
+   <td class="backChange">100</td>
+   <td class="backChange">70</td>
+   <td class="backChange">Pass</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>SONU</td>
+    <td>14</td>
+    <td class="imgspace"> <img src="img/boy3.PNG" alt="" width="100PX" height=80OPX"></th>
+    <td>10TH</td>
+    <td>Chennai</td>
+    <td class="progressRow">
+    <table cellspacing="0px" cellpadding="5px">
+    <tr>
+    <th>Subject</th>
+    <th>MAX Marks</th>
+    <th>Obtained Mark</th>
+    <th>Status</th>
+    </tr>
+    <td class="backChange">Math</td>
+    <td class="backChange">100</td>
+    <td class="backChange">60</td>
+    <td class="backChange">Pass</td>
+    </tr>
+    <tr>
+    <td class="backChange2">Scince</td>
+    <td class="backChange2">100</td>
+    <td class="backChange2">20</td>
+<td class="backChange2">Fall</td>
+</tr>
+<tr>
+<td class="backChange">Computer</td>
+<td class="backChange">100</td>
+<td class="backChange">70</td>
+<td class="backChange">Pass</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>ROHAN</td>
+  <td>15</td>
+  <td class="imgspace"> <img src="img/boy4.PNG" alt="" width="100PX" height=80OPX"></th>
+  <td>10TH</td>
+  <td>Odisha</td>
+  <td class="progressRow">
+  <table cellspacing="0px" cellpadding="5px">
+<tr><th>Subject</th>
+    <th>MAX Marks</th>
+    <th>Obtained Mark</th>
+    <th>Status</th>
+    </tr>
+    <tr>
+    <td class="backChange2">Math</td>
+    <td class="backChange2">100</td>
+    <td class="backChange2">70</td>
+    <td class="backChange2">Pass</td>
+    </tr>
+<tr>
+    <td class="backChange">Scince</td>
+    <td class="backChange">100</td>
+    <td class="backChange">70</td>
+    <td class="backChange">pass</td>
+</tr>
+<tr>
+    <td class="backChange2">Computer</td>
+    <td class="backChange2">100</td>
+    <td class="backChange2">70</td>
+    <td class="backChange2">Pass</td>
+</tr>
+    </table>
+    </td>
+    </tr>
+<tr>
+    <td>6</td>
+    <td>AVA</td>
+    <td>14</td>
+    <td class="imgspace"> <img src="img/girl2.PNG" alt="" width="100PX" height=80OPX"></th>
+    <td>10TH</td>
+    <td>Delhi</td>
+    <td class="progressRow">
+    <table cellspacing="0px" cellpadding="5px">
+    <tr>
+        <th>Subject</th>
+        <th>MAX Marks</th>
+        <th>Obtained Mark</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td class="backChange">Math</td>
+        <td class="backChange">100</td>
+        <td class="backChange">80</td>
+        <td class="backChange">pass</td>
+    </tr>
+    <tr>
+        <td class="backChange2">Scince</td>
+        <td class="backChange2">100</td>
+        <td class="backChange2">70</td>
+        <td class="backChange2">pass</td>
+    </tr>
+    <tr>
+        <td class="backChange">Computer</td>
+        <td class="backChange">100</td>
+        <td class="backChange">70</td>
+        <td class="backChange">Pass</td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>ZOYA</td>
+        <td>13</td>
+        <td class="imgspace"> <img src="img/girl3.PNG" alt="" width="100PX" height=80OPX"></th>
+        <td>10TH</td>
+        <td>Mumbai</td>
+        <td class="progressRow">
+        <table cellspacing="0px" cellpadding="5px">
+    <tr>
+        <th>Subject</th>
+        <th>MAX Marks</th>
+        <th>Obtained Mark</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+       <td class="backChange2">Math</td>
+       <td class="backChange2">100</td>
+       <td class="backChange2">20</td>
+       <td class="backChange2">Fall</td>
+    </tr>
+    <tr>
+       <td class="backChange">Scince</td>
+       <td class="backChange">100</td>
+       <td class="backChange">70</td>
+       <td class="backChange">pass</td>
+    </tr>
+    <tr>
+       <td class="backChange2">Computer</td>
+       <td class="backChange2">100</td>
+       <td class="backChange2">70</td>
+       <td class="backChange2">Pass</td>
+    </tr>
+   </table>
+    </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Kaju</td>
+        <td>14</td>
+        <td class="imgspace"> <img src="img/girl4.PNG" alt="" width="100PX" height=80OPX"></th>
+        <td>10TH</td>
+        <td>Kolkata</td>
+        <td class="progressRow">
+        <table cellspacing="0px" cellpadding="5px">
+        <tr>
+        <th>Subject</th>
+        <th>MAX Marks</th>
+        <th>Obtained Mark</th>
+        <th>Status</th>
+        </tr>
+        <tr>
+        <td class="backChange">Math</td>
+        <td class="backChange">100</td>
+        <td class="backChange">80</td>
+        <td class="backChange">pass</td>
+        </tr>
+        <tr>
+        <td class="backChange2">Scince</td>
+        <td class="backChange2">100</td>
+        <td class="backChange2">70</td>
+        <td class="backChange2">pass</td>
+        </tr>
+        <tr>
+        <td class="backChange">Computer</td>
+        <td class="backChange">100</td>
+        <td class="backChange">70</td>
+        <td class="backChange">Pass</td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+        <td>9</td>
+        <td>REHAN</td>
+        <td>13</td>
+        <td class="imgspace"> <img src="img/boy5.PNG" alt="" width="100PX" height=80OPX"></th>
+        <td>10TH</td>
+        <td>Odisha</td>
+        <td class="progressRow">
+        <table cellspacing="0px" cellpadding="5px">
+        <tr>
+        <th>Subject</th>
+        <th>MAX Marks</th>
+        <th>Obtained Mark</th>
+        <th>Status</th>
+        </tr>
+        <tr>
+        <td class="backChange2">Math</td>
+        <td class="backChange2">100</td>
+        <td class="backChange2">20</td>
+        <td class="backChange2">Fall</td>
+        </tr>
+        <tr>
+        <td class="backChange">Scince</td>
+        <td class="backChange">100</td>
+        <td class="backChange">70</td>
+        <td class="backChange">pass</td>
+        </tr>
+        <tr>
+        <td class="backChange2">Computer</td>
+        <td class="backChange2">100</td> 
+        <td class="backChange2">70</td>
+<td class="backChange2">Pass</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>MONA</td>
+    <td>14</td>
+    <td class="imgspace"> <img src="img/gilr5.PNG" alt="" width="100PX" height=80OPX"></th>
+    <td>10TH</td>
+    <td>Bihar</td>
+    <td class="progressRow">
+    <table cellspacing="0px" cellpadding="5px">
+<tr>
+   <th>Subject</th>
+   <th>MAX Marks</th>
+   <th>Obtained Mark</th>
+   <th>Status</th>
+</tr>
+<tr>
+   <td class="backChange">Math</td>
+   <td class="backChange">100</td>
+   <td class="backChange">80</td>
+   <td class="backChange">pass</td>
+</tr>
+<tr>
+    <td class="backChange2">Scince</td>
+    <td class="backChange2">100</td>
+    <td class="backChange2">70</td>
+    <td class="backChange2">pass</td>
+</tr>
+<tr>
+    <td class="backChange">Computer</td>
+    <td class="backChange">100</td>
+    <td class="backChange">70</td>
+    <td class="backChange">Pass</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<footer class="border">
+@ Copy Right - 2023
+</footer>
+</body>
+</html>

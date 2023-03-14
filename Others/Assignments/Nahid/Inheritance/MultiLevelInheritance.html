@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Multi Level Inheritance Example</title>
+</head>
+<body>
+    <script>        
+        class University {
+            constructor(udata){
+                this.universityName = udata.universityName;
+            }
+        }
+
+        class College extends University
+        {            
+            constructor(cdata)
+            {
+                super({universityName : cdata.universityName});
+                this.collegeName = cdata.collegeName
+            }
+        }
+        var val1 = {universityName:"JNTU", collegeName:"KIT"};
+        var obj1 = new College(val1);//calling single inheritance
+        console.log(obj1)
+
+        class Student extends College{
+            constructor(data){
+                super({universityName: data.uName, collegeName: data.college});
+                this.studentName = data.sName;
+                this.course = data.course
+            }
+        }  
+        var val = {uName:"JNTU", college:"KIT", sName:"Nakul", course:"CS"};
+        var obj = new Student(val); //calling multi level inheritance
+        console.log(obj)
+    </script>
+</body>
+</html>

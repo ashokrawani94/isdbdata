@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating js closures through js library
+        </title>
+        <link rel="stylesheet" href="app.css">
+        
+        <script src="app.js"></script>
+        <script src="lib/mathUtil.js"></script>
+    </head>
+    <body>
+        <h3>
+            Demonstrating JS Library's through Closures
+        </h3>
+        <ul>
+            <li>
+                First value: 
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Second value: 
+                <input type="text" id="sval">
+            </li>
+            <li>
+                <input type="button" value="Do Add" onclick="doOperation('add')">
+                <input type="button" value="Do Mul" onclick="doOperation('mul')">
+                <input type="button" value="Do Division" onclick="doOperation('div')">
+                <input type="button" value="Do Substration" onclick="doOperation('sub')">
+            </li>
+            <li id="rBlock">
+
+            </li>
+            <li id="cblock">
+
+            </li>
+        </ul>
+    </body>
+</html>

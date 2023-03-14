@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       //...javascript functions-assignment_12..//
+
+    </title>
+</head>
+<body>
+    <script>
+        console.log("employe detailes");
+        var employename,employeage,employegender,employesalary;
+
+        function readEMPLOYEdetailes(){
+            employename=prompt("employe name");
+            employeage=prompt("employe age");
+            employeage=parseInt(employeage);
+            employegender=prompt("employe gender");
+            employesalary=prompt("employe salary");
+            employesalary=parseInt(employesalary);
+
+        }
+
+        function displayEMPLOYEDEATAILES(){
+            console.log("employe name" + employename);
+            console.log("employe age" + employeage);
+            console.log("employe gender" + employegender);
+            console.log("employe salary" + employesalary);
+            
+        }
+
+        function employeTAX(){
+            if(employesalary >=100000){
+                console.log("employe tax is"+15);
+            }else if(employesalary <=100000){
+                console.log("employe tax"+10);
+            }else if(employesalary<=50000){
+                console.log("employe tax"+5);
+            }
+            else if(employesalary<=25000) {
+                console.log("employe tax"+0);
+            }
+        
+        }
+        readEMPLOYEdetailes();
+        displayEMPLOYEDEATAILES();
+        employeTAX();
+    </script>
+    
+</body>
+</html>

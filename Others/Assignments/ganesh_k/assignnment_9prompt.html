@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user data from the user</title>
+    <style>
+        h1{
+            border: 3px solid red;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            text-decoration: underline;
+            color: aqua;
+            background-color: blueviolet;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>-:-using prompt()-:- </h1>
+   <br><div>work with student details</div><br>
+   <div>work with employe details</div>
+   <script>
+    console.log("................student details................");
+    var sname=prompt('student name');
+    console.log("student name :"+sname);
+    var sdob=prompt("student date of birth");
+    console.log('date of birth :'+sdob);
+    var sclass=prompt("class");
+    console.log('student class :'+sclass);
+    var clgname =prompt("college name");
+    console.log("college name :"+clgname);
+    var telu=prompt("enter telugu marks");
+    telu=parseInt(telu);
+    console.log("telugu marks :"+telu);
+    var eng=prompt("enter english marks :"+eng);
+    eng=parseInt(eng);
+    console.log("english marks :"+eng);
+    var comp=prompt('enter computer marks');
+    comp=parseInt(comp);
+    console.log("computer marks :"+comp);
+    var total=telu+eng+comp;
+    console.log("total marks :"+total);
+   </script>
+   <script>
+        console.log("................employe  details................");
+        var ename=prompt("employe name");
+        console.log("employe name :"+ename);
+        var eage=prompt('employe age');
+        console.log("employe age :"+eage);
+        var edept=prompt('department');
+        console.log("department :"+edept);
+        var egender=prompt("gender");
+        console.log("gender :"+egender);
+        var bsalary=prompt(" enter basic salary");
+        bsalary=parseInt(bsalary);
+        console.log('basic salary :'+bsalary);
+        var pf=(15/100)*bsalary;
+        pf=parseInt(pf);
+        console.log("pf is :"+pf);
+        var hra=(25/100)*bsalary;
+        hra=parseInt(hra);
+        console.log("hra is :"+hra);
+        var tsalary=bsalary+pf+hra;
+        console.log("total salary :"+tsalary);
+   </script>
+</body>
+</html>

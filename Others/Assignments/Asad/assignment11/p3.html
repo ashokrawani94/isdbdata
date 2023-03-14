@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        WAP to find the sum of all prime numbers between 200 to 18?
+        <script>
+            var n;
+           
+            var primeSum=0;
+           
+            for(var a=200;a>=18;a--){
+                n=a;
+                var count=0;
+                for(var b=1;b<=n;b++){
+                    var rem=n%b;
+                    if(rem==0){
+                        count++;
+                    }
+                }
+            if(count==2){
+             
+                primeSum=primeSum+n;
+               
+               
+            }
+           
+            }
+            console.log("The sum of Prime number " +primeSum);
+        </script>
+    </body>
+</html>

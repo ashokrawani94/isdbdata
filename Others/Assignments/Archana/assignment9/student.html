@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentjs_details</title>
+    
+</head>
+<body>
+   <script>
+    var sname = prompt ('Enter student name');
+    var sage = prompt ('Enter student Age');
+    var sgender = prompt('Enter Gender');
+    var sclass = prompt ('Enter Class');
+    var smath = prompt ('Enter math mark');
+    var sodia = prompt ('Enter odia mark');
+    var shindi= prompt ('Enter hindi mark');
+    var senglish= prompt ('Enter english mark');
+   var Total;
+    Total = parseInt(smath) + parseInt ( sodia) + parseInt( shindi) + parseInt( senglish);
+    Avg = Total/4 ;
+    console.log ('Student name :'+sname);
+    console.log ('Student Age :' +sage);
+    console.log ('Gender :' +sgender);
+    console.log ('Class :' +sclass);
+    console.log ('Total :'+Total);
+    console.log ('Avg :' +Avg);
+    
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<body><h2>STUDENT DETAILS AND EMPLOYEE DETAILS...</h2>
+    CHECK EXECUTION FOR THIS PROGRAM IN DEBUGGING WINDOW...
+    <script>//Student Details
+        var name,age,studentclass,m1,m2,m3,total,avg;
+
+        name=prompt(" Enter student name") ;
+        console.log("Student name is "+name)
+        age=prompt(" Enter student age") ;
+        console.log("Student age is "+age )
+        studentclass=prompt(" Enter student class") ;
+        console.log("Student class is "+studentclass)
+        m1=prompt(" Enter science marks") ;
+        m1=parseInt(m1);
+        console.log("science marks= "+m1)
+        m2=prompt(" Enter maths marks") ;
+        m2=parseInt(m2);
+        console.log("Maths marks= "+m2)
+        m3=prompt(" Enter english marks") ;
+        m3=parseInt(m3);
+        console.log("English marks= "+m3)
+        total=m1+m2+m3;
+        console.log(" Total of marks is "+total) ;
+        avg=total/3;
+        console.log(" Average of marks is "+avg) ;
+        
+        //Employee Details
+        var ename, eage,basicsal,pf,hra,totalsal;
+        
+        ename=prompt("Enter employee name")
+        console.log("Employee name is "+ename);
+        eage=prompt("Enter employee age")
+        console.log("Employee age is "+eage);
+        basicsal=prompt("Enter employee's basic salary");
+        console.log("basic salary is "+basicsal);
+        pf = (14 * parseInt(basicsal)) / 100;
+        console.log("PF="+pf);
+        hra = (25 * parseInt(basicsal)) / 100;
+        console.log("HRA= "+hra);
+        totalsal = pf + hra + parseInt(basicsal);
+        console.log("Total salary is "+totalsal);
+        
+
+        
+    </script>
+    
+</body>
+</html>

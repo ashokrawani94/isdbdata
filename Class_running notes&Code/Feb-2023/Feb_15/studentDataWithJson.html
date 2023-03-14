@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var studentData = {
+                "name": 'Raj',
+                
+                'gender': 'Male',
+                marks: [34, 55, 66, 77, 88],
+                total: 0
+            };
+            studentData.age = 10;
+
+            console.log(typeof(studentData));
+            
+
+            for (var i = 0; i < studentData.marks.length; i++) {
+                studentData.total = studentData.total + studentData.marks[i];
+            }
+
+            studentData.avg = studentData.total / studentData.marks.length;
+
+            console.log(studentData)
+            console.log("Student name " + studentData.name );
+            console.log("Student Age " + studentData.age );
+            console.log("Avg is " + studentData.avg)
+        </script>
+    </body>
+</html>

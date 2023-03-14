@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       var empname = prompt("Enter Employee Name");
+       var empage = prompt("Enter Employee Age");
+       var empgender = prompt("Enter Employee Gender");
+       var empbasicsalary = prompt("Enter Employee Basic Salary");
+
+       var pf = (empbasicsalary * 14) / 100;
+       var hra = (empbasicsalary * 24) / 100;
+       var emptotal;
+       emptotal = parseInt(empbasicsalary) + parseInt(pf) + parseInt(hra);
+        
+       console.log ("Employee Details");
+       console.log ("Employee Name " + empname);
+       console.log ("Employee Age " + empage);
+       console.log ("Employee Gender " + empgender);
+       console.log ("Employee Bsic Salary " + empbasicsalary);
+       console.log ("Employee PF " + pf);
+       console.log ("Employee HRA " + hra);
+       console.log ("Employee Total Salary " + emptotal);
+
+       if (empgender == 'male'){
+           if (emptotal >= 100000) {
+              var tax = (emptotal * 15) / 100;
+              console.log ("male tax cutoff " + tax);
+           } 
+           else if (emptotal >= 50000){
+            var tax = (emptotal * 10) / 1000;
+            console.log ("male tax cutoff " + tax);
+           }
+           else if (emptotal >= 25000){
+            var tax = (emptotal * 5) / 100;
+            console.log ("Male tax cutoff " + tax)
+           }
+           else {
+            var tax = (emptotal * 0) / 100;
+            console.log ("Male tax cutoff " + tax);
+           }
+       }
+
+       if (empgender == 'female'){
+            if (emptotal >= 100000){
+                var tax = (emptotal * 10) / 100;
+                console.log("Female tax cutoff " + tax)
+            }
+            else if (emptotal >= 50000) {
+                var tax = (emptotal * 5) / 100;
+                console.log("Female tax cutoff " + tax)
+            }
+            else {
+                var tax = (emptotal * 0) / 100;
+                console.log("Female tax cutoff " + tax);
+            }
+       }
+    </script>
+</body>
+</html>

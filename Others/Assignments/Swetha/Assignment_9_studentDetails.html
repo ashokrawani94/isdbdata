@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+</head>
+<body>
+    <script type="text/javascript">
+      var sName = prompt("enter student name");
+      var sAge = prompt("enter student age");
+      var sGender = prompt("enter gender");
+      var sClass = prompt("enter class");
+      var Sub1 = prompt("enter telugu marks");
+      Sub1 = parseInt( Sub1);
+      var Sub2 = prompt("enter hindi marks");
+      Sub2 = parseInt( Sub2);
+      var Sub3 = prompt("enter english marks");
+      Sub3 = parseInt( Sub3);
+      var Sub4 = prompt("enter math marks");
+      Sub4 = parseInt( Sub4);
+      var Sub5 = prompt("enter science marks");
+      Sub5 = parseInt( Sub5);
+      var Sub6 = prompt("enter social marks");
+      Sub6 = parseInt( Sub6);
+
+      total = Sub1+Sub2+Sub3+Sub4+Sub5+Sub6;
+      avg = total/6;
+     
+      console.log(" student Name:" + sName );
+      console.log(" student age:" +  sAge );
+      console.log(" student gender:" + sGender);
+      console.log("student class:" +  sClass );
+      console.log("telugu:" +Sub1  );
+      console.log("hindi:" + Sub2);
+      console.log("english:" + Sub3);
+      console.log("math:" +  Sub4);
+      console.log("science:" + Sub5);
+      console.log("social:" + Sub6 );
+      console.log("total is:"  +  total);
+      console.log("avg is:"  +  avg);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+#studentTable{
+    margin:15px;
+    width:450px;
+    /* padding: 5px; */
+}
+
+li{
+    list-style: none;
+}
+.mainContainer{
+    height: 450px;
+    padding: 12px;
+    width:950px;
+    margin:5px auto;
+}
+.mainContainer>li{
+    float:left;
+}
+.studentEntryForm{
+    width:40%;
+    border:1px solid maroon;
+}
+.studentDisplayForm{
+    width:55%;
+    border:1px solid magenta;
+    margin:5px;
+}
+
+.studentEntryForm ul>li{
+    padding: 5px;
+}
+#sAge{
+    width:40px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number Program</title>
+</head>
+<body>
+    <script>
+        var number = prompt("Enter A Number");
+        var rem = 0, reverse = 0;
+        originalNo = number;
+
+        while (number > 0){
+            rem = number % 10;
+            number = number / 10;
+            number = parseInt(number);
+            reverse = (reverse * 10) + rem;
+        }
+
+        if (reverse === parseInt(originalNo)){
+            console.log(originalNo + " is a palindrom no");
+        } else 
+            console.log(originalNo + " is a not a palindrome no");
+            console.log("original no is " + originalNo);
+            console.log("reverse of given number is " + reverse);
+    </script>
+</body>
+</html>

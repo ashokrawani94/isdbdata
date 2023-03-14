@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details By Function</title>
+</head>
+<body>
+    <h2>Employee Details Page</h2>
+        <script>
+            var ename, age, department, gender, basicSalary,PF, HRA, totalSalary, totalTax;
+            var taxValue=0;
+
+            //function created to take employee inputs by prompt
+            function getEmployeeDetails(){
+                ename = prompt("enter employee name");
+                age = prompt("enter employee age");
+                gender = prompt("enter gender");
+                department = prompt("enter department name");
+                basicSalary = prompt("enter salary");
+                calculateTotalSal();
+                calculateTax();
+                displayEmployeeDetails();
+            }           
+
+            //function created to calculate to calculte PF, HRA, totalsalary
+            function calculateTotalSal(){
+                basicSalary = parseInt(basicSalary);
+                PF = (14*basicSalary)/100;
+                HRA = (12*basicSalary)/100;
+                totalSalary = basicSalary+PF+HRA;                
+            }
+
+            //function created to calculate tax based on totalsalary
+            function calculateTax(){
+                if(gender=="male")
+                {
+                    if(totalSalary>100000)
+                    {
+                        taxValue = 15;
+                    }
+                    else if(totalSalary>50000)
+                    {
+                        taxValue = 10;
+                    }
+                    else if(totalSalary>25000)
+                    {
+                        taxValue = 5;
+                    }
+                    else
+                    {
+                        taxValue = 0;
+                    }
+                }
+                else if(gender=="female")
+                {
+                    if(totalSalary>100000)
+                    {
+                        taxValue = 10;
+                    }
+                    else if(totalSalary>50000)
+                    {
+                        taxValue = 5;
+                    }
+                    else
+                    {
+                        taxValue = 0;
+                    }
+                }
+                totalTax = (taxValue*totalSalary)/100;                
+            }
+
+            //function to display all details of employee
+            function displayEmployeeDetails(){
+                console.log("Employee name: "+ename);
+                console.log("Employee age: "+age);
+                console.log("Gender: "+gender);
+                console.log("Department is: "+department);
+                console.log("Employee Salary: "+basicSalary);
+                console.log("PF: "+PF);
+                console.log("HRA: "+HRA);
+                console.log("Employee total salary: "+totalSalary);
+                console.log("Total Tax is: "+totalTax);
+            }
+
+            //calling function to take employee details and showing the result
+            getEmployeeDetails();
+        </script> 
+</body>
+</html>

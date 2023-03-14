@@ -1,0 +1,36 @@
+Exception Handling:
+    try, catch, throws, finally
+
+User defined exceptions:
+    using throws keyword
+-----------------------
+var age;
+var r = age + c;
+console.log(age)
+------------
+
+var age = 90;
+try {
+    if (age > 21) {
+       throws
+    }
+} catch (e) {
+
+}
+------------------
+finally block:
+ try {
+                // .. there is a chance of getting error 
+            } catch(err) {
+                // code to handle error 
+            } finally {
+                // Code which for sure need to be executed, irrelavent of whether there is an exception been raised or not.
+            }
+        
+Closure: 
+
+    function addValues() { // function definition
+
+    }
+
+    addValues(); // function calling 

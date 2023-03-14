@@ -1,0 +1,41 @@
+setTimeout and setInterval Methods
+    job based on the delay time 
+
+    sytax:
+
+        setTimeout( function/method name , delay in ms  );
+
+        eg:
+
+            setTimeout(abc, 2000)
+
+            abc();
+        
+
+        clearInterval()  - used to stop the running interval method 
+
+    Document - object 
+
+        predefined object 'document'
+
+--------------------
+<div id="abc"></div>
+document.getElementById("abc")
+
+<span class="test"> ... </span>
+document.getElementByClassname("test")
+
+<a href=''>link 1</a>
+<a href=''>link 2</a>
+
+document.getelementsByTagName('a')
+-----
+    <div id="abc"></div>
+        document.querySelector("#abc")
+
+    <span class="test"> ... </span>
+        document.querySelector(".test")
+    
+    <a href=''>link 1</a>
+        document.querySelector("a")
+

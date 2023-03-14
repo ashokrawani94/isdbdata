@@ -1,0 +1,22 @@
+List of datatypes what js is supporting:
+    number    // var a = 90, b = 9.4
+    string    // var name = 'b', countryName = 'India', uname = "Prasad";
+    boolean   // var isFeepaid = true, isAssignmentDone=false
+    undefined  // var userName; // userName = undefined;
+    function
+    Object
+    null
+
+alert("hello");
+
+'typeof' method - It throws the type of data been hold within provided variable. 
+
+    Syntax  :
+        typeof(<variable name>);
+    eg:
+        var a = 90;
+        typeof(a);
+
+Adding comment in js 
+    if its single line //
+    multi line /* ... */

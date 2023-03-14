@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>employee Details using Function</title>
+    </head>
+    <body>
+        <h3>Employee Details using function with Private Data</h3>
+        <script>
+            function readEmployeeDetails(){
+                var eName,eAge,eGender,basicSal,totalSal,pf,hra,totalTax;
+                eName = prompt("Enter emp Name");
+                eAge = prompt("Enter emp Age");
+                eGender = prompt("Enter emp Gender");
+                basicSal = prompt("Enter emp Basic Sal");
+                basicSal = parseInt(basicSal);
+                totalSal = calPfAndHra(basicSal,eGender);
+                totalTax = calTotalTax(totalSal,eGender);
+                displayEmployeeDetails(eName,eAge,eGender,totalSal,totalTax);
+
+            }
+
+            function calPfAndHra(basicSal){
+                var pf = (14 * basicSal)/100;
+                var hra = (10 * basicSal)/100;
+                var totalSal = pf + hra + basicSal;
+                return totalSal;
+            }
+
+            function calTotalTax(totalSal,eGender){
+                if(eGender == 'male'){
+                    if(totalSal >= 100000){
+                        taxPercent = 15;
+                    }else if(totalSal >= 50000){
+                        taxPercent = 10;
+                    }else if(totalSal >= 25000){
+                        taxPercent = 5;
+                    }else{
+                        taxPercent = 0;
+                    }
+                }else{
+                    if(totalSal >= 100000){
+                        taxPercent = 10;
+                    }else if(totalSal >= 50000){
+                        taxPercent = 5;
+                    }else{
+                        taxPercent = 0;
+                    }
+                }
+                totalTax = (totalSal * taxPercent)/100;
+                return totalTax;
+            }
+
+            function displayEmployeeDetails(eName,eAge,eGender,totalSal,totalTax){
+                console.log("Emp Name= "+ eName);
+                console.log("Emp Age= "+ eAge);
+                console.log("Emp Gender= "+ eGender);
+                console.log("Emp total Sal= "+ totalSal);
+                console.log("Emp tax to be Paid= "+ totalTax);
+            }
+
+            readEmployeeDetails();
+
+            
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prepare Array Dynamically and do the Summation</title>
+    </head>
+    <body>
+        <h3>Prepare Array Dynamically and do the Summation</h3>
+        <script> 
+          var count = prompt("enter the size of array");
+          var arr = [], sum = 0;
+
+          //loop to fetch values for array dynamically and doing the summation
+          for(var i = 0; i < count; i++)
+          {
+            arr[i] = prompt("enter number" + (i+1));
+            sum = sum + parseInt(arr[i]);    
+          }
+          console.log(arr);
+          console.log(sum);  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Online Shopping</title>
+    <style>
+      h1,h4{
+        background-color: blue;
+        color: white;
+        font-family: sans-serif;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px 0px;
+        border-radius: 25px;
+        padding: 10px;
+      }
+
+      .bodyContainer{
+        border: 3px solid violet;
+        height: 505px;
+        padding: 10px;
+        border-radius: 25px;
+      }
+
+      .loginContainer{
+        border: 3px solid violet;
+        width: 30%;
+        height:50%;
+        border-radius: 25px;
+        position: relative;
+        top: 110px;
+        margin: auto;
+      }
+
+      label{
+        font-family: sans-serif;
+        color: violet;
+      }
+
+      input[type = "password"],input[type = "text"]{
+        border-color: violet;
+        border-radius:25px ;
+        text-align: center;
+        height: 25px;
+        width: 226px;
+        font-family: sans-serif;
+      }
+
+      input[type = "submit"],input[type = "button"]{
+        width: 70px;
+        height: 30px;
+        background-color: violet;
+        color: white;
+        border-radius: 25px;
+      }
+
+      .userNameContainer{
+        position: relative;
+        top: 32px;
+        left: 31px;
+      }
+
+      .passwordContainer{
+        position: relative;
+        top: 50px;
+        left: 42px;
+      }
+
+      .buttonContainer{
+        position: relative;
+        top: 73px;
+        left: 61px;
+      }
+
+      .dataPart{
+        background-color: violet;
+        padding: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 30px;
+        border-top-right-radius: 22px;
+        border-top-left-radius: 22px;
+        border: 1px solid violet;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Online Shopping App</h1>
+    <div class="bodyContainer">
+      <div class="loginContainer">
+        <div class="dataPart">Login</div>
+        <form action="Home.html" method="post">
+          <div class="userNameContainer">
+            <label for="userName">User Name : </label>
+            <input type="text" id = "userName" name="userName" placeholder="Enter User Name" required>
+          </div>
+          <div class="passwordContainer">
+            <label for="password">Password : </label>
+            <input type="password" name="password" id = "passsword" placeholder="Enter Password" required>
+          </div>
+
+          <div class="buttonContainer">
+            <input type="submit" value="Login">
+            <a href = "SignUpPage.html"><input type="button" value="SignUp"></a>
+            <a href = "ForgetPassword.html"><input type="button" value="Forget Password ?" style="width: 130px;"></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <h4>@Copyright 2023</h4>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       // java script practice//
+    </title>
+</head>
+<body>
+
+    <script>
+        var sname="raj";
+        var sage=12;
+        var sgen="male";
+        var m1=20;
+        var m2=63;
+        var m3=53;
+        var m4=44;
+        var total,avg;
+        total =m1+m2+m3+m4;
+        avg=total/4;
+         console.log("..../student detailes/....")
+    console.log("student name" + sname);
+    console.log("student age" + sage);
+    console.log("student gender" + sgen);
+    console.log("total marks" + total);
+    console.log("avg marks" + avg);
+
+    //variable hoisting...
+
+    console.log("..../variable hoisting/....")
+
+     var a,b,c;
+     a=90;
+     b="raj"
+     c="male"
+     console .log("the value of a is " +a);
+     console .log("the value of b is " +b);
+     console .log("the value of c is " +c);
+     
+//type casting...
+
+     console.log("...../type casting/.....")
+
+     var a=90;
+     console.log(typeof(a));
+     var b="77";
+     console.log(typeof(b));
+     b=parseInt(b);
+     console.log(typeof(b));
+     var avg= '45.45';
+     console.log(avg);
+     console.log(typeof(avg));
+     avg=parseFloat(avg);
+     console.log(typeof(avg));
+     console.log(avg);
+     var total=465;
+     console.log(typeof(total));
+     total = total.tostring;
+     console.log(typeof(total));
+
+</script>
+
+ <script>
+
+    //reading user input....
+
+    window.alert("hello");//alert message
+    window.prompt("your name");//input message
+    window.confirm("are you sure want to delete");//confirm message
+
+    //prompt method....
+
+    var p1=prompt("enter the first value");
+    p1=parseInt(p1);
+    var p2=prompt("enter the second value");
+    p2=parseInt(p2);
+    var result=p1+p2;
+    console.log("sum of the values"+result);
+    
+
+ </script>
+ 
+</body>
+</html>

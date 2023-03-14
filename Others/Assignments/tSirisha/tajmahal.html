@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my own</title>
+    <style>
+        
+        .maindoor{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 210px;
+            width: 150px;
+            border: 5px double;
+            
+            position:absolute;
+            top:50%;
+            left:40%;
+            border:1px solid white;
+            
+        }
+        .rounddoor{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            height: 160px;
+            width: 95px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            position:absolute;
+            top:20%;
+            left:20%;
+            border:1px solid black;
+            
+        }
+        
+            
+      
+        .topround{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 155px;
+            width: 155px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top:25%;
+            left:40%;
+            border:1px solid white;
+        }
+        .cbcolor{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+        }
+        .centerblock1{
+            background-color: rgb(67, 59, 59);
+            height: 100px;
+            width: 20px;
+            border: 50px;
+            position:absolute;
+            top:30%;
+            left:10%;
+            z-index: 5;
+            border:1px solid black;
+        }
+        .centerblock2{
+            background-color: rgb(67, 59, 59);
+            height: 100px;
+            width: 20px;
+            border: 50px;
+            position:absolute;
+            top:30%;
+            left:30%;
+            z-index: 5;
+            border:1px solid black;
+        }
+        .centerblock3{
+            background-color: rgb(67, 59, 59);
+            height: 100px;
+            width: 20px;
+            border: 50px;
+            position:absolute;
+            top:30%;
+            left:50%;
+            z-index: 5;
+            border:1px solid black;
+        }
+        .centerblock4{
+            background-color: rgb(67, 59, 59);
+            height: 100px;
+            width: 20px;
+            border: 50px;
+            position:absolute;
+            top:30%;
+            left:70%;
+            z-index: 6;
+            border:1px solid black;
+        }
+        .leftblock{
+           
+            height: 210px;
+            width: 100px;
+            border: 50px;
+            
+            position:absolute;
+            top:50%;
+            left:28%;
+            z-index: 5;
+        }
+        .roundwindow1{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:3%;
+            left:5%;
+            border:1px solid black;
+            
+        }
+        .roundwindow2{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:50%;
+            left:5%;
+            border:1px solid black;
+            
+        }
+        .leftround{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 125px;
+            width: 100px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top:30%;
+            left:28%;
+        }
+        .leftblockwh{
+            height: 70px;
+            width: 10px;
+            top:40%;
+            position:absolute;
+
+        }
+        .leftblock1{
+                       
+            left:10%;
+            z-index: 5;
+        }
+        .leftblock2{
+                   
+            left:28%;
+            z-index: 5;
+        }
+        .leftblock3{
+            left:47%;
+            z-index: 5;
+        }
+        .leftblock4{
+            
+            left:67%;
+            z-index: 6;
+        }
+        .leftblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+        .rightblock{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 210px;
+            width: 100px;
+            border: 50px;
+            position:absolute;
+            top:50%;
+            left:58%;
+            z-index: 5;
+        }
+        .rrw{
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            position:absolute;
+            height: 90px;
+            width: 90px;
+            border:1px solid black;
+        }
+        .rightroundwindow1{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:3%;
+            left:5%;
+            
+        }
+        .rightroundwindow2{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:50%;
+            left:5%;
+            
+        }
+        .rightround{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 125px;
+            width: 100px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top:30%;
+            left:58%;
+        }
+        
+        .rightblock1{
+                      
+            left:10%;
+            
+        }
+        .rightblock2{
+                     
+            left:28%;
+           
+        }
+        .rightblock3{
+                    
+            left:47%;
+            
+        }
+        .rightblock4{
+            
+            left:67%;
+           
+        }
+        .rightblock5{
+           
+            left:85%;
+            
+        }
+        .sleftblock{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 210px;
+            width: 100px;
+            border: 50px;
+            
+            position:absolute;
+            top:50%;
+            left:18%;
+            z-index: 5;
+        }
+        .sroundwindow1{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:3%;
+            left:5%;
+            
+        }
+        .sroundwindow2{
+            background-image:radial-gradient(white,rgb(91, 83, 83),white);
+            top:50%;
+            left:5%;
+            
+        }
+
+        .sleftround{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 125px;
+            width: 100px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top:30%;
+            left:18%;
+        }
+        .leftblockwh{
+            height: 70px;
+            width: 10px;
+            top:40%;
+            position:absolute;
+            background-color:rgb(63, 61, 65);
+            border: 50px;
+
+        }
+        .sleftblock1{
+            
+            left:10%;
+            z-index: 5;
+        }
+        .sleftblock2{
+                        
+          
+            left:28%;
+            z-index: 5;
+        }
+        .sleftblock3{
+         
+            left:47%;
+            z-index: 5;
+        }
+        .sleftblock4{
+          
+            left:67%;
+            z-index: 6;
+        }
+        .sleftblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+        .pillarc{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 20px;
+            width: 55px;
+            border-radius: 500px;
+            position:absolute;
+            border:1px solid black;
+        }
+        .pleftround{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 105px;
+            width: 75px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top: 13%;
+            left:0.5%;
+        }
+        .pleftblockwh{
+            height: 50px;
+            width: 5px;
+            top:42%;
+            position:absolute;
+            background-color:rgb(36, 35, 37);
+            border: 50px;
+
+        }
+        .pleftblock1{
+            
+            left:10%;
+            z-index: 5;
+        }
+        .pleftblock2{
+                        
+          
+            left:28%;
+            z-index: 5;
+        }
+        .pleftblock3{
+         
+            left:47%;
+            z-index: 5;
+        }
+        .pleftblock4{
+          
+            left:67%;
+            z-index: 6;
+        }
+        .pleftblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+        .pillarstand{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 350px;
+            width: 60px;
+            border: 50px;
+            position:absolute;
+
+        }
+        .pleftblock{
+            
+            top:30%;
+            left:9%;
+            z-index: 5;
+        }
+        .pillarcircle{
+            
+            top:20%;
+            left:2%;
+            
+        }
+        .pillarcircle2{
+            
+            top:50%;
+            left:2%;
+            
+        }
+        .lpleftround{
+           
+            height: 105px;
+            width: 80px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top: 13%;
+            left:8%;
+        }
+        .pleftblockwh{
+            height: 50px;
+            width: 10px;
+            top:42%;
+            position:absolute;
+            background-color:rgb(48, 34, 34)
+            border: 50px;
+
+        }
+        .lpleftblock1{
+            
+            left:10%;
+            z-index: 5;
+        }
+        .lpleftblock2{
+                        
+          
+            left:28%;
+            z-index: 5;
+        }
+        .lpleftblock3{
+         
+            left:47%;
+            z-index: 5;
+        }
+        .lpleftblock4{
+          
+            left:67%;
+            z-index: 6;
+        }
+        .lpleftblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+        .lpleftblock{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 350px;
+            width: 60px;
+            border: 50px;
+            position:absolute;
+            top:30%;
+            left:1%;
+            z-index: 5;
+        }
+        .lpillarcircle{
+           
+            top:20%;
+            left:2%;
+            
+        }
+        .lpillarcircle2{
+            
+            top:50%;
+            left:2%;
+            
+        }
+        .srightblock{
+            background-image:linear-gradient(white,rgb(91, 83, 83),white);
+            height: 210px;
+            width: 100px;
+            border: 1px solid;  
+            position:absolute;
+            top:50%;
+            left:68%;
+            z-index: 5;
+        }
+        .srightroundwindow1{
+            background-image:radial-gradient(white,grey,white);
+            top:3%;
+            left:5%;
+            
+        }
+        .srightroundwindow2{
+            background-image:radial-gradient(white,grey,white);
+            top:50%;
+            left:5%;
+            
+        }
+        .srightround {
+            background-image:linear-gradient(white,grey,white);
+            height: 125px;
+            width: 100px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top:30%;
+            left:68%;
+        }
+       
+        .srightblock1{
+                        
+            left:10%;
+            z-index: 5;
+        }
+        .srightblock2{
+                    
+            left:28%;
+            z-index: 5;
+        }
+        .srightblock3{
+                    
+            left:47%;
+            z-index: 5;
+        }
+        .srightblock4{
+                       
+            left:67%;
+            z-index: 6;
+        }
+        .srightblock5{
+                     
+            left:85%;
+            z-index: 6;
+        }
+        .prightround{
+            background-image:linear-gradient(white,grey,white);
+            height: 105px;
+            width: 70px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top: 13%;
+            left:80%;
+        }
+        .prightblockwh{
+            height: 50px;
+            width: 9px;
+            top:42%;
+            position:absolute;
+            background-color:rgb(10, 10, 10);
+            border: 50px;
+
+        }
+        .prightblock1{
+            
+            left:10%;
+            z-index: 5;
+        }
+        .prightblock2{
+                        
+          
+            left:28%;
+            z-index: 5;
+        }
+        .prightblock3{
+         
+            left:47%;
+            z-index: 5;
+        }
+        .prightblock4{
+          
+            left:67%;
+            z-index: 6;
+        }
+        .prightblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+        .rpillarstand{
+            background-image:linear-gradient(white,grey,white);
+            height: 350px;
+            width: 60px;
+            border: 50px;
+            position:absolute;
+
+        }
+        .prightblock{
+            
+            top:30%;
+            left:81%;
+            z-index: 5;
+        }
+        .rpillarcircle{
+            
+            top:20%;
+            left:2%;
+            
+        }
+        .rpillarcircle2{
+            
+            top:50%;
+            left:2%;
+            
+        }
+    
+        .sprightround{
+            background-image:linear-gradient(white,grey,white);
+            height: 105px;
+            width: 70px;
+            border-top-right-radius: 70px;
+            border-top-left-radius: 70px;
+            position:absolute;
+            top: 13%;
+            left:90.5%;
+        }
+     
+        .sprightblock1{
+            
+            left:10%;
+            z-index: 5;
+        }
+        .sprightblock2{
+                        
+          
+            left:28%;
+            z-index: 5;
+        }
+        .sprightblock3{
+         
+            left:47%;
+            z-index: 5;
+        }
+        .sprightblock4{
+          
+            left:67%;
+            z-index: 6;
+        }
+        .sprightblock5{
+           
+            left:85%;
+            z-index: 6;
+        }
+     
+
+
+
+        .sprightblock{
+            
+            top:30%;
+            left:91%;
+            z-index: 5;
+        }
+        .srpillarcircle{
+            
+            top:20%;
+            left:2%;
+            
+        }
+        .srpillarcircle2{
+            
+            top:50%;
+            left:2%;
+            
+        }
+        .block1{
+            background-color: blue;
+            height: 65px;
+            width: 65px;
+            border-radius: 500px;
+            position:absolute;
+            top:53%;
+            left:40%;
+           
+        }
+        .block2{
+            background-color: blue;
+            height: 65px;
+            width: 65px;
+            border-radius: 500px;
+            position:absolute;
+            top:53%;
+            left:65%;
+            
+        }
+        
+        
+    </style>
+
+</head>
+<body style="background-color:black">
+    <div class="topround cbcolor">
+        <div class="centerblock1 "></div>
+        <div class="centerblock2 "></div>
+        <div class="centerblock3 "></div>
+        <div class="centerblock4 "></div>
+    </div> 
+    <div class="leftround cbcolor">
+        <div class="leftblock1 leftblockwh"></div>
+        <div class="leftblock2 leftblockwh"></div>
+        <div class="leftblock3 leftblockwh"></div>
+        <div class="leftblock4 leftblockwh"></div>
+        <div class="leftblock5 leftblockwh"></div>
+    </div> 
+    <div class="leftblock cbcolor">
+
+        <div class="roundwindow1 rrw"></div>
+        <div class="roundwindow2 rrw"></div>
+    </div>
+    <div class="sleftround">
+        <div class="sleftblock1 leftblockwh"></div>
+        <div class="sleftblock2 leftblockwh"></div>
+        <div class="sleftblock3 leftblockwh"></div>
+        <div class="sleftblock4 leftblockwh"></div>
+        <div class="sleftblock5 leftblockwh"></div>
+    </div> 
+    <div class="sleftblock">
+
+        <div class="sroundwindow1 rrw"></div>
+        <div class="sroundwindow2 rrw"></div>
+    </div>
+    <div class="pleftround cbcolor">
+        <div class="pleftblock1 pleftblockwh"></div>
+        <div class="pleftblock2 pleftblockwh"></div>
+        <div class="pleftblock3 pleftblockwh"></div>
+        <div class="pleftblock4 pleftblockwh"></div>
+        <div class="pleftblock5 pleftblockwh"></div>
+    </div> 
+    <div class="pleftblock pillarstand">
+        <div class="pillarcircle pillarc"></div>
+        <div class="pillarcircle2 pillarc"></div>
+    </div>
+    <div class="lpleftround cbcolor">
+        <div class="lpleftblock1 pleftblockwh"></div>
+        <div class="lpleftblock2 pleftblockwh"></div>
+        <div class="lpleftblock3 pleftblockwh"></div>
+        <div class="lpleftblock4 pleftblockwh"></div>
+        <div class="lpleftblock5 pleftblockwh"></div>
+    </div> 
+    <div class="lpleftblock pillarstand">
+        <div class="lpillarcircle pillarc"></div>
+        <div class="lpillarcircle2 pillarc"></div>
+    </div>
+    <div class="maindoor">
+        <div class="rounddoor">
+            <div class="centerdoor"></div>
+        </div>
+    </div>
+    <div class="rightround">
+        <div class="rightblock1 leftblockwh"></div>
+        <div class="rightblock2 leftblockwh"></div>
+        <div class="rightblock3 leftblockwh"></div>
+        <div class="rightblock4 leftblockwh"></div>
+        <div class="rightblock5 leftblockwh"></div>
+    </div> 
+    <div class="rightblock">
+
+        <div class="rightroundwindow1 rrw"></div>
+        <div class="rightroundwindow2 rrw"></div>
+    </div>
+    <div class="srightround">
+        <div class="srightblock1 leftblockwh"></div>
+        <div class="srightblock2 leftblockwh"></div>
+        <div class="srightblock3 leftblockwh"></div>
+        <div class="srightblock4 leftblockwh"></div>
+        <div class="srightblock5 leftblockwh"></div>
+    </div> 
+    <div class="srightblock">
+
+        <div class="srightroundwindow1 rrw"></div>
+        <div class="srightroundwindow2 rrw"></div>
+    </div>
+    <div class="prightround">
+        <div class="prightblock1 prightblockwh"></div>
+        <div class="prightblock2 prightblockwh"></div>
+        <div class="prightblock3 prightblockwh"></div>
+        <div class="prightblock4 prightblockwh"></div>
+        <div class="prightblock5 prightblockwh"></div>
+    </div> 
+    <div class="prightblock rpillarstand">
+        <div class="rpillarcircle pillarc"></div>
+        <div class="rpillarcircle2 pillarc"></div>
+    </div>
+    <div class="sprightround">
+        <div class="sprightblock1 prightblockwh"></div>
+        <div class="sprightblock2 prightblockwh"></div>
+        <div class="sprightblock3 prightblockwh"></div>
+        <div class="sprightblock4 prightblockwh"></div>
+        <div class="sprightblock5 prightblockwh"></div>
+    </div> 
+    <div class="sprightblock rpillarstand">
+        <div class="srpillarcircle pillarc"></div>
+        <div class="srpillarcircle2 pillarc"></div>
+    </div>
+</body>
+</html>

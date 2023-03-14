@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating employee details</title>
+</head>
+<body>
+    <script>
+        var employeeDetails = {};
+            employeeDetails.ename = prompt("enter emp name");
+            employeeDetails.egender= prompt("enter emp gender");
+            employeeDetails.eage= prompt("enter emp age");
+            employeeDetails.edept = prompt("enter dept name");
+            employeeDetails. esalary = prompt("enter salary");
+            employeeDetails.esalary= parseInt(employeeDetails.esalary);
+
+            employeeDetails.epf= prompt("enter emp pf");
+            employeeDetails.epf = parseInt(employeeDetails.epf);
+            employeeDetails.epf = (employeeDetails.esalary*employeeDetails.epf)/100;
+
+
+            employeeDetails.ehra = prompt("enter emp hra");
+            employeeDetails.ehra = parseInt(employeeDetails.ehra);
+            employeeDetails.ehra = (employeeDetails.esalary*employeeDetails.ehra)/100;
+
+            employeeDetails.etotal = (employeeDetails.esalary+employeeDetails.epf+employeeDetails.ehra);
+
+            
+            
+            console.log (employeeDetails);
+            console.log ("employee name"+ employeeDetails.ename );
+            console.log ("employee gender" + employeeDetails.egender );
+            console.log ("employee age" + employeeDetails.eage );
+            console.log ("employee department" + employeeDetails.edept );
+            console.log ("employee salary" +  employeeDetails. esalary );
+            console.log ("employee pf" + employeeDetails.epf);
+            console.log("employee hra"+ employeeDetails.ehra);
+            console.log("total"+ employeeDetails.etotal);
+
+
+
+
+    </script>
+</body>
+</html>

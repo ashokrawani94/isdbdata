@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 11</title>
+  </head>
+  <body>
+    <script>
+      var readNumber = () => parseInt(prompt("Enter a number."));
+      // read a number from usercard check whether it is prime or not.
+      var primeNumber = function (number) {
+        for (var start = 2, end = Math.sqrt(number); start <= end; start++) {
+          if (number % start == 0) return false;
+        }
+        return number > 1;
+      };
+      //End
+
+      //to display all the prime numbers between 1 to 100
+      var displayPrime = function () {
+        var start = 1,
+          end = 100;
+
+        for (start; start <= end; start++) {
+          if (primeNumber(start)) console.log(start);
+        }
+      };
+
+      //End
+
+      //sum of all prime numbers between 200 to 18
+      var sumPrime = function () {
+        var start = 200,
+          end = 18,
+          sumPrime = 0,
+          isPrime;
+        for (start; start >= end; start--) {
+          if (primeNumber(start)) sumPrime += start;
+        }
+        return sumPrime;
+      };
+      //End
+
+      //read a number from user and find the sum of individual digits of given number
+      var sumIndividualDigits = function (number) {
+        var sum = 0;
+
+        while (number) {
+          sum += number % 10;
+          number = parseInt(number / 10);
+        }
+        return sum;
+      };
+      //end
+
+      //lucky number of given number
+      var luckyNumber = function (number) {
+        var result;
+        if (number == 0) {
+          result = 0;
+        }
+        result = number % 9 ? number % 9 : 9;
+        return result;
+      };
+      //end
+
+      //armstrong number
+      var armstrong = function (number) {
+        var num = number;
+        var armTotal = 0,
+          size = String(num).length;
+        while (number != 0) {
+          armTotal = armTotal + (number % 10) ** size;
+          number = parseInt(number / 10);
+        }
+        return num == armTotal;
+      };
+      //end
+
+      //reverse of a number
+      var reverseNum = function (number) {
+        var reverseNumber = 0,
+          reverse = number;
+        while (reverse != 0) {
+          reverseNumber = reverseNumber * 10 + (reverse % 10);
+          reverse = parseInt(reverse / 10);
+        }
+        return reverseNumber;
+      };
+      //end
+
+      //check palindrome number
+      var palindrome = function (reverse1) {
+        return reverse1 == reverseNum(reverse1);
+      };
+      //end
+
+      //lucky number between 1 to 1000.
+      var luckyBetweenNumbers = function () {
+        var result1;
+        for (var one = 1; one <= 1000; one++) {
+          console.log("Lucky Number" + luckyNumber(one));
+        }
+      };
+
+      //end
+
+      var displayOutput = function () {
+        var number = readNumber();
+        console.log(
+          primeNumber(number) ? "Prime Number." : "Not Prime Number."
+        );
+        displayPrime();
+        console.log("Sum of primes between 200 and 18 : " + sumPrime());
+        console.log(
+          "Sum of individual digits : " + sumIndividualDigits(number)
+        );
+        console.log("Lucky Number Is : " + luckyNumber(number));
+        console.log(
+          number +
+            " is " +
+            (armstrong(number) ? "armnstrong." : "not armstrong.")
+        );
+        console.log(
+          "Reverse Of A number " + number + " is " + reverseNum(number)
+        );
+        console.log(
+          number +
+            " is " +
+            (palindrome(number) ? "palindrome." : "not palindrome.")
+        );
+      };
+
+      displayOutput();
+    </script>
+  </body>
+</html>

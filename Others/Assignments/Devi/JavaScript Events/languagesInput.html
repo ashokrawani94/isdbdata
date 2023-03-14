@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages Input</title>
+</head>
+<style>
+    li{
+        list-style: none;
+        padding: 20px;
+    }
+</style>
+<body>
+    <ul>
+        <li>
+            Select Languages:
+            <input type="checkbox" value="Telugu" name="language">Telugu
+            <input type="checkbox" value="English" name="language">English
+            <input type="checkbox" value="Hindi" name="language">Hindi
+            <input type="checkbox" value="Odiya" name="language">Odiya
+        </li>
+        <li>
+            <input type="button" value="Submit" onclick="getValue()">
+        </li>
+        <li>
+           <span id="span1"></span>
+        </li>
+    </ul>
+
+    <script>
+        var getValue = () => {
+            var check = document.querySelectorAll("input[type='checkbox']");
+            var result = '';
+            for(var i=0; i<check.length; i++)
+            {
+                if(check[i].checked){
+                    result = result + check[i].value + ", ";
+                }
+            }
+            document.querySelector("#span1").innerHTML = result.trim().slice(0,-1);
+        }
+    </script>
+    
+</body>
+</html>

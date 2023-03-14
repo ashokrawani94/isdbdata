@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts using floats</title>
+    <style>
+        .top, .mainContent {
+            margin: 5px 200px 10px 200px;
+            border: 2px solid green;
+            height: 40px;
+            text-align: center;
+        }
+        .mainContent {
+            height: 620px;
+        }
+        .mainContent div {
+            width: 90px;
+            height: 110px;
+            border: 2px solid red;
+            margin: 5px;
+        }
+        .block01, .block02, .block09, .block10 {
+            float: left;
+        }
+        .block03, .block05, .block11 {
+            float: right;
+        }
+        .block04, .block06, .block07, .block08 {
+            clear: both;
+            float: left;
+        }
+        .block05 {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <span>Block Alignment Using Float Property</span>
+    </div>
+    <div class="mainContent">
+        <div class="block01"><span>Block 1</span></div>
+        <div class="block02"><span>Block 2</span></div>
+        <div class="block03"><span>Block 3</span></div>
+        <div class="block04"><span>Block 4</span></div>
+        <div class="block05"><span>Block 5</span></div>
+        <div class="block06"><span>Block 6</span></div>
+        <div class="block07"><span>Block 7</span></div>
+        <div class="block08"><span>Block 8</span></div>
+        <div class="block09"><span>Block 9</span></div>
+        <div class="block10"><span>Block 10</span></div>
+        <div class="block11"><span>Block 11</span></div>
+    </div>
+</body>
+</html>

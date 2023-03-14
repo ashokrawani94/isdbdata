@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //function to fetch total characters of a string without using length property
+     var str = prompt("enter a string");
+     var size = 0;
+     function fetchCharacters(str)
+     {   
+        var arr = str.split("");        
+        while(arr.pop() != undefined)
+        {
+          size++;
+        }
+        console.log("Length of '" + str + "' String is: " + size);
+     }
+     fetchCharacters(str);
+    </script>
+</body>
+</html>

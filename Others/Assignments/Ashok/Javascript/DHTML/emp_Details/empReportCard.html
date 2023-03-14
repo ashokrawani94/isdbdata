@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee Report card</title>
+    <link rel="stylesheet" href="emp.css">
+    <script src="emp.js"></script>
+</head>
+<body>
+    <h3>Employee Details</h3>
+    <ul class="formContainer">
+        <li>
+            Employee Name: <input type="text" id="ename">
+        </li>
+        <li>
+            Employee Gender: 
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li>
+            Employee Age: <input type="number" id="eage">
+        </li>
+        <li>
+            Employee Department: <input type="text" id="edept">
+        </li>
+        <li>
+            Employee Basic Salary: <input type="number" id="basicSal">
+        </li>
+        <li>
+            <input type="button" value="Generate Salary Slip" onclick="readEmpData()">
+        </li>
+        
+    </ul>
+
+    <ul class="progressCardBlock">
+        <li class="progressTitle">
+            Employee Salary Info
+        </li>
+        <li>
+            Employee Name is : <span id="dename"></span>
+        </li>
+        <li>
+            Employee Gender is : <span id="dgender"></span>
+        </li>
+        <li>
+            Employee Age is : <span id="dage"></span>
+        </li>
+        <li>
+            Employee Dept is : <span id="ddept"></span>
+        </li>
+        <li>
+            Employee Basic Sal is : <span id="dbasicSal"></span>
+        </li>
+        <li>
+            Employee Total Sal is : <span id="dtotalSal"></span>
+        </li>
+        <li>
+            Employee Tax to be paid : <span id="dtax"></span>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

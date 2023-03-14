@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //....student detailes using json..//
+
+
+       /* var bookdetailes = {
+            name : "abcd",
+            price : 200,
+            author : "someone",
+            discount : 20,
+            displaybookdetales() {
+                console.log("book name" + bookdetailes. name);
+                console.log("book price" + bookdetailes. price);
+                console.log("author name" + bookdetailes. author);
+
+            },
+            getpriceafterdiscount(){
+                var priceafterdiscount = (bookdetailes.price * bookdetailes.dscountpercent)/100;
+                console.log("priceafterdiscount" + priceafterdiscount)
+            }
+            
+        };
+        bookdetailes.displaybookdetales();
+        bookdetailes.getpriceafterdiscount();
+         */
+
+         //....employe detailes using json..//
+
+         var edetales = {
+            ename : 'raj',
+            eage : 25,
+            egen : 'male',
+            ebsalary : 20000,
+            pf : 2000,
+            hra : 3000,
+            totalsalary:[],
+            displayEmployedetailes(){
+                console.log("employe name" + edetales.ename);
+                console.log("employe age" + edetales.eage);
+                console.log("employe gen" + edetales.egen);
+                console.log("employe basic salary" + edetales.ebsalary);
+                edetales.getemployepf();
+                
+            
+            },
+            getemployepf(){
+                var getemployepf = (edetales.ebsalary * edetales.pf)/100;
+                console.log("getemploye pf" + getemployepf)
+                edetales.getEmployehra();
+                
+         
+            },
+            getEmployehra(){
+                var getEmployehra = (edetales.ebsalary * edetales.hra)/100;
+                console.log("getemploye hra" + getEmployehra)
+                edetales.Employetotalsalary();
+            },
+            Employetotalsalary(){
+                var Employetotalsalary = edetales. pf +  edetales.hra + edetales.ebsalary;
+                console.log('employe total salary' + Employetotalsalary)
+                
+            }
+         };
+         edetales.displayEmployedetailes();
+         //edetales.getemployepf();
+        // edetales.getEmployehra();
+         //edetales.Employetotalsalary();
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total Tax</title>
+  </head>
+  <body>
+    <script>
+      var empname = prompt("Enter employee name");
+      var Gender = prompt("Enter Gender Male/Female");
+      var salary = prompt("Enter Salary");
+      var salary = parseInt(salary);
+      var Tax;
+
+      var pf = (salary * 14) / 100;
+      var hra = (salary * 24) / 100;
+      var totalsalary = salary + pf + hra;
+
+      if (Gender == "Male") {
+        if (totalsalary >= 100000) {
+          Tax = totalsalary * (15 / 100);
+        } else if (totalsalary >= 50000 && totalsalary < 100000) {
+          Tax = totalsalary * (10 / 100);
+        } else if (totalsalary >= 25000 && totalsalary < 50000) {
+          Tax = totalsalary * (5 / 100);
+        } else {
+          Tax = 0;
+        }
+      } else if (Gender == "Female") {
+        if (totalsalary >= 100000) {
+          Tax = totalsalary * (10 / 100);
+        } else if (totalsalary >= 50000 && totalsalary < 100000) {
+          Tax = totalsalary * (5 / 100);
+        } else {
+          Tax = 0;
+        }
+      } else {
+        console.log("Please enter correct gender");
+      }
+
+      console.log("Employee Name is " + empname);
+      console.log("Employee Gender is " + Gender);
+      console.log("Salary is " + salary);
+      console.log("pf is " + pf);
+      console.log("hra is " + hra);
+      console.log("Total Salary is " + totalsalary);
+      console.log("tax is " + Tax);
+    </script>
+  </body>
+</html>

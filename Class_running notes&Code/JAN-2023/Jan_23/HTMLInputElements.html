@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating HTML Input elements
+        </title>
+        <style>
+            .regBlock {
+                border: 1px solid;
+                width: 600px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                padding: 5px;
+                margin: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="regBlock">
+            <h3>Student Registration page   </h3>
+            <form method="GET" action="http://abcpqr.com/senddta">
+                <ul>
+                    <li>
+                        
+                        <input type="text" name="username" maxlength="10" placeholder="Enter User Name" required>
+                    </li>
+                    <li>
+                        <label for="acctId">User Acccount Id</label>
+                        <input type="text" name="acctId" value="TESTING">
+                    </li>
+                    <li>
+                        <label for="acctPwd">User Acccount Password</label>
+                        <input type="password" name="acctPwd" maxlength="8">
+                    </li>
+                    <li>
+                        User Gender:
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </li>
+                    <li>
+                        Languages: 
+                        <input type="checkbox" name="lng_eng" >English
+                        <input type="checkbox" name="lng_tel">Telugu
+                        <input type="checkbox" name="lng_hin">Hindi
+                    </li>
+                    <li>
+                        Country Name: 
+                        <select name="countryName">
+                            <option>Kenya      </option>
+                            <optgroup label="Asian Countries">
+                                <option>India</option>
+                                <option>China</option>
+                            </optgroup>
+                            <option>USA</option>
+                            <option>WestIndies</option>
+                            <option>Japan</option>
+                        </select>
+                    </li>
+                    <li>
+                        Tell about urself 
+                        <textarea name="aboutUser" id="" cols="60" rows="10" maxlength="300"></textarea>
+                    </li>
+                    <li>
+                        
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">             
+                    </li>
+                </ul>
+            </form>
+            <input type="text" name="courseName">
+            
+        </div>
+    </body>
+</html>

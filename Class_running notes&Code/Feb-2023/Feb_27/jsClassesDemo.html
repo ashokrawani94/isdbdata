@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating JS Classes
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var sdata1 = {
+                name: 'Teena',
+                age: 20,
+                gender: 'Female',
+                displayData: () => {
+                    console.log("Name is " + this.name);
+                    console.log('Gender ' + this.gender);
+                }
+            };
+
+            var sdata2 = {
+                name: 'Krish',
+                age: 20,
+                gender: 'Male',
+                displayData: () => {
+                    console.log("Name is " + this.name);
+                    console.log('Gender ' + this.gender);
+                }
+            }
+
+            var sdata3 = {
+                name: 'Prasad',
+                age: 20,
+                gender: 'male',
+                displayData: () => {
+                    console.log("Name is " + this.name);
+                    console.log('Gender ' + this.gender);
+                }
+            }*/ 
+           
+            class StudentData {
+                schoolLocation = 'Hyderabad';
+                sSchoolname = 'ABC School';
+                constructor(sData) {
+//                     this.sSchoolname = 'ABC School';
+                    this.sname = sData.name;
+                    this.sage = sData.age;
+                    this.gender = sData.gender;
+                   console.log("am from constructor") 
+                }
+                displayStudentData() {
+                    console.log("Hello am from display studetn data")
+                }
+                readStudentData() {
+                    consoel.log("frm read studen tdata")
+                }
+                getGrade() {
+                    console.log("Frm get grade method")
+                }
+            }
+            var s1 = {
+                name: 'Teena',
+                age: 20,
+                gender: 'Female'
+            }
+
+            var obj1 = new StudentData(s1); // creating obj for class
+            console.log(obj1)
+
+            var s2 = {
+                name: 'Krish',
+                age: 10,
+                gender: 'Male'
+            }
+            var obj2 = new StudentData(s2); // creating obj for class
+            console.log(obj2)
+           
+            // displayStudentData();
+        </script>
+    </body>
+</html>

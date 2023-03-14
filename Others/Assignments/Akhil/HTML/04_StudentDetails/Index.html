@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04_StudentDetails</title>
+    <style>
+      .container {
+        border: 1px solid red;
+      }
+      .header {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      .header h1,
+      .footer p {
+        color: darkcyan;
+        text-decoration: underline;
+        text-align: center;
+      }
+
+      .main {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: auto;
+        height: 3452px;
+      }
+
+      .footer {
+        padding: 5px;
+      }
+
+      .section1 {
+        width: 286px;
+        height: 3450px;
+        float: left;
+        margin-right: 5px;
+      }
+
+      .section2 {
+        width: 1016px;
+        height: auto;
+        float: left;
+      }
+
+      .leftContainer {
+        padding: 5px;
+        margin: 10px;
+        height: 40px;
+      }
+
+      .rightContainer {
+        padding: 10px;
+        width: auto;
+        height: 312px;
+        margin: 10px;
+      }
+
+      .imageContainer {
+        background-image: url("imageSpiriting.png");
+        margin-top: 51px;
+        width: 200px;
+        height: 200px;
+        float: left;
+      }
+
+      .dataContainer {
+        float: left;
+        margin-left: 5px;
+        width: 763px;
+        height: 309px;
+      }
+
+      .section1 .leftContainer a {
+        text-align: center;
+        display: block;
+        text-decoration: none;
+      }
+
+      .section2 .dataContainer p {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .section2 .dataContainer p .Key {
+        color: blue;
+        font-size: 25px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .section2 .dataContainer p .Value {
+        color: cadetblue;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .imagePosition2 {
+        background-position: -521px 8px;
+      }
+
+      .imagePosition3 {
+        background-position: -251px -2px;
+      }
+
+      .imagePosition4 {
+        background-position: -567px -217px;
+      }
+
+      .imagePosition5 {
+        background-position: -39px -218px;
+      }
+
+      .imagePosition6 {
+        background-position: -785px -1px;
+      }
+
+      .imagePosition7 {
+        background-position: -1042px 7px;
+      }
+
+      .imagePosition8 {
+        background-position: -835px -219px;
+      }
+
+      .imagePosition9 {
+        background-position: -304px -216px;
+      }
+
+      .imagePosition10 {
+        background-position: -1051px -219px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>Student Details</h1>
+    </div>
+    <div class="container main">
+      <div class="container section1">
+        <div class="container leftContainer">
+          <a href="#rajContainer">Raj</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#sureshContainer">Suresh</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#meenaContainer">Meena</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#akhilContainer">Akhil</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#teenaContainer">Teena</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#davidContainer">David</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#rahulContainer">Rahul</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#raviContainer">Ravi</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#rameshContainer">Ramesh</a>
+        </div>
+        <div class="container leftContainer">
+          <a href="#gireshContainer">Giresh</a>
+        </div>
+      </div>
+      <div class="container section2">
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition1"></div>
+          <div class="dataContainer" id="rajContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Raj</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">20</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Hyderabad</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition2"></div>
+          <div class="dataContainer" id="SureshContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Suresh</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">25</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Mumbai</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition3"></div>
+          <div class="dataContainer" id="meenaContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Meena</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">26</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span
+              ><span class="Value">Female</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Delhi</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition4"></div>
+          <div class="dataContainer" id="akhilContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Naresh</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">20</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Hyderabad</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition5"></div>
+          <div class="dataContainer" id="teenaContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Teena</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">21</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span
+              ><span class="Value">Female</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">France</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition6"></div>
+          <div class="dataContainer" id="davidContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">David</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">30</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">America</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition7"></div>
+          <div class="dataContainer" id="rahulContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Rahul</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">26</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">England</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition8"></div>
+          <div class="dataContainer" id="raviContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Ravi</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">30</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Italy</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition9"></div>
+          <div class="dataContainer" id="rameshContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Natasha</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">40</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span
+              ><span class="Value">Female</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Mumbai</span>
+            </p>
+          </div>
+        </div>
+        <div class="container rightContainer">
+          <div class="imageContainer imagePosition10"></div>
+          <div class="dataContainer" id="gireshContainer">
+            <p>
+              <span class="Key">Name : </span>
+              <span class="Value">Giresh</span>
+            </p>
+            <p>
+              <span class="Key">Age : </span>
+              <span class="Value">45</span>
+            </p>
+            <p>
+              <span class="Key">Gender : </span><span class="Value">Male</span>
+            </p>
+            <p>
+              <span class="Key">Location : </span
+              ><span class="Value">Hyderabad</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer">
+      <p style="text-decoration: none">@ CopyRight 2023</p>
+    </div>
+  </body>
+</html>

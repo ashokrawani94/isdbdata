@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details by JSON Object with Functionalities</title>
+</head>
+<body>
+    <script>
+        var empData = {
+            ename: "",
+            gender:"",
+
+            getEmployeeDetails(){
+                    this.ename = prompt("enter employee name");
+                    this.gender = prompt("enter gender");
+                    this.department = prompt("enter department name");
+                    this.basicSalary = prompt("enter salary");            
+                
+                    this.calculateTotalSal(this.basicSalary);                
+                    this.calculateTax(this.gender, this.totalSalary);
+                    this.displayEmployeeDetails();
+            },
+            calculateTotalSal(){
+                var sal = parseInt(empData.basicSalary);
+                empData.PF = (14 * sal) / 100;
+                empData.HRA = (12 * sal) / 100;
+                empData.totalSalary = sal + this.PF + this.HRA;                
+            },
+
+            calculateTax(gender, totalSal)
+            {
+                var taxValue = 0;
+
+                if(gender=="male")
+                {
+                    if(totalSal>100000)
+                    {
+                        taxValue = 15;
+                    }
+                    else if(totalSal>50000)
+                    {
+                        taxValue = 10;
+                    }
+                    else if(totalSal>25000)
+                    {
+                        taxValue = 5;
+                    }
+                    else
+                    {
+                        taxValue = 0;
+                    }
+                }
+                else if(gender=="female")
+                {
+                    if(totalSal>100000)
+                    {
+                        taxValue = 10;
+                    }
+                    else if(totalSal>50000)
+                    {
+                        taxValue = 5;
+                    }
+                    else
+                    {
+                        taxValue = 0;
+                    }
+                }
+                totalTax = (taxValue * totalSal) / 100;
+                empData.tax = totalTax;                
+            },
+            
+            displayEmployeeDetails()
+            {
+                console.log("Employee name: "+ this.ename);               
+                console.log("Gender: "+ this.gender);
+                console.log("Department is: "+ this.department);
+                console.log("Employee Salary: "+ this.basicSalary);
+                console.log("Employee PF: "+ empData.PF);
+                console.log("Employee HRA: "+ empData.HRA);
+                console.log("Employee total salary: "+ empData.totalSalary);
+                console.log("Total Tax is: "+ empData.tax);
+            }
+        };
+        empData.getEmployeeDetails();
+   </script>
+</body>
+</html>

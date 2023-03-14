@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Assignment solution
+        </title>
+        <style>
+            img {
+                width: 100px;
+                height: 130px;
+            }
+            .mainContainer,
+            h3,
+            .pageFooter {
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+            }
+
+            .mainContainer {
+               height: 550px;
+               background-color: aqua;
+            }
+            h3 {
+                text-align: center;
+                text-decoration: underline;
+                background-color: greenyellow;
+            }
+            .pageFooter {
+                text-align: center;
+                font-size: 12px;
+            }
+            .leftContainer,
+            .rightContainer {
+                border: 1px solid;
+                padding: 5px;
+                margin: 5px;
+                float: left;
+                height: 530px;
+                overflow: auto;
+            }
+            .leftContainer {
+                width: 30%;
+                background-color: azure;
+            }
+            .rightContainer {
+                width: 63%;
+            }
+            .leftContainer li {
+                border: 1px solid;
+                width: 80%;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                background-color: orange;
+            }
+            .leftContainer li:hover {
+                background-color: #ccc;
+                cursor: pointer;
+            }
+            .rightList > li {
+                list-style: none;
+                border: 1px solid;
+                height: 180px;
+                padding: 5px;
+                margin: 5px;
+            }
+            .rightContainer ol {
+                margin: 0;
+                padding: 0;
+            }
+            .imgContainer, .detailsContainer {
+                float: left;
+                margin: 10px;
+            }
+            .detailsContainer li {
+                list-style: none;
+                margin: 10px;
+            }
+            .label, .content {
+                float: left;
+                margin: 10px;
+            }
+            .label {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Student Details
+        </h3>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <ol>
+                    <li>siva</li>
+                    <li>Mouni </li>
+                    <li>Devi</li>
+                    <li>sai </li>
+            
+                    <li>Rani</li>
+                </ol>
+            </div>
+            <div class="rightContainer">
+                <ol class="rightList">
+                    <li>
+                        <div class="imgContainer">
+                            <img src="images/std1.webp" alt="">
+                        </div>
+                        <div class="detailsContainer">
+                            <ol>
+                                <li>
+                                    <div class="label" >Name:</div> <div class="content"> siva</div>
+                                </li>
+                                <li>
+                                    <div class="label">Age:</div> <div class="content"> 20</div>
+                                </li>
+                                <li>
+                                    <div class="label">Gender:</div> <div class="content"> Male</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="images/std2.webp" alt="">
+                        </div>
+                        <div class="detailsContainer">
+                            <ol>
+                                <li>
+                                    <div class="label">Name:</div> <div class="content"> Mouni</div>
+                                </li>
+                                <li>
+                                    <div class="label">Age:</div> <div class="content"> 25</div>
+                                </li>
+                                <li>
+                                    <div class="label">Gender:</div> <div class="content"> Male</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="images/std3.webp" alt="">
+                        </div>
+                        <div class="detailsContainer">
+                            <ol>
+                                <li>
+                                    <div class="label">Name:</div> <div class="content"> Devi</div>
+                                </li>
+                                <li>
+                                    <div class="label">Age:</div> <div class="content"> 22</div>
+                                </li>
+                                <li>
+                                    <div class="label">Gender:</div> <div class="content"> female</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgContainer">
+                            <img src="images/std4.png" alt="">
+                        </div>
+                        <div class="detailsContainer">
+                            <ol>
+                                <li>
+                                    <div class="label">Name:</div> <div class="content"> sai</div>
+                                </li>
+                                <li>
+                                    <div class="label">Age:</div> <div class="content"> 20</div>
+                                </li>
+                                <li>
+                                    <div class="label">Gender:</div> <div class="content"> male</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li id="std_5">
+                        <div class="imgContainer">
+                            <img src="https://ww1.prweb.com/prfiles/2006/06/22/402824/thumbsup.jpg" alt="">
+                        </div>
+                        <div class="detailsContainer">
+                            <ol>
+                                <li>
+                                    <div class="label">Name:</div> <div class="content"> Rani</div>
+                                </li>
+                                <li>
+                                    <div class="label">Age:</div> <div class="content"> 18</div>
+                                </li>
+                                <li>
+                                    <div class="label">Gender:</div> <div class="content"> female</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="pageFooter">
+            @copy rights 2023
+        </div>
+    </body>
+</html>

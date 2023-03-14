@@ -1,0 +1,15 @@
+opacity: Through which we could control the transparency of any dom elementc 
+        It takes value between 0 - 1
+            Syntax:
+                opacity: 0.6;
+--------------------------------------------
+
+Javascript
+
+    Predefined methods
+        alert("al;dkf;alskdf;asldkfjas;@#$24") - method
+
+        anystatement() - > method/function
+
+
+Datatypes: - Specify the type of data can be stored with in the variable, and the size it will occupy

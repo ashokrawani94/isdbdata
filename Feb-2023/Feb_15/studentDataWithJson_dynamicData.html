@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var studentData = {};
+
+            studentData.name = prompt("enter value for name");
+            studentData.age = prompt("enter value for age");
+            studentData.gender = prompt("enter value for gender");
+            studentData.marks = [];
+            for (var i = 0 ; i < 5; i++) {
+                studentData.marks[i] = prompt("Enter value for sub " + i);
+                studentData.marks[i] = parseInt(studentData.marks[i]);
+            }
+           
+            studentData.total = 0;
+            for (var i = 0; i < studentData.marks.length; i++) {
+                studentData.total = studentData.total + studentData.marks[i];
+            }
+
+            studentData.avg = studentData.total / studentData.marks.length;
+
+            console.log(studentData)
+            console.log("Student name " + studentData.name );
+            console.log("Student Age " + studentData.age );
+            console.log("Avg is " + studentData['avg'])
+        </script>
+    </body>
+</html>

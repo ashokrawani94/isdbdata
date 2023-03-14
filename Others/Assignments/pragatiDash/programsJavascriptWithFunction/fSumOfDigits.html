@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of Individual Digits</title>
+  </head>
+  <body>
+    <script>
+      var num,
+        sum = 0;
+
+      function readDataFromUser() {
+        num = prompt("Enter a number");
+        num = parseInt(num);
+        findSumOfDigits();
+      }
+
+      function findSumOfDigits() {
+        while (num != 0) {
+          sum = sum + (num % 10);
+          num = num / 10;
+          num = parseInt(num);
+        }
+        console.log("Sum of the digits is:" + sum);
+      }
+      readDataFromUser();
+    </script>
+  </body>
+</html>

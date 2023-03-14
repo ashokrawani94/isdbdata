@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emp details work in json object with methods</title>
+</head>
+<body>
+    <script>
+        console.log("..................empDataWithJsonObjWithMethod(userGivenData)...........................");
+        var empData = {
+            getdetails:function(){
+                empData.name = 'ganesh';
+                empData.age = 23;
+                empData.gender ='male';
+                empData.bsalary = 35000;
+                empData.pf = (15*empData.bsalary)/100;
+                empData.hra = (25*empData.bsalary)/100;
+                empData.getTotal();
+            },
+            getTotal:function(){
+                empData.totalsalary = empData.bsalary+empData.pf+empData.hra;
+
+                empData.getTax();
+            },
+            getTax:function(){
+                if(empData.gender=='male'){
+                    if(empData.totalsalary>= 100000){
+                        empData.taxpercent=15;
+                    }else if(empData.totalsalary >=50000){
+                        empData.taxpercent=10;
+                    }else if(empData.totalsalary >= 25000){ 
+                        empData.taxpercent = 5;   
+                    }else{
+                        empData.taxpercent =0;
+                    }
+                }else{
+                    if(empData.totalsalary >= 100000){
+                        empData.taxpercent=10;
+                    }else if(empData.totalsalary >= 50000){
+                        empData.taxpercent = 5;
+                    }else{
+                        empData.taxpercent = 0;
+                    }
+                }
+                empData.tax =(empData.totalsalary*empData.taxpercent)/100;
+
+                empData.getDisplayData();
+            },
+            getDisplayData:function(){
+                console.log('employe name :'+empData.name);
+                console.log("age is :"+empData.age);
+                console.log("gender :" +empData.gender);
+                console.log("basic salary :" +empData.bsalary);
+                console.log("pf is :" +empData.pf);
+                console.log("hra is :" +empData.hra);        
+                console.log("total salary : "+empData.totalsalary);
+                console.log('tax is : '+empData.tax);
+            },
+
+        }
+        empData.getdetails();
+    </script>
+    <script>
+        console.log("..................empDataWithJsonObjWithMethod(ReadFromUser)...........................");
+        var empData = {
+            getdetails:function(){
+                empData.name = prompt("employe name");
+                empData.age = prompt("enter age");
+                empData.gender =prompt("gender");
+                empData.bsalary = prompt("basic salry");
+                empData.bsalary =parseInt(empData.bsalary);
+                empData.pf =prompt("pf in %");
+                empData.pf = (empData.pf*empData.bsalary)/100;
+                empData.hra = prompt("hra in %");
+                empData.hra = (empData.hra*empData.bsalary)/100;
+                empData.getTotal();
+            },
+            getTotal:function(){
+                empData.totalsalary = empData.bsalary+empData.pf+empData.hra;
+
+                empData.getTax();
+            },
+            getTax:function(){
+                if(empData.gender=='male'){
+                    if(empData.totalsalary>= 100000){
+                        empData.taxpercent=15;
+                    }else if(empData.totalsalary >=50000){
+                        empData.taxpercent=10;
+                    }else if(empData.totalsalary >= 25000){ 
+                        empData.taxpercent = 5;   
+                    }else{
+                        empData.taxpercent =0;
+                    }
+                }else{
+                    if(empData.totalsalary >= 100000){
+                        empData.taxpercent=10;
+                    }else if(empData.totalsalary >= 50000){
+                        empData.taxpercent = 5;
+                    }else{
+                        empData.taxpercent = 0;
+                    }
+                }
+                empData.tax =(empData.totalsalary*empData.taxpercent)/100;
+
+                empData.getDisplayData();
+            },
+            getDisplayData:function(){
+                console.log('employe name :'+empData.name);
+                console.log("age is :"+empData.age);
+                console.log("gender :" +empData.gender);
+                console.log("basic salary :" +empData.bsalary);
+                console.log("pf is :" +empData.pf);
+                console.log("hra is :" +empData.hra);        
+                console.log("total salary : "+empData.totalsalary);
+                console.log('tax is : '+empData.tax);
+            },
+
+        }
+        empData.getdetails();
+
+    </script>
+    <script>
+        console.log("..................thisWithJsonObjWithMethod(use this keyword)...........................");
+        var empData = {
+            getdetails:function(){           // objectname is placed in use this keyword.
+                this.name = prompt("employe name");     // this keyword indicates current json object name.
+                this.age = prompt("enter age");
+                this.gender =prompt("gender");
+                this.bsalary = prompt("basic salry");
+                this.bsalary =parseInt(this.bsalary);
+                this.pf =prompt("pf in %");
+                this.pf = (this.pf*this.bsalary)/100;
+                this.hra = prompt("hra in %");
+                this.hra = (this.hra*this.bsalary)/100;
+                this.getTotal();
+            },
+            getTotal:function(){
+                this.totalsalary = this.bsalary+this.pf+this.hra;
+    
+                this.getTax();
+            },
+            getTax:function(){
+                if(this.gender=='male'){
+                    if(this.totalsalary>= 100000){
+                        this.taxpercent=15;
+                    }else if(this.totalsalary >=50000){
+                        this.taxpercent=10;
+                    }else if(this.totalsalary >= 25000){ 
+                        this.taxpercent = 5;   
+                    }else{
+                        this.taxpercent =0;
+                    }
+                }else{
+                    if(this.totalsalary >= 100000){
+                        this.taxpercent=10;
+                    }else if(this.totalsalary >= 50000){
+                        this.taxpercent = 5;
+                    }else{
+                        this.taxpercent = 0;
+                    }
+                }
+                this.tax =(this.totalsalary*this.taxpercent)/100;
+    
+                this.getDisplayData();
+            },
+            getDisplayData:function(){
+                console.log('employe name :'+this.name);
+                console.log("age is :"+this.age);
+                console.log("gender :" +this.gender);
+                console.log("basic salary :" +this.bsalary);
+                console.log("pf is :" +this.pf);
+                console.log("hra is :" +this.hra);        
+                console.log("total salary : "+this.totalsalary);
+                console.log('tax is : '+this.tax);
+            },
+    
+        }
+        empData.getdetails();
+    
+    </script>
+</body>
+</html>

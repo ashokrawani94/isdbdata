@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. write a program to read a no. from user & check wheather it is prime or not?
+
+         var n = prompt("Enter your number")
+         n = parseInt(n)
+         var count = 0;
+
+         for(i=2; i<n; i++){
+            var rem = n % i;
+            if(rem == 0){
+                count++;
+            } 
+         }
+         console.log(count);
+
+         if(count==0){
+            console.log("it is a prime number")
+         }else{
+            console.log("it is not a prime number")
+         }
+
+
+        // 2. write a program to display all the prime no. between 1 to 100
+
+        for (var j = 2; j <= 100; j++) {
+            var n = j;
+            var isItsPrime;
+            var count = 0;
+
+            for (i = 1; i <= n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    count++;
+                }
+            }
+
+            if (count == 2) {
+                console.log(n + " it is a prime number");
+            } else {
+                // console.log(n + " it is not a prime number");
+            }
+
+        }
+
+
+        // 3. write a program to find the sum of all the prime no. between user higher no. to user lower no.
+
+        var startIndex = prompt("Enter start index higher than end index")
+        startIndex = parseInt(startIndex);
+        var endIndex = prompt("Enter end index lower than start index")
+        endIndex = parseInt(endIndex);
+        primeSum = 0;
+        for (var j = startIndex; j >= endIndex; j--) {
+            var n = j;
+            var isItsPrime;
+            var count = 0;
+
+            for (i = 1; i <= n; i++) {
+                var rem = n % i;
+                if (rem == 0) {
+                    count++;
+                }
+            }
+
+            if (count == 2) {
+                console.log(n + " it is a prime number");
+                primeSum = primeSum + n;
+            } else {
+                console.log(n + " it is not a prime number");
+            }
+
+        }
+        console.log("the sum of prime number is " + primeSum)
+
+
+        // ---------------------------------------------lucky number------------------------------------------------
+
+
+        var startIndex = 1
+        var endIndex = 20
+        var sum = 0;
+        for (var j = startIndex; j <= endIndex; j++) {
+            var n = j;
+
+        while (n > 0) {
+            var rem = n % 10
+            sum = sum + rem;
+            n = n / 10;
+            n = parseInt(n); //removing decimals
+            if(n  == 0 && sum >9){
+             n = sum;
+             sum = 0;
+            }
+        }
+        console.log("the lucky number is " + sum)
+        }
+
+
+        // 4. write a program to display the table of a given number until 10 using user no.
+
+        var n = prompt("Enter your no.");
+        n = parseInt(n);
+
+        for (i = 1; i <= 10; i++) {
+            console.log(n + ' * ' + i + " = " + n * i)
+        }
+
+
+        // 5. write a program to read a no. from user and find the sum of individual digit of a given no.
+
+        // ------------------for loop-----------------//
+        var n = prompt("Enter the no.")
+        n = parseInt(n);
+        var sum = 0;
+
+        for (i = 1; i < n; i++) {
+            var rem = n % 10
+            console.log(rem);
+            n = n / 10;
+            n = parseInt(n);
+            console.log(n);
+            sum = sum + rem;
+        }
+        console.log("The sum of individual digit is " + sum)
+
+        // --------------------while loop--------------------//
+        var n = prompt("Enter the no.")
+        n = parseInt(n);
+        var sum = 0;
+
+        while (n > 0 ) {
+            var rem = n % 10
+            console.log(rem);
+            n = n / 10;
+            n = parseInt(n); //removing decimals
+            console.log(n);
+            sum = sum + rem;
+        }
+        console.log("The sum of individual digit is " + sum)
+
+
+        // 6. write a program to find a lucky no. of the given no.
+
+        var n = prompt("Enter the no.")
+        n = parseInt(n);
+        var sum = 0;
+
+        while (n > 0) {
+            var rem = n % 10
+            sum = sum + rem;
+            n = n / 10;
+            n = parseInt(n); //removing decimals
+            if(n  == 0 && sum >9){
+             n = sum;
+             sum = 0;
+            }
+        }
+        console.log("the lucky number is " + sum)
+
+        // 7. write a program to find the lucky numbers for every numbers between 1 to 1000
+
+        var n = 0;
+
+        for (var i = 1; i <= 1000; i++) {
+            n = i;
+            while (n > 0) {
+                var reminder = 0;
+                reminder = n % 10;
+                n = n / 10;
+                n = parseInt(n);
+                sum = sum + parseInt(reminder);
+                if (n == 0 && sum > 9) {
+                    var sum = 0;
+                    n = sum;
+                    sum = 0;
+                }
+            }
+            console.log("for " + i + " lucky number is " + sum);
+        }
+
+        // 8. write a program to check weather the given number is armstrong number or not
+
+        var n = prompt("Enter a value")
+        var digit = n.length;
+        n = parseInt(n);
+        var temp = n;
+        var armstrongNumber = 0;
+
+        while (n > 0) {
+            rem = n % 10;
+            n = n / 10;
+            n = parseInt(n)
+            // console.log(rem)
+            armstrongNumber = armstrongNumber + (rem ** digit)
+        }
+        if (temp == armstrongNumber) {
+            console.log("it ia an armstrong number " + armstrongNumber)
+        } else {
+            console.log("it is not an armstrong number " + armstrongNumber)
+        }
+
+
+        // 9. write a program to find the reverse of any given numbers
+
+        var n = prompt("Enter your no. for reverse it");
+        n = parseInt(n);
+        result = 0;
+        var temp = n;
+
+        while (n > 0) {
+            var rem = n % 10;
+            result = (result * 10) + rem;
+            n = n / 10;
+            n = parseInt(n);
+        }
+        console.log(temp + " reverse is " + result)
+
+
+        // 10. write a program to check weather the number is pallandrom number or not
+
+        var n = prompt("Enter your number")
+        n = parseInt(n)
+        result = 0;
+        var temp = n;
+
+        while(n > 0){
+            var rem = n % 10;
+            result = (result * 10) + rem;
+            n = n/ 10;
+            n = parseInt(n);
+        }
+        if(temp == result){
+        console.log(temp + " it is a pallandrom " + result)
+        }else{
+        console.log(temp + " it is not a pallandrom " + result)
+        }
+
+        //----------------------------------------------------------------------------------
+
+    </script>
+</body>
+
+</html>

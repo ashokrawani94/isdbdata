@@ -1,0 +1,80 @@
+OOPS -> Inheritance 
+
+    Types:
+        Single Level 
+
+        Multilevel
+
+        Multiple - Not supported in js 
+
+        Hierarchical - Supported
+
+        Hybrid - Not supported
+
+    Single Level Inheritance:
+        Example:
+            class A {
+
+            }
+            class B extends A {
+
+            }
+     Multi Level Inheritance:
+        Example:
+            class A {
+
+            }
+            class B extends A {
+
+            }
+
+            class C extends B {
+
+            }
+
+        Hierarchical Inheritance:
+
+            class A {
+
+            }
+
+            Class B extends A {
+
+            }
+
+            class C extends A {
+
+            }
+
+            class D extends B {
+
+            }
+
+            class E extends B {
+
+            }
+    
+
+    Assignment:  - Mutilevel inhr 
+
+        class UnivDetails {
+
+        }
+
+        class CollegeDetail extends UnivDetails {
+
+        }
+
+        class StudentDetails extends CollegeDetail {
+
+        }
+
+
+-=-----
+
+__proto__ 
+
+var data = {
+    __proto__
+}
+

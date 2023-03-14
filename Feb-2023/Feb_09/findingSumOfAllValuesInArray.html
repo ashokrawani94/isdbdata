@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finding Sum of values.
+        </title>
+    </head>
+    <body>
+        <script>
+            var data = []; // var data = new Array();
+
+            // data[0] = prompt("etner value at position 0");
+            // data[0] = parseInt(data[0])
+            // data[1] = prompt("etner value at position 1");
+            // data[1] = parseInt(data[1])
+            // data[2] = prompt("etner value at position 2");
+            // data[2] = parseInt(data[2])
+
+            var n = prompt("enter array size");
+            n = parseInt(n)
+
+            for (var i = 0; i < n; i++) {
+                data[i] = prompt("etner value at position " + i);
+                data[i] = parseInt(data[i])
+            }
+
+            var sum = 0;
+            for (var i = 0; i < data.length; i++) {
+                sum = sum + data[i];
+            }
+
+
+            console.log(data);
+            console.log("Sum of values is " + sum)
+
+            // var a = 90;
+            // a = prompt("enter value");
+        </script>
+    </body>
+</html>

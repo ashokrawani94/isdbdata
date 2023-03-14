@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+           /* class SchoolDetails {
+                constructor () {
+                    console.log("Frm parent class const")
+                    this.schoolName = 'ABC School';
+                    this.schoolLoc = 'Hyd';
+                    this.rating = 4.5;
+                }
+            }
+
+            class StudentDetails extends SchoolDetails {
+                constructor () {
+                    super();
+                    console.log("Frm child class constructor")
+                    this.sname = 'Krish';
+                    this.sage = 20;
+                    this.gender = 'Male';
+                }
+                displayStudentDetails() {
+                    console.log("School name is " + this.schoolName);
+                    console.log("School Location " + this.schoolLoc);
+                    console.log("Student Name " + this.sname);
+                    console.log("Age" + this.sage);
+                    console.log("Gender " + this.gender);
+                }
+            }
+
+            var s1 = new StudentDetails();
+            var s2 = new StudentDetails();
+            // s1.displayStudentDetails(); */ 
+
+            class SchoolDetails {
+                constructor (data) {
+                    console.log("Frm parent class const")
+                    this.schoolName = data.schoolName;
+                    this.schoolLoc = data.schoolLoc;
+                    this.rating = 4.5;
+                }
+            }
+
+            class StudentDetails extends SchoolDetails {
+                constructor (data) {
+                    super({schoolName: data.schoolName, schoolLoc: 'Hyderabad'});
+                    console.log("Frm child class constructor")
+                    this.sname = data.name;
+                    this.sage = data.age;
+                    this.gender = data.gender;
+                }
+                displayStudentDetails() {
+                    console.log("School name is " + this.schoolName);
+                    console.log("School Location " + this.schoolLoc);
+                    console.log("Student Name " + this.sname);
+                    console.log("Age" + this.sage);
+                    console.log("Gender " + this.gender);
+                }
+            }
+
+            var s1 = new StudentDetails({name: 'Krish', age: 10, gender: 'Male', schoolName: 'TEST School'});
+            s1.displayStudentDetails();
+            var s2 = new StudentDetails({name: 'Teena', age: 11, gender: 'Female'});
+            s2.displayStudentDetails();
+
+        </script>
+    </body>
+</html>

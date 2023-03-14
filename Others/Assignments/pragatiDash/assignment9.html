@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var ename = prompt("Enter Employee Name");
+      var edepartment = prompt("Enter Employee Department");
+      var salary = prompt("Enter Salary");
+      var salary = parseInt(salary);
+
+      var pf = (salary * 14) / 100;
+      var hra = (salary * 24) / 100;
+      var totalsalary = salary + pf + hra;
+
+      console.log("Employee Name is " + ename);
+      console.log("Employee Department is " + edepartment);
+      console.log("Salary is " + salary);
+      console.log("pf is " + pf);
+      console.log("hra is " + hra);
+      console.log("Total Salary is " + totalsalary);
+    </script>
+  </body>
+</html>

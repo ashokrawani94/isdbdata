@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+
+<!-------======= External google fonts link =======-------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<!-------======= CSS style sheet link =======-------->
+
+    <link rel="stylesheet" href="Student_Registration_form_Assignment_8.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"> Student Registration page</div>
+        <div class="section">
+            <fieldset>
+<!-------======= Account details section start from here =======-------->
+                <legend>Account details</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter your name" autofocus required></td>
+
+                        <td><label for="account_Id">Account Id:</label></td>
+                        <td><input type="text" name="account_Id" id="account_Id" placeholder="Enter your Account id" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" name="age" id="age" placeholder="Enter your age" required></td>
+
+                        <td><label for="account_type">Account Type:</label></td>
+                        <td> <select name="account_type" id="account_type">
+                            <option value="currentAccount">Current Account</option>
+                            <option value="savingsAccount">Savings Account</option>
+                            <option value="NRI">NARI Account</option>
+                            <option value="select" selected>Select</option>
+                        </select> </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td><input type="radio" name="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="female" id="female">
+                            <label for="female">Feale</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Mail id:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
+                        
+                    </tr>
+                </table>
+            </fieldset>
+<!-------======= Education Details section start from here =======-------->
+
+            <fieldset class="top">
+                <legend>Education Details</legend>
+                <form action="#" method="post" autocomplete="on">
+                    <table>
+                        <tr>
+                            <td><label for="qualification">Qualification:</label></td>
+                            <td>
+                                <select name="qualification" id="qualification">
+                                    <option value="select" selected> Select</option>
+                                    <option value="Bsc">Bsc</option>
+                                    <option value="B.com">B.com</option>
+                                    <option value="Graduation">Graduation</option>
+                                    <option value="postGraduation">Post Graduation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </td>
+
+                            <td><label for="collageName">Collage Name:</label></td>
+                            <td><input type="text" name="collageName" id="collageName" placeholder="Enter your Collage Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="languages">Language Known:</label></td>
+                            <td><input type="checkbox" name="telugu" id="telugu">
+                            <label for="telugu">Telugu</label>
+                            <input type="checkbox" name="english" id="english">
+                            <label for="english">English</label>
+                            <input type="checkbox" name="hindi" id="hindi">
+                            <label for="hindi">Hindi</label>
+                            </td>
+
+                            <td><label for="location">Location:</label></td>
+                            <td><select name="location" id="location">
+                                <option value="hyd">Hyderabad</option>
+                                <option value="warangal">Warangal</option>
+                                <option value="nizamabad">Nizamabad</option>
+                                <option value="Khammam">Khammam</option>
+                                <option value="karimnagar">Karimnagar</option>
+                                <option value="select" selected>Select</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="courses">Course Opting For:</label></td>
+                            <td><select name="courses" id="courses">
+                                <option value="Javascript">Javascript</option>
+                                <option value="Python">Python</option>
+                                <option value="Java">Java</option>
+                                <option value="Kotlin">Kotlin</option>
+                                <option value="PHP">PHP</option>
+                                <option value="select" selected>Select</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+
+<!-------======= Address section start from here =======-------->
+            <fieldset class="top">
+                <legend>Address</legend>
+                    <form action="#" method="post" autocomplete="on">
+                        <table>
+                            <tr>
+                                <td><label for="door:">Door number:</label></td>
+                                <td><input type="text" name="door" id="door" placeholder="Enter your Door number"></td>
+                            
+                                <td><label for="countryName">Country Name:</label></td>
+                                <td><input type="text" name="countryName" id="countryName" placeholder="Enter your Country Name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="streetName:">Street Name:</label></td>
+                                <td><input type="text" name="streetName" id="streetName" placeholder="Enter your Street Name"></td>
+                            
+                                <td><label for="countryCode">Country Code:</label></td>
+                                <td><input type="text" name="countryCode" id="countryCode" placeholder="Enter your Country code" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="stateName">State Name:</label></td>
+                                <td><input type="text" name="stateName" id="stateName" placeholder="Enter your State Name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="stateCode">State Code:</label></td>
+                                <td><input type="text" name="stateCode" id="stateCode" placeholder="Enter your State Code" required></td>
+                            </tr>
+                        </table>
+                    </form>
+                
+            </fieldset>
+            
+
+            
+<!-------======= About section start from here =======-------->
+
+            <div class="about">
+                <fieldset class="top">
+                    <legend>About Yourself </legend>
+                    <table>
+                        <tr>
+                            <td><label for="about">About Yourself: </label></td>
+                            <td><textarea name="about" id="about" cols="60" rows="5" placeholder="About Yourself"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+<!-------======= About section ends here =======-------->
+
+            <div class="butn">
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </div>
+<!-------======= footer section starts here =======-------->
+        <div class="footer">&copy; copyrights 2023</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_10</title>
+</head>
+<body>
+    <script>
+        var Emp1,totalsal,emppf,empGender,empTotalSal,emphra,empBasicSal,Totaltax;
+        
+      Emp1=prompt("Enter Employee name:");
+      console.log("Employee name: " +Emp1);
+      empGender=prompt("Gender:");
+      console.log(empGender);
+      empBasicSal=parseFloat(prompt("The basic salary is: "));
+      console.log("The basic salary is:" +empBasicSal )
+      emphra=parseInt((empBasicSal/100)*14);
+      console.log("The Employee House rent allowance: " +emphra);
+      emppf=parseFloat((empBasicSal/100)*20);
+      console.log("The employee PF is:" +emppf);
+      empTotalSal=parseFloat(empBasicSal+emphra+emppf);
+      console.log(typeof(empTotalSal)); 
+      console.log("The Total salary of employee is:" +empTotalSal);
+      Totaltax=parseInt();
+      console.log(typeof(Totaltax));
+
+   debugger; 
+      if(empGender=='Female')
+       {
+      if(empTotalSal>100000)
+      {
+        Totaltax=((empTotalSal*10)/100);
+      }
+      else if(empTotalSal>=50000)
+      {
+        Totaltax=((empTotalSal*5)/100);
+      }
+      else
+      { 
+      Totaltax=0;
+      }
+       }
+       if(empGender=='Male')
+       {
+        if(empTotalSal>100000)
+        { 
+         Totaltax=((empTotalSal*15)/100);
+        }
+        else if(empTotalSal>=50000)
+        {
+         Totaltax=((empTotalSal*10)/100);
+        }
+        else if(empTotalSal>=25000)
+        {
+          Totaltax=((empTotalSal*5)/100)
+        }
+        else
+        Totaltax=(0);
+       }
+       console.log("The Total tax is:" +Totaltax);
+            
+
+    </script>
+    
+</body>
+</html>

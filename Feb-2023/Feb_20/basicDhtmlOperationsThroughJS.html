@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating DHTML operations
+        </title>
+    </head>
+    <body>
+        <b>Demonstrating dhtml methods</b>
+        <div id="container">
+            
+        </div>
+        <ul>
+            <li>
+                <span>
+                    <p id="abc"></p>
+                </span>
+            </li>
+        </ul>
+        <script>
+            // var msg = 'Hello everyone, how are you doing';
+            // var spanElement = document.createElement("span");
+            // spanElement.innerHTML = msg;
+            // spanElement.setAttribute("id", "test");
+            // spanElement.setAttribute("class", "sample");
+            // spanElement.setAttribute("name", "abc");
+            // spanElement.style.color = 'blue';
+            // spanElement.style.border = '2px solid';
+            
+            // console.log(spanElement)
+            
+            // document.querySelector("#container").append(spanElement);
+            var elementName = prompt("enter which tag u want to create");
+            var msg = prompt("enter wht msg u whant to show")
+            var spanElement = document.createElement(elementName);
+            spanElement.innerHTML = msg;
+
+            var whatid = prompt("enter what id u whanted")
+            spanElement.setAttribute("id", whatid);
+            spanElement.setAttribute("class", "sample");
+            spanElement.setAttribute("name", "abc");
+            spanElement.style.color = 'blue';
+            spanElement.style.border = '2px solid';
+            
+            console.log(spanElement)
+            
+            document.querySelector("#container").append(spanElement);
+        </script>
+    </body>
+</html>

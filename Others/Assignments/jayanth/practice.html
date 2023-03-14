@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(
+        "---reverse of any given number and is palindrome number or not---"
+      );
+      a = prompt("Enter a value to check the reverse of a number");
+      console.log(a + " is the given number");
+      a = parseInt(a);
+      b = a; //to check palindrome in the same program
+      reverseAns = 0;
+      while (a > 0) {
+        rem3 = a % 10;
+        a = a / 10;
+        a = parseInt(a);
+        reverseAns = reverseAns * 10 + rem3;
+      }
+      console.log(reverseAns + " is reverse of the given number");
+      if (reverseAns == b) {
+        console.log(reverseAns + " is also a palindrome number");
+      } else {
+        console.log(reverseAns + " is not a palindrome number");
+      }
+    </script>
+  </body>
+</html>

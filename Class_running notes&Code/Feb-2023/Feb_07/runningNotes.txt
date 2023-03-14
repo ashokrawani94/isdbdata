@@ -1,0 +1,34 @@
+3 ways of accessing private data of one function to another
+    By passing parameters 
+    by returning value from a function 
+    both passing params and returning values;
+
+
+    1. By passing parameters
+
+        Syntax:
+            function <name of function>(, , ) {
+                ... 
+                ... 
+                ..
+            }
+        eg:
+            function addValues(a1, a2, a3, ...) { // definition 
+
+            }
+
+            addValues(20, 30, 40); // calling of function 
+
+    2. 
+
+        Syntax:
+
+            var temp = addValues();
+
+           function addValues() {
+            ... 
+            ... 
+            .. 
+            sum, div, sub 
+            return value1, ;
+           }

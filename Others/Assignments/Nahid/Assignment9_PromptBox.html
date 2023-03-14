@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Box Assignment</title>
+    </head>
+    <body>
+        <script>
+            var eName, eAge, eDepartment, basicSalary, PF, HRA, totalSalary;
+            eName = prompt("Enter Employee Name");
+            eAge = prompt("Enter Employee Age");
+            eDepartment = prompt("Enter Department Name");
+            basicSalary = prompt("Enter Basic Salary");
+            
+            HRA = (14*parseInt(basicSalary))/100;
+            PF = (25*parseInt(basicSalary))/100;
+            totalSalary=HRA+PF+parseInt(basicSalary);
+
+            console.log("Employee Name is: "+ eName);
+            console.log("Employee Age is: "+eAge);
+            console.log("Employee Depatment is: "+eDepartment);
+            console.log("Employee Basic Salary is: "+basicSalary);            
+            console.log("Employee PF is: "+PF);
+            console.log("Employee HRA is: "+HRA);
+            console.log("Employee Total Salary is: "+totalSalary);
+        </script>
+    </body>
+</html>

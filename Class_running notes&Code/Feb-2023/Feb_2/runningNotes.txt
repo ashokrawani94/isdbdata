@@ -1,0 +1,33 @@
+
+do while
+a = 90
+Syntax:
+    ...
+    do {
+        ...
+        ....
+        ... // set of instructions
+    } while(a > 99);
+     .. . . .
+
+
+
+    while (a > 90) {
+        ... 
+        ...
+        ...
+    }
+
+    playing game
+
+    if score i > 100
+        play game again
+        \
+
+
+    var totalScore = 0;
+    do {
+        user will play the game 
+        .. 
+        get the total score 
+    }while (totalScore >= 100);

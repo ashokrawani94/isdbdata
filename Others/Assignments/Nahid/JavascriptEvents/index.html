@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            li{
+                list-style: none;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="mainlist">
+            <li>
+                Select Language:
+                <input type="checkbox" value="Hindi" name="lng">Hindi
+                <input type="checkbox" value="Odia" name="lng">Odia
+                <input type="checkbox" value="English" name="lng">English
+                <input type="checkbox" value="Telgu" name="lng">Telgu
+            </li>
+            <li>
+                <input type="button" value="GetValue" onclick="getValue()">
+            </li>
+            <li>
+                <span id="span1"></span>
+            </li>
+        </ul>     
+        
+        <script>
+            var getValue = () => {
+                //var chk = document.getElementsByName("lng");
+                //var chk = document.querySelectorAll('input[name=lng]:checked');
+                //document.querySelector("input[name='lng']");
+
+                var chk = document.querySelectorAll("input[type='checkbox']:checked");
+                var res = '';
+                for(var i=0; i < chk.length; i++)
+                {
+                    if(chk[i].checked)
+                    {
+                        res = res + chk[i].value + ", ";           
+                    }
+                }                
+                document.querySelector("#span1").innerHTML = res.trim().slice(0,-1);
+            }
+        </script>
+    </body>
+</html>

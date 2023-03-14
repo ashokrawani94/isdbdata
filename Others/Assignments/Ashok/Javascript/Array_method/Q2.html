@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Return total number of Space</title>
+    </head>
+    <body>
+        <h3>Read a string from user and return total no. of Space</h3>
+        <script>
+            var calTotalSpaceInString = () => {
+            var str = 'Hello everyone Welcome to Javascript language';    
+            var wordcount = str.trim().split(' ');
+
+            console.log("Given String: '" + str + "'");
+            // console.log("Words Count: " + wordcount.length);     
+            console.log("No Of Sapces " + (wordcount.length-1));
+            }
+            calTotalSpaceInString();
+        </script>
+    </body>
+</html>

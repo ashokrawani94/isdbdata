@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details By Json</title>
+</head>
+<body>
+    <script>
+        var details ={
+            bookname : "Half GirlFriend",
+            price : 150 ,
+            author : ["ChetanBhagat"],
+            discout : 5,
+
+        displayBookDetails(){
+            console.log("bookname: " + this.bookname);
+            console.log("book price: " + this.price);
+            console.log("author: " +this.author);
+            this.getDiscount();
+        },
+
+        getDiscount(){
+            this.discount = (this.price * 5) / 100;
+            var discountPrice = this.price - this.discount;
+            console.log("discount: " + this.discount);
+            console.log("discount price: " + discountPrice);
+        },
+
+        };
+
+        details.displayBookDetails();
+    </script>
+    
+</body>
+</html>

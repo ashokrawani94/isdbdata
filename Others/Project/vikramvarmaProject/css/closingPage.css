@@ -1,0 +1,121 @@
+body {
+  background-color: rgba(150, 152, 151, 0.118);
+}
+.headersection {
+  border: 2px solid;
+  background-color: black;
+  margin: 5px;
+  height: 50px;
+}
+.navlist {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: oblique;
+  position: relative;
+  top: 8px;
+}
+.anc {
+  color: white;
+
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#search {
+  border-radius: 8px;
+  width: 500px;
+  height: 30px;
+}
+.navkey {
+  float: left;
+}
+.p1 {
+  position: relative;
+  left: 50px;
+}
+.p2 {
+  position: relative;
+  left: 75px;
+}
+.p3 {
+  position: relative;
+  left: 550px;
+}
+.p4 {
+  position: relative;
+  left: 575px;
+}
+.p5 {
+  position: relative;
+  left: 600px;
+}
+.head {
+  border: 2px;
+  padding: 5px;
+  margin: 35px;
+  height: 35px;
+}
+.cart,
+.viewPro {
+  float: right;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+}
+.productcontent {
+  border: 2px solid;
+  background-color: rgba(150, 152, 151, 0.466);
+  box-shadow: 10px 10px;
+  padding: 5px;
+  margin: 35px;
+  height: 200px;
+}
+.imgFrm {
+  border: 2px solid;
+  margin: 8px 50px;
+  height: 170px;
+  width: 170px;
+  float: left;
+}
+.img1 {
+  background-image: url("../images/mencloths/clo1.jpg");
+  background-size: 170px 170px;
+}
+.proDetails {
+  border: 2px;
+  margin: 8px;
+  height: 170px;
+  width: 1166px;
+  float: left;
+  clear: right;
+}
+.proDescription {
+  width: 150px;
+  padding: 7px;
+}
+.key1,
+.key2,
+.key3,
+.key4 {
+  float: left;
+}
+.value1,
+.value2,
+.value3,
+.value4 {
+  float: left;
+
+  padding: 7px;
+}
+.key2,
+.key3,
+.key4 {
+  clear: left;
+}
+
+li {
+  list-style: none;
+}

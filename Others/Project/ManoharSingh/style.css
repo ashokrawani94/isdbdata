@@ -1,0 +1,294 @@
+body {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  /* background-image: url("./images/bg.jpg");
+    background-size: cover; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+/* home css */
+/* css for navbar */
+
+.navbar {
+  background-color: transparent;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.navbar ul {
+  margin: 0px;
+  overflow: auto;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 13px 20px;
+}
+
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #a3e8df 0%, #f8ea8c 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  flex-grow: 1;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.field {
+  margin: 10px 0;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+input {
+  padding: 9px 0px 7px 9px;
+  font-size: 12px;
+  width: 16rem;
+  height: 1.2rem;
+  outline: none;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #efefef;
+}
+
+/* label intial position*/
+
+label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  padding-bottom: 15px;
+  transform: translateY(10px);
+  line-height: 6px;
+  transition: all ease-out 0.1s;
+  font-size: 14px;
+  color: rgb(75, 74, 74);
+  padding-top: 6px;
+}
+
+/* hiding placeholder in all browsers */
+
+input::placeholder {
+  visibility: hidden;
+}
+
+
+/* label final position */
+input:not(:placeholder-shown)+label {
+  transform: translateY(0);
+  font-size: 11px;
+}
+
+/* input padding increases if placeholder is not shown */
+input:not(:placeholder-shown) {
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+
+.login-button {
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  background-color: #3897f0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height:30px ;
+  width: 265px;
+  margin: 0px;
+}
+
+.separator .line {
+  height: 1px;
+  width: 40%;
+  background-color: red;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account-btn {
+  margin: 1rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #01274d;
+  font-weight: 600;
+  background: transparent;
+}
+
+.forgot-password {
+  display: block;
+  margin: 2px;
+  text-align: center;
+  font-size: 13px;
+  color: #01274d;
+}
+
+.login,
+.signup {
+  color: #3897f0;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: block;
+  color: rgb(142, 142, 142);
+  font-weight: 600;
+  line-height: 15px;
+  font-size: 15px;
+  margin: 0px 35px 0px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/logo.png");
+}
+
+.logo_img {
+  height: 97px;
+  width: 97px;
+  background-position: 471px 404px;
+  border-radius: 63px;
+}
+
+.signup_logo {
+  background-position: 157px 236px;
+  border-radius: 63px;
+}
+
+.fg_logo {
+  height: 80px;
+  width: 78px;
+  border-radius: 45px;
+  background-position: 374px 406px;
+}
+
+.heading {
+  font-size: 15px;
+  margin: 3px;
+  padding: 2px;
+  font-weight: 600;
+  font-family: system-ui;
+}
+
+/* social Icon */
+.signup-icons{
+  width: 200px;
+  height: 30px;
+  padding: 3px;
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+
+.icon{
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: .35s;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.icon:hover{
+  animation: shake(0.25s);
+}
+.icon-instagram:hover{
+  background-image: radial-gradient(circle at 30% 107%,
+  #fdf497 0%,
+  #fdf497 5%,
+  #fd5949 45%,
+  #d6249f 60%,
+  #285aeb 90%);
+  outline-color: #a02d76;
+}
+.icon-twitter:hover{
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+.icon-linkedin:hover{
+  background-color: #0077b5;
+  outline-color: blue;
+}
+.icon-facebook:hover{
+  background-color: #1877f2;
+  outline-color: #1877f2;
+}
+@keyframes shake {
+  10%{
+    transform: rotate(15deg);
+  }
+  
+}

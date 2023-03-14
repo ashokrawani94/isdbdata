@@ -1,0 +1,91 @@
+OOPS
+    Object 
+    Class
+    Inheritance
+    Polymorphism - Not supported in js
+    DataAbstraction 
+    DataEncapsulation
+
+
+Classes
+
+    class <classname> {
+        this.propname = 'value'
+        this.propname2 = 'value2';
+        behaviour1() {
+            ...
+        }
+        behaviour2() {
+            ...
+        }
+    }
+
+    var obj1 = new Classname(); 
+     var obj2 = new Classname(); 
+
+     Java :
+
+        class StudentData {
+            StudentData() { // constructor 
+
+            }
+        }
+
+        class ClassTEacher {
+            ClassTEacher() {
+
+            }
+        }
+
+    JavaScript:
+
+        class StudentData {
+            constructor() {
+
+            }
+        } 
+
+    Class Car_XUV300 {
+        constructor(data) {
+            this.carColor = data.color;
+            this.gearType = data.gearType;
+            this.interiorType = data.interiorType;
+            this.fuelType = fuelType;
+        }
+        buildEngine() {
+            ...
+        }
+        buildOuterBody() {
+            ...
+        }
+        settheInteriorBody(){
+            ....
+        }
+    }
+
+    var data1 = {
+        color: 'black',
+        gearType: 'Manual',
+        interiorType: 'stylish',
+        fuelType: 'Petrol'
+    }
+
+    var c1 = new Car_XUV300(data1);
+    c1.buildEngine();
+    c1.settheInteriorBody();
+
+    
+    var data2 = {
+        color: 'black',
+        gearType: 'Manual',
+        interiorType: 'stylish',
+        fuelType: 'Petrol'
+    }
+
+    var c2 = new Car_XUV300(data2')
+    c2.buildEngine();
+    c2.settheInteriorBody();
+
+    var c3 = new Car_XUV300("grey", 'Automatic', 'Luxery', 'Diesel')
+    c3.buildEngine();
+    c3.settheInteriorBody();

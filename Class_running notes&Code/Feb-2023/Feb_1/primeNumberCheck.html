@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var primeSum = 0;
+            var startIndex = prompt("Enter start index");
+            startIndex = parseInt(startIndex);
+            var endIndex = prompt("Enter End index");
+            endIndex = parseInt(endIndex);
+            
+            for (var j = startIndex; j <= endIndex; j++) {
+                var n = j;
+                var isItsPrime;
+                var count = 0;
+            
+                for (var i = 1; i <= n; i++) {
+                    var rem = n % i;
+                    if (rem == 0) {
+                        count++;
+                    }
+                }
+
+                if (count == 2) {
+                    console.log(n + " is a prime no. ");
+                    primeSum = primeSum + n;
+                } else {
+                    console.log(n + " Its not a prime no.");
+                } 
+            }
+            console.log("The sum is " + primeSum)
+            
+        </script>
+    </body>
+</html>

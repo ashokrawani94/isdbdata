@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+  </head>
+  <body>
+    <script>
+      var bookDetails = {
+        bookName: "Javascript Fundamentals",
+        price: "500 INR",
+        authors: ["Parvati", "Baglamukhi", "Kali", "Laxmi"],
+        discountPercent: "10%",
+        displayBookDetails: function () {
+          for (var bookProp in this) {
+            if (typeof this[bookProp] != "function") {
+              console.log(bookProp + " : " + this[bookProp]);
+            }
+          }
+          console.log("Price After Discount : " + this.priceAfterDiscount());
+        },
+        priceAfterDiscount() {
+          return (
+            parseInt(this.price) -
+            (parseInt(this.discountPercent) / 100) * parseInt(this.price)
+          );
+        },
+      };
+
+      bookDetails.displayBookDetails();
+    </script>
+  </body>
+</html>

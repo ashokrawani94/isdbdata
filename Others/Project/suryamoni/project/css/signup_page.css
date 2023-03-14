@@ -1,0 +1,36 @@
+.regBlock {
+    border: 1px ;
+    width: 450px;
+    margin: 10px auto;
+    height: 12cm;
+   
+    padding: 5px;
+    position: relative;
+   top: 70px;
+   left: 380px;
+    z-index: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://previews.123rf.com/images/mayrum/mayrum1902/mayrum190200041/117104597-abstract-pink-brush-background-with-hexagon-geometric-frame-rose-gold-color.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: rgb(12, 12, 12) black purple;
+    font-size: large   ;
+    border-radius: 15px 50px;
+    text-align-last: center;
+    box-shadow: 10px 10px 5px 2px rgb(199, 151, 89);
+    list-style: none;
+    text-decoration: solid;
+   
+      
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    float: left;
+}

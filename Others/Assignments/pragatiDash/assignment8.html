@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3 {
+        border: 2px solid;
+        text-align: center;
+        padding: 5px;
+        margin: 20px;
+      }
+      .centerBlock {
+        border: 2px solid;
+        height: 1200px;
+        padding: 5px;
+        margin: 20px;
+        position: relative;
+      }
+      .lowerBlock {
+        border: 2px solid;
+        text-align: center;
+        padding: 5px;
+        margin: 20px;
+      }
+      .block {
+        border: 2px solid;
+        height: 200px;
+        width: 1400px;
+        position: absolute;
+      }
+
+      .block1 {
+        top: 30px;
+        left: 40px;
+        position: absolute;
+      }
+      .block2 {
+        top: 260px;
+        left: 40px;
+        position: absolute;
+      }
+      .block3 {
+        top: 490px;
+        left: 40px;
+        position: absolute;
+      }
+      .block4 {
+        top: 720px;
+        left: 40px;
+        height: 400px;
+        position: absolute;
+      }
+
+      .zindexblock {
+        border: 2px solid;
+        left: 60px;
+        height: 30px;
+        width: 150px;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        background-color: white;
+      }
+      .block5 {
+        top: 15px;
+      }
+      .block6 {
+        top: 245px;
+      }
+      .block7 {
+        top: 475px;
+      }
+      .block8 {
+        top: 705px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        padding: 5px;
+      }
+      .inputblock {
+        float: left;
+        margin-left: 200px;
+        margin-top: 20px;
+      }
+      .inputblock1 {
+        float: right;
+        margin-right: 200px;
+        margin-top: 20px;
+      }
+      .inputblock3 {
+        float: right;
+        margin-right: 230px;
+        margin-top: 10px;
+      }
+      .inputblock2 {
+        clear: both;
+        float: left;
+        margin-left: 200px;
+        margin-top: 10px;
+      }
+      .inputblock4 {
+        float: right;
+        margin-right: 320px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Student Registration Page</h3>
+    <div class="centerBlock">
+      <div class="block block1">
+        <form action="">
+          <ul>
+            <li class="inputblock">
+              <label for="name" style="color: red">Name :</label>
+              <input type="text" name="name" />
+            </li>
+
+            <li class="inputblock1">
+              <label for="accountID" style="color: blue">AccountID :</label>
+              <input type="text" name="accountID" />
+            </li>
+
+            <li class="inputblock2">
+              <label for="age" style="color: yellowgreen">Age :</label>
+              <input type="text" name="age" />
+            </li>
+
+            <li class="inputblock3">
+              <label for="account type" style="color: coral">Account Type :</label>
+              <select>
+                <option>Savings Account</option>
+                <option>Current Account</option>
+              </select>
+            </li>
+
+            <li class="inputblock2">
+              <label for="Gender" style="color: darkmagenta">Gender :</label>
+              <input type="radio" name="gender" /> Male
+              <input type="radio" name="gender" /> Female
+            </li>
+
+            <li class="inputblock2">
+              <label for="mailid" style="color: darkcyan">mailid :</label>
+              <input type="text" name="mailid" />
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="block block2">
+        <form action="">
+          <ul>
+              <li class="inputblock"> 
+              <label for="qualification" style="color:hotpink " > Qualification :</label>
+              <select>
+                <option>B.A</option>
+                <option>B.Com</option>
+                <option>BSc.</option>
+              </select>
+              </li>
+
+              <li class="inputblock">
+                <li class="inputblock1">
+                  <label for="college name" style="color: fuchsia;">College Name :</label>
+                  <input type="text" name="collegename" />
+                </li>
+              </li>
+
+              <li class="inputblock2">
+              <label for="Languages Known" style="color: goldenrod">Languages Known :</label>
+              <input type="checkbox" />English
+              <input type="checkbox" />Telugu
+              <input type="checkbox" />Hindi
+            </li>
+
+             <li class="inputblock4">
+            <label for="Location" style="color: indianred">Location :</label>
+              <select>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+                <option>Mumbai</option>
+                <option>Kolkata</option>
+                <option>Bangalore</option>
+              </select>
+            </li>
+
+            <li class="inputblock2">
+              <label for="Course Opting For" style="color: salmon"> Course opting for: </label>
+              <select>
+                <option>M.A</option>
+                <option>M.Com</option>
+                <option>MSc.</option>
+              </select>
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="block block3">
+        <form action="">
+          <ul>
+            <li class="inputblock">
+                <label for="Dno" style="color: brown;">D No:</label>
+                <input type="text" name="Dno" />
+            </li>
+
+            <li class="inputblock1">
+              <label for="Country name" style="color: cornflowerblue;">CountryName :</label>
+              <input type="text" name="Country Name" />
+            </li>
+
+            <li class="inputblock2">
+              <label for="Street name" style="color: darkkhaki;">Street Name :</label>
+              <input type="text" name="Street Name" />
+            </li>
+
+            <li class="inputblock1">
+              <label for="Country code" style="color: greenyellow;">Country Code :</label>
+              <input type="text" name="Country Code" />
+            </li>
+
+            <li class="inputblock2">
+              <label for="State name" style="color: darkolivegreen;">State Name :</label>
+              <input type="text" name="State Name" />
+            </li>
+
+            <li class="inputblock2">
+              <label for="State code" style="color: forestgreen;">State Code :</label>
+              <input type="text" name="State Code" />
+            </li>
+
+
+          </ul>
+        </form>
+    </div>
+
+      <div class="block block4">
+        <form action="">
+          <ul>
+            <li class="inputblock">
+              <label for="about yourself" >About Yourself</label>
+              <textarea name="" id="" cols=150"" rows="15" maxlength="300"></textarea>
+            </li>
+            <li class="inputblock1">
+              <input type="button" value="Register">
+          </li>
+          </ul>
+        </form>
+      </div>
+
+      <div class="zindexblock block5">Account Details</div>
+      <div class="zindexblock block6">Education Details</div>
+      <div class="zindexblock block7">Address</div>
+      <div class="zindexblock block8">About Yourself</div>
+    </div>
+    <div class="lowerBlock">@copyrights 2023</div>
+  </body>
+</html>

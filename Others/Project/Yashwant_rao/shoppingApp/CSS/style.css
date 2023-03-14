@@ -1,0 +1,342 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*----------------------------------------------- background image---------------------------------------*/
+body  {
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+
+  /*----------------------------------------------- header part---------------------------------------*/
+
+
+.header div div {
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 18px;
+}
+.header div div ul {
+    display: flex;
+    list-style-type: none;
+}
+.header div div ul li {
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.header div div ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+/*----------------------------------------------- brand heading/name---------------------------------------*/
+.heading {
+    text-align: center;
+    color: whitesmoke;
+    margin: 50px auto;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+/*----------------------------------------------- category/ search box/login---------------------------------------*/
+.subSearchBar {
+    display: flex;
+    gap: 2px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.subSearchBar div {
+    margin: 0px auto;
+}
+
+.subSearchBar div button, #category, #lang, #searchBox {
+    height: 35px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+#category {width: 150px; background-color: #363636; color: whitesmoke; padding: 5px; padding-left: 10px;}
+#searchBox {width: 450px; padding: 10px; padding-left: 26px;}
+#lang {width: 130px; padding: 5px; padding-left: 10px;}
+.subSearchBar div button {background-color: #ffbb10;}
+.subSearchBar div button a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*----------------------------------------------- get start your shopping here---------------------------------------*/
+
+.heading2 {
+    margin-top: 70px;
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+    line-height: 70px;
+    font-weight: bold;
+    
+}
+.subBuyNow {
+    width: auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.subBuyNow button{
+    font-size: 18px;
+    background-color: #363636;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 130px;
+}
+.one {
+    color: #363636;
+}
+.subBuyNow button a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.heading3 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.divider {
+    margin-top: 14px;
+    height: 50px;
+    background: linear-gradient(#fec015, white);
+    border: none;
+}
+.mwFashion{
+    color: #363636;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*----------------------------------------------- shopping images---------------------------------------*/
+
+.images {
+    display: flex;
+    gap: 0px;
+    margin-bottom: 50px;
+}
+.subImg {
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 5px 5px 100px 30px rgb(190, 183, 183);
+    width: 330px;
+    height: 440px;
+
+    
+}
+.images div h3 {margin-top: 15px;}
+.images div h3, h4 {
+    text-align: center;
+    color: #363636;
+    line-height: 10px;
+}
+.priceTag { color: rgb(227, 87, 6);}
+
+.img1, .img2, .img3 {
+    margin: 10px;
+    height: 330px;
+    image-rendering: auto;
+    background-position: 100%;
+    background-size: 290px;
+}
+.img1 {
+    background-image: url(/image/shopImg2.png);
+}
+.img2 {
+    background-image: url(/image/shopImg1.png);
+}
+.img3 {
+    background-image: url(/image/shopImg3.png);
+}
+
+.subImg button {
+    height: 30px;
+    width: 100px;
+    margin-left: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-width: .2px;
+}
+
+/*--------------------------- footer part------------------------- */
+
+.subFooter div {
+    margin: 0px auto;
+}
+.subFooter {
+    display: flex;
+    gap: 10px;
+}
+.footer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffbb10;
+}
+.subFooter div ul {
+    list-style-type: none;
+    color: #363636;
+    line-height: 25px;
+}
+.subFooter1 {
+    width: 40%;
+    color: #363636;
+}
+.subFooter2 {
+    width: auto;
+}
+
+.divider1 {
+    height: 60px;
+    background: linear-gradient(white, #ffbb10);
+    border: none;
+}
+
+.footerBrand {
+    color: whitesmoke;
+}
+.subFooter2 ul li a {
+    text-decoration: none;
+    color: #363636;
+}
+.divider2 {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to left, #ffbb10 , whitesmoke,whitesmoke, whitesmoke, whitesmoke , #ffbb10);
+}
+.copyright {
+    background-color: #ffbb10;
+    text-align: center;
+    color: #363636;
+    padding: 8px;
+}
+
+
+/*=================================================================================================================================
+                                                        login page                                                                  
+==================================================================================================================================*/
+
+.header1 {
+    background: url(/image/wallpaper3Copy.jpg);
+    width: 100%;
+    height:80px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+}
+.header1 div div {
+    margin-left: 22%;
+    margin-right: 22%;
+    
+}
+.header1 div div ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+.header1 div div ul li {
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-top: 18px;
+}
+
+.header1 div div ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.divider3 {
+    height: 30px;
+    background: linear-gradient(#fec015, #f6f1ee);
+    border: none;
+}
+.mainBody {
+    height: 400px;
+    background: url(/image/wallpaper.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    background-size: cover;
+    
+}
+
+.divider101 {
+    background: linear-gradient(#f4ebe7, #ffbb10);
+    height: 60px;
+    border: none;
+}
+
+.mainBody div h1 {
+    color: whitesmoke;
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.mainBody div h1 span {
+    color: #262425;
+}
+.mainBody div h1 a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.loginForm {
+    background-color: rgba(245, 234, 231, 0.5);
+    border-radius: 10px;   
+    height: 250px;
+    width: 400px;
+    float: right;
+    margin: 60px 100px;
+}
+.subLoginForm {
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    transition: 1s;
+}
+.subLoginForm input {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #363636;
+    padding: 5px;
+}
+.subLoginForm button {
+    width: 80px;
+    height: 25px;
+    background-color: #363636;
+    border: none;
+    border-radius: 3px;
+}
+.subLoginForm button:hover {
+    background-color: whitesmoke;
+}
+.subLoginForm:hover {
+    background-color: rgba(245, 234, 231, 0.8);
+    box-shadow: 2px 2px 100px 10px #fef9f6;
+    transition: 1s;
+}

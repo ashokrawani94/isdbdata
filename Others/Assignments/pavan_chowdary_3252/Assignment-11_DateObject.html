@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        data objew Date();
+
+        console.log(mydatcts
+    </title>
+</head>
+<body>
+    <script>
+
+        var months = ['Jan','feb','mar','april','may','jun','july','august','september','october','november','december'];
+        var days = ['sun','mon','tues','wed','thu','fri','sat'];
+
+        var mydate = new Date();
+       
+        console.log(mydate.getDate());
+        console.log(mydate.getMonth());
+        console.log(mydate.getFullYear());
+        console.log(mydate.getDay());
+
+       // 14/feb/2023//
+        var monthname = months[mydate.getMonth()]
+        var mycustomformat = mydate.getDate() + '/' + monthname + '/' +  mydate.getFullYear() 
+        console.log(mycustomformat)
+
+        //14 feb,2023//
+        var mycustomformat = mydate.getDate() + 'th' + ' ' + monthname  + ',' + mydate.getFullYear()
+        console.log(mycustomformat);
+
+        //....tuesday...//
+        console.log(days[mydate.getDay()])
+
+        console.log(mydate.getHours());
+        console.log(mydate.getMinutes());
+        console.log(mydate.getSeconds());
+
+    </script>
+    
+</body>
+</html>

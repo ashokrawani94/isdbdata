@@ -1,0 +1,27 @@
+JS Functions:
+
+    Set of instructions binded within flower braces, assigned with a user defined name, starting with keyword function
+
+
+    // Definition of a function 
+    function myownblock() {
+        ... 
+        .... 
+        ....
+    }.
+
+
+
+    myownblock(); // calling of the function 
+
+
+    myownblock();
+
+
+
+
+    myownblock();
+
+
+
+    myownblock();

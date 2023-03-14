@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work wirh emp details read from user in json
+    </title>
+</head>
+<body>
+    <script>
+        var empdata = {
+            name :prompt("employe name"),
+            age :prompt("employe age"),
+            dept :prompt("department"),
+            gender :prompt("employe gender"),
+        };
+        empdata.bsalary =prompt("enter employe basic salary");
+        empdata.bsalary = parseInt(empdata.bsalary);
+        
+        empdata.pf =prompt("pf in percent");
+        empdata.pf=(empdata.pf*empdata.bsalary)/100;
+
+        empdata.hra =prompt("hra in percent");
+        empdata.hra=(empdata.hra*empdata.bsalary)/100;
+
+        empdata.totalsalary = empdata.bsalary+empdata.pf+empdata.hra;
+
+    
+        if(empdata.gender=='male'){
+            if(empdata.totalsalary > 100000){
+                empdata.taxpercent = 15;
+            }else if(empdata.totalsalary > 50000){
+                empdata.taxpercent = 10;
+            }else if(empdata.totalsalary > 25000){
+                empdata.taxpercent = 5;
+            }else{
+                empdata.taxpercent = 0;
+            }
+
+        }else{
+            if(empdata.totalsalary > 100000){
+                empdata.taxpercent = 10;
+            }else if(empdata.totalsalary > 50000){
+                empdata.taxpercent =5;
+            }else{
+                empdata.taxpercent =0;
+            }
+
+        }
+        empdata.taxis =(empdata.taxpercent*empdata.totalsalary)/100;
+
+        console.log(empdata);
+
+        console.log("employee name : "+empdata.name);
+        console.log("employee age : "+empdata.age);
+        console.log("employee department : "+empdata.dept);
+        console.log("employee gender : "+empdata.gender);
+        console.log("basic salary : "+empdata.bsalary);
+        console.log("pf is : "+empdata.pf);
+        console.log("hra is : "+empdata.hra);
+        console.log("total salary : "+empdata.totalsalary);
+        console.log("paid tax is : "+empdata.taxis);
+
+
+
+    </script>
+</body>
+</html>

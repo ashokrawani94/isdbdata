@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Number</title>
+    </head>
+    <body>
+        <script>                                                                     
+            // to find the palindrome number
+            var n = prompt("Enter the number");
+            var rem;
+            var result = 0;
+            temp = n;
+            while (n > 0)
+            {
+                rem = n % 10;
+                result = (result * 10) + rem;
+                result = parseInt(result);
+                console.log(result);
+                n = n / 10;
+                n = parseInt(n);
+            }
+            console.log("The reverse of " + temp + " is : " + result);
+                if (temp == result)
+                {
+                    console.log("The number " + temp + " is a palindrome number");
+                }
+                else
+                {
+                    console.log("The number " + temp + " is not a palindrome number");
+
+                }   
+            
+
+        </script>
+        
+    </body>
+</html>

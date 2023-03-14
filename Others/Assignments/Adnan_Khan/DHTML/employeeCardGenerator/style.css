@@ -1,0 +1,31 @@
+h3{
+    text-align: center;
+    border: 1px solid;
+}
+.form_container li{
+    list-style: none;
+    margin: 10px;
+    border: 1px solid;
+    width: 400px;
+    padding: 10px;
+}
+.form_container{
+    border: 1px solid;
+    margin: 5px auto;
+    width: 500px;
+}
+
+.progress li{
+    list-style: none;
+    margin: 10px;
+}
+.progress{
+    border: 1px solid;
+    margin: 0px auto;
+    width: 500px;
+    display: none;
+}
+#progress_title{
+    color:blue;
+    text-align: center;
+}

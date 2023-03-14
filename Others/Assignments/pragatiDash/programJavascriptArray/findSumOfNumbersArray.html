@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Sum of all values within the given Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = [],
+        output = "";
+
+      var s = prompt("Enter size of the array");
+      s = parseInt(s);
+      var i,
+        output = "",
+        sum = 0;
+
+      for (i = 0; i < s; i++) {
+        arr[i] = prompt("Enter element on index " + i);
+        arr[i] = parseInt(arr[i]);
+        console.log("arr[" + i + "] :" + arr[i]);
+        output = output + " " + arr[i];
+      }
+      console.log("Array is: [" + output + " ]");
+
+      function findSumOfNumbers() {
+        for (i = 0; i < s; i++) {
+          sum = sum + arr[i];
+          arr[i] = parseInt(arr[i]);
+        }
+        console.log("Sum of Numbers in the given Array is:" + sum);
+      }
+
+      findSumOfNumbers();
+    </script>
+  </body>
+</html>

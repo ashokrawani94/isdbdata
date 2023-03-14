@@ -1,0 +1,84 @@
+body {
+  background-image: url("../images/backimagsignup.png");
+  background-position: 142px -82px;
+}
+.navigation {
+  border: 1px solid;
+  height: 50px;
+  background-color: black;
+}
+.navlist {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: oblique;
+  position: relative;
+  top: 8px;
+}
+
+a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+#search {
+  border-radius: 8px;
+  width: 500px;
+  height: 30px;
+}
+.key {
+  float: left;
+}
+.p1 {
+  position: relative;
+  left: 50px;
+}
+.p2 {
+  position: relative;
+  left: 75px;
+}
+.p3 {
+  position: relative;
+  left: 550px;
+}
+.p4 {
+  position: relative;
+  left: 575px;
+}
+.p5 {
+  position: relative;
+  left: 600px;
+}
+ol {
+  list-style: none;
+}
+.lable,
+.content {
+  float: left;
+}
+.group {
+  clear: left;
+}
+.lable {
+  width: 150px;
+}
+.space {
+  padding: 20px;
+}
+.container {
+  background-color: powderblue;
+  border: 2px solid;
+  border-radius: 15px;
+  width: 460px;
+  position: absolute;
+  top: 262px;
+  left: 971px;
+  box-shadow: 10px 8px;
+}
+#btnsubmit {
+  background-color: green;
+  position: absolute;
+  left: 197px;
+  top: 217px;
+  border-radius: 5px;
+}

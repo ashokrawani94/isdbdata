@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data Validation</title>
+  <style>
+    .mainContainer {
+      border: 1px solid red;
+      margin: auto;
+      width: 400px;
+      height: 200px;
+      padding: 40px;
+    }
+
+    .passwordValidator {
+      margin: 10px auto;
+      border: 1px solid red;
+      width: 400px;
+      height: 200px;
+      padding: 40px;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainContainer">
+    <form action="FormData.html" method="post">
+      <label for="accountName">Account Name : </label>
+      <input type="text" id="accountName" name="accountName" placeholder="Enter Account Name"
+        onkeypress="return doAccountNameValidation(event)"><br><br>
+      <label for="accountNumber">Account Number : </label>
+      <input type="text" id="accountNumber" onkeypress="return doAccountNumberValidation(event)" name="accountNumber"
+        placeholder="Enter Account Number" maxlength="10"><br><br>
+      <label for="accountPassword">Account Password : </label>
+      <input type="password" id="accountPassword" name="accountPassword" placeholder="Enter Account Password"
+        maxlength="8" required><br><br>
+      <label for="reAccountPassword">Re Enter Account Password : </label>
+      <input type="password" id="reAccountPassword" name="reAccountPassword" placeholder="Enter Account Password"
+        maxlength="8" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class="passwordValidator">
+    <p class="firstLetterUpper">First Letter is Upper Case</p>
+    <p class="threeCharacter">Min 3 char should be there</p>
+    <p class="twoSymbol">Min 2 Symbol should be there</p>
+    <p class="oneNumber">Should Have one number</p>
+    <p class="endNumber">Should not end with number</p>
+    <p class="countChar">Minimum Eight Character</p>
+  </div>
+</body>
+<script>
+
+  var myInput = document.querySelector('#accountPassword');
+
+  var doAccountNumberValidation = function (event) {
+    if (event.keyCode >= 48 && event.keyCode <= 57) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  var doAccountNameValidation = function (event) {
+    if (event.keyCode >= 65 && event.keyCode <= 90 || event.keyCode >= 97 && event.keyCode <= 122) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  myInput.onfocus = function () {
+    document.querySelector('.passwordValidator').style.display = 'block';
+  }
+
+  myInput.onblur = function () {
+    document.querySelector('.passwordValidator').style.display = 'none';
+  }
+
+  myInput.onkeyup = function () {
+
+    var firstLetter = /^[A-Z]/g;
+    if (myInput.value.match(firstLetter)) {
+      document.querySelector('.firstLetterUpper').style.color = "green";
+    } else {
+      document.querySelector('.firstLetterUpper').style.color = "red";
+    }
+
+    var character = /(.*[a-zA-Z]){3}/g;
+    if (myInput.value.match(character)) {
+      document.querySelector('.threeCharacter').style.color = "green";
+    } else {
+      document.querySelector('.threeCharacter').style.color = "red";
+    }
+
+    var symbol = /(.*[!@#$%^&*(),.?":{}|<>]){2}/g;
+    if (myInput.value.match(symbol)) {
+      document.querySelector('.twoSymbol').style.color = "green";
+    } else {
+      document.querySelector('.twoSymbol').style.color = "red";
+    }
+
+    var number = /(.*[0-9]){1}/g;
+    if (myInput.value.match(number)) {
+      document.querySelector('.oneNumber').style.color = "green";
+    } else {
+      document.querySelector('.oneNumber').style.color = "red";
+    }
+
+    var endCharacter = /(.*[a-zA-Z!@#$%^&*(),.?":{}|<>])$/g;
+    if (myInput.value.match(endCharacter)) {
+      document.querySelector('.endNumber').style.color = "green";
+    } else {
+      document.querySelector('.endNumber').style.color = "red";
+    }
+
+
+    if (myInput.value.length === 8) {
+      document.querySelector('.countChar').style.color = "green"; 
+      if(document.querySelector('.firstLetterUpper').style.color === "green" && document.querySelector('.threeCharacter').style.color === "green" && document.querySelector('.twoSymbol').style.color === "green" && document.querySelector('.oneNumber').style.color === "green" && document.querySelector('.endNumber').style.color === "green"){
+        console.log('Password is metted the priority');
+        document.querySelector('#reAccountPassword').removeAttribute('disabled','disabled');
+      }else{
+        alert("Please meet the below password requirement");
+        document.querySelector('#reAccountPassword').setAttribute('disabled','disabled');
+      }
+    } else {
+      document.querySelector('.countChar').style.color = "red";
+    }
+  };
+</script>
+
+</html>

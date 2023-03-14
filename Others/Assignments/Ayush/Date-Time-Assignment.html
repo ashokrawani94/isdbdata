@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+
+<body>
+    <script>
+        var date = new Date()
+        console.log(date)
+        console.log("This your entered number date")
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        var weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        var monthName = months[date.getMonth()]
+        var weekName = weeks[date.getDay()]
+
+        var myDate = prompt("Enter a number lies between 1-10 then it will show you date")
+
+
+        switch (myDate) {
+            case '1':
+                var custom1 = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+                console.log(custom1);
+                break;
+
+            case '2':
+                var custom2 = date.getDate() + "th " + monthName + " " + date.getFullYear()
+                console.log(custom2)
+                break;
+
+            case '3':
+                var custom3 = weekName + ", " + monthName + " " + date.getDate() + "th, " + date.getFullYear()
+                console.log(custom3)
+                break;
+
+            case '4':
+                var custom4 = date.getDate() + "/" + monthName + "/" + date.getFullYear()
+                console.log(custom4)
+                break;
+
+            case '5':
+                var custom5 = date.getDate() + "-" + monthName + "-" + date.getFullYear()
+                console.log(custom5)
+                break;
+
+            case '6':
+                var custom6 = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear()
+                console.log(custom6)
+                break;
+
+            case '7':
+                var custom7 = date.getDate() + "th " + monthName + ", " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+                console.log(custom7)
+                break;
+
+            case '8':
+                var custom8 = date.getMinutes() + " min : " + date.getSeconds() + " sec"
+                console.log(custom8)
+                break;
+
+            case '9':
+                var custom9 = date.getHours() + " Hrs " + date.getMinutes() + " min " + date.getSeconds() + " sec"
+                console.log(custom9)
+                break;
+
+            case '10':
+                var custom10 = (date.getDate() - 1) + "/" + date.getMonth() + "/" + date.getFullYear()
+                console.log("you entered last month date " + custom10)
+        }
+
+
+    </script>
+</body>
+
+</html>

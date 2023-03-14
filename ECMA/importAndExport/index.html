@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating import and export key words / importing external js file/code
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js" type="module"></script>
+        <script src="sample.js"></script>
+    </head>
+    <body>
+        <h3>
+            Employee Pay Details Application
+        </h3>
+        <ul>
+            <li>
+                Enter employee name:
+                <input type="text" id="ename">
+            </li>
+            <li>
+                Enter employee Basic Sal:
+                <input type="text" id="bsal">
+            </li>
+            <li>
+                <input type="button" value="Get PF " onclick="doOperation('pf')">
+                <input type="button" value="Get Total Sal" onclick="doOperation('tsal')">
+                <input type="button" value="Get Total Tax " onclick="doOperation('ttax')">
+            </li>
+            <li id="rblock">
+
+            </li>
+        </ul>
+    </body>
+</html>

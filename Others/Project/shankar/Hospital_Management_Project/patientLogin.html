@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MediCare.com || Patient login</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .overlay {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            opacity: 0px;
+            opacity: 0;
+            transition: 1px;
+        }
+        .loginform {
+            padding: 30px 20px;
+            width: 350px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 1px 0px 10px 0px black;   
+        }
+        .loginform label {
+            color: purple;
+            font-size: 17px;
+        }
+        .loginform input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 38px;
+        }
+        .loginform button {
+            width: 100px;
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            margin-left: 35%;
+            border: none;
+        }
+        .loginform button:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+        .loginform span {
+            margin: 2px;
+            position: absolute;
+            z-index: 8;
+            right: 0px;
+            top: 0px;
+            width: 30px;
+            height: 25px;
+            background-color: green;
+            text-align: center;
+            color: white;
+            line-height: 25px;
+        }
+        .loginform span:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+        a {
+           margin-left: 31%;
+           text-decoration: none;
+           color: royalblue;
+        }
+         a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        form h4 {
+               color: red;
+               text-align: center;
+               font-size: 18px;
+        }
+        form h3 {
+            text-align: center;
+            margin: 10px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(img/signup-bacgound.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+    <div class="overlay"></div>
+    <div class="loginform">
+        
+        <span>&times;</span> 
+        <form action="">
+            <h4>MediaCare</h4>
+            <h3>Patient Login</h3>
+            <div>
+              <label for="">User Name</label>
+              <input type="text"/>
+            </div>
+        
+            <div>
+              <label for="">Password</label>
+              <input type="password"/>
+            </div>
+            <button>LOGIN</button><br><br>
+            <a href="#">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>
+
+

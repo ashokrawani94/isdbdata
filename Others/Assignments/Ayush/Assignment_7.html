@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7</title>
+    <style>
+        header {
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            font-size: 2rem;
+            background-color: gray;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid black;
+            margin: 5px;
+            height: 550px;
+            width: auto;
+            position: relative;
+            background-color: gray;
+        }
+
+        .block1 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+
+        }
+
+        .block2 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            right: 1px;
+            position: absolute;
+
+        }
+
+        .block3 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            right: 1px;
+            bottom: 1px;
+            position: absolute;
+
+        }
+
+        .block4 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            left: 1px;
+            bottom: 1px;
+            position: absolute;
+
+        }
+
+        .block5 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            top: 50px;
+            left: 50px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+        }
+
+        .block6 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            right: 50px;
+            top: 50px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+
+        }
+
+        .block7 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            right: 50px;
+            bottom: 50px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+
+        }
+
+        .block8 {
+            border: 2px solid black;
+            margin: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            left: 50px;
+            bottom: 50px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.6;
+
+        }
+
+        .block9 {
+            border: 3px solid white;
+            width: 100px;
+            height: 100px;
+            background-color: #a87ed7;
+            top: 40%;
+            left: 46%;
+            position: absolute;
+        }
+
+        .block10 {
+            width: 0px;
+            height: 0px;
+            border: 126px solid transparent;
+            border-right-color: black;
+            top: 27%;
+            left: 27%;
+            position: absolute;
+        }
+
+        .block11 {
+            width: 0px;
+            height: 0px;
+            border: 126px solid transparent;
+            border-left-color: black;
+            top: 27%;
+            left: 54%;
+            position: absolute;
+        }
+
+        .block12 {
+            background-color: aqua;
+            width: 95px;
+            height: 95px;
+            border-radius: 50px;
+            position: absolute;
+            top: 41%;
+            left: 28%;
+        }
+
+        .block13 {
+            background-color: aqua;
+            width: 95px;
+            height: 95px;
+            border-radius: 50px;
+            position: absolute;
+            top: 41%;
+            right: 28%;
+        }
+
+        .block14 {
+            background-color: aqua;
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+            position: absolute;
+            top: 44%;
+            left: 21%;
+        }
+
+        .block15 {
+            background-color: aqua;
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+            position: absolute;
+            top: 44%;
+            right: 21%;
+        }
+
+        .block16 {
+            background-color: aqua;
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            position: absolute;
+            top: 46%;
+            left: 16%;
+        }
+
+        .block17 {
+            background-color: aqua;
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            position: absolute;
+            top: 46%;
+            right: 16%;
+        }
+
+        footer {
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            font-size: 1rem;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>Block Position</b>
+    </header>
+    <div class="container">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+        <div class="block4"></div>
+        <div class="block5"></div>
+        <div class="block6"></div>
+        <div class="block7"></div>
+        <div class="block8"></div>
+        <div class="block9"></div>
+        <div class="block10"></div>
+        <div class="block11"></div>
+        <div class="block12"></div>
+        <div class="block13"></div>
+        <div class="block14"></div>
+        <div class="block15"></div>
+        <div class="block16"></div>
+        <div class="block17"></div>
+    </div>
+</body>
+<footer>
+    <b>&copy; Copy Rights 2023</b>
+</footer>
+
+</html>

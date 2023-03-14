@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  
+    <script>
+      sum = 0;
+      n = prompt("enter a number to find the sum of all individual digits");
+      n = parseInt(n);
+      console.log("---sum of all individual digits entered---");
+      while (n > 0) {
+        var rem = n % 10;
+        sum += rem;
+        n = n / 10;
+        n = parseInt(n);
+      }
+      console.log(sum);
+
+      sum1 = 0;
+      m = prompt("Enter value to check the Lucky Number");
+      m = parseInt(m);
+      luckyNumber = m;
+      console.log("---Lucky Number is ---");
+      while (m > 0) {
+        var rem = m % 10;
+        sum1 += rem;
+        m = m / 10;
+        m = parseInt(m);
+        if (m == 0 && sum1 > 9) {
+          m = sum1;
+          sum1 = 0;
+        }
+      }
+      console.log(sum1 + " is  lucky number of " + luckyNumber);
+
+      console.log("---armstrong number is");
+      o = prompt('Enter a number to check weather it is an armstrong number or not');
+      powerOfDigits = o.length;
+      i = parseInt(o);
+      console.log(powerOfDigits);
+      o = parseInt(o);
+      armstrongNumber = 0;
+      while (o > 0) {
+        rem2 = o % 10;
+        o = o / 10;
+        o = parseInt(o)
+        armstrongNumber = armstrongNumber + (rem2 ** powerOfDigits);
+                
+      }
+      if( armstrongNumber == i ){
+        console.log( i + " is a Armstrong Number")
+      }else{
+        console.log( i + " is not a Armstrong Number")
+      }
+      console.log('---reverse of any given number and is palindrome number or not---')
+      a = prompt('Enter a value to check the reverse of a number');
+      console.log(a + " is the given number");
+      a = parseInt(a);
+      b = a;//to check palindrome in the same program
+      reverseAns = 0;
+      while( a > 0 ){
+        rem3 = a % 10;
+        a  = a/10;
+        a = parseInt(a);
+        reverseAns = (reverseAns*10) + rem3
+      }
+      console.log(reverseAns + " is reverse of the given number");
+      if(reverseAns == b){
+        console.log(reverseAns + " is also a palindrome number");
+      }else{
+        console.log(reverseAns + " is not a palindrome number");
+      }
+    </script>
+  </body>
+</html>

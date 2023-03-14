@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details By Function</title>
+</head>
+<body>
+    <script>
+       // function created to take employee inputes by prompt
+        var Name, Age, Gender, Depratment, BasicSalary, PF, HRA, TotalSalary, TotalTaxCut;
+        var TaxValue = 0;
+        function employeeData () {
+           Name = prompt("Enter Employee Name");
+           Age = prompt("Enter Employee Age");
+           Gender = prompt("Enter Employee Gender");
+           Depratment = prompt("Enter Employee Department");
+           BasicSalary = prompt("Enter Employee BasicSalary");
+           BasicSalary = parseInt(BasicSalary);
+
+           calculateTotalSal();
+           employeeTaxCalculate();
+           employeeDetails();
+        }
+        // function created to calculate to calculate PF, HRA , TotalSalary
+        function calculateTotalSal () {
+            PF = (BasicSalary * 15) / 100;
+            PF = parseInt(PF);
+            HRA = (BasicSalary * 20) / 100;
+            HRA = parseInt(HRA);
+
+            TotalSalary = BasicSalary + PF + HRA;
+        }
+        // function created to calculate tax based on totalsalary
+        function employeeTaxCalculate() {
+            if (Gender == 'male') {
+                if (TotalSalary > 100000){
+                    TaxValue = 15;
+                } else if (TotalSalary > 50000){
+                    TaxValue = 10;
+                } else ( TotalSalary > 25000)
+                    TaxValue = 5;
+            }  else (Gender == 'female') 
+               if (TotalSalary > 100000) {
+                TaxValue = 10;
+               } else if (TotalSalary > 50000) {
+                TaxValue = 5;
+               } else  if (TotalSalary > 25000) {
+                  
+               }
+           
+            TotalTaxCut = (TaxValue * TotalSalary) / 100;
+            console.log("Tax is Free" + TotalTaxCut);
+        }
+
+       // function to display all details of employee
+        function employeeDetails () {
+            console.log("Employee Name " + name);
+            console.log("Employee Age " + Age);
+            console.log("Employee Gender " + Gender);
+            console.log("Employee Department " + Depratment);
+            console.log("Employee Basic Salary " + BasicSalary);
+            console.log("Employee PF " + PF);
+            console.log("Employee HRA " + HRA);
+            console.log("Employee Total Salary " + TotalSalary);
+            console.log("Total Tax Cut " + TotalTaxCut);
+        }
+        // calling function to take employee details and showing the result
+        employeeData();
+    </script>
+</body>
+</html>

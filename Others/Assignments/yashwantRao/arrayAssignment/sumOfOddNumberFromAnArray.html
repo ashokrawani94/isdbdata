@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of odd/even number from the given array</title>
+</head>
+<body>
+    <h4>
+        sum of odd/even number from the given array
+    </h4>
+
+    <script>
+                    //----------------------------------------  write an program to find the sum of all the odd numbers within the given array.
+
+            var data = [1,2,3,4,5,6,7,8,9,0,11,12,13,14,15,16,17,18,19];
+            var sumOdd = 0;
+            var newData = [];
+
+            for (i = 0; i < data.length; i++) {
+                var mod = data[i] % 2;
+                if (mod != 0) {
+                    sumOdd  = sumOdd + data[i];
+                    console.log(data[i]);
+                    newData.push(data[i]);
+                }
+            }
+            console.log(newData);
+            console.log(data);
+            console.log("the sum of all odd number is : "+ sumOdd);
+            
+
+    </script>
+</body>
+</html>

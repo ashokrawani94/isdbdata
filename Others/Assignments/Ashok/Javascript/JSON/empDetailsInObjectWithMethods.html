@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sDetails_DynamicInJson objectn method</title>
+    </head>
+    <body>
+        <h3>Employee Details taking Dynamic Data in Object with method</h3>
+        <script>
+           var empDetails = {
+            name: '',
+            age: '',
+            gender: '',
+            dept: '',
+            basicSal: '',
+            getEmpData() {
+           this.name = prompt("Enter emp Name");
+           this.age = prompt("Enter emp Age");
+           empDetails.gender = prompt("Enter emp Gender");
+           this.dept = prompt("Enter emp Department");
+           this.basicSal = prompt("Enter emp Basic Sal");
+           this.basicSal = parseInt(empDetails.basicSal);
+           this.totalTax = '';
+           empDetails.getEmpTotalSal();
+           },
+           getEmpTotalSal: function(){
+            this.pf = (10 * this.basicSal) / 100;
+           empDetails.hra = (20 * empDetails.basicSal) / 100;
+           this.totalSal = this.basicSal + this.pf + this.hra;
+           this.totalSal = parseInt(this.totalSal);
+           console.log(empDetails);
+           empDetails.getTaxToBePaid();
+           },
+           getTaxToBePaid: function(){
+            if(empDetails.gender == 'male'){
+                    if(this.totalSal >= 100000){
+                        this.taxPercent = 15;
+                    }else if(this.totalSal >= 50000){
+                        this.taxPercent = 10;
+                    }else if(this.totalSal >= 25000){
+                        this.taxPercent = 5;
+                    }else{
+                        this.taxPercent = 0;
+                    }
+                }else{
+                    if(this.totalSal >= 100000){
+                        this.taxPercent = 10;
+                    }else if(this.totalSal >= 50000){
+                        this.taxPercent = 5;
+                    }else{
+                        this.taxPercent = 0;
+                    }
+                }
+                this.totalTax = (this.totalSal * this.taxPercent)/100;
+            empDetails.getDisplayEmpData();
+
+           },
+           getDisplayEmpData: function(){
+           console.log("Emp name is "+ empDetails.name );
+           console.log("Emp age is "+ this.age );
+           console.log("Emp gender is "+ this.gender );
+           console.log("Emp dept is "+ this.dept );
+           console.log("Emp total sal is "+ this.totalSal);
+           console.log("Emp total Tax to be paid is "+ this.totalTax);
+           }           
+           
+
+        }
+        empDetails.getEmpData();
+
+           
+
+
+
+        </script>
+    </body>
+</html>

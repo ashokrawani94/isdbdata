@@ -1,0 +1,20 @@
+1.write a program to show the even numbers between 1 to 100
+2.write a program to display odd numbers between 89 to 18
+3.write a program to read a number from user and check wheather it is prime number or not?
+4.write a program to display all the prime numbers between 1 to 100
+5.write a program to find the sum of all the prime numbers between 200 to 18
+6.write a program to read a number from user and find the sum of individual digits of the given number
+7.write a program to find the lucky number of the given number
+8.write a program to find the lucky numbers for every number between 1 to 1000.
+9.write a program to check wheather the given number is armstrong number or not.
+10.write a program to find the reverse of any given number.
+11.write a program to check wheather given number is a pallandrome number or not
+
+--------------
+1) write a program to read a string from the user and return total no. of words within it.
+2) write a program to find out the total no. of spaces within the string.
+3) write a program to find out whether a given string is palindrome or not.
+4) write a program to read a string from the user and return the total no. of vowels within it.
+5) write a program to read a string from the user and return whether a given string is available within the main string or not.
+6) write a program to findout the total no. of characters within given string without using predefined length property.
+7) write a program to find reverse of any given string.

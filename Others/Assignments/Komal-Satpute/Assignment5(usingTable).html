@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .student{
+            border-left: 2px solid;
+            border-right: 2px solid;
+            border-top: 2px solid;
+            text-align: center;
+           width: 790px; 
+           margin: auto;
+           height: 45px;
+        }
+        table{
+           
+            border: 2px solid;
+            margin: auto;
+        }
+        tr{
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        img{
+            height: 120px;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="student"><h2>STUDENT DETAILS</h2></div>
+    <table border="2px">
+    <thead>
+        <tr>
+            <th>Sr No.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Picture</th>
+            <th>Class</th>
+            <th>Location</th>
+            <th>Progress Card</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Sushant Singh</td>
+            <td>23</td>
+            <td><img src="https://www.mwallpapers.com/download-image/23759/383x511"></td>
+            <td>17<sup>th</sup></td>
+            <td>Lonavala</td>
+            <td>
+                <table border="2px">
+                    
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td>60</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>120</td>
+                        <td>20</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>150</td>
+                        <td>99</td>
+                        <td>Pass</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Aaliya Bhatt</td>
+            <td>23</td>
+            <td><img src="data:image/jpeg;base64,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"></td>
+           <td>17<sup>th</sup></td>
+            <td>Lonavala</td>
+            <td>
+                <table border="2px">
+                    
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td>60</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>120</td>
+                        <td>20</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>150</td>
+                        <td>99</td>
+                        <td>Pass</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Siddharth Malhotra</td>
+            <td>23</td>
+            <td><img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQFd97QiIDqVQEGXC2hR5CccBDPXauGQqalqNdtQxst0B0LgPZAOz4KuUbNORjQrl8aQvF2rsIgvW6n8dQ"></td>
+            <td>17<sup>th</sup></td>
+            <td>Lonavala</td>
+            <td>
+                <table border="2px">
+                    
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obtained Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Maths</td>
+                        <td>100</td>
+                        <td>60</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>120</td>
+                        <td>20</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>150</td>
+                        <td>99</td>
+                        <td>Pass</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+
+        </tr>
+
+    
+   
+    </tbody>
+</table>
+</body>
+</html>

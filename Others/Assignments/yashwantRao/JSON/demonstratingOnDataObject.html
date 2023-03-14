@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrating on object</title>
+</head>
+<body>
+    <h3>
+        demonstrating on object
+    </h3>
+
+    <script>
+/*        var studentData = {
+            name : '',
+            age : ''
+            
+        };
+        var getStudentData = () => {
+            studentData.name = prompt("Enter your full name");
+            studentData.age = prompt("Enter your age");
+            studentData.marks = [];
+            for(var i = 0; i < 5; i++) {
+                studentData.marks[i] = parseInt(prompt("Enter the marks for subject "+ i));
+            }
+            getTotalAndAvg();
+        }
+
+        var getTotalAndAvg = () => {
+            studentData.total = 0;
+            for (i = 0; i<5; i++) {
+                studentData.total = studentData.marks[i] + studentData.total;
+            }
+            studentData.avg = (studentData.total)/(studentData.marks.length);
+            
+            getGrade();
+        }
+
+        var getGrade = () => {
+            if(studentData.avg >= 40) {
+                studentData.grade = "Passed";
+            } else {
+                studentData.grade = "You have failed";
+            }
+
+            displayStudentData();
+        }
+
+        var displayStudentData = () => {
+            console.log(studentData);
+            console.log("---------------Student Details-------------");
+            console.log("Studend's name : " + studentData.name);
+            console.log("Studend's age : " + studentData.age);
+            console.log("Studend's grade : " + studentData.grade);
+            console.log("Average marks : " + studentData.avg);
+        }
+
+        getStudentData(); */
+    </script>
+
+    <script>
+        
+        var studentData = {
+            name : '',
+            age : '',
+            getStudentData : function () {
+                studentData.name = prompt("Enter your full name");
+                studentData.age = prompt("Enter your age");
+                studentData.marks = [];
+                for(var i = 0; i < 5; i++) {
+                    studentData.marks[i] = parseInt(prompt("Enter the marks for subject "+ i));
+                }
+                studentData.getTotalAndAvg();
+            },
+            getTotalAndAvg : function () {
+                studentData.total = 0;
+                for (i = 0; i<5; i++) {
+                    studentData.total = studentData.marks[i] + studentData.total;
+                }
+                    studentData.avg = (studentData.total)/(studentData.marks.length);
+                
+                    studentData.getGrade();
+            },
+            getGrade : function () {
+                if(studentData.avg >= 40) {
+                    studentData.grade = "Passed";
+                } else {
+                    studentData.grade = "You have failed";
+                }
+
+                studentData.displayStudentData();
+            },
+            displayStudentData : function () {
+                console.log(studentData);
+                console.log("---------------Student Details-------------");
+                console.log("Studend's name : " + studentData.name);
+                console.log("Studend's age : " + studentData.age);
+                console.log("Studend's grade : " + studentData.grade);
+                console.log("Average marks : " + studentData.avg);
+            }
+            
+        };
+
+        studentData.getStudentData();
+    </script>
+</body>
+</html>

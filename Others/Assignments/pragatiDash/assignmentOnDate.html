@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment on Dates</title>
+  </head>
+  <body>
+    <script>
+      var option = prompt("Which option do you want? 1,2,3,4,5,6,7,8,9,10");
+      var mydate = new Date();
+      var months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      var monthname = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var dayname = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      switch (option) {
+        case "1":
+          var myCustmFormat =
+            mydate.getDate() +
+            "/" +
+            months[mydate.getMonth()] +
+            "/" +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "2":
+          var myCustmFormat =
+            mydate.getDate() +
+            "th" +
+            " " +
+            months[mydate.getMonth()] +
+            "," +
+            " " +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "3":
+          var myCustmFormat =
+            mydate.getDate() +
+            "th" +
+            " " +
+            monthname[mydate.getMonth()] +
+            "," +
+            " " +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "4":
+          var myCustmFormat =
+            days[mydate.getDay()] +
+            "," +
+            " " +
+            mydate.getDate() +
+            "th" +
+            " " +
+            months[mydate.getMonth()];
+          console.log(myCustmFormat);
+          break;
+
+        case "5":
+          var myCustmFormat =
+            dayname[mydate.getDay()] +
+            "," +
+            " " +
+            mydate.getDate() +
+            "th" +
+            " " +
+            monthname[mydate.getMonth()] +
+            " " +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "6":
+          var myCustmFormat =
+            mydate.getDate() +
+            "-" +
+            months[mydate.getMonth()] +
+            "-" +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "7":
+          var myCustmFormat =
+            mydate.getDate() +
+            "-" +
+            ("0" + (mydate.getMonth() + 1)).slice(-2) +
+            "-" +
+            mydate.getFullYear();
+          console.log(myCustmFormat);
+          break;
+
+        case "8":
+          var myCustmFormat =
+            mydate.getDate() +
+            "th" +
+            " " +
+            months[mydate.getMonth()] +
+            "," +
+            " " +
+            mydate.getFullYear() +
+            " " +
+            mydate.getHours() +
+            ":" +
+            mydate.getMinutes() +
+            ":" +
+            mydate.getSeconds();
+          console.log(myCustmFormat);
+          break;
+
+        case "9":
+          var myCustmFormat =
+            mydate.getMinutes() +
+            " " +
+            "mins" +
+            " " +
+            ":" +
+            " " +
+            mydate.getSeconds() +
+            " " +
+            "sec";
+          console.log(myCustmFormat);
+          break;
+
+        case "10":
+          var myCustmFormat =
+            mydate.getHours() +
+            "hrs" +
+            "," +
+            " " +
+            mydate.getMinutes() +
+            "mins" +
+            " " +
+            mydate.getSeconds() +
+            "sec";
+          console.log(myCustmFormat);
+          break;
+
+        default:
+          console.log("Its wrong option choosen");
+      }
+    </script>
+  </body>
+</html>

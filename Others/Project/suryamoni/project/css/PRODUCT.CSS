@@ -1,0 +1,190 @@
+body{
+    background-color: black;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .topcontainer
+         { 
+            padding: 8px;
+            margin: 8px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            width: 35cm;
+            height: 55px;
+            border-radius: 1599px
+            ;
+            box-shadow: 5px 10px  rgb(195, 197, 51);
+           
+          
+
+
+          }
+          ul{
+            text-align: center;
+            list-style: none;
+            border: #ddd solid snow;
+            position: relative;
+            top: -1.5ch;
+          }
+
+   
+
+
+          .topcontainer {
+overflow: hidden;
+background-color: #ccba30;
+}
+
+.topcontainer a {
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topcontainer   a:hover {
+background-color: #9ada5e;
+color: black;
+}
+
+.topcontainer a.active {
+background-color: #3bc2a0;
+color: rgb(43, 4, 54);
+}
+
+.topcontainer .search-container {
+float: right;
+}
+
+.topcontainer input[type=text] {
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+.topcontainer .search-container button {
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #c9bd1f;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+.topcontainer .search-container button:hover {
+background: #a79a2c;
+}
+
+@media screen and (max-width: 600px) {
+.topcontainer .search-container {
+float: none;
+}
+.topcontainer a, .topcontainer input[type=text], .topcontainer .search-container button {
+float: none;
+display: block;
+text-align: left;
+width: 100%;
+margin: 0;
+padding: 14px;
+}
+.topcontainer input[type=text] {
+border: 1px solid #ee6c6c;  
+}
+}
+
+.maincontainer{
+padding: 5px;
+margin: 5px;
+border:  solid;
+width: 35cm;
+height: 13cm;
+position: relative;
+top: 20px;
+box-shadow:5px 10px 18px#bfc0bf ;
+border-radius: 100px;
+float:inline ;
+
+background-color:rgb(36, 35, 35) #7160ce;
+}
+.leftcontainer{
+  padding: 2px;
+  margin: 5px;
+  width: 10cm;
+  height: 12cm;
+  border-radius: 150px;
+ 
+  color: #ddd;
+ 
+
+
+}
+.rightcontainer{
+  padding: 2px;
+  margin: 2px;
+  width: 23cm;
+  height: 12cm;
+  border-radius: 50px;
+  border: 1px ;
+  box-shadow:5px 10px 18px#216c8f ;
+  position: relative;
+  left: 420px;
+  bottom: 465px;
+  overflow-y: auto;
+
+
+ 
+}
+.cv1A,.cv1B,.cv1C,.cv1D,.cv1E,.cv1F
+
+{
+padding-left: 10px;
+margin-left:10px; margin-top:35px; margin-right: 20PX;
+height:35PX;
+width:200px;
+border: 3px solid; 
+background-image: url(https://preview.redd.it/ut1c8oruss261.png?blur=40&format=pjpg&auto=webp&s=0c92feefbb2132afc794253e0cc23c2fc67230b7);
+background-repeat:repeat;
+text-align: center; color: rgb(187, 185, 185); 
+font-size:larger;
+border-radius: 25cm;
+position: relative;
+left: 15px;
+box-shadow:  18px 10px 5px rgb(43, 43, 66);
+font-size: small;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rightcontainer li{
+  padding: 2px;
+  margin: 25px;
+  border: 2px ;
+  display: inline-block;
+ border-radius: 25px;
+ color: #ddd;
+ position: relative;
+ left: -55px;
+}
+
+footer{
+
+  padding: 2px;
+  margin: 2px;
+  border:1px solid #216c8f;
+  border-radius: 2px;
+  background-color: #09090a;
+ 
+ position: relative;
+ bottom: 22px;
+
+}

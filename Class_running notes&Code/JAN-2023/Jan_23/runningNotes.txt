@@ -1,0 +1,21 @@
+form tag
+    A very special tag used to send the data automatically to the specified server
+
+    <form></form>
+        action -> through which we can specify teh path/url of the server
+        method -> the way data has to be sent to teh server secured/non secured way
+
+        GET - non secured type of communication
+
+        POST - its a secured way of sending the data throgh request header
+
+    <form method="GET/POST" action="url/path of the server"> 
+        ..set of input elemetns
+    </form>
+
+    While adding input elements within the form tag
+        1. make sure we add unique name attribute along with value to every input element 
+
+    GET - > data will be sent to server through url rewriting / query parameters
+
+    POST -> Data will be sent to server by appending data to Request Header 

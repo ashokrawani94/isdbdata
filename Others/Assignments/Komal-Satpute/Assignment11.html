@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee details</title>
+</head>
+
+<body>
+    <script>
+        function readEmployeeDetails() {
+
+            var ename, eage, edept, basicsalary, egender, pf, hra, Totalsalary, Totaltax, taxpercent
+
+        }
+
+        function calculateTotalsalary(basicsalary, pf, hra, Totalsalary) {
+
+            pf = (14 * basicsalary) / 100
+            hra = (25 * basicsalary) / 100
+            Totalsalary = basicsalary + pf + hra
+            return Totalsalary
+        }
+
+        function employeeAvg(Totalsalary, egender) {
+
+            if (egender == "female") {
+
+                if (Totalsalary >= 100000) {
+                    taxpercent = 15
+                } else if (Totalsalary >= 50000) {
+                    taxpercent = 10
+                } else if (Totalsalary >= 10000) {
+                    taxpercent = 5
+                }
+            }
+
+
+            else (egender == "male")
+
+            if (Totalsalary >= 50000) {
+                taxpercent = 15
+            } else if (Totalsalary >= 25000) {
+                taxpercent = 10
+            } else if (Totalsalary >= 10000) {
+                taxpercent = 5
+            }
+
+        }
+
+        function employeeTotaltax(taxpercent, Totalsalary) {
+
+            var Totaltax = (taxpercent * Totalsalary) / 100
+            return Totaltax
+        }
+
+        function displayEmployeeDetails(ename, eage, edept, basicsalary, egender, pf, hra, Totalsalary, Totaltax, taxpercent) {
+
+            console.log("--------------Employee Details---------------")
+            console.log("Name : " + ename)
+            console.log("Age : " + eage)
+            console.log("Dept : " + edept)
+            console.log("Gender : " + egender)
+            console.log("Basicsalary : " + basicsalary)
+            console.log("Total Salary : " + Totalsalary)
+            console.log("Total tax to be paid : " + Totaltax)
+
+        }
+
+        displayEmployeeDetails(
+            ename = "Rushi jaiswal",
+            eage = 25,
+            edept = "CSE",
+            basicsalary = 50000,
+            egender = "male",
+
+        )
+
+        displayEmployeeDetails(
+            ename = "Ishu pathak",
+            eage = 24,
+            edept = "CSE",
+            basicsalary = 100000,
+            egender = "female",
+
+        )
+
+        displayEmployeeDetails(
+            ename = "Sneha Agraval",
+            eage = 25,
+            edept = "CSE",
+            basicsalary = 70000,
+            egender = "female",
+
+        )
+
+        displayEmployeeDetails(
+            ename = "Ruchi shrivastav",
+            eage = 23,
+            edept = "CSE",
+            basicsalary = 50000,
+            egender = "female",
+
+        )
+
+        displayEmployeeDetails(
+            ename = "Ram Tripathi",
+            eage = 23,
+            edept = "CSE",
+            basicsalary = 150000,
+            egender = "male",
+
+        )
+    </script>
+</body>
+
+</html>

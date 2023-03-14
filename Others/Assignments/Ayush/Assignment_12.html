@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using function method</title>
+</head>
+
+<body>
+    <h1 style="border: 2px solid black; background-color: gray; text-align: center;"><b>Create some empolyee details
+            using function method</b></h1>
+    <script>
+        var ename, eage, edep, gender, ebasicsal, totalsal
+
+        var abc = () => {
+            ename = prompt("Enter your name")
+            eage = prompt("Enter your age")
+            edep = prompt("Enter your departement")
+            gender = prompt("Enter your gender")
+            ebasicsal = prompt("Enter your salary")
+            ebasicsal = parseInt(ebasicsal);
+        }
+
+        var pqr = () => {
+            var pf = (14 * ebasicsal) / 100;
+            pf = parseInt(pf);
+            var hra = (25 * ebasicsal) / 100;
+            hra = parseInt(hra);
+            totalsal = pf + hra + ebasicsal;
+        }
+
+        var xyz = () => {
+            console.log("-----Empolyee Details-----")
+            console.log("Name : " + ename)
+            console.log("Age : " + eage)
+            console.log("Departement : " + edep)
+            console.log("Gender : " + gender)
+            console.log("Salary : " + totalsal)
+        }
+
+
+        var aaa = () => {
+            if (gender == 'male') {
+                if (totalsal >= 100000) {
+                    var tax = (15 * totalsal) / 100;
+                    console.log("pay the tax 15% is : " + tax)
+                } else if (totalsal >= 50000) {
+                    var tax1 = (10 * totalsal) / 100;
+                    console.log("pay the tax 10% is : " + tax1)
+                } else if (totalsal >= 25000) {
+                    var tax2 = (5 * totalsal) / 100;
+                    console.log("pay tax yp to 5% is : " + tax2)
+                } else {
+                    console.log("you do not need to pay tax")
+                }
+
+            } else {
+                if (totalsal >= 100000) {
+                    var tax = (10 * totalsal) / 100;
+                    console.log("pay the tax 10% is : " + tax)
+                } else if (totalsal >= 50000) {
+                    var tax1 = (5 * totalsal) / 100;
+                    console.log("pay the tax 5% is : " + tax1)
+                } else {
+                    console.log("you do not need to pay tax")
+                }
+            }
+        }
+
+        abc();
+        pqr();
+        xyz();
+        aaa();
+
+    </script>
+</body>
+
+</html>

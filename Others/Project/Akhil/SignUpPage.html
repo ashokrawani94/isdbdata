@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Sign Up Page</title>
+    <style>
+      h1,h4{
+        background-color: violet;
+        color: white;
+        font-family: sans-serif;
+        border: 1px solid;
+        text-align: center;
+        margin: 10px 0px;
+        border-radius: 25px;
+        padding: 10px;
+      }
+
+      .bodyContainer{
+        border: 3px solid violet;
+        height: 505px;
+        padding: 10px;
+        border-radius: 25px;
+      }
+
+      .signUpContainer{
+        border: 3px solid violet;
+        width: 40%;
+        height:75%;
+        border-radius: 25px;
+        position: relative;
+        top: 73px;
+        margin: auto;
+      }
+
+      label{
+        font-family: sans-serif;
+        color: violet;
+      }
+
+      input[type = "password"],input[type = "text"],input[type = "email"],select{
+        border-color: violet;
+        border-radius:25px ;
+        text-align: center;
+        height: 25px;
+        width: 226px;
+        font-family: sans-serif;
+      }
+
+      input[type = "submit"]{
+        width: 70px;
+        height: 30px;
+        background-color: violet;
+        color: white;
+        border-radius: 25px;
+      }
+
+      .userNameContainer{
+        position: relative;
+        top: 32px;
+        left: 81px;
+      }
+
+      .passwordContainer{
+        position: relative;
+        top: 50px;
+        left: 93px;
+      }
+
+      .confirmPasswordContainer{
+        position: relative;
+        top: 65px;
+        left: 36px;
+      }
+
+      .mobileNumberContainer{
+        position: relative;
+        top: 79px;
+        left: 58px;
+      }
+      
+      .emailContainer{
+        position: relative;
+        top: 91px;
+        left: 109px;
+      }
+
+      .buttonContainer{
+        position: relative;
+        top: 109px;
+        left: 204px;
+      }
+
+      .dataPart{
+        background-color: violet;
+        padding: 10px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 30px;
+        border-top-right-radius: 22px;
+        border-top-left-radius: 22px;
+        border: 1px solid violet;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Online Shopping App</h1>
+    <div class="bodyContainer">
+      <div class="signUpContainer">
+        <div class="dataPart">Sign Up</div>
+        <form action="index.html" method="post">
+          <div class="userNameContainer">
+            <label for="userName">User Name : </label>
+            <input type="text" id = "userName" name="userName" placeholder="Enter User Name" required>
+          </div>
+          <div class="passwordContainer">
+            <label for="password">Password : </label>
+            <input type="password" name="password" id = "passsword" placeholder="Enter Password" required>
+          </div>
+
+          <div class="confirmPasswordContainer">
+            <label for="confirmPassword">Confirm Password : </label>
+            <input type="password" name="confirmPassword" id = "confirmPassword" placeholder="Enter Password Again" required>
+          </div>
+
+          <div class="mobileNumberContainer">
+            <label for="mobileNumber">Mobile Number : </label>
+            <input type="text" id = "mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number" required>
+          </div>
+          <div class="emailContainer">
+            <label for="emailId">Email Id : </label>
+            <input type="email" name="emailId" id = "emailId" placeholder="Enter Email Id" required>
+          </div>
+
+          <div class="buttonContainer">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <h4>@Copyright 2023</h4>
+  </body>
+</html>

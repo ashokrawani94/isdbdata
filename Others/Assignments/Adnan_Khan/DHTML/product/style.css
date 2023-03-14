@@ -1,0 +1,27 @@
+h3{
+    text-align: center;
+    border: 1px solid;
+}
+*{
+    margin: 0;
+}
+li{
+    list-style: none;
+    
+}
+img{
+    width: 150px;
+}
+.container > li{
+    border: 1px solid;
+    padding: 3px;
+    width: 300px;
+    float: left;
+    margin: 3px
+}
+.productDetails > li{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}

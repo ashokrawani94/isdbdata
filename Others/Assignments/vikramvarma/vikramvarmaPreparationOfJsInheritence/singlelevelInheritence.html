@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>single level inheritence</title>
+  </head>
+  <body>
+    single level inheritence
+  </body>
+  <script>
+    class CompanyDetails {
+      constructor() {
+        this.companyName = 'Itc';
+        this.companyLocation = 'hitechCity';
+        this.companyCeo = 'vikram';
+      }
+    }
+    class ExployeeDetails extends CompanyDetails {
+      constructor() {
+        super();
+        this.name = 'varma';
+        this.detpartment = 'food';
+        this.salary = 10000;
+      }
+      showData() {
+        console.log(`The company Name is ${this.companyName}`);
+        console.log(`The company CEO is ${this.companyCeo}`);
+        console.log(`The Employee Name is ${this.name}`);
+      }
+    }
+    var empdata = new ExployeeDetails();
+    empdata.showData();
+  </script>
+</html>

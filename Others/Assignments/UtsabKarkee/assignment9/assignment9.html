@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 9</title>
+    <link rel="icon" type="image/x-icon" href="images/js.png" />
+    <style>
+      h3 {
+        text-align: center;
+        border: 2px solid black;
+        background-color: rebeccapurple;
+        height: 100px;
+        color: dimgrey;
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Please Check Console</h3>
+    <script>
+      var studentName = prompt("Enter Student Name"),
+        studentAge = parseInt(prompt("Enter Student Age")),
+        courseOne = prompt("Enter First Course"),
+        courseTwo = prompt("Enter Second Course"),
+        costOne = parseFloat(prompt("Enter First Course Cost")),
+        costTwo = parseFloat(prompt("Enter Second Course Cost")),
+        totalCost = costOne + costTwo;
+
+      console.log(
+        "Student Name: " +
+          studentName +
+          "\nStudent Age: " +
+          studentAge +
+          "\nCourse One: " +
+          courseOne +
+          "\nCourse Two: " +
+          courseTwo +
+          "\nTotal Cost Of Courses: " +
+          totalCost
+      );
+
+      var employeeName = prompt("Enter Employee Name"),
+        employeeAge = parseInt(prompt("Enter Employee Age")),
+        salary = parseInt(prompt("Enter Employee Salary")),
+        bonus = parseFloat(
+          prompt("Enter Employee Bonus Percentage Out Of Salary")
+        ),
+        totalSalary = salary + (bonus / 100) * salary;
+
+      console.log(
+        "Employee Name: " +
+          employeeName +
+          "\nEmployee Age: " +
+          employeeAge +
+          "\nSalary: " +
+          salary +
+          "\nBonus Percentage: " +
+          bonus +
+          "\nTotal Salary: " +
+          totalSalary
+      );
+    </script>
+  </body>
+</html>

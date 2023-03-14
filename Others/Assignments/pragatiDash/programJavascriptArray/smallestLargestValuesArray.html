@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Smallest and Largest Values in Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = []; //var arr = new Array();
+
+      var s = prompt("Enter size of the array");
+      s = parseInt(s);
+      var i;
+
+      for (i = 0; i < s; i++) {
+        arr[i] = prompt("Enter element on index " + i);
+        arr[i] = parseInt(arr[i]);
+        console.log("arr[" + i + "] :" + arr[i]);
+      }
+
+      var highestNumber = arr[0],
+        lowestNumber = arr[0];
+
+      function highestLowestNumber() {
+        for (i = 0; i < s; i++) {
+          if (highestNumber < arr[i]) {
+            highestNumber = arr[i];
+          }
+          if (lowestNumber > arr[i]) {
+            lowestNumber = arr[i];
+          }
+        }
+        console.log("Highest number is:" + highestNumber);
+        console.log("Lowest number is:" + lowestNumber);
+      }
+      highestLowestNumber();
+    </script>
+  </body>
+</html>

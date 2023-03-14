@@ -1,0 +1,18 @@
+Closures:
+
+    function funname() { // definition
+        ....
+        ....
+    }
+    funname(); // Calling
+    ----------------
+
+    (function() { // Both defining an calling.
+        ...
+        ...
+    })();
+
+Steps to access closures data outside of the closure:
+    1.  asssign a value or name to closure
+    2. From the closure, return an object with all the prop and methods, which need to be accessable outside of closure
+    3. Access the closure data outside of it, through the closure name

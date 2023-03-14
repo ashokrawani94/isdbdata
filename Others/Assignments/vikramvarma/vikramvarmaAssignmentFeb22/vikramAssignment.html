@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Employee Pay-slip</title>
+    <link
+      rel="stylesheet"
+      href="../vikramvarmaAssignmentFeb22/vikramAssignment.css"
+    />
+  </head>
+  <body>
+    <div class="head">Employee Pay Slip</div>
+    <div class="inputDetails">
+      <ul>
+        <li>Employee Name: <input type="text" name="" id="ename" /></li>
+        <li>Employee Age: <input type="text" name="" id="eage" /></li>
+        <li>
+          Employee Gender:
+          <input type="radio" name="gender" id="egender" value="male" />Male
+          <input type="radio" name="gender" id="egender" value="female" />Female
+        </li>
+        <li>Employee Salary: <input type="text" id="esalary" /></li>
+        <li>Employee Department: <input type="text" id="edpt" /></li>
+        <li>
+          languages Known:
+          <input type="checkbox" id="tel" value="Telugu" />Telugu
+          <input type="checkbox" id="hin" value="Hindi" />Hindi
+          <input type="checkbox" id="eng" value="English" />English
+        </li>
+        <li>
+          <input
+            type="button"
+            value="submit"
+            id="btn"
+            onclick="payslipGenerator()"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="payslipDetails">
+      <ul>
+        <li>Employee Name: <span id="dname"></span></li>
+        <li>Employee Age: <span id="dage"></span></li>
+        <li>Employee Gender: <span id="dgender"></span></li>
+        <li>Employee Department: <span id="dDpt"></span></li>
+        <li>Employee BasicSalary: <span id="dsalary"></span></li>
+        <li>Employee Total Tax: <span id="dtax"></span></li>
+        <li>Employee Total Salary: <span id="dtotal"></span></li>
+        <li>Employee Konwn Languages: <span id="dlang"></span></li>
+      </ul>
+    </div>
+  </body>
+  <script src="vikramAssignment.js"></script>
+</html>

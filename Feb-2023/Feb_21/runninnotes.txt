@@ -1,0 +1,16 @@
+Event handling 
+    Event - > any action happens on the page is called an event (cclick, dblclick, hover, focus, keypress, keydown.)
+
+    If we could invoke a job when a particular action happens on the page - its called evenbt handling
+
+
+    Predefined event attributes:\
+        onclick 
+        onmouseove
+        onfocus
+        onblur 
+        onchange
+         ... 
+         .. 
+         .. 
+         .. 

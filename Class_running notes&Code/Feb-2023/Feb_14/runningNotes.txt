@@ -1,0 +1,30 @@
+["Raj",'male', 20, [30, 40, 70, 33, 90]]
+
+JSON 
+     1. Its is capable of storing more than one value 
+     2. ITs stores hetrogns data 
+     3. it holds data in the form of key and value pairs
+
+
+var a = []; // array 
+
+var a = {}; // Object | Json 
+
+var data = {
+    key1 : value,
+    key2 : value,
+    key3: value
+
+    .. 
+    .. 
+    ...
+};
+
+var studentData = ["Raj",'male', 20, [30, 40, 70, 33, 90]]; // Array 
+
+var studentData = {
+    "sname" : "Raj",
+    "gender" : 'Male',
+    "age": 20,
+    'marks' : [30, 40, 70, 33, 90]
+};

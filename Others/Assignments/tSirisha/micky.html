@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>micky</title>
+    <style>
+        .eye{
+            background-color: black;
+            height: 9px;
+            width: 9px;
+            border-radius: 100px;
+            position:absolute;
+            z-index: 2;
+        }
+        .eyeround{
+            background-color:white;
+            border: 0.5px solid black;
+            height: 25px;
+            width: 14px;
+            border-radius: 100px;
+            position:absolute;
+            top:33%;
+            z-index: 3;
+        }
+
+        
+        .ear{
+            background-color: rgb(9, 9, 9);
+            height: 50px;
+            width: 50px;
+            border-radius: 500px;
+            position:absolute;
+
+        }
+        .ear1 {
+           
+            top:1%;
+            left:5%;   
+          }
+          .ear2 {
+            top:1%;
+            left:28%;   
+          }
+          .hair{
+            background-color: rgb(16, 16, 16);
+            height: 72px;
+            width: 65px;
+            border-radius: 500px;
+            border-bottom-left-radius: 600px;
+            position:absolute;
+            top:8%;
+
+          }
+        .hair1 {
+            
+           
+            left:8%;   
+          }
+        
+          .hair2 {
+           
+           
+            left:21%;   
+          }
+          .face{
+            background-color: rgb(225, 240, 159);
+            border-radius: 500px;
+            position:absolute;
+            z-index: 1;
+        }
+        .backface{
+            background-color: rgb(225, 240, 159);
+            
+            width: 55px;
+            border-radius: 500px;
+            position:absolute;
+            z-index: 1;
+            top:20%;
+        }
+    
+          .face1 {
+            height: 68px;
+            width: 65px;   
+            top:13%;
+            left:10%;   
+           
+          }
+          .face2{
+            height: 68px;
+            width: 65px;
+            top:13%;
+            left:20%;
+            
+          }
+          .face3{
+            height: 68px;
+           
+           left:11%;
+           
+         }
+         .face4{
+            height: 68px;
+          top:24%;
+           left:15%;
+           
+           
+         }
+          .chin {
+            background-color: rgba(225, 240, 159, 0.957);
+            height: 68px;
+            width: 68px;
+            border-radius: 500px;
+            position:absolute;
+            top:24%;
+            left:15%;   
+          }
+         
+          .eye1 {
+            
+            top:43%;
+            left:8%;
+            
+          }
+           .eye2 {
+                      
+              
+            top:43%;
+            left:5%;
+          }
+         
+          .circle2 {
+           
+            left:40%;
+            z-index: 10;
+          }
+         
+          .circle3 {
+            
+           
+          
+            left: 35px;
+            z-index: 2;
+          }
+          .nose {
+            background-color:black;
+            height: 10px;
+            width: 15px;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius:100px;
+            border-bottom-right-radius: 100px;
+            position:absolute;
+            top:40%;
+            left:38%;
+            z-index: 3;
+          }
+          .nosecover{
+            background-color: rgb(225, 240, 159);
+            height: 20px;
+            width: 15px;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius:100px;
+            border-bottom-right-radius: 100px;
+            position:absolute;
+          }
+          .nose1 {
+            
+            top:35%;
+            left:15%;
+            z-index: 3;
+          }
+          .nose2 {
+            
+            top:35%;
+            left:67%;
+            z-index: 3;
+          }
+          .mouth {
+            background-color: rgb(4, 4, 4);
+            height: 25px;
+            width: 25px;
+            border-top-left-radius: 200px;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius:200px;
+            border-bottom-right-radius: 200px;
+            position:absolute;
+            top:58%;
+            left:31%;
+            z-index: 2;
+          }
+          .backmouth {
+            background-color: rgb(225, 240, 159);
+            height: 32px;
+            width: 40px;
+            border-radius: 200px;
+            border: .5px solid black;
+            
+            position:absolute;
+            top:28%;
+            left:20%;
+            z-index: 2;
+          }
+          .curve{
+            background-color: rgba(225, 240, 159, 0.017);
+            height: 8px;
+            width: 8px;
+            border-radius: 200px;
+            border: .5px solid black;
+            
+            position:absolute;
+          }
+          .curve1{
+           
+            top:62%;
+            left:21%;
+            z-index: 5;
+          }
+          .curve2{
+             
+            top:62%;
+            left:66%;
+            z-index: 5;
+          }
+          .curvecover{
+            background-color: rgb(225, 240, 159);
+            height: 7px;
+            width: 7px;
+            border-radius: 200px;
+          
+            
+            position:absolute;
+          }
+          .curvecover1{
+           
+           top:61%;
+           left:28%;
+           z-index: 5;
+         }
+         .curvecover2{
+           
+           top:68.5%;
+           left:20%;
+           z-index: 5;
+         }
+         .curvecover3{
+           
+           top:62%;
+           left:62%;
+           z-index: 6;
+         }
+         .curvecover4{
+           
+           top:70%;
+           left:69%;
+           z-index: 6;
+         }
+          .tongue{
+            background-color:red;
+            height: 8px;
+            width: 8px;
+            border-radius: 200px;
+            position:absolute;
+            top:65%;
+           
+          }
+          .tongue1 {
+            
+           
+            
+           
+            left:45%;
+            z-index: 3;
+          }
+          .tongue2 {
+           
+            
+           
+            left:18%;
+            z-index: 3;
+          }
+          .tongue3 {
+           
+            
+           top:70%;
+           left:33%;
+           z-index: 3;
+         }
+          .circle {
+        
+            left:20%;
+          }
+    </style>
+
+</head>
+<body>
+    <div class="ear ear1" > </div>
+    <div class="hair hair1" > </div>
+    <div class="face backface face3" > </div>
+    <div class="face face1" > 
+        <div class="eyeround circle2" > 
+            <div class=" eye eye1" > </div>
+        </div>
+        
+    </div>
+    <div class="ear ear2" > </div>
+    <div class="hair hair2" > </div>
+    <div class="face face2" > 
+        <div class="eyeround circle3" >
+            <div class=" eye eye2" > </div>
+        </div>
+    <div class="face backface face4" > </div>
+    </div>
+    <div class="chin " >
+        <div class="nose " ></div>
+        <div class=" nosecover nose1 " ></div>
+        <div class=" nosecover nose2 " ></div>
+        <div class="curve curve1" ></div>
+        <div class="curvecover curvecover1" ></div>
+        <div class="curvecover curvecover2" ></div>
+        <div class="curvecover curvecover3" ></div>
+        <div class="curvecover curvecover4" ></div>
+        <div class="curve curve2" ></div>
+        <div class="mouth " >
+            <div class="tongue tongue1 " ></div>
+            <div class="tongue tongue2 " ></div>
+            <div class="tongue tongue3 " ></div>
+        </div>
+        <div class="backmouth " ></div>
+    </div>
+</body>
+</html>

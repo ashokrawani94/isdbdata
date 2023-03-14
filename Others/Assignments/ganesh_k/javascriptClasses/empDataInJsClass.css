@@ -1,0 +1,86 @@
+h2{
+    border: 2px solid ;
+    padding: 10px;
+    text-align: center;
+    color: blueviolet;
+    background-color: yellow;
+}
+#dataentercontainer{
+    border: 2px solid;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 350px;
+    height: 550px;
+    background-color: azure;
+
+}
+#dataentercontainer > li{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+.titleofemp{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: antiquewhite;
+    color:red;
+}
+label{
+    font-weight: bolder;
+    font-style: italic;
+}
+#getDetails{
+    position: relative;
+    left: 210px;
+    padding: 10px;
+    margin: 5px;
+    background-color: blue;
+    color: aqua;
+    width: 100px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+#salaryData{
+    border: 2px solid;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 350px;
+    background-color: azure;
+
+}
+#salaryData > li{
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+
+}
+#salaryshow{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    background-color: antiquewhite;
+}
+span{
+color: blue;
+}
+input{
+    color: red;
+}
+body{
+    background-color:aquamarine;
+}

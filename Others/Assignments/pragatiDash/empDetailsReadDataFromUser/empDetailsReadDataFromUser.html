@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Generating Payslip of Employees Through Reading Data From User
+    </title>
+    <link rel="stylesheet" href="emp.css" />
+    <script src="emp.js"></script>
+  </head>
+  <body>
+    <h3>Employee Details - Pay Slip Generator</h3>
+    <ul class="formContainer">
+      <li>Employee Name: <input type="text" id="ename" /></li>
+      <li>
+        Gender:
+        <input type="radio" name="gender" value="Male" />Male
+        <input type="radio" name="gender" value="Female" />Female
+      </li>
+      <li>Department: <input type="text" id="edept" /></li>
+      <li>Salary: <input type="text" id="esalary" /></li>
+      <li>
+        <input
+          type="button"
+          value="Generate Payslip"
+          onclick="readEmployeeDetails()"
+        />
+      </li>
+    </ul>
+
+    <ul class="paySlipContainer">
+      <li id="Payslip">Employee Payslip</li>
+      <li>
+        Employee Name:
+        <span id="empname"></span>
+      </li>
+      <li>
+        Gender:
+        <span id="empgender"></span>
+      </li>
+      <li>
+        Department:
+        <span id="empdept"></span>
+      </li>
+      <li>
+        Salary:
+        <span id="empsalary"></span>
+      </li>
+      <li>
+        Pf:
+        <span id="pf"></span>
+      </li>
+      <li>
+        Hra:
+        <span id="hra"></span>
+      </li>
+      <li>
+        Total Salary:
+        <span id="totalsalary"></span>
+      </li>
+      <li>
+        total Tax:
+        <span id="totaltax"></span>
+      </li>
+    </ul>
+  </body>
+</html>

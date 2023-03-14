@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details
+        </title>
+    </head>
+    <body>
+        <h2>Student Details</h2>
+        <script type="text/javascript">
+            
+            console.log('------STUDENT DETAILS-------') 
+            var sName= prompt("Enter student Name:");
+            sName=sName.toString(sName)
+            console.log('Student Name:' +sName);
+            var sAge= prompt("Enter student Age");
+            sAge=parseInt(sAge)
+            console.log('Student Age:' +sAge);
+            var sGender = prompt("Enter student Gender");
+            sGender=sGender.toString(sGender)
+            console.log('Gender:' +sGender);
+            console.log('Subject wise Marks:')
+            var Maths,Physics,Chemistry;
+            Maths=parseInt(Maths)
+            Maths=prompt("Enter Marks in Maths")
+            console.log('Maths:' +Maths);
+            Physics=parseInt(Physics)
+            Physics=prompt("Enter Marks in Physics")
+            console.log('Physics:' +Physics);
+            Chemistry=parseInt(Chemistry)
+            Chemistry=prompt("Enter Marks in Chemistry")
+            console.log('Chemistry:' +Chemistry);
+            var total= Maths+Physics+Chemistry
+            total= parseInt(Maths)+parseInt(Physics)+parseInt(Chemistry)
+            console.log('total marks:' +total);
+            var avg = (total/3);
+            avg=parseFloat(total/3)
+            console.log('Average:' +avg);
+
+        </script>
+        <h2>Employee Details</h2>
+        <script type="text/javascript">
+
+            console.log('------EMPLOYEE DETAILS------')
+            var empName= prompt("Enter Employee Name:");
+            empName=empName.toString(empName)
+            console.log('Employee Name:' +empName);
+            var empAge= prompt("Enter Employee Age");
+            empAge=parseInt(empAge)
+            console.log('Employee Age:' +empAge);
+            var empGender = prompt("Enter Employee Gender");
+            empGender=empGender.toString(empGender)
+            console.log('Employee Gender:' +empGender);
+            var empBasicpay = prompt("Enter Basic Pay");
+            empPf=parseInt((empBasicpay*14)/100)
+            console.log('Employee PF:' +empPf);
+            empHra=parseInt((empBasicpay*25)/100)
+            console.log('Employee HRA:' +empHra);
+            empTotalsalary=parseInt(empBasicpay)+parseInt(empPf)+parseInt(empHra)
+            console.log('Employee Total Salary:' +empTotalsalary);
+
+
+        </script>
+    </body>
+</html>

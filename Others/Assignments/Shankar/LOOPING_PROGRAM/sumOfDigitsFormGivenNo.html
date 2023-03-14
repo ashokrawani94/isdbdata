@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summatio of all digits for a given number</title>
+</head>
+<body>
+    <script>
+        var number= prompt("enter the mumber")
+        number = parseInt(number);
+        var reminder = 0, divident = 0;
+        var sum = 0;
+
+        while (parseInt(number)!=0){
+           reminder = number % 10; // findinf last digit number
+           number = parseInt(number / 10); //finding remaining digits
+           sum = sum + reminder; 
+        }
+        console.log("Summation of digits for " + number + " is " + sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentsDetails</title>
+</head>
+<body>
+    Students details here
+    <script>
+        var s_name=prompt("enter students name");
+        var s_age=prompt("Enter Students age");
+        var sgender=prompt("enter gender");
+        var sclass=prompt("students class");
+        var m1=prompt("enter mark1");
+        m1=parseInt(m1);
+        var m2=prompt("enter mark2");
+        m2=parseInt(m2);
+        var m3=prompt("enter mark3");
+        m3=parseInt(m3);
+        var total,average;
+        total=m1+m2+m3;
+        average=total/3;
+        console.log("---student details----");
+        console.log("studentname"+s_name);
+        console.log("age"+s_age);
+        console.log("gender"+sgender);
+        console.log("class"+sclass);
+        console.log("total of marks" +total);
+        console.log("average" +average);
+
+    </script>
+</body>
+</html>

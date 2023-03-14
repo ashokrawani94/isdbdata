@@ -1,0 +1,22 @@
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maincontainer{
+    border: 1px solid blue;
+    width: 400px;
+    height: 300px;
+}
+.studentTable{
+    width: 200px;
+    height: auto;
+    margin: 15px;
+}
+.studentDisplayform{
+    width: 300px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            function getSavingsAccountUpdte() {
+                console.log("About to retrive savings account details");
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                    resolve("Savings is done");
+                        console.log("Savings account info is done");
+                    }, 2000);
+                });
+            }
+
+            function getCreditCardBalanceDetails() {
+                console.log("starting Credit card processing");
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve("Credit is done");
+                        console.log("Credit Card process is done");
+                    }, 5000);
+                });
+            }
+
+            async function dojob() {
+                const slow = await getSavingsAccountUpdte();
+                console.log(slow); // 2. this runs 2 seconds after 1.
+
+                const fast = await getCreditCardBalanceDetails();
+                console.log(fast); // 3. this runs 3 seconds after 1.
+
+                console.log("settel the bill to customer")
+            }
+            dojob();
+        </script>
+    </body>
+</html>

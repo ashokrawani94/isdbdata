@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empdetails</title>
+</head>
+<body>
+        <script type="text/javascript">
+            var empName= prompt("Enter the Employee Name");
+            var empage= prompt("Enter the Employee Age");
+            var empdpt= prompt("Enter the Employee Department");
+            var basicSal= prompt("Enter the Employee Basicsalary");
+            var gender= prompt("Enter the Employee Gender");
+
+            basicSal = parseInt(basicSal);
+
+            var pf =(basicSal*12)/100;
+            var hra =(basicSal*25)/100;
+            var totalsal= basicSal+pf+hra;
+        
+            console.log("total salary =" + totalsal);
+            console.log("pf =" + pf);
+            console.log("hra =" + hra);
+           
+        
+            if (gender =='male'){
+                if (totalsal>=100000){
+                    var tax=(totalsal*15)/100;
+                console.log("tax ="+tax);
+                }else if(totalsal>=50000){
+                    var tax=(totalsal*10)/100;
+                    console.lpg("tax ="+tax);
+                }else if(totalsal>=25000){
+                    var tax=(totalsal*5)/100;
+                    console.log("tax ="+tax);  
+                }else{
+                    console.log("there is no tax");
+                    
+                }
+            }
+
+
+
+
+            if (gender =='female'){
+                if (totalsal>=100000){
+                    var tax=(totalsal*10)/100;
+                console.log("tax ="+tax);
+                }else if(totalsal>=50000){
+                    var tax=(totalsal*5)/100;
+                    console.log("tax ="+tax);
+                 
+                }else{
+                    console.log("there is no tax");
+
+                }
+            }
+      </script>
+</body>
+</html>

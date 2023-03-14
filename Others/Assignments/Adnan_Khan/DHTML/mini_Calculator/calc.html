@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        list-style: none;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid;
+      }
+      ul {
+        border: 1px solid;
+        width: 500px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li>Enter First value <input type="text" id="fval" /></li>
+      <li>Enter Second value <input type="text" id="sval" /></li>
+      <li>
+        Select Operation
+        <select id="Select">
+          <option >Add</option>
+          <option >Sub</option>
+          <option >Div</option>
+          <option >Mul</option>
+        </select>
+      </li>
+      <li><input type="button" value="Do Job" onclick="Calculation()" /></li>
+      <li id="result"></li>
+    </ul>
+    <script>
+        /*
+      // var first = document.querySelector("#fval").value;
+      // first = parseInt(first);
+      // var second = parseInt(document.querySelector('#sval').value);
+      // // second = parseInt(second);
+        
+      Also, it's worth noting that the values of "first" and "second" are extracted from the input fields outside the "Calculation" function. This means that the values will be extracted only once when the page loads and not updated when the user changes the input values. If the values of the input fields need to be updated dynamically, then they should be extracted inside the "Calculation" function.
+      */
+      var Calculation = () => {
+        var first = document.querySelector("#fval").value;
+        first = parseInt(first);
+        var second = parseInt(document.querySelector("#sval").value);
+        // second = parseInt(second);
+        var option = document.querySelector("#Select").value;
+        /*
+         It seems that the issue is with the condition in the if statement. The code uses the option.value property in the condition, which is not necessary since option already contains the selected value. So instead of using option.value == "Add", you can use option == "Add".
+        */
+        var result = 0;
+        if ((option == "Add")) {
+          result = first + second;
+        } else if (option == "Sub") {
+          result = first - second;
+        } else if (option == "Div") {
+          result = first / second;
+        } else {
+          result = first * second;
+        }
+
+        var showResult = document.querySelector("#result");
+        showResult.innerHTML = result;
+      };
+     
+    </script>
+  </body>
+</html>

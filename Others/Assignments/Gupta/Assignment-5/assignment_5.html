@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment_6</title>
+            <link rel="icon" type="image/png" href="images/logo.png">
+        <style>
+            .head{
+                border:2px solid none;
+                padding: 5px;
+                background-color: aquamarine;
+                color: blueviolet;
+                text-align: center;
+                font-size: xx-large;
+            }
+            .body{
+                border: 1px solid;
+                margin-top: 5px;
+                padding: 3px;
+                height: 500px;
+            }
+            .foot{
+                border: 2px solid none;
+                padding: 5px;
+                background-color: brown;
+                color: mediumspringgreen;
+                text-align: center;
+                font-size: x-large;
+                margin-top: 5px;
+            }
+            .left{
+                border:2px solid;
+                padding:5px;
+                margin: 5px;
+                width: 30%;
+                height: 475px;
+                float: left;
+
+            }
+            .merge{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .right{
+                border:2px solid;
+                padding:5px;
+                margin: 5px;
+                width: 66%;
+                height: 475px;
+                float: left;
+                overflow: auto;
+            }
+            .leftcontent li{
+                border:1px solid;
+                width:90%;
+                padding:9px;
+                margin:8px;
+                text-align: center;
+            }
+            .leftcontent{
+                list-style-type: none;
+                margin-left: 5px;
+                padding: 0;
+            }
+            .rightcontent>li{
+                border:1px solid;
+                width:95%;
+                padding:9px;
+                margin:8px;
+                height:100px;
+            }
+            .rightcontent{
+                list-style: none;
+                margin:0;
+                padding:0;
+            }
+           .img1{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 990px -9px;
+           }
+           .img2{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 879px -9px;
+           }
+           .img3{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 772px -31px;
+           }
+           .img4{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 664px -9px;
+           }
+           .img5{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 557px -10px;
+           }
+           .img6{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 448px -10px;
+           }
+           .img7{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 340px -10px;
+           }
+           .img8{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 232px -27px;
+           }
+           .img9{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 124px -14px;
+           }
+           .img10{
+            border:1px solid;
+            width:100px;
+            height:100px;
+            float:left;
+            background-image: url(images/sprting\ image.png);
+            background-position: 990px -9px;
+           }
+           .details{
+            float: left;
+            
+           }
+           .label{
+            width: 100px;
+            
+           }
+           .label, .content{
+            float:left
+           }
+           a{
+            text-decoration: none;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="head">Student Details</div>
+        <div class="body">
+                <ul class="merge">
+                    <li class="left">
+                        <ol class="leftcontent">
+                            <li><a href="#std1">Ramu</a></li>
+                            <li><a href="#std2">Aruna</a></li>
+                            <li><a href="#std3">Alekya</a></li>
+                            <li><a href="#std4">Athidi</a></li>
+                            <li><a href="#std5">Anasuya</a></li>
+                            <li><a href="#std6">Kajal</a></li>
+                            <li><a href="#std7">Supritha</a></li>
+                            <li><a href="#std8">sukanya</a></li>
+                            <li><a href="#std9">Rasi</a></li>
+                            <li><a href="#std10">Chakri</a></li>
+                        </ol>
+                    </li>
+                    <li class="right">
+                        <ol class="rightcontent">
+                            <li>
+                                <div class="img1"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std1"><div class="label">Name:</div> <div class="content">Ramu</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">10</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Hyderabad</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img2"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std2"><div class="label">Name:</div> <div class="content">Aruna</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">11</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Machilipatnam</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img3"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std3"><div class="label">Name:</div> <div class="content">Alekya</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">12</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Rajamandry</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img4"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std4"><div class="label">Name:</div> <div class="content">Athidi</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">9</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Visakhapatnam</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img5"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std5"><div class="label">Name:</div> <div class="content">Anasuya</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">10</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Ongol</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img6"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std6"><div class="label">Name:</div> <div class="content">Kajal</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">15</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Guntur</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img7"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std7"><div class="label">Name:</div> <div class="content">Supritha</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">12</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Tirupati</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img8"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std8"><div class="label">Name:</div> <div class="content">Sukanya</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">10</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Warangal</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img9"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std9"><div class="label">Name:</div> <div class="content">Rasi</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">11</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Hyderabad</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img10"></div>
+                                <div class="details">
+                                    <ul><br>
+                                        <li id="std10"><div class="label">Name:</div> <div class="content">Chakri</div></li>
+                                        <li><div class="label">Age:</div> <div class="content">11</div></li>
+                                        <li><div class="label">Location:</div> <div class="content">Vijayawada</div></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                
+        </div>
+        <div class="foot">@copyright2023</div>
+    </body>
+</html>

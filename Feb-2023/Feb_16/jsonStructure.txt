@@ -1,0 +1,37 @@
+Contact Details:
+    GENDER - snglevalue 
+
+    maritalstatus - 
+
+    profilepic - sinlevalue
+
+    name 
+        fname \
+        lname 
+        middle name 
+    contact No -> 
+        office: snglevalue 
+        prsnl : multiple  
+
+    address:
+        office 
+            buldingno. 
+            state 
+            officespace
+        prsnl
+            dno 
+            stateInfo
+                state code 
+                state name 
+            country 
+    emailID:
+        office - singleval 
+        prsnl - multiple
+
+    socialID 
+        twitter - 
+        linkd id -
+        fb id 
+    
+    
+    

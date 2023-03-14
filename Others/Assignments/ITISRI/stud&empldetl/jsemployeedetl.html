@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employeedetails</title>
+</head>
+<body>
+    Employee Details here
+
+    <script>
+        var empname=prompt("Enter employee name");
+        var empage=prompt("enter emp age");
+        var empdept=prompt("employee department");
+        var empsal=prompt("Enter eployee sal");
+        empsal=parseInt(empsal);
+        var pf=(20*empsal)/100;
+        var hra=(25*empsal)/100;
+        var totalsal=empsal+pf+hra;
+        console.log("ename"+empname);
+        console.log("emp age"+empage);
+        console.log("departname"+empdept);
+        console.log("enter basic salary"+empsal);
+        console.log("pf money is"+pf);
+        console.log("hra money is"+hra);
+        console.log("Total salary is" +totalsal);
+</script>
+</body>
+</html>

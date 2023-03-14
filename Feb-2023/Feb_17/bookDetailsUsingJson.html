@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating book details with json
+        </title>
+    </head>
+    <body>
+        <script>
+            var bookDetails = {
+                name: 'My Travel History',
+                price: 3000,
+                discountPercent: 10,
+                authors: ['ABC', 'PQR'],
+                displayBookDetails() {
+                    console.log("Book name " + this.name);
+                    console.log("Price  " + this.price);
+                    console.log("Authors " + this.authors);
+                    this.getPriceAfterDiscount();
+                },
+                getPriceAfterDiscount() {
+                    var priceAfterDiscount = (this.price * this.discountPercent) / 100;
+                    console.log("priceAfterDiscount " + priceAfterDiscount)
+                }
+            };
+            bookDetails.displayBookDetails();
+            
+
+        </script>
+    </body>
+</html>

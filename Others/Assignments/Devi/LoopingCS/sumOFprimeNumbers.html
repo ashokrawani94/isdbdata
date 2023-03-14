@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Prime Numbers</title>
+</head>
+<body>
+    <script>
+        var count=0, sum =0;
+        for(var i = 100; i >= 50; i--)
+        {
+            for(var j=2; j<i; j++)
+            {
+                if(i % 2 ==0){
+                    count++;
+                }
+
+            }
+            if(count==0){
+                console.log(i + "is a prime number");
+            }
+            count=0;
+            sum = sum + i;
+        }
+        console.log("sum of all prime numbers" +sum);
+
+    </script>
+    
+</body>
+</html>

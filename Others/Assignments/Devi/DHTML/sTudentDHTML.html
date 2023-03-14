@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Entry Form</title>
+    <link rel="stylesheet" href="sTudent.css">
+    <script src="sTudent.js"></script>
+</head>
+<body>
+    <div class="maincontainer">
+    <h4>Students Details Entry Form</h4>
+
+    <ul>
+        
+        <li>
+            Student Name :
+            <input type="text" id="sName">
+        </li>
+        <li>
+            Student Age :
+            <input type="text" id="sAge" maxlength="2">
+        </li>
+        <li>
+            Gender :
+            <input type="radio" id="male" name="Gender" value="Male">Male
+            <input type="radio" id="female" name="Gender" value="Female">Female    
+        </li>
+        <li>
+            Location :
+            <select id="location">
+                <option>Hyderabad</option>
+                <option>Visakhapatnam</option>
+                <option>Vijayawada</option>
+                <option>Odissa</option>
+                <option>Bheemavarm</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" id="add" value="Add" id="btn"  onclick="addvalues();">
+            <input type="button" id="res" value="reset">
+        </li>
+    </ul>
+    <li class="studentDisplayform">
+        <ul>
+            <li>
+                <h2 style="color: darkmagenta;">Student Details Display Form</h2>
+            <li>
+                <table id="studentTable" border="1" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Gender</td>
+                        <td>Location</td>
+                        <td>Operation</td>        
+                    </tr>
+                </table>
+            </li>
+            </li>
+        </ul>    
+    </li>
+    </div>
+    
+</body>
+</html>

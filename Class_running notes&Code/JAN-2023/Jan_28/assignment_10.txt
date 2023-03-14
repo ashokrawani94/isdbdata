@@ -1,0 +1,25 @@
+total tax
+    male employeess
+        total sal is > 100000
+            tax is 15 % of total sal
+
+        totalsal >= 50000
+
+            tax is 10 %
+
+        total sal >= 25000
+            tax is 5%
+
+        else 
+            tax is zero
+
+
+    female employeess
+        total sal is > 100000
+            tax is 10 %
+
+        totalsal >= 50000
+
+            tax is 5 %
+        else 
+            tax is zero

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       h2{
+        text-align: center;
+        color: red;
+        text-transform: capitalize;
+       }
+
+       .div1{
+        display: flex;
+        /*width: 600px; */
+        height: auto;
+       }
+       
+       .img1{
+        margin-left: 800px;
+       }
+
+       .name{
+        margin: 60px;
+        margin-left: 10px;
+        width: 400px;
+       }
+       </style>
+</head>
+<body>
+    <div>
+        <h2>Students details</h2>
+    </div>
+    <hr style="color: red;">
+    <div class="div1">
+        <div class="name">
+            Name : Yashwant Rao <br>
+            Age : 22 yr <br>
+            Gender : Male <br> 
+            Location : Delhi <br>
+        </div>
+        <div class="img1">
+            <img src="https://media.istockphoto.com/photos/smiling-indian-man-looking-at-camera-picture-id1270067126?b=1&k=20&m=1270067126&s=612x612&w=0&h=tcabRaVlA0bsZhWCDBXxC1IYuGnh7_VuramO-vJ5jRs=" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+    <div class="div1">
+        <div class="name">
+            Name : Neelu <br>
+            Age : 24 yr <br>
+            Gender : Female <br> 
+            Location : Faridabad <br>
+        </div>
+        <div class="img1">
+            <img src="data:image/jpeg;base64,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" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+    <div class="div1">
+        <div class="name">
+            Name : Deepak <br>
+            Age : 21 yr <br>
+            Gender : Male <br> 
+            Location : Delhi <br>
+        </div>
+        <div class="img1">
+            <img src="data:image/jpeg;base64,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" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+    <div class="div1">
+        <div class="name">
+            Name : Shivu <br>
+            Age : 23 yr <br>
+            Gender : Male <br> 
+            Location : Delhi <br>
+        </div>
+        <div class="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMGJQXYDZbgG2rI9VeockZKpcuw_kfjs0ZeQ&usqp=CAU" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+    <div class="div1">
+        <div class="name">
+            Name : Aman Singhania <br>
+            Age : 20 yr <br>
+            Gender : Male <br> 
+            Location : Bareilly <br>
+        </div>
+        <div class="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddMIBWCb8CwhDXje_Qtrw6Sp3lyLpDal0JA&usqp=CAU" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+    <div class="div1">
+        <div class="name">
+            Name : Ajeet <br>
+            Age : 18 yr <br>
+            Gender : Male <br> 
+            Location : Delhi <br>
+        </div>
+        <div class="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqzIPl6XGaOJtfBoUo7GaUnTPq-8YZADTOQ&usqp=CAU" alt="image" height="150px" width="150px">
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mydate= new Date("2023-02-14");
+        console.log(mydate);
+        var months=["jan","feb","mar","Apr","May","jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var newmonths=["January","February","March","April","May","JUN"]
+        var weeks=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var newweek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var monthName=months[mydate.getMonth()];
+        var newmonthName=newmonths[mydate.getMonth()];
+        var weekname=weeks[mydate.getDay()];
+        var newweek=newweek[mydate.getDay()];
+        //14/feb/2023
+        var mycustmFormat=mydate.getDate()+' '+'/'+monthName +' '+'/'+mydate.getFullYear();
+        console.log(mycustmFormat);
+        //14th feb,2023
+        var mycustmFormat=mydate.getDate()+'th'+' '+monthName +' ,'+ mydate.getFullYear();
+        console.log(mycustmFormat);
+        //14th February,2023
+        var mycustmFormat=mydate.getDate()+'th'+' '+newmonthName+','+ mydate.getFullYear();
+        console.log(mycustmFormat);
+        //Tue,14th,feb
+        var mycustmFormat=weekname +',' +mydate.getDate() +'th'+','+monthName;
+        console.log(mycustmFormat);
+        //Tuesday,14th February 2023
+        var mycustmFormat=newweek+','+mydate.getDate()+'th'+' '  +newmonthName+mydate.getFullYear();
+        console.log(mycustmFormat);
+        //14-feb-2023
+        var mycustmFormat=mydate.getDate()+'-'+monthName+'-'+mydate.getFullYear();
+        console.log(mycustmFormat);
+        //14-02-2023
+        var mycustmFormat=mydate.getDate()+'-'+(mydate.getMonth()+1)+'-'+mydate.getFullYear();
+        console.log(mycustmFormat);
+        //14th Feb ,2023 10:20:30
+        var mycustmFormat=mydate.getDate()+'th'+ ' '  +monthName+''+ mydate.getSeconds()+'sec';
+        console.log(mycustmFormat);
+        //10min:20 sec
+        var mycustmFormat=mydate.getMinutes()+'min'+':'+ mydate.getSeconds()+'sec';
+        console.log(mycustmFormat);
+        //2hrs,10min 20sec
+        var mycustmFormat=mydate.getHours()+','+mydate.getMinutes()+ 'min' + mydate.getSeconds()+' ' +'sec';
+        console.log(mycustmFormat);
+
+    </script>
+</body>
+</html>

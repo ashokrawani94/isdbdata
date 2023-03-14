@@ -1,0 +1,46 @@
+argument
+
+function abc() {
+    argument [10, 20, 30]
+}
+
+abc(10, 20, 30)
+---------------------------------------
+
+function addValues(a, b) {
+    ...
+}
+
+function addValues(a, b, c) {
+    ... 
+    ...
+}
+
+function addValues() {
+    ...
+    ...
+}
+
+addValues(10, 20);
+
+addValues(10, 20, 30);
+
+addValues()
+
+addValues(1, 2, 3, 4);
+
+-----------------
+
+Javascript strings:
+
+    ASCII
+        a -> 97
+
+        z - > 122
+    
+
+        A - 65
+        ..
+        Z -> 90
+
+        

@@ -1,0 +1,29 @@
+li {
+  list-style: none;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid rgba(161, 161, 240, 0.54);
+}
+.head {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid;
+  text-align: center;
+}
+.inputDetails {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: 2px solid;
+  width: 500px;
+}
+.payslipDetails {
+  display: none;
+  margin: 10px auto;
+  padding: 5px;
+  border: 2px solid;
+  width: 500px;
+  position: absolute;
+  top: 39px;
+  left: 511px;
+}

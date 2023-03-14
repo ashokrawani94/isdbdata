@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <style>
+        h2 {
+            border: 2px solid;
+            border-right-color: red;
+            border-left-color: chocolate;
+            border-bottom-color: aqua;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            background-image: radial-gradient(red, yellow, aqua)
+        }
+
+        .contener {
+            border: 2px solid;
+            background-color: chocolate;
+
+
+        }
+
+        .con {
+            border: 1px solid;
+            height: 200px;
+            margin: 20px;
+
+
+        }
+
+        .come {
+            border: 1px solid;
+            height: 200px;
+            margin: 20px;
+
+        }
+
+        .assi {
+            border: 1px solid;
+            height: 250px;
+            margin: 20px;
+
+        }
+
+        .block {
+            border: 1px solid;
+            height: 400px;
+            margin: 20px;
+        }
+
+        .bod {
+            border: 2px solid;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            background-image: radial-gradient(red, yellow, aqua)
+        }
+
+        .block1 {
+            border: 2px solid;
+            height: 30px;
+            width: 150px;
+        }
+
+        .account {
+            position: relative;
+            top: -26px;
+            left: 61px;
+
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .come2 {
+            position: relative;
+            left: 61px;
+            top: -27px;
+        }
+
+        .addr {
+            position: relative;
+            left: 61px;
+            top: -26px;
+        }
+
+        .about {
+            position: relative;
+            left: 61px;
+            top: -10px;
+        }
+
+        .age {
+            position: relative;
+            left: 33px;
+            top: 6px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+
+        .email {
+            position: relative;
+            left: -14px;
+            top: 42px;
+            font-size: x-large;
+            font: bold;
+
+        }
+
+        .accountid {
+            position: relative;
+            left: 671px;
+            top: -108px;
+            font-size: x-large;
+            font: bold;
+
+        }
+
+        .gen {
+            position: relative;
+            left: 3px;
+            top: 23px;
+            font-size: x-large;
+            font: bold;
+
+        }
+
+        .name {
+            position: relative;
+            left: 17px;
+            top: -11px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .type {
+            position: relative;
+            left: 650px;
+            top: -70px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .Qualification {
+            position: relative;
+            left: 53px;
+            top: -3px;
+            font-size: x-large;
+            font: bold;
+
+
+
+
+        }
+
+        .Languages {
+            position: relative;
+            left: -4px;
+            top: 38px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .Course {
+            position: relative;
+            left: -3px;
+            top: 62px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .College {
+            position: relative;
+            left: 663px;
+            top: -69px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .Location {
+            position: relative;
+            left: 715px;
+            top: -33px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .Dno {
+            position: relative;
+            left: 90px;
+            top: 6px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .StreetName {
+            position: relative;
+            left: 22px;
+            top: 30px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .State {
+            position: relative;
+            left: 23px;
+            top: 56px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+
+        .Code {
+            position: relative;
+            left: 26px;
+            top: 87px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+
+        .Country {
+            position: relative;
+            left: 682px;
+            top: -88px;
+            font-size: x-large;
+            font: bold;
+
+
+
+        }
+
+        .CountryCode {
+            position: relative;
+            left: 687px;
+            top: -48px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+
+        .Register {
+            position: relative;
+            left: 1190px;
+            top: -15px;
+            font-size: x-large;
+            font: bold;
+
+        }
+
+        .About {
+            position: relative;
+            left: 150px;
+            top: -33px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+
+        .self {
+            position: relative;
+            left: 10px;
+            top: 10px;
+            font-size: x-large;
+            font: bold;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student Registration Page</h2>
+    <div class="contener">
+        <form action="">
+            <div class="con">
+
+                <ol>
+                    <li class="account">
+                        <input type="text" value="Account Details" required>
+                    </li>
+                    <div class="name">
+                        <label for="">Name :</label>
+                        <input type="texe" name="Name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="age">
+                        <label> Age :</label>
+
+                        <input type="number" name="Age" size="2" required>
+
+                    </div>
+                    <div class="gen">
+                        <label for="">Gender :</label>
+                        <input type="radio" name="gend">Male
+                        <input type="radio" name="gend">Female
+                    </div>
+                    <div class="email">
+                        <label>Email ID :</label>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="accountid">
+                        <label for="">Account ID :</label>
+                        <input type="text" name="account" placeholder="Enter Account " required>
+                    </div>
+                    <div class="type">
+                        <label for="">Account Type :</label>
+                        <select>
+                            <option></option>
+                            <option>Current Account</option>
+                            <option>Saving Account</option>
+                            <option>NRI Account</option>
+
+
+
+                        </select>
+                    </div>
+                </ol>
+
+
+            </div>
+            <div class="come">
+
+                <ol>
+                    <li class="come2">
+                        <input type="text" value="Education Details" required>
+                    </li>
+                    <div class="Qualification">
+                        <label>Qualification :</label>
+                        <select>
+                            <option></option>
+                            <option>B.Tec</option>
+                            <option>B.A</option>
+                            <option>M.A</option>
+                        </select>
+                    </div>
+                    <div class="Languages">
+                        <label>Languages Known :</label>
+                        <input type="radio">Hindi
+                        <input type="radio">English
+
+                    </div>
+                    <div class="Course">
+                        <label for="">Course Opting For :</label>
+                        <select>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+
+                    </div>
+                    <div class="College">
+                        <label for="">College Name :</label>
+                        <input type="text" name="College Name" required>
+                    </div>
+                    <div class="Location">
+                        <label for="">Location :</label>
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option>U.P</option>
+                            <option>Dilhi</option>
+                            <option>M.P</option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+                </ol>
+
+
+            </div>
+            <div class="assi">
+
+                <ol>
+                    <li class="addr">
+                        <input type="text" value="Address" required>
+                    </li>
+                    <div class="Dno">
+                        <label for="">Dno :</label>
+                        <input type="text" name="Dno" required>
+
+                    </div>
+                    <div class="StreetName">
+                        <label for="">StreetName :</label>
+                        <input type="text" name="streetname" required>
+                    </div>
+                    <div class="State">
+                        <label for="">State Name :</label>
+                        <input type="text" name="statename" required>
+
+                    </div>
+                    <div class="Code">
+                        <label for="">State Code :</label>
+                        <input type="number" name="state code" required>
+
+                    </div>
+                    <div class="Country">
+                        <label for="">Country Name :</label>
+                        <input type="text" name="Countryname" required>
+                    </div>
+                    <div class="CountryCode">
+                        <label>Country Code :</label>
+                        <input type="number" name="countrycode" required>
+                    </div>
+                </ol>
+
+
+            </div>
+            <div class="block">
+
+                <li class="about">
+                    <input type="text" value="About urself" required>
+                </li>
+                <div class="self"><Label>About ur self</Label></div>
+                <div class="About">
+
+                    <textarea name="About ur self" id="" cols="150" rows="21" required></textarea>
+                </div>
+                <div class="Register">
+                    <button type="submit">Register</button>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="bod">@Copy right 2023</div>
+    </footer>
+</body>
+
+</html>

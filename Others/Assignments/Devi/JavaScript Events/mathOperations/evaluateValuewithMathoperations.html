@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations through Input type</title>
+    <link rel="stylesheet" href="math.css">
+    <script src="math.js"></script>
+</head>
+<body>
+    <h3>Math Operations</h3>
+    <ul>
+        <li>
+            enter first value:
+            <input type="text" id="fval">
+
+        </li>
+        <li>
+            enter second value:
+            <input type="text" id="sval">
+
+        </li>
+        <li>
+            select an operation:
+            <select id="userOption">
+                <option>Addition</option>
+                <option>Substraction</option>
+                <option>Multiplication</option>
+                <option>Division</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" value="Submit" onclick="getValue();">
+        </li>
+        <li>
+            <span id="result1"></span>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

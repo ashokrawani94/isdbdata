@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Data From User</title>
+    <style>
+      ul {
+        border: 1px solid;
+        margin: 30px auto;
+        padding: 10px;
+        width: 500px;
+      }
+      li {
+        list-style: none;
+        border: 1px solid #c712df;
+        margin: 5px;
+        padding: 5px;
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Enter firstValue :<input type="text" id="firstval" /></li>
+      <li>Enter secondValue :<input type="text" id="secondval" /></li>
+      <li>
+        Select Operation :
+        <select id="useroption">
+          <option>Add</option>
+          <option>Div</option>
+          <option>Mul</option>
+          <option>Sub</option>
+        </select>
+      </li>
+      <li>
+        <input type="button" value="Calculate" onclick="Calculate()" />
+      </li>
+      <li>Calculated Value is : <span id="res"></span></li>
+    </ul>
+
+    <script>
+      var Calculate = () => {
+        var fval = document.querySelector("#firstval").value;
+        fval = parseInt(fval);
+        var sval = document.querySelector("#secondval").value;
+        sval = parseInt(sval);
+        var operation = document.querySelector("#useroption").value;
+        var result;
+
+        switch (operation) {
+          case "Add":
+            result = fval + sval;
+            break;
+          case "Div":
+            result = fval / sval;
+            break;
+          case "Mul":
+            result = fval * sval;
+            break;
+          case "Sub":
+            result = fval - sval;
+            break;
+          default:
+            result = "Wrong Input";
+        }
+
+        document.querySelector("#res").innerHTML = result;
+      };
+    </script>
+  </body>
+</html>

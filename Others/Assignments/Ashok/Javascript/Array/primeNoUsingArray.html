@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Number</title>
+    </head>
+    <body>
+        <h3>showing all prime number within array</h3>
+        <script>
+            var temp = 0, m= 0;
+            var arrayLength = prompt("enter the Size of Array");
+            arrayLength = parseInt(arrayLength);
+            var arrayData = [];
+            var primeNoArray = [];
+            //creat dynamic loop Array.
+            for(var i = 0; i < arrayLength; i++){
+                arrayData[i] = prompt("enter the values at position "+ i);
+                arrayData[i] = parseInt(arrayData[i]);
+            }
+            console.log(arrayData);
+            //End of loop here.
+
+            //Loop to catch Array data.
+            for(var j = 0; j < arrayData.length; j++){
+                //Loop to check whether the number is prime number or not.
+                for(i = 2; i < arrayData[j]; i++){
+                    if(arrayData[j] % i == 0){
+                        temp++;
+                    }
+                }
+                if(temp == 0){
+                    primeNoArray[m] = arrayData[j];
+                    m++;
+                }
+                temp = 0;
+            }
+            console.log(primeNoArray);
+
+            
+        </script>
+    </body>
+
+</html>

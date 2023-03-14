@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validating User Input Data</title>
+    <link rel="stylesheet" href="validatingData.css" />
+  </head>
+  <body>
+    <ul>
+      <li id="accDetails">Account Details</li>
+
+      <li>
+        Account Name:
+        <input
+          type="text"
+          id="accName"
+          onkeypress="return validateAccName(event)"
+        />
+        <div class="error actNameError">
+          User Account is Mandate. Must contain Characters without spaces.
+        </div>
+      </li>
+
+      <li>
+        Account Number:
+        <input
+          type="text"
+          id="accNumber"
+          onkeypress="return validateAccNumber(event)"
+        />
+        <div class="error actNumberError">
+          Account No. must be of 10 numbers
+        </div>
+      </li>
+
+      <li>
+        Account Password:
+        <input type="password" id="accPwd" />
+        <div class="error actPwdError">
+          Password Rules not matching
+          <span id="condition condtn1">Total Password Length should be 8</span>
+          <div></div>
+          <span id="condition condtn2">First Letter Should Be Upper Case</span>
+          <div></div>
+          <span id="condition condtn3"> Minimum 3 characters required</span>
+          <div></div>
+          <span id="condition condtn4">Minimum 2 symbols required</span>
+          <div></div>
+          <span id="condition condtn5"> Should have min one number</span>
+          <div></div>
+          <span id="condition condtn6"> Should not end with number</span>
+        </div>
+      </li>
+
+      <li>
+        ReEnter Password:
+        <input type="password" id="resetPwd" />
+        <div class="error rActPwdError">Password not matching</div>
+      </li>
+
+      <li class="submitbtn">
+        <input
+          type="button"
+          value="Submit"
+          id="subbtn"
+          onclick="validateAccPwd();validateAccountDetails()"
+        />
+      </li>
+    </ul>
+    <script src="validatingData.js"></script>
+  </body>
+</html>

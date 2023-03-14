@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating ul and ol tag
+        </title>
+        <style>
+            /* li {
+                list-style-type: upper-roman;
+            } */
+            .subitem li {
+                list-style-type: upper-roman;
+            }
+            li {
+                
+                width: 150px;
+                margin: 5px;
+                padding: 5px;
+                
+            }
+            li::marker {
+                color: aliceblue;
+            }
+
+            .item1::marker {
+                color: green;
+            }
+            .item2::marker {
+                color: red;
+            }
+
+            .block1 li {
+                border: 1px solid;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+                list-style-position: inside;
+                list-style-type: square;
+            }
+            .block2 li {
+                border: 1px solid;
+                width: 100px;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Employee Names</h3>
+        <ol>
+            <li>
+                Raj
+                <ol class="subitem">
+                    <li>Maths - 50</li>
+                    <li>Science - 50</li>
+                    <li>Computers - 50</li>
+                </ol>
+
+                </ol>
+            </li>
+            <li>Teena</li>
+            <li>Krish</li>
+            <li>ABC </li>
+            <li>Ramesh</li>
+        </ol>
+        <div class="footer">Footers</div>
+        <h3>Student Names</h3>
+        <ul>
+            <li>Student _ Teena</li>
+            <li>Student _ PQR</li>
+            <li>Student _ Meena</li>
+            <li>Student _ Ali</li>
+        </ul>
+        <hr>
+
+        <ul class="block1">
+            <li class="item1">ITem 1</li>
+            <li class="item2">ITem 1</li>
+            <li>ITem 1</li>
+            <li>ITem 1</li>
+
+        </ul>
+
+        <ol class="block2">
+            <li>ITem 1</li>
+            <li>ITem 1</li>
+            <li>ITem 1</li>
+            <li>ITem 1</li>
+
+        </ol>
+
+        <div>
+            <span>Helllo2</span>
+            <span>Helllo1</span>
+        </div>
+    </body>
+</html>

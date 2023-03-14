@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date object in javascript using some predefined  methods</title>
+</head>
+<body>
+    <script>
+        var mydate = new Date();
+        console.log("current date : "+mydate);
+
+        var mydate12 = new Date("10-jan-2022, 10:20:05 ");
+        console.log("user given date : "+mydate12);
+
+        console.log("-------->current date changes different format<-----------");
+
+        var months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+        var monthName = months[mydate.getMonth()];
+        var week = ["sun","mon","tue","wed","thu","fri","sat"];
+        var dayName =week[mydate.getDay()];
+
+        var months1 = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+        var monthNamefull = months1[mydate.getMonth()];
+        var week1 = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+        var dayNamefull =week1[mydate.getDay()];
+
+        var changeFormat1 = mydate.getDate()+'/'+monthName+'/'+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat1);
+        alert(" ->the change format is : "+changeFormat1);
+
+        var changeFormat = mydate.getDate()+'th'+' '+monthName+','+" "+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getDate()+'th'+' '+monthNamefull+','+" "+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the chenge format is : "+changeFormat);
+
+        var changeFormat = dayName+','+' '+mydate.getDate()+"th"+' '+monthName;
+        console.log(" ->the chenge format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = dayNamefull+','+' '+mydate.getDate()+'th'+' '+monthNamefull+' '+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getDate()+'-'+monthName+'-'+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getDate()+'-'+(mydate.getMonth()+1)+'-'+mydate.getFullYear();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getDate()+'th'+' '+monthName+','+' '+mydate.getFullYear()+' '+mydate.getHours()+':'+mydate.getMinutes()+':'+mydate.getSeconds();
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getMinutes()+'minutes'+':'+mydate.getSeconds()+'seconds';
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+        var changeFormat = mydate.getHours()+'hours'+','+' '+mydate.getMinutes()+'minutes'+','+' '+mydate.getSeconds()+'seconds';
+        console.log(" ->the change format is : "+changeFormat);
+        alert(" ->the change format is : "+changeFormat);
+
+    </script>
+</body>
+</html>

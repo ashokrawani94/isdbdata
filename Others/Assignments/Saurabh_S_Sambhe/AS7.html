@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .header, .footer{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+            width: 1320px;
+            height: 30px;
+        }
+        .maincontainer{
+            border:1px solid black;
+            margin: 5px;
+            padding: 5px;
+            width: 1320px;
+            height: 520px;
+        }
+        .box{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+           background-color: aqua;
+           top: 10px;
+           left: 10px;
+           position: relative;
+           z-index: 2;
+
+        }
+        .box2{
+           background-color: yellow;
+           top: 120px;
+           left: 80px;
+           position: absolute;
+           z-index: 1;
+        }
+        .box3{
+           background-color: violet; 
+           position: absolute;
+           top: 120px;
+           right: 100px;
+           z-index: 1;
+        }
+        .box4{
+          background-color: brown; 
+          position:absolute; 
+          top: 70px;
+          right: 40px;
+          z-index: 2;
+        }
+        .box5{
+          background-color: crimson; 
+          position: absolute;
+          bottom: 120px; 
+          right: 80px;
+          z-index: 1;
+        }
+        .box6{
+           background-color: purple;
+           position: absolute;
+           bottom: 70px;
+           right: 40px;
+           z-index: 2;
+        }
+        .box7{
+           background-color: orange;
+           position: absolute;
+           bottom: 120px;
+           left: 80px;
+           z-index: 1;
+        }
+        .box8{
+            background-color:lawngreen;
+            position: absolute;
+            bottom: 70px;
+            left: 30px;
+            z-index: 2;
+        }
+        .box9{
+            background-color:darkblue;
+            position:absolute;
+            top: 250px;
+            left: 620px;
+            z-index: 2;
+        }
+        .box10{
+            background-color:gold;
+            position: absolute;
+            top: 200px;
+            left: 560px;
+            z-index: 1;
+        }
+        .box11{
+            background-color: green;
+            position: absolute;
+            bottom: 220px;
+            left: 560px;
+            z-index: 1;
+        }
+        .box12{
+           background-color: pink;
+           position: absolute;
+           top: 200px;
+           right: 580px;
+           z-index: 1;
+        }
+        .box13{
+           background-color: khaki;
+           position: absolute;
+           bottom: 220px;
+           right: 580px;
+           z-index: 1;
+        }
+    </style>
+</head>
+<body>
+   <div class="header">BLOCK GAME</div>
+    <div class="maincontainer">
+        <div class=" box box1"></div>
+        <div class=" box box2"></div>
+        <div class=" box box3"></div>
+        <div class=" box box4"></div>
+        <div class=" box box5"></div>
+        <div class=" box box6"></div>
+        <div class=" box box7"></div>
+        <div class=" box box8"></div>
+        <div class=" box box9"></div>
+        <div class=" box box10"></div>
+        <div class=" box box11"></div>
+        <div class=" box box12"></div>
+        <div class=" box box13"></div>
+    </div>
+    <div class="footer">@copyrights 2023</div>
+</body>
+</html>

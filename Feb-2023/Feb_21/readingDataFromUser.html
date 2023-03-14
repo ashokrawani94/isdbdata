@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating Reading Data from user
+        </title>
+        <style>
+            ul {
+                border: 1px solid;
+                margin: 40px auto;
+                padding: 10px;
+                width: 500px;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                Enter First value: 
+                <input type="text" id="fval">
+            </li>
+            <li>
+                Enter Second value: 
+                <input type="text" id="sval">
+            </li>
+            
+            <li>
+                Select Operation:
+                <select id="userOption">
+                    <option>Add</option>
+                    <option>Div</option>
+                    <option>Sub</option>
+                    <option>Mul</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="Do Job" onclick="doAddition()">
+            </li>
+            <li>
+                The sum of values is : <span id="rblock"></span>
+            </li>
+        </ul>
+        <script>
+            // var a1 = prompt("enter first value");
+            // var a2 = prompt("Enter second value");
+            // a1 = parseInt(a1);
+            // a2 = parseInt(a2);
+            // var result = a1 + a2; 
+            // console.log("The sum of values is " + result);
+
+            var doAddition = () => {
+               var a1 = document.querySelector("#fval").value;
+               a1 = parseInt(a1);
+               var a2 = document.querySelector("#sval").value;
+               a2 = parseInt(a2);
+               var result = a1 + a2;
+               document.querySelector("#rblock").innerHTML = result;
+            }
+
+            //doAddition();
+        </script>
+    </body>
+</html>

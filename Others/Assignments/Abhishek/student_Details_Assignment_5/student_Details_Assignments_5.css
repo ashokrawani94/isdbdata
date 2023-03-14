@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    
+}
+/************** container part **************/
+.container{
+    padding: 10px;
+    margin: 0 5% 0 5%;
+    width: 90%;
+    position: relative;
+}
+/************** header part **************/
+.header{
+    padding: 20px 0px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+/************** section part **************/
+.section{
+    width: 100%;
+    height: 750px;
+    padding: 10px;
+    margin: 5px 0;
+    align-content: space-between;
+    border: 2px solid black;
+}
+.box_1{
+    width: 40%;
+    height: 730px;
+    padding: 10px;
+    float: left;
+    border: 2px solid black;
+}
+.box_2{
+    width: 59%;
+    height: 730px;
+    padding: 10px;
+    float: right;
+    border: 2px solid black;
+}
+.head{
+    width: 100%;
+    height: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+.box_1 .list{
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    margin: 5% 10% 5% 10%;
+    height: fit-content;
+    border: 2px solid black;
+
+}
+.box_2 .list_2{
+    width: 100%;
+    height: 125px;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+.box_2 .img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -170px 320px;
+    background-size: 275px;
+}
+.box_2 .img_2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -170px 320px;
+    background-size: 275px;
+}
+.box_2 .img_3{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -170px 320px;
+    background-size: 275px;
+}
+.box_2 .img_4{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid black;
+    background: url(MergedImages.png);
+    background-position: -170px 320px;
+    background-size: 275px;
+}
+.box_2 .list_2 .details{
+    width: 60%;
+    float: left;
+    margin-top: 17px;
+
+}
+.box_2 .details .two{
+    padding-left: 5px;
+
+}
+/************** footer part **************/
+.footer{
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+}

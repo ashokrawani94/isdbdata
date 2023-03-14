@@ -1,0 +1,77 @@
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+body {
+  background: #d0d0db;
+}
+
+div.pic {
+  background: url('../img/veg.jpg');
+
+  height: 200px;
+  width: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+h2 {
+  font-weight: 200;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+div.form {
+  width: 500px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+form input[type=text],
+input[type=password],
+input[type=submit] {
+  padding: 15px;
+  position: relative;
+  left: 20px;
+  width: 300px;
+  border-radius: 5px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type=submit] {
+  background: #01d28e;
+  color: #fff;
+}
+
+a.signup {
+  text-decoration: none;
+  color: #01d28e;
+  font-size: 20px;
+  position: relative;
+  top: 80px;
+  right: 155px;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+
+}
+
+a.forgot {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  position: relative;
+  right: 220px;
+  top: 110px;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-8 Registration Page</title>
+         <style>
+            .header
+            {
+                border: 2px solid black;
+                padding: 10px;
+                margin: 20px;
+                text-align: center;
+                font-size: large;
+                background-color: aqua;
+            }
+            .box
+            {
+                border: 2px solid black;
+                padding: 10px;
+                margin: 20px;
+                background-color: #ccc;
+                text-align: center;
+            }
+            .box1
+            {
+                border: 2px solid  none;
+                padding: 10px;
+                margin: 20px;
+                background-color:white;
+                text-align: center;
+                color: black;
+            }
+            li{
+                padding: 10px;
+                margin: 5px;
+                list-style: none;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .footer{
+                border: 2px solid black;
+                padding: 10px;
+                margin: 20px;
+                text-align: center;
+                background-color: aqua;
+                font-size: large;
+                font-weight: bold;
+            }
+            .left{
+                position: relative;
+                left: 850px;
+                top: -180px;
+             }
+             .left1{
+                position: relative;
+                left: 850px;
+                top: -175px;
+
+             }
+             .left2{
+                position: relative;
+                left: 850px;
+                top: -135px;
+
+             }
+             .left3{
+                position: relative;
+                left: 850px;
+                top: -135px;
+
+             }
+             .left4{
+                position: relative;
+                left: 850px;
+                top: -135px;
+
+             }
+             .left5{
+                position: relative;
+                left: 850px;
+                top: -135px;
+
+             }
+             .head1{
+                border: 1px solid black;
+                padding: 2px;
+                margin: 10px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 150px;
+                height: 20px;
+                position: relative;
+                top:-30px;
+                left: 20px;
+             }
+             
+         </style>
+        
+    </head>
+    <body>
+        <div class="header">STUDENT REGISTRATION PAGE</div>
+        <div class="box">
+            <div class="head1">Account Details</div>
+            <ul>
+                <li>Name:* <input type="text"></li>
+
+                <li>Age:*  <input type="text"></li>
+
+                <li>Gender:* <input type="radio" name="gender">MALE
+                             <input type="radio" name="gender">FEMALE
+                </li>
+
+                <li>Mail Id:* <input type="email" placeholder="@gmail.com"></li>
+
+                <li class="left">Account ID:* <input type="text"></li>
+
+                <li class="left1">Account Type:* 
+                    <select>
+                        <option>Please Select</option>
+                        <option>Savings</option>
+                        <option>Credit</option>
+                        <option>Debit</option>
+                        <option>Loan</option>
+                    </select></li>
+
+            </ul>
+        </div>
+
+        <div class="box">
+            <div class="head1">Qualifications</div>
+            <ul>
+                <li>Qualification:* 
+                        <select>
+                            <option>Please Select</option>
+                            <option>Btech</option>
+                            <option>B-Pharma</option>
+                            <option>BCom</option>
+                            <option>MBA</option>
+                        </select>
+                </li>
+
+                <li>Languages known:*
+                    <input type="checkbox" name="language">Hindi
+                    <input type="checkbox" name="language">English
+                    <input type="checkbox" name="language">Telgu
+                    <input type="checkbox" name="language">Tamil
+                    <input type="checkbox" name="language">Marathi
+                    <input type="checkbox" name="language">Odia
+                </li>
+
+                <li>Course :* 
+                    <select>
+                        <option>Please Select</option>
+                        <option>UI Full Stack</option>
+                        <option>Angular</option>
+                        <option>Java Script</option>
+                        <option>Node jS</option>
+                        <option>C Language</option>
+                        <option>C++</option>
+                        <option>Data Structures</option>
+                        <option>MongoDB</option>
+                        <option>MS Word</option>
+                        <option>MS Excel</option>
+                    </select>
+                </li>
+
+                <li class="left2">College:*
+                    <input type="text" >
+                </li>
+
+                <li class="left3">Location:*
+                    <input type="text">
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="box">
+            <div class="head1">Address</div>
+            <ul>
+                <li>D.No. :
+                    <input type="text"></D>
+                </li>
+
+                <li>Street Name :
+                    <input type="text"></D>
+                </li>
+
+                <li>State :
+                    <input type="text"></D>
+                </li>
+
+                <li>State Code :
+                    <input type="text"></D>
+                </li>
+
+                <li class="left3">Country Name:
+                    <input type="text"></D>
+                </li>
+
+                <li class="left4">Country Code  : 
+                    <input type="text"></D>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div class="box">
+            <div class="head1">About Yourself</div>
+            <ul>
+                <li>About Yourself
+                    <textarea cols="70" rows="20">
+                    </textarea>
+
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <div>
+                <input type="submit" placeholder="Register">
+                    <input type="reset" placeholder="Reset">
+            </div>
+        </div>
+        
+
+
+        
+        
+            <div class="footer"> &copy; Copy Rights 2023</div>
+
+
+        
+        
+    </body>
+</html>

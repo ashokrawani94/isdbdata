@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_13_Passing_parameters</title>
+</head>
+<body>
+    <script>
+       
+        var EmployeeDef=()=>
+    {
+        var ename,eage,egender,ebasicsalary,etotalsalary,epf,ehra;//Declaring values
+        ename=prompt("Enter Name:");
+        eage=prompt("Enter Age:")
+        eage=parseInt(eage);
+        egender=prompt("Enter Gender:");
+
+        ebasicsalary=parseInt(prompt("Enter basic salary"));
+    console.log(typeof(ebasicsalary));
+        EmployeePfTax(ebasicsalary);
+        employeeGender(egender);
+        console.log("The total tax is:"+taxCalc);
+    }
+     function EmployeePfTax(ebasicsalary)
+      {
+        epf=(ebasicsalary*14)/100;
+        ehra=(ebasicsalary*20)/100;
+        etotalsalary=parseInt(epf+ehra+ebasicsalary);
+        console.log(etotalsalary+ ":The Total salary is")
+      }
+     var employeeGender=(egender)=>
+     {
+        if(egender=="Male")
+        {
+         taxCalc=(etotalsalary*10)/100;
+         console.log("The tax cut is 10")
+        }
+        else
+        {
+            taxCalc=(etotalsalary*5)/100;
+            console.log("The tax cut is 5")
+        }
+     }
+    
+        EmployeeDef();
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var studentname = prompt("Enter Student Name");
+      var age = prompt("Enter Age");
+      var gender = prompt("Enter Gender");
+      var classname = prompt("Enter Classname");
+      var maths = prompt("Enter Maths Marks");
+      maths = parseInt(maths);
+      var english = prompt("Enter English Marks");
+      english = parseInt(english);
+      var science = prompt("Enter Science Marks");
+      science = parseInt(science);
+      var physics = prompt("Enter Physics Marks");
+      physics = parseInt(physics);
+      var chemistry = prompt("Enter chemistry Marks");
+      chemistry = parseInt(chemistry);
+
+      var total = maths + english + science + physics + chemistry;
+      var avg = total / 5;
+
+      console.log(" Student Name is: " + studentname);
+      console.log(" Age is: " + age);
+      console.log(" Gender is: " + gender);
+      console.log(" Classname is: " + classname);
+      console.log(" Maths mark is: " + maths);
+      console.log(" English mark is: " + english);
+      console.log(" Science mark is: " + science);
+      console.log(" Physics mark is: " + physics);
+      console.log(" Chemistry mark is: " + chemistry);
+
+      console.log(" Total marks is: " + total);
+      console.log("Average mark is:" + avg);
+    </script>
+  </body>
+</html>

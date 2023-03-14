@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List out all Palindrome Numbers within a given Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = []; //var arr = new Array();
+
+      var s = prompt("Enter size of the array");
+      s = parseInt(s);
+      var i,
+        rem,
+        temp,
+        reverse,
+        output1 = "",
+        output2 = "";
+
+      for (i = 0; i < s; i++) {
+        arr[i] = prompt("Enter element on index " + i);
+        arr[i] = parseInt(arr[i]);
+        console.log("arr[" + i + "] :" + arr[i]);
+        output1 = output1 + " " + arr[i];
+      }
+
+      console.log("Array is: [" + output1 + " ]");
+
+      function checkconditionForPalindromeNumber() {
+        for (i = 0; i < s; i++) {
+          temp = arr[i];
+          reverse = 0;
+
+          while (arr[i] > 0) {
+            rem = arr[i] % 10;
+            reverse = reverse * 10 + rem;
+            arr[i] = arr[i] / 10;
+            arr[i] = parseInt(arr[i]);
+          }
+
+          if (temp == reverse) {
+            output2 = output2 + " " + temp;
+          }
+        }
+        console.log("Palindrome numbers are: [" + output2 + " ]");
+      }
+
+      checkconditionForPalindromeNumber();
+    </script>
+  </body>
+</html>

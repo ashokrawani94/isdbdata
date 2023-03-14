@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating class with and without constructor.
+        </title>
+    </head>
+    <body>
+        <script>
+            /*class BookDetails {
+                bookName = 'My Dreams';
+                bookPrice = 2000;
+                displayBookDetails() {
+                    console.log("Book name " + this.bookName);
+                    console.log("Book Price " + this.bookPrice);
+                }
+            }
+
+            var b1 = new BookDetails();
+            b1.displayBookDetails(); */ 
+
+            class BookDetails {
+                constructor(bdata) {
+                    this.bookName = bdata.bname;
+                    this.bookPrice = bdata.bprice;
+                }
+                displayBookDetails() {
+                    console.log("Book name " + this.bookName);
+                    console.log("Book Price " + this.bookPrice);
+                }
+            }
+
+            var b1 = new BookDetails({bname: 'My Dreams ', bprice : 2000});
+            b1.displayBookDetails();
+
+            var b2 = new BookDetails({bname: 'Tech Solutions ', bprice : 1000});
+            b2.displayBookDetails();
+             
+            
+        </script>
+    </body>
+</html>

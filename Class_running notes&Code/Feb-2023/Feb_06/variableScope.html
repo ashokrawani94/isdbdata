@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating local and Global Variables
+        </title>
+    </head>
+    <body>
+        <script>
+            var a = 90; // Global/ public scope
+            var z;
+            var b;
+            var displayMsg = function() {
+                var a1 = 90;
+                b = 99;
+                z = 100;
+                console.log("fm display msg");
+                console.log("value of a is " + a);
+                console.log("value of b is " + b);
+                console.log("value of z is " + z);
+            }
+            displayMsg();
+            console.log("value of a is " + a);
+            console.log("value of b is " + b);
+            console.log("value of z is " + z);
+            
+        </script>
+    </body>
+</html>

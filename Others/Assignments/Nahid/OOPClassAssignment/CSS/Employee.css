@@ -1,0 +1,42 @@
+li{
+    list-style: none;
+    padding: 7px;
+    margin: 7px;
+}
+
+ul{
+    /* border:1px solid dashed; */
+    width:500px;
+    margin:10px auto;
+    padding: 10px;
+}
+#mainlist li{
+    
+    border: 1px solid #eee;
+    background-color: aliceblue;
+}
+
+h3{
+    color:green;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.paySlipContainer{
+    display: none;
+}
+
+.paySlipContainer li{    
+    color: rgb(107, 6, 6);
+    border-bottom: 1px dashed rgb(255, 0, 140);
+}
+
+.paySlipContainer li span{
+    color: green;
+}
+
+#payslipId{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emp details by Js</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ename,edep,eage,etotalsal,pf,hra,basicsal,pff,hraa;
+        ename=prompt("enter name of emp");
+        edep=prompt("enter department of emp ");
+        eage=prompt("enter age of emp");
+        basicsal=prompt("enter basic salary of emp");
+        pf=prompt("enter pf percentatge of salary");
+        hra=prompt("enter Hra percentatge of salary");
+       var basic=parseInt(basicsal);
+        // basicsal=10000;
+        pff=(pf*basicsal)/100;
+        hraa=(hra*basic)/100;
+        etotalsal=(pff+hraa+basic);
+        console.log("Name:" + ename);
+        console.log("Department:" + edep);
+        console.log("Age:" + eage);
+        console.log("Pf %:" + pf);
+        console.log("Hra %:" + hra);
+        console.log("Basic Salary:" + basic);
+        console.log("Toatal salary of the Empolyee:"+etotalsal);
+    </script>
+
+</body>
+</html>

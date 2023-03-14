@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Student Details
+        </title>
+    </head>
+    <body>
+        <script>
+            console.log("Student details...")
+            
+            // Method to display student details...
+            function displayStudentDetails(userName, userAge, userGender, avg) {
+
+                console.log("-----Student details-----")
+                console.log("Student Name " + userName);
+                console.log("Age " + userAge);
+                console.log("Gender " + userGender);
+                console.log("Avg is " + avg); 
+                getStudentGrade(avg);
+            }
+
+
+            function getTotalAndAvg(m1, m2, m3) {
+                var total = m1 + m2 + m3;
+                var avg = total / 3;
+                return avg;
+            }
+
+            function getStudentGrade(avg) {
+                if (avg >= 40) {
+                    console.log("Student is passed");
+                    if (avg >= 90) {
+                        console.log("you got distiction");
+                    } else if (avg >= 60){                
+                        console.log("you got first class")
+                    } else {
+                        console.log("you got second class")
+                    }
+                } else {
+                    console.log("Student got failed");
+                }
+            }
+                        
+            // Method to read student data.
+            function readStudentData() {
+                var userAge, userGender, userName, studentClass, m1, m2, m3, total, avg;
+                userName = prompt("Enter student name");
+                userAge = prompt("etner age");
+                userGender = prompt("Enter Gender");
+                studentClass = prompt("Enter class");
+                m1 = prompt("Enter marks for sub 1");
+                m2 = prompt("Enter marks for sub 2");
+                m3 = prompt("Enter marks for sub 3");
+                m1 = parseInt(m1);
+                m2 = parseInt(m2);
+                m3 = parseInt(m3);
+                var avg = getTotalAndAvg(m1, m2, m3);
+                displayStudentDetails(userName, userAge, userGender, avg);
+            }
+
+            readStudentData();
+
+        </script>
+    </body>
+</html>

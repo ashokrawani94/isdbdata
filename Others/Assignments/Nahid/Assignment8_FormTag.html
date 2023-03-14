@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Tag Example</title>
+        <style>
+            .setBorder{
+                border: 1px solid;
+            }
+
+            #studentHeading, #copyRight{
+            border: 1px solid;
+            text-align: center;
+            padding:10px;
+            margin: 15px auto;
+            width:930px;
+            }
+            .accountSectionHeading, .educationSectionHeading,
+            .addressSectionHeading, .aboutSectionHeading
+            {
+                width:200px;
+                height: 25px;
+                margin:2px;                
+                text-align: center;
+                background-color:rgb(247, 231, 231);
+                position: relative;
+                top: 20px;
+                left: 60px;
+            }            
+            .mainContainer{
+                width:950px;
+                margin: 1px auto;
+            }
+             
+            .accountSectionDetails,
+            .educationSectionDetails,
+            .addressSectionDetails,
+            .aboutSectionDetails
+            {
+              padding: 5px;
+              height: 250px; 
+              width: 870px;
+              margin: 10px auto;
+            }
+            
+            li{
+                list-style-type: none;
+                margin: 30px 5px 5px 5px;
+            }
+            #txtArea{
+                width:500px;
+                height: 120px;
+                margin: 20px auto;
+            }
+
+            .label
+            {
+                display:inline-block; 
+                width: 150px;
+                color: rgb(6, 8, 126);
+            }
+            .submitBtn{
+                position: relative;
+                left: 550px;
+                bottom:20px;
+                background-color: rgb(17, 82, 202);
+                color: rgb(240, 245, 244);
+                border-radius: 5px;
+                width: 100px;
+                height:30px;
+            }
+            .setPosition{
+                position: relative;
+                bottom: 130px;
+            }
+            .setPosition1{
+                position: relative;
+                bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="studentHeading">Student Registration Page</h2>
+        <div class="mainContainer setBorder">
+          <form method="GET" action="">
+            <div class="accountSectionHeading setBorder">Account Details</div>
+            <ul class="accountSectionDetails setBorder">
+                <li style="float: left;">
+                    <div class="label">
+                        <label for="txtAccountName">Name:</label>
+                    </div>                    
+                    <input type="text" name="txtAccountName">
+                </li>
+                <li style="float: right;">
+                  <div class="label">
+                     <label for="txtAccountId">Account Id:</label>
+                  </div>
+                  <input type="text" name="txtAccountId" >
+                </li>
+                 <li style="clear: both; float: left;">
+                   <div class="label">
+                    <label for="txtAge">Age:</label>
+                   </div>                 
+                    <input type="text" name="txtAge" style="width:50px;" maxlength="3">
+                 </li>
+                <li style="float: right;">
+                    <div class="label">
+                     <label for="txtAccountType">Account Type:</label>
+                    </div>                   
+                    <select name="txtAccountType" style="width:175px;">
+                        <option>Select</option>
+                        <option>HR</option>
+                        <option>Finance</option>
+                        <option>Management</option>
+                    </select>                    
+                </li>
+                <li style="clear: both; float:left">
+                    <div class="label">
+                     <label for="rblRadio">Gender:</label>
+                    </div>
+                    <input type="radio" name="rblRadio" value="Male">Male
+                    <input type="radio" name="rblRadio" value="Female">Female
+                </li>
+                <li style="clear: both; float:left">
+                    <div class="label">
+                     <label for="txtmail">Mail Id:</label>
+                    </div>
+                    <input type="text" name="txtmail" style="height: 30px; width: 400px;">
+                </li>
+            </ul>
+            <!-- Account Details Closed -->
+            <!-- Education Details Start -->
+            <div class="educationSectionHeading setBorder">Education Details</div>
+            <ul class="educationSectionDetails setBorder">
+                <li style="float: left;">
+                    <div class="label">
+                        <label for="lblQualification">Qualification:</label>
+                    </div>                    
+                    <select name="drpQualification" style="width:175px;">
+                        <option>Select</option>
+                        <option>MBA</option>
+                        <option>MCA</option>
+                        <option>BCA</option>
+                    </select>  
+                </li>
+                <li style="float: right;">
+                  <div class="label">
+                     <label for="lblCollegeName">College Name:</label>
+                  </div>
+                  <input type="text" name="txtCollegeName" >
+                </li>
+                 <li style="clear: both; float: left;">
+                   <div class="label setPosition1">
+                    <label for="lblLanguage">Language Known:</label>
+                   </div> 
+                   <div style="width: 350px;display: inline-block;">                
+                   <input type="checkbox" name="chklanguage" value="Hindi">Hindi
+                   <input type="checkbox" name="chklanguage" value="English">English
+                   <input type="checkbox" name="chklanguage" value="Marathi">Marathi
+                   <input type="checkbox" name="chklanguage" value="Gujrati">Gujrati
+                   <input type="checkbox" name="chklanguage" value="Punjabi">Punjabi
+                   <input type="checkbox" name="chklanguage" value="Bengali">Bengali
+                   <input type="checkbox" name="chklanguage" value="Oriya">Oriya
+                </div>
+                 </li>
+                <li style="float: right;">
+                    <div class="label">
+                     <label for="lblLocation">Location:</label>
+                    </div>
+                    <select name="drpLocation" style="width:175px;">
+                        <option>Select</option>
+                        <option>Hyderabad</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Nagpur</option>
+                    </select>
+                                      
+                </li>
+                <li style="clear: both; float:left">
+                    <div class="label">
+                     <label for="rblRadio">Course Opting For:</label>
+                    </div>
+                    <select name="drpCourse" style="width:175px;">
+                        <option>Select</option>
+                        <option>JAVA</option>
+                        <option>Python</option>
+                        <option>UI Developer</option>
+                        <option>.Net</option>
+                    </select>
+                </li>                
+            </ul>
+            <!-- Education Details End -->
+            <!-- Address Details Start -->
+            <div class="addressSectionHeading setBorder">Address</div>
+            <ul class="addressSectionDetails setBorder">
+                <li style="float: left;">
+                    <div class="label">
+                        <label for="txtDNo">DNO:</label>
+                    </div>                    
+                    <input type="text" name="txtDNo">
+                </li>
+                <li style="float: right;">
+                  <div class="label">
+                     <label for="txtCountryName">Country Name:</label>
+                  </div>
+                  <input type="text" name="txtCountryName" >
+                </li>
+                 <li style="clear: both; float: left;">
+                   <div class="label">
+                    <label for="txtStreetName">Street Name:</label>
+                   </div>                 
+                    <input type="text" name="txtStreetName">
+                 </li>
+                <li style="float: right;">
+                    <div class="label">
+                     <label for="txtCountryCode">Country Code:</label>
+                    </div>                   
+                    <input type="text" name="txtCountryCode">                
+                </li>
+                <li style="clear: both; float:left">
+                    <div class="label">
+                     <label for="txtStateName">State Name:</label>
+                    </div>
+                    <input type="text" name="txtStateName">
+                </li>
+                <li style="clear: both; float:left">
+                    <div class="label">
+                     <label for="txtStateCode">State Code:</label>
+                    </div>
+                    <input type="number" name="txtStateCode">
+                </li>
+            </ul>
+            <!-- Address Section End -->
+            <!-- About Section Start -->
+            <div class="aboutSectionHeading setBorder">About Details</div>
+            <ul class="aboutSectionDetails setBorder">
+                <li>
+                    <div class="label">
+                      <label for="txtArea" class="setPosition">About Yourself:</label>
+                    </div>
+                    <textarea id="txtArea" name="txtArea" cols="10" rows="10"></textarea>
+                </li>                
+                <li><input type="submit" Text="Register" class="submitBtn"></li>
+            </ul>
+            <!-- About Section End -->
+        </form>
+      </div>
+      <!-- End of Middle Section-->
+      <h3 id="copyRight">@copyRight 2023</h2>
+    </body>
+</html>

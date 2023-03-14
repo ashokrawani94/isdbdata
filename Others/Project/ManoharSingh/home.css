@@ -1,0 +1,107 @@
+body{
+  background-image: url("./images/homebg.jpg");
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+}
+.navbar {
+  background-color: transparent;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul {
+  margin: 0px;
+  overflow: auto;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 13px 20px;
+}
+
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.container{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  overflow: auto;
+}
+.collection_name{
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid none;
+}
+.collection_name li{
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  list-style: none;
+  border: 1px solid;
+}
+.prodect_view{
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  float: right;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid none;
+  overflow: auto;
+}
+.card {
+  width: 200px;
+  background: linear-gradient(135deg, #a3e8df 0%, #f8ea8c 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  margin: 5px;
+  padding: 5px;
+  flex-grow: 1;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#card-header{
+  background-color:gray;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  border-radius:10px;
+  /* padding:5px; */
+}
+button{
+  width:100%;
+  font-size: 20px;
+  background-color:red;
+  color:white;
+  border-radius:10px;
+}
+p{
+  color:black;
+  text-align: center;
+}
+h2{
+  border:2px solid;
+  border-radius:10px;
+  width:200px;
+  background-color:#1b1b32;
+  color:white;
+  text-align: center;
+  padding:10px;
+  border:none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empolyee Details Using JSON</title>
+</head>
+
+<body>
+    <script>
+        var empDetails = {
+            getEmpolyeeDetails() {
+                this.name = prompt("Enter your name");
+                this.age = prompt("Enter your age");
+                this.dep = prompt("Enter your departement");
+                this.gender = prompt("Enter gender");
+                this.salary = prompt("Enter your salary");
+                this.salary = parseInt(this.salary);
+                this.calculateTotal();
+            },
+
+            calculateTotal() {
+                this.pf = (14 * this.salary) / 100
+                this.pf = parseInt(this.pf);
+                this.hra = (24 * this.salary) / 100
+                this.hra = parseInt(this.hra);
+
+                this.total = this.salary + this.pf + this.hra;
+                this.calculateTax();
+            },
+
+            calculateTax() {
+                taxValue = 0;
+                if (this.gender == 'male') {
+                    if (this.total > 100000) {
+                        taxValue = 15;
+                    } else if (this.total > 50000) {
+                        taxValue = 10;
+                    } else if (this.total > 25000) {
+                        taxValue = 5;
+                    } else {
+                        taxValue = 0;
+                    }
+                } else {
+                    if (this.total > 100000) {
+                        taxValue = 10;
+                    } else if (this.total > 50000) {
+                        taxValue = 5;
+                    } else {
+                        taxValue = 0;
+                    }
+                }
+
+                this.totalTax = (taxValue * this.total) / 100
+                this.displayEmpolyeeDetails();
+            },
+
+            displayEmpolyeeDetails() {
+                console.log("------EMPOLYEE DETAILS------")
+                console.log("Name : " + this.name)
+                console.log("Age : " + this.age)
+                console.log("Departement : " + this.dep)
+                console.log("Gender : " + this.gender)
+                console.log("Salary : " + this.salary)
+                console.log("Total Salary : " + this.total)
+                console.log("Total Tax : " + this.totalTax)
+            }
+
+        }
+
+        empDetails.getEmpolyeeDetails();
+    </script>
+</body>
+
+</html>

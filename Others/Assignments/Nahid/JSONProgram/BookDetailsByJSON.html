@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dsiplay Book Details</title>
+    </head>
+    <body>
+        <script>
+            var data = {
+                        bookname:"the One thing",
+                        price : 150,
+                        author : ["Pappon", "caly"],
+                        discountpercentage : 0,
+
+                        displayBookdetails(){
+                            console.log("book name: " + this.bookname);
+                            console.log("book price: " + this.price);
+                            this.getDiscount();                    
+                            console.log("author: " + data.author);                    
+                        },
+        
+                        getDiscount(){
+                            this.discountpercentage = (this.price*10)/100;
+                            var discountPrice = this.price - this.discountpercentage;
+                            console.log("discount percentage: " +  this.discountpercentage);
+                            console.log("discount price: " +  discountPrice);
+                        }
+
+                }
+
+            data.displayBookdetails();
+        </script>    
+    </body>
+</html>

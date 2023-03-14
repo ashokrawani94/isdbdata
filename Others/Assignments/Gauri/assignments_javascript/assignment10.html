@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var ename = prompt("Enter employee name");
+        var eage = prompt("Enter employee age");
+        var egender = prompt("Enter gender");
+        var edept = prompt("Enter department name");
+        var basicsal = prompt("Enter basic salary");
+        basicsal = parseInt(basicsal);
+        var tax=0;
+        var pf, hra, totalsal;
+        pf = (basicsal * 14) / 100;
+        hra = (basicsal * 25) / 100;
+        totalsal = pf + hra + basicsal;
+
+        console.log("Employee name :" + ename);
+        console.log("Employee age :" + eage);
+        console.log("Employee gender :" + egender);
+        console.log("Employee department :" + edept);
+        console.log("Employee basic salary :" + basicsal);
+        console.log("PF :" + pf);
+        console.log("HRA :" + hra);
+        console.log("Total salary :" + totalsal);
+
+        if (egender == "male") {
+            if (totalsal >= 100000) {
+                tax = (totalsal * 15) / 100;
+                console.log("Total tax is " + tax);
+            } else if (totalsal >= 50000) {
+                tax = (totalsal * 10) / 100;
+                cosole.log("Total tax is " + tax);
+            } else if (totalsal >= 25000) {
+                tax = (totalsal * 5) / 100;
+                console.log("Total tax is " + tax);
+            } else {
+                console.log("Tax is zero");
+            }
+        } else {
+            if (egender =="female") {
+                if (totalsal >= 100000) {
+                    tax = (totalsal * 15) / 100;
+                    console.log("Total tax is " + tax);
+                } else if (totalsal >= 50000) {
+                    tax = (totalsal * 10) / 100;
+                    cosole.log("Total tax is " + tax);
+                } else {
+                    console.log("Tax is zero");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

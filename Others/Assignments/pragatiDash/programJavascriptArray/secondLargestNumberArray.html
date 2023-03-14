@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Second Largest Number in Array</title>
+  </head>
+  <body>
+    <script>
+      var arr = []; //var arr = new Array();
+
+      var s = prompt("Enter size of the array");
+      s = parseInt(s);
+      var i,
+        j,
+        temp,
+        output = "";
+
+      for (i = 0; i < s; i++) {
+        arr[i] = prompt("Enter element on index " + i);
+        arr[i] = parseInt(arr[i]);
+        console.log("arr[" + i + "] :" + arr[i]);
+        output = output + " " + arr[i];
+      }
+
+      console.log("Array is: [" + output + " ]");
+
+      function secondLargestNumber() {
+        for (i = 0; i < s; i++) {
+          for (j = i + 1; j < s; j++) {
+            if (arr[i] > arr[j]) {
+              temp = arr[i];
+              arr[i] = arr[j];
+              arr[j] = temp;
+            }
+          }
+        }
+        output = "";
+        for (i = 0; i < s; i++) {
+          output = output + " " + arr[i];
+        }
+
+        var secondLargestNumber = arr[s - 2];
+        console.log("Ascending order is: [" + output + " ]");
+        console.log("Second Largest Number is: " + secondLargestNumber);
+      }
+
+      secondLargestNumber();
+    </script>
+  </body>
+</html>

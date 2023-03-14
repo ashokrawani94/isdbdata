@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work with employe details using local data in functions</title>
+</head>
+<body>
+    <script>
+        var readUser = function (){
+            var ename,eage,edept,gender,bsalary,totalsalary,taxpercent,paidtax;
+            ename =prompt("enter employe name" );
+            eage = prompt("enter employe age");
+            edept = prompt("department");
+            gender =prompt("employe gender");
+            bsalary=prompt("basic salary");
+            bsalary=parseInt(bsalary);
+            var pf=(15*bsalary)/100;
+            var hra=(25*bsalary)/100;
+            var totalsalary = calTotalSal(bsalary,pf,hra);
+            var tax =taxbePaid(totalsalary,gender);
+            showData(ename,eage,edept,gender,bsalary,pf,hra,totalsalary,tax);
+        }
+        var calTotalSal = function(bsalary,pf,hra){
+            var pf,hra;
+            pf=(15*bsalary)/100;
+            hra=(25*bsalary)/100;
+            var totalsalary=bsalary+pf+hra;
+            return totalsalary;
+        }
+        
+        var taxbePaid = function (totalsalary,gender){
+            
+            if(gender=='male'){
+                if(totalsalary>=100000){
+                   taxpercent=15;
+                }else if (totalsalary >=50000){
+                   taxpercent=10;
+                }else if (totalsalary >=25000){
+                   taxpercent=5;
+                }else{
+                   taxpercent=0;
+                }
+
+            }else{
+                if(totalsalary >=100000){
+                    taxpercent=10;
+                }else if (totalsalary >=50000){
+                    taxpercent=5;
+                }else{
+                    taxpercent=0;
+                }
+
+            }
+            tax=(totalsalary*taxpercent)/100;
+            return tax;
+
+        }
+        var showData = function (ename,eage,edept,gender,bsalary,pf,hra,totalsalary,tax){
+            console.log("employ name :"+ename);
+            console.log("employ age :"+eage);
+            console.log("employ dept :"+edept);
+            console.log("employ gender :"+gender);
+            console.log("employ bsalary :"+bsalary);
+            console.log(" pf is :"+pf);
+            console.log(" hra is :"+hra);
+            console.log("totalsalary :"+totalsalary);
+            console.log("tax to be paid :"+tax);
+        }
+        readUser();
+    </script>
+</body>
+</html>

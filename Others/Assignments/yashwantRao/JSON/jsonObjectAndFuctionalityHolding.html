@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Holding the object and the fucntionality within the object</h3>
+
+    <script>
+        var empData = {
+            name : '',
+            age : '',
+
+            getEmpData : function() {
+                empData.name = prompt("Enter your name");
+                empData.age = prompt("Enter your age");
+                empData.gender = prompt("enter your gender");
+                empData.location = prompt("Enter your current location");
+                empData.basicSalary = prompt("Enter your current salary");
+                empData.basicSalary = parseInt(empData.basicSalary);
+                empData.getPfAndHra();
+            },
+
+            getPfAndHra : function() {
+                empData.pf = (empData.basicSalary*14)/100;
+                empData.hra = (empData.basicSalary*12)/100;
+                empData.totalSal = (empData.pf + empData.hra + empData.basicSalary);
+
+                empData.taxToBePaid();
+            },
+
+            taxToBePaid : function() {
+                if(empData.gender=="male") {
+                    if (empData.totalSal >100000) {
+                        empData.taxPercent = 10;
+                    } else {
+                        empData.taxPercent = 5;
+                    }
+                } else {
+                    empData.taxPercent = 5;
+                }
+                empData.totalTax = (empData.totalSal*empData.taxPercent)/100;
+
+                empData.displayEmpData();
+            },
+            displayEmpData : function() {
+                console.log("---------------emp details----------");
+                console.log("emp name : " + empData.name);
+                console.log(("emp age : " + empData.age));
+                console.log("basic salary : " + empData.basicSalary);
+                console.log("HRA : " + empData.hra);
+                console.log("PF : " + empData.pf);
+                console.log("total Salary : " + empData.totalSal);
+                console.log("total tax : " + empData.totalTax);
+            }
+
+        };
+        empData.getEmpData();
+    </script>
+</body>
+</html>

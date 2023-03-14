@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            To find the lucky number
+        </title>
+    </head>
+    <body>
+        <script>
+            /*
+            var n = 239;
+            var sumOfNumbers = 0;
+            while (n > 0) {
+                var rem = n  % 10;
+                // sumOfNumbers = sumOfNumbers + rem;
+                sumOfNumbers += rem;
+                n = n / 10; // 23.3434
+                n = parseInt(n);
+            }
+            var finalResult = 0;
+            while(sumOfNumbers) {
+                rem = sumOfNumbers % 10;
+                finalResult += rem;
+                sumOfNumbers = sumOfNumbers / 10;
+                sumOfNumbers = parseInt(sumOfNumbers);
+            }
+            console.log("Sum of numbers is " + finalResult) */
+        </script>
+        <script>
+            // Optimized way
+            var n = prompt("enter a no. to find lucky number");
+            n = parseInt(n);
+            var sumOfNumbers = 0;
+            while (n > 0) {
+                var rem = n  % 10;
+                sumOfNumbers += rem;
+                n = n / 10; // 23.3434
+                n = parseInt(n);
+                if (n == 0 && sumOfNumbers > 9) {
+                    n = sumOfNumbers;
+                    sumOfNumbers = 0;
+                }
+            }
+            console.log("Lucky number for given number " + sumOfNumbers);
+        </script>
+        <!-- n = 239
+        rem = n % 10 - > 239 % 10 -> 9
+        n = n / 10 -> 23.34534 -> 23
+        sumOfNumbers = 0 + 9 -> 9
+        
+        rem = n % 10 - > 23 % 10 -> 3 
+        n = n / 10 -> 23 / 10 -> 2.323 -> 2
+        sumOfNumbers = sumOfNumbers + rem -> 9 + 3 -> 12
+        
+        rem =n % 10 - > 2 % 10- > 2
+        n  = n / 10 - > 0.34534 -> 0
+        sumOfNumbers = sumOfNumbers + rem -> 12 + 2 -> 14
+         -->
+        
+        
+        
+        
+
+    </body>
+</html>
+
+
+

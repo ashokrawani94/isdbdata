@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <Style>
+            h3{
+                text-align: center;
+                border: 1px solid;
+            }
+            .container{
+                border: 1px solid;
+                height: 1050px;
+                
+            }
+            .box1{
+                margin: 20px;
+                border: 1px solid;
+                height: 200px;
+            }
+            li{
+                list-style: none;
+            }
+            .account{
+                position: relative;
+                top: -25px;
+            }
+            .name{
+                
+                margin: 5px;
+                color: red;
+            }
+            .detail{
+                   
+                    position: relative;
+                    left: 200px;
+                    top: -30px;
+            }
+            .age{
+               
+                margin: 5px;
+                
+                color: blueviolet;
+            }
+            .ageDetail{
+                display: inline-block;
+                position: relative;
+                left: 200px;
+                top: -28px;
+            }
+            .gender{
+                color: aqua;
+            }
+            .genderDetail{
+                position: relative;
+                left: 200px;
+                top: -20px;
+            }
+            .mail{
+                color: brown;
+            }
+            .mailDetail{
+                position: relative;
+                left: 200px;
+                bottom: 20px;
+            }
+            .accntid{
+              
+                color: chocolate;
+               position: relative;
+               top: -173px;
+               left: 550px;
+            
+            }
+            .accntDetail{
+               
+                position: relative;
+               top: -190px;
+               left: 700px;
+            }
+            .accnttype{
+                color: chartreuse;
+              display: inline;
+               
+               position: relative;
+               top: -150px;
+               left: 550px;
+            }
+            .accnttpyeDetail{
+                position: relative;
+                top: -173px;
+                left: 700px;
+            }
+             .box2{
+                margin: 20px;
+                border: 1px solid;
+                height: 150px;
+             }
+             .education{
+                       
+                position: relative;
+                top: -25px;
+             }
+             .qua{
+                
+                color: red;
+             }
+             .quaDetail{
+            
+                 position: relative;
+                    left: 200px;
+                    top: -19px; 
+             }
+             .lang{
+                color: blue;
+                
+             }
+             .langDetail{
+                        position: relative;
+                    left: 200px;
+                    top: -19px; 
+             }
+             .course{
+                color: aqua;
+             }
+             .courseDetail{
+                        position: relative;
+                    left: 200px;
+                    top: -19px; 
+             }
+             .college{
+                 
+                color: chocolate;
+               position: relative;
+               top: -110px;
+               left: 550px;
+             }
+             .collegeDetail{
+                
+                position: relative;
+               top: -130px;
+               left:700px;
+              
+             }
+             .location{
+                color: cadetblue;
+                
+                 position: relative;
+               top: -110px;
+               left: 550px;
+             }
+             .lDetail{
+                 position: relative;
+                top: -125px;
+                left: 700px;
+             }
+             .box3{
+                 margin: 20px;
+                border: 1px solid;
+                height: 200px;
+             }
+                
+             
+             .address{
+                position: relative;
+                top: -25px;
+             }
+             .dno{
+                color: red;
+             }
+             .dnodet{
+                position: relative;
+                    left: 200px;
+                    top: -20px;
+             }
+             .sname{
+                color: blue;
+             }
+             .snameDet{
+                position: relative;
+                    left: 200px;
+                    top: -20px;
+             }
+             .state{
+                color: hotpink;
+             }
+             .stateDel{
+                position: relative;
+                    left: 200px;
+                    top: -20px;
+             }
+             .statecode{
+                color: crimson;
+             }
+             .scd{
+                position: relative;
+                    left: 200px;
+                    top: -20px;
+             }
+             .conname{
+                color: cornflowerblue;
+                position: relative;
+               top: -150px;
+               left: 550px;
+             }
+             .conDetail{
+                position: relative;
+               top: -170px;
+               left:700px;
+             }
+             .concode{
+                color: black;
+                position: relative;
+               top: -150px;
+               left: 550px;
+             }
+             .concodedetail{
+                position: relative;
+               top: -170px;
+               left:700px;
+             }
+             .box4{
+                margin: 20px;
+                border: 1px solid;
+                height: 310px;  
+             }
+             .about{
+                position: relative;
+                top: -25px;
+             }
+             .aboutyour{
+                    color: blue;
+             }
+             .aboutdet{
+                position: relative;
+                top: -8px;
+                left: 190px;
+             }
+             .reg input{
+               margin: 10px;
+               padding: 10px;
+               text-align: center;
+                float: right;
+                background-color: red;
+                
+
+             }
+             .reg input:hover{
+                cursor: pointer;
+             }
+        </Style>
+    </head>
+    <body>
+        <h3>Student Details</h3>
+        <div class="container">
+            <div class="box1">
+                <form action="">
+                    <ol>
+                        <li class="account"> 
+                            <input type="text" value="Account Details" >
+                        </li>
+                        <li>
+                            <div class="name">
+                            <label for="name">Name:</label>
+                            </div>
+                            <div class="detail">
+                            <input type="text" name="name">
+                            </div>
+                            <div class="age">
+                                <label for="age">Age:</label>
+                            </div>
+                            <div class="ageDetail">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="gender">
+                            <label for="">Gender:</label>
+                             </div>
+                             <div class="genderDetail">
+                            <input type="radio" name="sex">Male
+                            <input type="radio" name="sex">Female
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mail">
+                            <label for="mailID">Mail Id:</label>
+                            </div>
+                            <div class="mailDetail">
+                            <input type="mail" name="mailID" id="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accntid">
+                                <label for="accntid">Account ID:</label>
+                            </div>
+                            <div class="accntDetail">
+                                <input type="mail" name="" id="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="accnttype">
+                                <label for="accnt_type">Account Type:</label>
+                            </div>
+                            <div class="accnttpyeDetail">
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value="">Current Account</option>
+                                    <option value="">Saving Account</option>
+                                    <option value="">NRI Account</option>
+                                </select>
+                            </div>
+                        </li>
+
+                    </ol>
+                </form>
+
+            </div>
+                <div class="box2">
+                    <form action="">
+                        <ol>
+                            
+                                <li class="education"> 
+                            <input type="text" value="Education Details" >
+                                 </li>
+                                 <li>
+                                    <div class="qua">
+                                    <label for="qualification">Qualification:</label>
+                                    </div>
+                                    <div class="quaDetail">
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                            <option value="">Graduation</option>
+                                            <option value="">B COM</option>
+                                            <option value="">B ed</option>
+                                            <option value="">MBBS</option>
+                                        </select>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="lang">
+                                    <label for="lang">Language Know:</label>
+                                    </div>
+                                    <div class="langDetail">
+                                    <input type="checkbox">English
+                                    <input type="checkbox">Hindi
+                                    <input type="checkbox">Urdu
+                                    </div>
+                                 </li>
+                                 <li class="course">
+                                    <label for="course">Course Opting For:</label>
+                                    <div class="courseDetail">
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                            <option value="">JAVA</option>
+                                            <option value="">PYTHON</option>
+                                        </select>
+                                    </div>
+                                 </li>
+                           <li>
+                            <div class="college">
+                            <label for="collname">Collage Name:</label>
+                            </div>
+                            <div class="collegeDetail">
+                                <input type="text">
+                            </div>
+                            <li>
+                                <div class="location">
+                                    <label for="">Location:</label>
+                                    </div>
+                                    <div class="lDetail">
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="">INDIA</option>
+                                        <option value="">USA</option>
+                                        <option value="">NZ</option>
+                                    </select>
+                                    </div>
+                              
+                            </li>
+                           
+                           </li>
+                        </ol>
+                    </form>
+                </div>
+                <div class="box3">
+                    <form action="">
+                        <ol>
+                            <li class="address">
+                                
+                                <input type="text" value="Address">
+
+                            </li>
+                            <li>
+                                <div class="dno">
+                                    <label for="dno">Dno:</label>
+                                </div>
+                                <div class="dnodet">
+                                    <input type="text">
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="sname">
+                                    <label for="sname">Street Name:</label>
+                                </div>
+                                <div class="snameDet">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="state">
+                                    <label for="state">State Name:</label>
+                                </div>
+                                <div class="stateDel">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="statecode">
+                                    <label for="statecode">State Code:</label>
+                                </div>
+                                <div class="scd">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="conname">
+                                    <label for="countryname">Country Name:</label>
+                                </div>
+                                <div class="conDetail">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="concode">
+                                    <label for="countrycode">Country Code:</label>
+                                </div>
+                                <div class="concodedetail">
+                                    <input type="text" name="" id="">
+                                </div>
+                            </li>
+                        </ol>
+                    </form>
+                   
+                </div>
+                <div class="box4">
+                    <ol>
+                        <li>
+                            <div class="about">
+                                <input type="text" value="About Yourself">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="aboutyour">
+                                <label for="aboutyourself">About Yourself :</label>
+                            </div>
+                            <div class="aboutdet">
+                                <textarea name="" id="" cols="120" rows="15"></textarea>
+                            </div>
+                        </li>
+
+                    </ol>
+                    <div class="reg">
+                    <input type="submit" value="Register">
+                </div>
+
+                </div>
+        </div>
+        <h3>&copy;CopyRight2023</h3>
+            </body>
+        </html>

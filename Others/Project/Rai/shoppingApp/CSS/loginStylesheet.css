@@ -1,0 +1,29 @@
+.loginDiv {
+    border: 1px solid white;
+    height: 290px;
+    width: 320px;
+    padding: 40px;
+    margin: 60px;
+    border-radius: 10px;
+} 
+.loginDiv input {
+    padding: 5px;
+    margin: 5px;
+    width: 210px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+}
+.inputType {
+    border-radius: 10px;
+    display: flex;
+}
+#btnSignIn , #btnSignUp {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+.inputType a {
+    padding: 10px;
+    margin: auto;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating - Static event Handling
+        </title>
+    </head>
+    <body>
+        <input id="abc" type="button" onclick="showMsg(event)" value="Click me">
+        <div onmouseover="showMsg2()">hover on me</div>
+        <script>
+            var showMsg = (event) => {
+                console.log(event)
+                console.log("event happend");
+            }
+
+            var showMsg2 = () => {
+                
+                console.log("hover happend")
+            }
+        </script>
+    </body>
+</html>

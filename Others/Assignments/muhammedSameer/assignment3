@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Id</title>
+    <style>
+        .block {
+            border: solid black;
+            margin: 5px;
+            padding: 7px;
+           background-image: url('uiclasses/pic5.png');
+        }
+         .imgcontainer{
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-image: url(pic5.png);
+         }
+
+         .block div{
+            background-color: beige;
+         }
+      
+         .emp1{
+            background-position:  -473px -46px ;
+         }
+
+         .emp2{
+            background-position: -191px -247px ;
+         }
+
+         .emp3{
+            background-position: -420px -257px ;
+         }
+
+         .emp4{
+            background-position: -240px -53px ;
+         }
+
+         .emp5{
+            background-position: -708px -45px ;
+         }
+    </style>
+</head>
+<body>
+   <h3 style="text-align: center; border: 1px solid;"> Employee Details </h3>
+   <div class="block">
+    <div> Name:Watson</div>
+    <div>Age: 26</div>
+    <div>Designation:Software developer</div>
+    <div class="imgcontainer emp1"> </div>
+   </div>
+
+   <div class="block">
+      <div> Name:Alex</div>
+      <div>Age: 28</div>
+      <div>Designation:Network Assistant </div>
+      <div class="imgcontainer emp2"> </div>
+     </div>
+
+     <div class="block">
+      <div> Name:Anderson</div>
+      <div>Age: 25</div>
+      <div>Designation:Digital marketer </div>
+      <div class="imgcontainer emp3"> </div>
+     </div>
+
+     <div class="block">
+      <div> Name:perry</div>
+      <div>Age: 22</div>
+      <div>Designation:HR Manager </div>
+      <div class="imgcontainer emp4"> </div>
+     </div>
+
+     <div class="block">
+      <div> Name:Era</div>
+      <div>Age: 26</div>
+      <div>Designation:Finance Manager </div>
+      <div class="imgcontainer emp5"> </div>
+     </div>
+</body>
+</html>

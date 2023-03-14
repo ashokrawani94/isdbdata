@@ -1,0 +1,35 @@
+.form {
+  width: 600px;
+  border: 1px solid black;
+}
+
+label{
+  padding: 20px;
+}
+
+ul li{
+  list-style: none;
+  margin: 10px;
+}
+
+input[type=submit],input[type=button]{
+  position: relative;
+  left: 300px;
+}
+
+
+div.students{
+  width: 600px;
+  border: 1px solid black;
+  position: relative;
+  left: 651px;
+  bottom: 175px;
+}
+.center{
+margin-left: auto;
+margin-right: auto;
+}
+
+#aedit{
+  display: none;
+}

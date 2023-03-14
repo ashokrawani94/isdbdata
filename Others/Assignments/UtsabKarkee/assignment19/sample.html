@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstrating Reading Data from user</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Enter First value:
+        <input type="text" id="fval" />
+      </li>
+      <li>
+        Enter Second value:
+        <input type="text" id="sval" />
+      </li>
+
+      <li>
+        Select Operation:
+        <select id="userOption">
+          <option value="addition">Add</option>
+          <option value="division">Div</option>
+          <option value="subtraction">Sub</option>
+          <option value="multiplication">Mul</option>
+        </select>
+      </li>
+      <li>
+        <input type="button" value="Do Job" onclick="getSelectedText()" />
+      </li>
+      <li><span id="rblock"></span></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstrating inheritance btwn two static objects.
+    </title>
+</head>
+<body>
+    <script>
+        var sellerDetails = {
+            sname: 'ABC Electronics',
+            srating: '4.7/5',
+            displaySellerDetails() {
+                console.log("Seller name " + this.sname);
+                console.log("Seller rating " + this.srating);
+            }
+        }
+        
+        var productDetails1 = {
+            name: 'Laptop',
+            price: 20000,
+            manufacturer: 'Dell',
+            image: 'product1.png',
+            
+            displayProductDetails() {
+                console.log("Name is " + this.name);
+                console.log("Price " + this.price);
+                console.log("Manufacturer " + this.manufacturer);
+                console.log("Image " + this.image);
+                this.displaySellerDetails();
+                // console.log("Seller name " + this.sname);
+                // console.log("Seller rating " + this.srating);
+            }
+        }
+
+        productDetails1.__proto__ = sellerDetails;
+
+        var productDetails2 = {
+            name: 'Mobile',
+            price: 180000,
+            manufacturer: 'Apple',
+            image: 'product2.png',
+            displayProductDetails() {
+                console.log("Name is " + this.name);
+                console.log("Price " + this.price);
+                console.log("Manufacturer " + this.manufacturer);
+                console.log("Image " + this.image);
+                this.displaySellerDetails();
+            }
+        }
+        productDetails2.__proto__ = sellerDetails;
+
+        productDetails1.displayProductDetails();
+        productDetails2.displayProductDetails();
+    </script>
+</body>
+</html>

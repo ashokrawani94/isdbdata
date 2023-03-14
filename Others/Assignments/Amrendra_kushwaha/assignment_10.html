@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emplooye details</title>
+</head>
+<body>
+    <script>
+        var ename = prompt("inter your  name");
+        var eage = prompt("inter  your age");
+        var edep = prompt("inter  your department");
+        var egender = prompt(" inter gender");
+        var basic = prompt("inter  your basic salry");
+        basic = parseInt(basic);
+        pf = (basic*14)/100;
+        hra = (basic*24)/100;
+        pf = parseInt(pf);
+        hra = parseInt(hra);
+        var total = basic + pf + hra;
+
+        console.log('emp  name is  '+ ename);
+        console.log('emp age '+ eage);
+        console.log('emp gender '+ egender);
+        console.log('emp department '+ edep);
+        console.log('emp basic salry '+ basic);
+        console.log('emp total salry '+ total);
+
+        if (egender == "male"){
+              if( total >100000){
+               console.log('tax is '+ (total*15)/100);}
+              else if(total >50000) {
+              console.log( 'tax is  '+ (total*10)/100);}
+              else if(total > 25000){
+              console.log('tax is '+ (total*5)/100);}
+              else{
+              console.log('tax '+ (0));
+              }
+            }
+        
+        if (egender == "female"){
+            if(total>100000){
+                console.log( 'tax is '+ (total*10)/100);}
+                else if(total >50000){
+                console.log('tax is '+ (total*5)/100);}
+                else ('tax is '+ (0));
+            }
+                
+            
+        
+  
+
+    </script>
+</body>
+</html>

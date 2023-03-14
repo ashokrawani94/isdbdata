@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From User</title>
+    <style>
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            list-style: none;
+            text-align: center;
+            width: 400px;
+            margin: auto;
+        }
+
+        li {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><b>Calculate Value</b>
+    </h3>
+    <ul>
+        <li>
+            <b>Enter First Value :</b>
+            <input type="text" id="fval">
+        </li>
+        <li>
+            <b>Enter Second Value :</b>
+            <input type="text" id="sval">
+        </li>
+        <li>
+           <b> Select an operation :</b>
+            <select id="userOption">
+                <option>Addition</option>
+                <option>Division</option>
+                <option>Multiplication</option>
+                <option>Subtraction</option>
+            </select>
+        </li>
+        <li>
+            <input type="button" value="Calculate" onclick="calculate();">
+        </li>
+        <li>
+           <b>Answer is : </b> <span id="abc"></span>
+        </li>
+    </ul>
+
+    <script>
+
+        var calculate = () => {
+            var a1 = document.querySelector("#fval").value;
+            a1 = parseInt(a1);
+            var a2 = document.querySelector("#sval").value;
+            a2 = parseInt(a2);
+
+            var option = document.querySelector("#userOption").value
+            var result = 0;
+
+            if (option == 'Addition') {
+                result = a1 + a2
+            } else if (option == 'Subtraction') {
+                result = a1 - a2
+            } else if (option == 'Multiplication') {
+                result = a1 * a2
+            } else {
+                result = a1 / a2
+            }
+
+            document.querySelector("#abc").innerHTML = result;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      Employee Details Using Function
+      <script>
+         var empName,empAge, empGender,empDept,empbasicSal,totalSal,pf,hrf;
+            var tax=0;
+            function readEmpData(){
+                 empName= prompt("Enter Name");
+                 empAge= prompt("Enter Age");
+                 empGender= prompt("Enter Gender");
+                 empDept= prompt("Enter Department");
+                 empBasicSal= prompt("Enter Basic Sal");
+
+                empBasicSal= parseInt(empBasicSal);
+            }
+            function getEmpData(){
+                pf= (empBasicSal*14)/100;
+                hrf= (empBasicSal*10)/100;
+                totalSal= empBasicSal + pf + hrf;
+            }
+            function displayEmpData(){
+                console.log("Employee Name is "+ empName);
+                console.log("Employee Age is "+ empAge);
+                console.log("Employee Gender is "+ empGender);
+                console.log("Employee Department is "+ empDept);
+                console.log("Employee Basic Sal is "+ empBasicSal);
+                console.log("Employee Pf is "+ pf);
+                console.log("Employee HRA is "+ hrf);
+                console.log("Employee total Salary is "+ totalSal);
+            }
+
+           
+
+           
+            function getEmpTaxData(){
+
+            if(empGender=='male'){
+                if(totalSal >=100000){
+                    tax= (totalSal * 15)/100;
+                    console.log("Tax amount is "+ tax);
+                }else if(totalSal >= 50000){
+                    tax= (totalSal * 10)/100;
+                    console.log("Tax amount is "+ tax);
+                }else if(totalSal >=25000){
+                    tax= (totalSal * 5)/100;
+                    console.log("Tax amount is "+ tax);
+
+                }
+                else{
+                    console.log("ZERO TAX TO BE PAID");
+                }
+
+            }else{
+                if(empGender=="female"){
+                    if(totalSal >=100000){
+                        tax= (totalSal * 10)/100;
+                        console.log("Tax amount is "+ tax);
+                    }else if(totalSal >= 50000){
+                        tax= (totalSal * 5)/100;
+                        console.log("Tax amount is "+ tax);
+                    }else{
+                        console.log("NO TAX PAY");
+                    }
+                }
+            }
+        }
+        readEmpData();
+        getEmpData();
+        displayEmpData();
+        getEmpTaxData();
+
+      </script>  
+    </body>
+</html>

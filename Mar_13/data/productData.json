@@ -1,0 +1,28 @@
+    {
+        "pData": [
+            {
+            "name":  "Lapotop",
+            "price":  2850,
+            "discountPercent":  35,
+            "manufacturer":  "Dell",
+            "sellerName":   "Indian Electronics",
+            "image":  "https://www.wikihow.com/images/thumb/7/7f/Use-Laptops-Step-22.jpg/aid2283499-v4-1200px-Use-Laptops-Step-22.jpg"
+            },
+            {
+                "name":  "Mobile",
+                "price":  4000,
+                "discountPercent":  10,
+                "manufacturer":  "Sony",
+                "sellerName":   "ABC Goods & Electronics",
+                "image":  "https://www.thechennaimobiles.com/image/cache/catalog/1329356-600x600.jpg"
+            },
+            {
+                "name":  "Pendrive",
+                "price":  2100,
+                "discountPercent":  5,
+                "manufacturer":  "Disk",
+                "sellerName":   "PQR Electronics",
+                "image":  "https://rukminim1.flixcart.com/image/416/416/l1fc0i80/pendrive/pendrive/t/v/g/64gb-2-0-usb-pen-drive-flash-drive-with-metal-body-external-original-imagdy4kdgrpxyya.jpeg?q=70"
+            }
+        ]
+    }

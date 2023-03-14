@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION PAGE</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+
+        .head{
+            border: 1px solid;
+            text-align: center;
+            margin: 5px;
+            font-size: larger20px;
+            padding: 5px;
+        }
+
+        .main{
+            border: 1px solid;
+            /* text-align:center; */
+            /* font-size:20px; */ 
+            margin: 5px;
+            padding: 8px;
+        }
+        .footer{
+            border: 1px solid;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .row{
+            border: 1px solid;
+            margin: 5px;
+            height: 250px;
+            padding: 8px;
+            position: relative;
+        }
+
+
+        .box{
+            border: 1px solid;
+            height: 20px;
+            width: 250px;
+            position: absolute;
+            left: 35px;
+            top:-5px ;
+            text-align: center;
+            background-color: rgb(87, 57, 115);
+        }
+
+
+        #detel.s {
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="get" method="#">
+        <div class="head">STUDENT REGISTRATION PAGE</div>
+        <div class="main">
+            <div class="row">
+                <div class="box">Account Details</div>
+                <div id="detel">
+                    <div class="s">NAME<Input type="text"></div>
+                    <div class="s">AGE<Input type="text"></div>
+                    <div class="s" >GENDER: <input type="radio" name="g">MALE<input type="radio" name="g">FEMALE</div>
+                    <div class="s">MAIL ID: <input type="email"></div>  
+                    <div class="s" style="position: absolute;right: 30px;top:20px;">ACCOUNT ID:<input type="text"></div>
+                    <div class="s" style="position: absolute;right: 30px; top:60px;">ACCOUNT TYPE:<select name="ac" id=""><option value="nr">Normal</option><option value="pr">Parmanent</option><option value="cu">current</option></select></div>
+
+                </div>  
+            </div>
+            <div class="row">
+                <div class="box">EDUCATION DETAILS</div>
+                <div id="detel">
+                    <div class="s">QULIFICATION: <select name="q" id=""><option value="10">1oth</option><option value="12">12th</option><option value="ug">UG</option><option value="pg">PG</option></select></div>
+                    <div class="s">KNOWN LANGUAGE<input type="checkbox">Engish<input type="checkbox">Hindi</div>
+                    <div class="s">COURSE OPTION:<select name="cs" id=""><option  value="">Frantend</option><option value="">Backend</option><option value="">Full stack</option></select></div>
+                    <div class="s">COLLEGE NAME:<input type="text"></div>
+                    <div class="s" style="position: absolute;right: 30px ;top: 20px;">LOCATION: <select name="lo" id=""><option value="m">MUMBAI</option><option value="p">PUNE</option><option value="o">ODISHA</option></select></div>
+
+
+                </div>
+                
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="box ">ADDRESS</div>
+                <div id="detel">
+                    <div class="s">DSNO <input type="text"></div>
+                    <div class="s">STREET: <input type="text"></div>
+                    <div class="s">STATE NAME:<input type="text"></div>
+                    <div class="s">STATE CODE:<input type="number"></div>
+                    <div class="s" style="position: absolute;right: 30px ;top:20px;">COUNTRY NAME:<input type="text"></div>
+                    <div class="s" style="position: absolute;right: 30px;top: 60px;">COUNTRY CODE:<input type="number"></div>
+                </div>
+            </div>
+            <div  class="row">
+                <div class="box">ABOUT YOURSELF</div>
+                <div id="detel">
+                    <div class="s">ADDRESS:<textarea name=""  id=""  cols="180" rows="10"></textarea></div>
+                    <div class="s" style="position: absolute;right: 30px ;bottom: 15px;"><button style="border-radius: 5px;">REGISTER</button></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">@COPY RIGHT 2023</div>
+    </form>
+</body>
+</html>     

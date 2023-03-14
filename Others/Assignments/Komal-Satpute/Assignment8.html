@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student and employee details </title>
+</head>
+
+<body>
+    <script>
+
+        var student_name, age, userclass, section, hindi, marathi, english, total_marks, avg;
+        alert("student details");
+        student_name = prompt("Enter Student Name");
+        age = prompt("Enter Your Age");
+        userclass = prompt("Enter Your class");
+        section = prompt("enter section");
+        hindi = prompt("Hindi Marks");
+        marathi = prompt("Marathi Marks");
+        english = prompt("English Marks");
+        total_marks = hindi + marathi + english;
+        avg = (total_marks) / 3;
+        console.log("---------STUDENT DETAILS-------------");
+        console.log("student name" + student_name);
+        console.log("age" + age);
+        console.log("class" + userclass)
+        console.log("section" + section);
+        console.log("hindi" + hindi);
+        console.log("english" + english)
+        console.log('total marks is' + total_marks);
+        console.log("average" + avg);
+
+
+        var Employee_name, age, qualification, department, salary, pf, hra, total_salary
+        alert("Employee details")
+        Employee_name = prompt("Enter Employee Name")
+        age = prompt("Enter Your Age")
+        qualification = prompt("Enter Your Qualification")
+        department = prompt("Enter Your Department")
+        salary = prompt("Enter Salary")
+        pf = (salary * 15) / 100
+        hra = (salary * 25) / 100
+        total = salary + pf + hra
+        console.log("-------------Employee Details---------------")
+        console.log("Employee Name" + Employee_name)
+        console.log("age" + age);
+        console.log("qualification" + qualification)
+        console.log("department" + department)
+        console.log("salary" + salary)
+        console.log("pf" + pf)
+        console.log("hra" + hra)
+        console.log('total salary is' + total)
+
+
+    </script>
+</body>
+
+</html>

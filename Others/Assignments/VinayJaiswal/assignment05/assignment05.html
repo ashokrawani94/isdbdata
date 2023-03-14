@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            background: aqua;
+        }
+        .heading, .mainContent, .copyright {
+            background: white;
+            border: 2px solid black;
+            margin: 5px 100px 5px 100px;
+        }
+        .heading, .copyright {
+            text-align: center;
+            text-decoration: underline;
+        }
+        .col01 {
+            border: 2px solid black;
+            width: 318px;
+            margin: 5px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .col02 {
+            border: 2px solid black;
+            width: 700px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .col01 li {
+            background: blue;
+            font-weight: bold;
+            color: yellow;
+            width: 180px;
+            list-style-type: none;
+            padding: 10px;   
+            margin: 10px;      
+        }
+        .col01 a {
+            color: yellow;
+            text-decoration: none;
+        }
+        .studentInfo {
+            margin: 5px;
+            border: 2px solid black;
+        }
+        .col02 ol {
+            width: 300px;
+            list-style-type: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .col02 li {
+            border: 2px solid white;
+            padding: 4px;
+        }
+        .studentInfo div {
+            height: 120px;
+            width: 100px;
+            display: inline-block;
+            margin-top: 17px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>STUDENT DETAILS</h1>
+    </div>
+    <div class="mainContent">
+        <div class="col01">
+            <h4 style="text-align: center;">Select the student below</h4>
+            <ul>
+                <li><a href="#pic01">Varun</a></li>
+                <li><a href="#pic02">B. Yashwanth</a></li>
+                <li><a href="#pic03">M. Udaykiran</a></li>
+                <li><a href="#pic04">G. Ravi</a></li>
+                <li><a href="#pic05">Neha Thakur</a></li>
+                <li><a href="#pic06">M. Pallavi</a></li>
+                <li><a href="#pic07">Ayush Tiwari</a></li>
+                <li><a href="#pic08">Hemanth Yadav</a></li>
+                <li><a href="#pic09">Y. Usha</a></li>
+                <li><a href="#pic10">Bhanu Prasad</a></li>
+            </ul>
+        </div>
+        <div class="col02">
+            <div class="studentInfo">
+                <div id="pic01" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXibvmQO5tSslI2zMohZhA8r7CZ2RELq8GTg&usqp=CAU'); background-position: -67px -20px;"></div>
+                <ol>
+                    <li>Name: Varun</li>
+                    <li>Age: 13</li>
+                    <li>Gender: Male</li>
+                    <li>Location: R.B. Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div id="pic02" class="studentInfo">
+                <div style="background-image: url('https://media.istockphoto.com/id/1372481295/photo/photo-of-school-boy-wear-yellow-t-shirt-backpack-in-background-stock-photo.jpg?s=612x612&w=0&k=20&c=lRsVHozgtzpj9W6ZjEW2g2qTkh4iV4BLePFgvUt7kvE='); background-position: -241px 365px;"></div>
+                <ol>
+                    <li>Name: B. Yashwanth</li>
+                    <li>Age: 12</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Rallaguda, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic03" style="background-image: url('https://media.istockphoto.com/id/1071546516/photo/indian-high-school-students-stock-image.jpg?s=612x612&w=0&k=20&c=uh3EdjSRME44155rzaxUTKc3jes2xLtTg7kqTEQjp0A='); background-position: -282px -79px;"></div>
+                <ol>
+                    <li>Name: M. Udaykiran</li>
+                    <li>Age: 15</li>
+                    <li>Gender: Male</li>
+                    <li>Location: R.B. Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div id="pic04" class="studentInfo">
+                <div style="background-image: url('https://media.istockphoto.com/id/1284350507/photo/cute-indian-child-studying-at-home.jpg?s=612x612&w=0&k=20&c=LV-cQmzCi_iDD7jAuniGOBVbsNQxFiysEXWgnL88Fo0='); background-position: -418px -115px;"></div>
+                <ol>
+                    <li>Name: G. Ravi</li>
+                    <li>Age: 13</li>
+                    <li>Gender: Male</li>
+                    <li>Location: R.B. Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic05" style="background-image: url('https://media.istockphoto.com/id/1072486790/photo/indian-high-school-students-stock-image.jpg?s=612x612&w=0&k=20&c=o-uqdrTU692HeHSBC7BbGzygmdZo5AE4a4rNRJ-ql2k='); background-position: -306px -86px;"></div>
+                <ol>
+                    <li>Name: Neha Thakur</li>
+                    <li>Age: 15</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Madhura Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic06" style="background-image: url('https://media.istockphoto.com/id/1071546498/photo/indian-high-school-students-stock-image.jpg?s=612x612&w=0&k=20&c=TXwdeTfAHWt8jYrNJkHUrdb6XlTyUM95v5CjTiQfcwQ='); background-position: -242px -77px;"></div>
+                <ol>
+                    <li>Name: M. Pallavi</li>
+                    <li>Age: 15</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Siddanthi, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic07" style="background-image: url('https://media.istockphoto.com/id/1351408911/photo/group-of-students-writing-on-book-in-classroom.jpg?s=612x612&w=0&k=20&c=07CAJwGwHIps8ZpvzBtzzF1fEP-UEdcti0KjhFZeEzU='); background-position: -324px -112px;"></div>
+                <ol>
+                    <li>Name: Ayush Tiwari</li>
+                    <li>Age: 8</li>
+                    <li>Gender: Male</li>
+                    <li>Location: R.B. Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic08" style="background-image: url('https://media.istockphoto.com/id/1280273210/photo/cute-little-indian-indian-asian-school-boy-wearing-uniform.jpg?s=612x612&w=0&k=20&c=2FBo8VUxY4wYvtO2l39tbEZE_W8ViuViASaOfW8SUE4='); background-position: -140px -163px;"></div>
+                <ol>
+                    <li>Name: Hemanth Yadav</li>
+                    <li>Age: 13</li>
+                    <li>Gender: Male</li>
+                    <li>Location: R.B. Nagar, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic09" style="background-image: url('https://media.istockphoto.com/id/1072473524/photo/students-learning-computer-programming-stock-image.jpg?s=612x612&w=0&k=20&c=8CgtADbzGZ-BUv1lvLobhWTXqvsjf0qoCGHsvd8zsoc='); background-position: -273px -80px;"></div>
+                <ol>
+                    <li>Name: Y. Usha</li>
+                    <li>Age: 16</li>
+                    <li>Gender: Female</li>
+                    <li>Location: Satamrai, Shamshabad.</li>
+                </ol>
+            </div>
+            <div class="studentInfo">
+                <div id="pic10" style="background-image: url('https://media.istockphoto.com/id/1163982218/photo/happy-teacher-taking-care-of-schoolboy-while-traveling-in-school-bus.jpg?s=612x612&w=0&k=20&c=4ei8SQa3tNN89DVutK3e2XgviYYH1knNpBOQTNfer6A='); background-position: -191px -66px;"></div>
+                <ol>
+                    <li>Name: Bhanu Prasad</li>
+                    <li>Age: 6</li>
+                    <li>Gender: Male</li>
+                    <li>Location: Rudra Colony, Shamshabad.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>@copyright 2023</span>
+    </div>
+</body>
+</html>

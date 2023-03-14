@@ -1,0 +1,15 @@
+Event handling 
+    Event - > 
+        Static event handling
+            html event attributes 
+                onclick 
+                onkeyup
+                onkeypress\
+                onblur
+                onchange...
+
+        'event' a predefined object 
+
+        Dynamic event handling 
+
+Validating user input data

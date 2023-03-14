@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Assignment</title>
+  </head>
+  <body>
+    <script>
+      var numberOfElementsToAdd = () =>
+        parseInt(prompt("Enter size of numbers to store in array."));
+
+      var addDataInArray = function (number) {
+        var data = [];
+        for (var index = 0; index < number; index++) {
+          data.push(parseInt(prompt("Enter element at position " + index)));
+        }
+        return data;
+      };
+
+      var primeNumber = function (number) {
+        for (var start = 2, end = Math.sqrt(number); start <= end; start++) {
+          if (number % start == 0) return false;
+        }
+        return number > 1;
+      };
+
+      var reverseNum = function (number) {
+        var reverseNumber = 0,
+          reverse = number;
+        while (reverse != 0) {
+          reverseNumber = reverseNumber * 10 + (reverse % 10);
+          reverse = parseInt(reverse / 10);
+        }
+        return reverseNumber;
+      };
+
+      var luckyNumber = function (number) {
+        var result;
+        if (number == 0) {
+          result = 0;
+        }
+        result = number % 9 ? number % 9 : 9;
+        return result;
+      };
+
+      var armstrong = function (number) {
+        var num = number;
+        var armTotal = 0,
+          size = String(num).length;
+        while (number != 0) {
+          armTotal = armTotal + (number % 10) ** size;
+          number = parseInt(number / 10);
+        }
+        return num == armTotal;
+      };
+
+      var palindrome = function (reverse1) {
+        return reverse1 == reverseNum(reverse1);
+      };
+
+      var displayMinMax = (arr) =>
+        console.log("Minimum is " + arr[0] + " Maximum is " + arr[1]);
+
+      var displayEven = function (number) {
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (number[index] % 2 == 0) {
+            console.log("Even Number : " + number[index]);
+          }
+        }
+      };
+
+      var sumOddNumber = function (number) {
+        var sumOdd = 0;
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (number[index] % 2) {
+            sumOdd += number[index];
+          }
+        }
+        return sumOdd;
+      };
+
+      var displayPrimeNumber = function (number) {
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (primeNumber(number[index])) {
+            console.log("Prime Number : " + number[index]);
+          }
+        }
+      };
+
+      var findMaxAndMin = function (number) {
+        var min = Number.MAX_SAFE_INTEGER,
+          max = Number.MIN_SAFE_INTEGER;
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (number[index] < min) min = number[index];
+          if (number[index] > max) max = number[index];
+        }
+        return [min, max];
+      };
+
+      var findSecondMax = function (number) {
+        if (number.length == 1) return number[0];
+        var max = findMaxAndMin(number)[1],
+          secondMax = Number.MIN_SAFE_INTEGER;
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (number[index] < max && number[index] > secondMax)
+            secondMax = number[index];
+        }
+        return secondMax;
+      };
+
+      // asc ---> ascending else descending
+      var sortAscendingAndDescending = function (number, key) {
+        var flag = false,
+          temp;
+
+        while (!flag) {
+          flag = true;
+          for (var i = 1; i < number.length; i++) {
+            if (key == "asc") {
+              if (number[i - 1] > number[i]) {
+                flag = false;
+                temp = number[i - 1];
+                number[i - 1] = number[i];
+                number[i] = temp;
+              }
+            } else {
+              if (number[i - 1] < number[i]) {
+                flag = false;
+                temp = number[i - 1];
+                number[i - 1] = number[i];
+                number[i] = temp;
+              }
+            }
+          }
+        }
+
+        return number;
+      };
+
+      var displayPalindromeNumber = function (number) {
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (palindrome(number[index])) {
+            console.log("Palindrome : " + number[index]);
+          }
+        }
+      };
+
+      var displayArmstrongNumber = function (number) {
+        for (var index = 0, size = number.length; index < size; index++) {
+          if (armstrong(number[index])) {
+            console.log("Armstrong : " + number[index]);
+          }
+        }
+      };
+
+      var luckyNumbers = function (number) {
+        var lucky = [];
+        for (var index = 0, size = number.length; index < size; index++) {
+          lucky.push(luckyNumber(number[index]));
+        }
+        return lucky;
+      };
+
+      // testing
+      displayEven(addDataInArray(numberOfElementsToAdd()));
+      console.log(
+        "Sum Of Odd Numbers : " +
+          sumOddNumber(addDataInArray(numberOfElementsToAdd()))
+      );
+      displayPrimeNumber(addDataInArray(numberOfElementsToAdd()));
+      displayMinMax(findMaxAndMin(addDataInArray(numberOfElementsToAdd())));
+      console.log(
+        "Second Largest Number : " +
+          findSecondMax(addDataInArray(numberOfElementsToAdd()))
+      );
+      console.log(
+        "Ascending Order : " +
+          sortAscendingAndDescending(
+            addDataInArray(numberOfElementsToAdd()),
+            "asc"
+          )
+      );
+      console.log(
+        "Descending Order : " +
+          sortAscendingAndDescending(addDataInArray(numberOfElementsToAdd()))
+      );
+      displayPalindromeNumber(addDataInArray(numberOfElementsToAdd()));
+      displayArmstrongNumber(addDataInArray(numberOfElementsToAdd()));
+      console.log(
+        "Lucky Numbers : " +
+          luckyNumbers(addDataInArray(numberOfElementsToAdd()))
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static.css">
+    <script src="static1.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <ul>
+            <li>
+                <b>Student Name : </b>
+                <input type="text" id="sname">
+            </li>
+            <li>
+                <b>Age : </b>
+                <input type="text" id="sage">
+            </li>
+            <li>
+                <b>Gender : </b>
+                <input type="radio" name="sgender" value="male"><b>Male</b>
+                <input type="radio" name="sgender" value="female"><b>Female</b>
+            </li>
+            <li>
+                <b>Location : </b>
+                <input type="text" id="sloc">
+            </li>
+            <li>
+                <input type="button" id="btn" value="save" onclick="showTheValue()">
+            </li>
+        </ul>
+    </div>
+    <table border="1px solid" cellspacing="0px" width="700px" height="60px">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Location</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span id="dsname"></span></td>
+                <td><span id="dsage"></span></td>
+                <td><span id="dsgender"></span></td>
+                <td><span id="dsloc"></span></td>
+                <td><b id="sedit" onclick="studentEdit()">Edit</b>
+                    &nbsp;
+                    <b id="sdelete" onclick="studentDelete()">Delete</b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

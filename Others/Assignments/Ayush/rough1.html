@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            border: 4px solid black;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+            font-size: 2rem;
+        }
+
+        .container {
+            border: 4px solid black;
+            width: 320px;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .productDetails>li {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        ul {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        img {
+            width: 256px;
+            height: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3><b>Shopping Product Details Page</b></h3>
+
+    <ul class="container"></ul>
+
+    <script>
+        var productData = [
+            {
+                'name': 'laptop',
+                'price': '300',
+                'manufacturer': 'Dell',
+                'seller': 'BBK Electronics',
+                'img': 'https://images.prismic.io/frameworkmarketplace/46cbf974-cdff-4cd8-b761-8b4a3343f6c4_FW-chromebook-homepage-carousel.png?auto=compress,format'
+            },
+            {
+                'name': 'laptop',
+                'price': '300',
+                'manufacturer': 'Dell',
+                'seller': 'BBK Electronics',
+                'img': 'https://images.prismic.io/frameworkmarketplace/46cbf974-cdff-4cd8-b761-8b4a3343f6c4_FW-chromebook-homepage-carousel.png?auto=compress,format'
+            },
+            {
+                'name': 'laptop',
+                'price': '300',
+                'manufacturer': 'Dell',
+                'seller': 'BBK Electronics',
+                'img': 'https://images.prismic.io/frameworkmarketplace/46cbf974-cdff-4cd8-b761-8b4a3343f6c4_FW-chromebook-homepage-carousel.png?auto=compress,format'
+            }
+        ];
+
+        var renderProductDetails = (pData) => {
+            var mainli = document.createElement("li");
+            var ultag = document.createElement("ul");
+            ultag.setAttribute("class", "productDetails");
+
+            var li1 = document.createElement("li");
+            li1.innerHTML = "Product Name : " + pData.name;
+            ultag.append(li1);
+
+            var li2 = document.createElement("li");
+            li2.innerHTML = "Price : $" + pData.price;
+            ultag.append(li2);
+
+            var li3 = document.createElement("li");
+            li3.innerHTML = "Manufacturer : " + pData.manufacturer;
+            ultag.append(li3);
+
+            var li4 = document.createElement("li");
+            li4.innerHTML = "Seller : " + pData.seller
+            ultag.append(li4);
+
+            var li5 = document.createElement("li");
+            var imgTag = document.createElement("img");
+            imgTag.setAttribute("src", pData.img);
+            li5.append(imgTag);
+            ultag.append(li5);
+
+            mainli.append(ultag);
+            document.querySelector(".container").append(mainli);
+
+        }
+
+        for (var i = 0; i < productData.length; i++) {
+            renderProductDetails(productData[i]);
+        }
+    </script>
+</body>
+
+</html> 

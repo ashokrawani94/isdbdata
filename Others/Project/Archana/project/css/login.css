@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0.1px;
+}
+   
+    .frontpage{
+        background: url(../image/cover.jpg)no-repeat center center/cover ;
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        z-index: -1;
+        margin-top: 0px;
+        
+    }
+
+    h2{
+        font-size: 2rem;
+        margin-top: 7px;
+    }
+    .maincontainer{
+    
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+    border-radius: 60%;
+    margin-top: 250px;
+    margin-left: 908px;
+    background-color: rgba(226, 202, 202, 0.35);
+    text-align: center;
+}
+.containt{
+    padding: 16px;
+    margin: 16px ;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.containt1{
+    background-color: rgb(76, 127, 220);
+    margin: 7px;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius:12%;
+}

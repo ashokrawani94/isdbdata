@@ -1,0 +1,36 @@
+3 Different ways we can create functions in js 
+    1. through function keyword
+        function <nameoffunction>() {
+            ... 
+            ...
+            ...
+        }
+        eg: 
+            function showData() {
+                ... 
+                ....
+            }
+    2. Assigning function to a variable
+
+        nameoffunction = function() {
+
+        }
+        eg:
+            var showData = function() {
+                    ... 
+                    ..
+            }
+    3. Using Arrow function 
+
+
+            var nameoffunction = () => {
+                ... 
+                ...
+            }
+
+        eg:
+            var showData = () => {
+                ... 
+                ...
+            }
+

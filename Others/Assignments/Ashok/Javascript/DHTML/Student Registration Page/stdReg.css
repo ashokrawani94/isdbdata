@@ -1,0 +1,41 @@
+h3 {
+    text-align: center;
+    border: 1px solid;
+}
+.formContainer {
+    border: 1px solid;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formContainer li {
+    border: 1px solid #ccc;
+}
+#btn li .formContainer{
+    border:none;
+}
+.tableContainer, .formContainer{
+    float:left;
+    width:45%;
+}
+.tableContainer{
+    padding:0 15px;
+}
+.tableContainer table{
+    width:100%;
+}
+.tableContainer table tr{
+    border: solid 1px #ccc;
+}
+.tableContainer table tr, .tableContainer table tr th{
+    border-right:solid 1px #ccc;
+    padding:10px;
+}

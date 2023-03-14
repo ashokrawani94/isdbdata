@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="userDfndExceptions.js"> </script>
+        <style>
+            h3 {
+                text-align: center;
+                margin: 10px;
+            }
+            ul {
+                border: 1px solid;
+                width: 350px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ccc;
+            }
+            li {
+                list-style: none;
+                border: 1px solid #ccc;
+                padding: 5px;
+                margin: 5px;
+                background-color: #fff;
+            }
+            .successMsg {
+                font-weight: bold;
+                text-align: center;
+            }
+            .error {
+                color: red;
+                font-size: 11px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            User Registration page
+        </h3>
+        <ul>
+            <li>
+                User Account Id: <input type="text" id="uaccountId">
+                <div class="error iderr">
+                    User Account Id is mandate
+                </div>
+            </li>
+            <li>
+                Account Password: <input type="password" id="accntPwd">
+                
+                <div class="error pwdErr">
+                    Password Rules not matching
+                </div>
+            </li>
+            <li>
+                Re-enter Password: <input type="password" id="rAccntPwd">
+                <div class="error pwdRenterErr">
+                    Password not matching
+                </div>
+            </li>
+            <li>
+                Maild Id: <input type="text" id="actMailId">
+            </li>
+            <li>
+                <input type="button" value="Register" onclick="registerUserDetails()">
+            </li>
+            <li class="successMsg">
+            </li>
+        </ul>
+    </body>
+</html>

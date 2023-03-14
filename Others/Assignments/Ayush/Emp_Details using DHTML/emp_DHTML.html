@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empolyee details using DHTML</title>
+    <link rel="stylesheet" href="emp.css">
+    <script src="emp.js"></script>
+</head>
+<body>
+    <h2><b>Empolyee Details</b></h2>
+    <ul>
+        <li>
+           <b> Name :</b> 
+            <input type="text" id="ename">
+        </li>
+        <li>
+            <b>Departement : </b>
+            <input type="text" id="edep">
+        </li>
+        <li>
+           <b> Gender :</b> 
+            <input type="radio" name="egender" value="Male">&nbsp;<b> Male</b>
+            <input type="radio" name="egender" value="Female">&nbsp;<b>Female</b>
+        </li>
+        <li>
+           <b> Salary :</b>
+            <input type="text" id="esal">
+        </li>
+        <li class="btn">
+            <input type="button" value="Submit" onclick="showTheValue()">
+        </li>
+    </ul>
+
+    <ul class="abc">
+        <li><b>Name : </b><span id="dename"></span></li>
+        <li><b>Departement : </b><span id="dedep"></span></li>
+        <li><b>Gender : </b><span id="degender"></span></li>
+        <li><b>Salary : </b><span id="desal"></span></li>
+        <li><b>P.F : </b><span id="depf"></span></li>
+        <li><b>Hra : </b><span id="dehra"></span></li>
+        <li><b>Total Salary : </b><span id="detsal"></span></li>
+        <li><b>Tax : </b><span id="detax"></span></li>
+    </ul>
+</body>
+</html>

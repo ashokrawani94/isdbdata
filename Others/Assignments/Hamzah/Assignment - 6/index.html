@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_6</title>
+    
+    <style>
+        .header, .container, .footer{
+            border: 1px solid;
+            width: 1100px;
+            height: 50px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .header a{
+            font-size: 25px;
+        }
+        .container{
+            height: 720px;
+            overflow: auto;
+        }
+        .main-table{
+            margin: 10px auto;
+            width: 1060px;
+        }    
+        .progress-width{
+            width: 1px;
+        
+        }
+        .student-img{
+            width: 200px;
+            height: 150px;
+        }
+       
+     
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Student Details</a>
+    </div>
+    <div class="container">
+        <table class="main-table" border="1px solid" cellspacing="1px" cellpadding="4px">
+        <thead>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Picture</th>
+            <th>Class</th>
+            <th>Location</th>
+            <th class="progress-width">Progress Card</th>
+        </thead>
+        <tbody>
+
+        <!---Student 1--->       
+            <tr>
+                <td>1.</td>
+                <td>Karan</td>
+                <td>28</td>
+                <td class="student-img"><img class="img" src="./Images/St1.jpeg" alt="" width="100%"></td>
+                <td>10th</td>
+                <td>Puna</td>
+
+         <!-------Progress Table-------->          
+                <td>
+                    <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max_Marks</th>
+                            <th>Obtianed_Marks</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>120</td>
+                                <td>20</td>
+                                <td>Fail</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>89</td>
+                                <td>Pass</td>
+                            </tr>             
+                        </tbody>
+                    </table>
+                </td>
+        <!-----End Progress Table------->          
+            </tr>
+
+        <!---Student 2--->       
+        <tr>
+                <td>2.</td>
+                <td>Kajol</td>
+                <td>25</td>
+                <td class="student-img"><img class="img" src="./Images/st2.jpeg" alt="" width="100%"></td>
+                <td>12th</td>
+                <td>Hyderabad</td>
+         <!-------Progress Table-------->          
+                <td>
+                    <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max_Marks</th>
+                            <th>Obtianed_Marks</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>90</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>100</td>
+                                <td>75</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>45</td>
+                                <td>Fail</td>
+                            </tr>             
+                        </tbody>
+                    </table>
+                </td>
+        <!-----End Progress Table------->          
+            </tr> 
+
+        <!---Student 3--->       
+
+        <tr>
+                <td>3.</td>
+                <td>Depika</td>
+                <td>24</td>
+                <td class="student-img"><img class="img" src="./Images/st4.jpeg" alt="" width="100%"></td>
+                <td>11th</td>
+                <td>Delhi</td>
+
+         <!-------Progress Table-------->          
+                <td>
+                    <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                        <thead>
+                            <th>Subject</th>
+                            <th>Max_Marks</th>
+                            <th>Obtianed_Marks</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Math</td>
+                                <td>100</td>
+                                <td>50</td>
+                                <td>Fail</td>
+                            </tr>
+                            <tr>
+                                <td>Computer</td>
+                                <td>120</td>
+                                <td>100</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr>
+                                <td>Science</td>
+                                <td>100</td>
+                                <td>89</td>
+                                <td>Pass</td>
+                            </tr>             
+                        </tbody>
+                    </table>
+                </td>
+        <!-----End Progress Table------->          
+            </tr> 
+       <!---Student 4--->       
+       <tr>
+        <td>4.</td>
+        <td>John</td>
+        <td>28</td>
+        <td class="student-img"><img class="img" src="./Images/st5.jpeg" alt="" width="100%"></td>
+        <td>10th</td>
+        <td>Mumbai</td>
+
+ <!-------Progress Table-------->          
+        <td>
+            <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                <thead>
+                    <th>Subject</th>
+                    <th>Max_Marks</th>
+                    <th>Obtianed_Marks</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>120</td>
+                        <td>100</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td>89</td>
+                        <td>Pass</td>
+                    </tr>             
+                </tbody>
+            </table>
+        </td>
+<!-----End Progress Table------->          
+    </tr> 
+
+    <!---Student 5--->       
+    <tr>
+        <td>5.</td>
+        <td>Meera</td>
+        <td>28</td>
+        <td class="student-img"><img class="img" src="./Images/st6.jpeg" alt="" width="100%"></td>
+        <td>10th</td>
+        <td>Puna</td>
+
+ <!-------Progress Table-------->          
+        <td>
+            <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                <thead>
+                    <th>Subject</th>
+                    <th>Max_Marks</th>
+                    <th>Obtianed_Marks</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>100</td>
+                        <td>60</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>120</td>
+                        <td>20</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td>89</td>
+                        <td>Pass</td>
+                    </tr>             
+                </tbody>
+            </table>
+        </td>
+<!-----End Progress Table------->          
+    </tr>
+
+<!---Student 6--->       
+<tr>
+        <td>6.</td>
+        <td>Lakshmi</td>
+        <td>25</td>
+        <td class="student-img"><img class="img" src="./Images/ST7.jpeg" alt="" width="100%"></td>
+        <td>12th</td>
+        <td>Hyderabad</td>
+ <!-------Progress Table-------->          
+        <td>
+            <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                <thead>
+                    <th>Subject</th>
+                    <th>Max_Marks</th>
+                    <th>Obtianed_Marks</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>100</td>
+                        <td>90</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>100</td>
+                        <td>75</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td>45</td>
+                        <td>Fail</td>
+                    </tr>             
+                </tbody>
+            </table>
+        </td>
+<!-----End Progress Table------->          
+    </tr> 
+
+<!---Student 7--->       
+
+<tr>
+        <td>7.</td>
+        <td>Depika</td>
+        <td>24</td>
+        <td class="student-img"><img class="img" src="./Images/St9.jpeg" alt="" width="100%"></td>
+        <td>11th</td>
+        <td>Delhi</td>
+
+ <!-------Progress Table-------->          
+        <td>
+            <table border="1px solid" cellspacing="1px" cellpadding="3px">
+                <thead>
+                    <th>Subject</th>
+                    <th>Max_Marks</th>
+                    <th>Obtianed_Marks</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>Fail</td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>120</td>
+                        <td>100</td>
+                        <td>Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>100</td>
+                        <td>89</td>
+                        <td>Pass</td>
+                    </tr>             
+                </tbody>
+            </table>
+        </td>
+<!-----End Progress Table------->          
+    </tr> 
+<!---Student 8--->       
+<tr>
+<td>8.</td>
+<td>John</td>
+<td>28</td>
+<td class="student-img"><img class="img" src="./Images/st11.jpeg" alt="" width="100%"></td>
+<td>10th</td>
+<td>Chennai</td>
+
+<!-------Progress Table-------->          
+<td>
+    <table border="1px solid" cellspacing="1px" cellpadding="3px">
+        <thead>
+            <th>Subject</th>
+            <th>Max_Marks</th>
+            <th>Obtianed_Marks</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Math</td>
+                <td>100</td>
+                <td>50</td>
+                <td>Fail</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>120</td>
+                <td>100</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>100</td>
+                <td>89</td>
+                <td>Pass</td>
+            </tr>             
+        </tbody>
+    </table>
+</td>
+<!-----End Progress Table------->          
+</tr> 
+
+
+
+        </tbody>
+        </table>
+    </div>
+
+
+    <div class="footer">
+        &copy; Copy Rights 2023
+    </div>
+</body>
+</html>

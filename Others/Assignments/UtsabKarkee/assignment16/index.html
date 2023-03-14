@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 16</title>
+  </head>
+  <body>
+    <script>
+      var getMonthName = (index) =>
+        [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ][index];
+
+      var getDayName = (index) =>
+        [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ][index];
+
+      var displayMessage = function () {
+        var messages = [
+          "Please Select 1 to 10 Option",
+          "1: 14/Feb/2023",
+          "2: 14th Feb, 2023",
+          "3: 14th February, 2023",
+          "4: Tue, 14th Feb",
+          "5: Tuesday, 14th February 2023",
+          "6: 14-Feb-2023",
+          "7: 14-02-2023",
+          "8: 14th Feb, 2023 10:20:30",
+          "9: 10 min : 20 sec",
+          "10: 2 hrs, 10min 20sec",
+        ];
+        return messages.join("\n");
+      };
+
+      // fURTHER READING ISO_8601 ->  https://en.wikipedia.org/wiki/ISO_8601#:~:text=ISO%208601%20is%20an%20international,and%20an%20amendment%20in%202022.
+      var message = () =>
+        "Please Enter Date in Format YYYY-MM-DDTHH:MM:SS where MM -> 01/02..12, DD -> 01/02/..31 and YYYY -> 2019/2022, HH -> 0..24,MM->0:59, SS -> 0..60. Sample Example:2019-01-12T15:32:32";
+
+      // If input empty return current date else user entered date.
+      var getDate = function () {
+        var dateFormat = collectInput(message);
+        if (dateFormat) date = new Date(dateFormat);
+        else date = new Date();
+        return date;
+      };
+
+      var collectInput = function (func) {
+        return prompt(func());
+      };
+
+      var displayDateFormat = function (dateFormat, date) {
+        var formatDate;
+        if (dateFormat && date) {
+          switch (dateFormat) {
+            case "1":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "/" +
+                getMonthName(date.getMonth()).substring(0, 3) +
+                "/" +
+                date.getFullYear();
+              break;
+
+            case "2":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "th, " +
+                getMonthName(date.getMonth()).substring(0, 3) +
+                " " +
+                date.getFullYear();
+              break;
+            case "3":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "th, " +
+                getMonthName(date.getMonth()) +
+                " " +
+                date.getFullYear();
+              break;
+            case "4":
+              formatDate =
+                getDayName(date.getDay()).substring(0, 3) +
+                ", " +
+                date.getDate().toString().padStart(2, "0") +
+                "th " +
+                getMonthName(date.getMonth()).substring(0, 3);
+
+              break;
+
+            case "5":
+              formatDate =
+                getDayName(date.getDay()).substring(0, 3) +
+                ", " +
+                date.getDate().toString().padStart(2, "0") +
+                "th " +
+                getMonthName(date.getMonth()) +
+                " " +
+                date.getFullYear();
+
+              break;
+
+            case "6":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "-" +
+                getMonthName(date.getMonth()).substring(0, 3) +
+                "-" +
+                date.getFullYear();
+              break;
+
+            case "7":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "-" +
+                (date.getMonth() + 1).toString().padStart(2, "0") +
+                "-" +
+                date.getFullYear();
+              break;
+
+            case "8":
+              formatDate =
+                date.getDate().toString().padStart(2, "0") +
+                "th, " +
+                getMonthName(date.getMonth()).substring(0, 3) +
+                " " +
+                date.getFullYear() +
+                " " +
+                date.getHours().toString().padStart(2, "0") +
+                ":" +
+                date.getMinutes().toString().padStart(2, "0") +
+                ":" +
+                date.getSeconds().toString().padStart(2, "0");
+              break;
+
+            case "9":
+              formatDate =
+                date.getMinutes() + " min : " + date.getSeconds() + " sec";
+              break;
+
+            case "10":
+              formatDate =
+                date.getHours() +
+                " hrs, " +
+                date.getMinutes() +
+                " min  " +
+                date.getSeconds() +
+                " sec";
+              break;
+            default:
+              format = "Invalid";
+          }
+        } else {
+          console.log("Something went wrong");
+        }
+        return formatDate;
+      };
+      var showDate = (aDate) => console.log(aDate);
+
+      // testing
+      showDate(displayDateFormat(collectInput(displayMessage), getDate()));
+
+      //just for testing all 10 formats 2023-08-08T08:18:10
+
+      /*
+      var testing = function () {
+        for (var number = 1; number <= 10; number++) {
+          console.log(displayDateFormat(number.toString(), getDate()));
+        }
+        return;
+      };
+
+      testing();
+      */
+    </script>
+  </body>
+</html>

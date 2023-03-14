@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <form
+        action="sample.coq"
+        method="post"
+        onsubmit="return formValidation()"
+      >
+        <ul>
+          <li>
+            <label>Account Name:</label>
+            <input
+              type="text"
+              id="name"
+              onkeydown="return validateAccountName(event)"
+            /><span id="errorName"></span>
+          </li>
+          <li>
+            <label>Account Number:</label>
+            <input
+              type="text"
+              id="number"
+              onkeydown="return validateAccountNumber(event)"
+            />
+            <span id="errorNumber"></span>
+          </li>
+          <li>
+            <label>Account Password:</label>
+            <input
+              type="password"
+              id="password"
+              onkeydown="return validateAccountPassword(event)"
+            /><span id="errorPassword"></span>
+          </li>
+          <li>
+            <label>Renter Password:</label>
+            <input
+              type="password"
+              id="rpassword"
+              onkeydown="return validateAccountRePassword(event)"
+            /><span id="errorRPassword"></span>
+          </li>
+          <li>
+            <input type="submit" value="Enter" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating employee details with object method</title>
+</head>
+<body>
+    <script>
+        var employeeData = {
+            getEmployeeDetails() {
+                this.name = prompt("Enter Employee Name");
+                this.age = prompt("Enter Employee Age");
+                this.gender = prompt("Enter Employee Gender");
+                this.department = prompt("Enter Employee Department");
+                this.basicSalary = prompt("Enter Bsiac Salary");
+                this.basicSalary = parseInt(this.basicSalary);
+                this.getEmployeePfHraAndTotalasalary();
+            },
+
+            getEmployeePfHraAndTotalasalary() {
+                this.PF = (this.basicSalary * 15) / 100;
+                this.PF = parseInt(this.PF);
+                this.HRA = (this.basicSalary * 20) / 100;
+                this.HRA = parseInt(this.HRA);
+
+                this.totalSalary = this.basicSalary + this.PF + this.HRA;
+                this.getemployeeTax();
+            },
+
+            getemployeeTax() {
+                this.valueTax = 0;
+              if (this.gender == "male"){
+                if (this.totalSalary > 100000) {
+                    this.valueTax = 15;
+                } else if (this.totalSalary > 50000) {
+                    this.valueTax = 10;
+                } else (this.totalSalary > 25000) 
+                   this.valueTax = 5;  
+              } 
+              
+              if (this.gender == 'female'){
+                if (this.totalSalary > 100000) {
+                    this.valueTax = 10;
+                } else if (this.totalSalary > 50000) {
+                    this.valueTax = 5;
+                } else (this.totalSalary > 25000) 
+                    this.valueTax = "Tax is free"
+              }
+
+              this.totalTaxCut = (this.valueTax * this.totalSalary) / 100
+              this.displayEmployeeDetails();  
+            },
+
+            displayEmployeeDetails() {
+               console.log("Employee Details");
+               console.log("Employee Name " + this.name);
+               console.log("Employee Age " + this.age);
+               console.log("Employee Gender " + this.gender);
+               console.log("Employee Basic Salary " + this.basicSalary);
+               console.log("Employee PF " + this.PF);
+               console.log("Employee HRA " + this.HRA);
+               console.log("Employee Total Salary " + this.totalSalary);
+               console.log("Total Tax Cut " + this.totalTaxCut);
+            }
+
+        }
+        employeeData.getEmployeeDetails();
+    </script>
+</body>
+</html>

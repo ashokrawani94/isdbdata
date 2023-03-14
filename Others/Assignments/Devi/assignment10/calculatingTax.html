@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Tax</title>
+</head>
+<body>
+    <script>
+        var ename = prompt ("enter name of the employee");
+        var eage = prompt ("enter age of the employee");
+        var empGender = prompt ("enter gender of the employee");
+        var basicSal = prompt (" enter the basicSalary ");
+        basicSal = parseInt(basicSal);
+        var pf = ( 12 * basicSal) /100;
+        var hra = ( 5 * basicSal) /100;
+        var totalSal = pf + hra + basicSal;
+        totalSal = parseInt(totalSal);
+
+        console.log(" name of the employee " +ename);
+        console.log(" age of the employee " +eage);
+        console.log(" gender of the employee " +empGender);
+        console.log(" basicSal of the employee " +basicSal);
+        console.log(" Employee PF is " +pf);
+        console.log(" Employee HRA is " +hra);
+        console.log(" total salary of the employee " +totalSal);
+        
+        var totalTaxToBePaid, taxPercent =0;
+
+        if(empGender == 'male'){
+            if ( totalSal > 100000 ){
+                taxPercent = 15;
+            }else if ( totalSal > 50000){
+                taxPercent = 10;
+            }else if (totalSal > 25000) {
+                taxPercent = 5;
+            }
+        }else{
+            if( totalSal > 100000 ) {
+                taxPercent = 10;
+            }else if ( totalSal > 50000){
+                taxPercent = 5;
+            }else{
+                taxPercent =0;
+            }
+
+        }
+        totalTaxToBePaid = ( totalSal * taxPercent ) / 100;
+        console.log ( "total tax to be paid " +totalTaxToBePaid);
+
+</script>
+
+    
+</body>
+</html>

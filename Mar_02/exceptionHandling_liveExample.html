@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="exceptionHandling.js"></script>
+        <title>
+            Demonstrating  runtime exceptions - Employee Task Assigner
+        </title>
+        <style>
+             h3 {
+                text-align: center;
+                color: green;
+                margin: 10px;
+             }
+             input {
+                margin: 10px
+             }
+             .taskBlock {
+                border: 1px solid;
+                width: 300px;
+                margin: 20px auto;
+                color: rebeccapurple;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+             }
+
+             .welcomeBlock {
+                position: absolute;
+                bottom: 40px;
+                text-align: center;
+                background-color: #ddd;
+                opacity: 0.6;
+                padding: 10px;
+                left: 10px;
+                right: 10px;
+                color: #460404;
+                font-weight: bold;
+                display: none;
+             }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Employee Task Assignmer Page
+        </h3>
+        <input type="text" id="uname"> <input type="button" value="Save" onclick="saveName()">
+        <input type="button" onclick="createTaskBlock()" value="Create Task Container">
+        <input type="button" onclick="showTask()" value="Show Task for today">
+        <div class="tConainer"></div>
+        <div class="welcomeBlock">
+            Thanks for using our application
+        </div>
+    </body>
+</html>

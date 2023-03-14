@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <style>
+
+        h1{
+            border: 2px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><b>Employee Details</b></h1>
+
+    <script>
+//IN console without prompt method
+        var ename1, eage1, edep1, basicsal1, totalsal1;
+
+        ename1 = "Ravi";
+        eage1 = 26;
+        edep1 = "inventry";
+        basicsal1 = 84000;
+        pf = (14 * basicsal1)/100;
+        hra = (25 * basicsal1)/100;
+        totalsal1 = basicsal1 + pf + hra
+
+        console.log("-----Employee Details-----")
+        console.log("Employee Name: " + ename1)
+        console.log("Age: " + eage1)
+        console.log("Departement: " + edep1)
+        console.log("Salary: " + basicsal1)
+        console.log("Total Salary: " + totalsal1)
+
+//IN console with prompt method and also add details in console
+
+        var ename, eage, edep, basicsal, totalsal;
+
+        ename = prompt("Enter Employee Name");
+        eage = prompt("Enter Age");
+        edep = prompt("Enter your Departement");
+        basicsal = prompt("Add your Salary");
+        basicsal = parseInt(basicsal)
+        pf = (14 * basicsal)/100;
+        pf = parseInt(pf)
+        hra = (25 * basicsal)/100;
+        hra = parseInt(hra)
+        totalsal = (basicsal + pf + hra);
+        
+
+        console.log("-----Employee Details-----")
+        console.log("Employee Name: " + ename)
+        console.log("Age: " + eage)
+        console.log("Departement: " + edep)
+        console.log("Salary: " + basicsal)
+        console.log("Total Salary: " + totalsal)
+        alert(totalsal);
+
+    </script>
+</body>
+</html>

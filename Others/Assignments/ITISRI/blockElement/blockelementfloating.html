@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blockElementFloating</title>
+    <style>
+        h3{
+            border: 3px solid blue;
+            width:400px;
+            height: 50px;
+            text-align: center;
+            margin: auto;
+            background-color: black;
+            color: white;
+            overflow: auto;
+        }
+        .container{
+            border: 2px blue solid;
+            width: 800px;
+            height: 600px;
+            margin:auto;
+            background-color: bisque;
+            overflow: auto;
+                  }
+       .blocks1,.blocks2,.blocks3,.blocks4,.blocks5,.blocks6,.blocks7,.blocks8,.blocks9,.blocks10,.blocks11{
+            border: 2px blue solid;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            background-color: brown;
+            color:peru ;
+            margin: 8px;
+                }
+        .blocks1{
+            background-color: brown;
+            display: inline-block;
+           
+              }
+        .blocks2{
+            background-color: brown;
+            display: inline-block;
+        
+            
+               }
+        .blocks3{
+            background-color: brown;
+            float: right;
+            display: block;
+               }
+        .blocks4{
+            background-color: brown;
+            float: right;
+            clear: both;
+               }
+        .blocks5{
+            background-color: brown;
+           
+              }
+        .blocks6{
+            background-color: brown;
+           
+        }
+        .blocks7{
+            background-color: brown;
+            
+        }
+        .blocks8{
+            background-color: brown;
+           display: inline-block;
+        }
+        .blocks9{
+            background-color: brown;
+            display: inline-block;
+        }
+        .blocks10{
+            background-color: brown;
+           display:inline-block;
+        }
+        .blocks11{
+            background-color: brown;
+           float:right;
+        }
+    </style>
+</head>
+<body>
+    <h3>Block Element</h3>
+    <div class="container">
+       
+        <div class="blocks1">Block1</div>
+        <div class="blocks2">Block2</div>
+        <div class="blocks3">Block3</div>
+        <div class="blocks4">Block4</div>
+        <div class="blocks5">Block5</div>
+        <div class="blocks6">Block6</div>
+        <div class="blocks7">Block7</div>
+        <div class="blocks8">Block8</div>
+        <div class="blocks9">Block9</div>
+        <div class="blocks10">Block10</div>
+        <div class="blocks11">Block11</div>
+    </div>
+</body>
+</html>

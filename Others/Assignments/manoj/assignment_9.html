@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empolyee_Details</title>
+</head>
+<body>
+    <h1>list of empolyee details</h1>
+    <script>
+        var p1 = prompt('enter empolyee name');
+        var p2 = prompt('enter empolyee age');
+        p2 = parseInt(p2)
+        var p3 = prompt('enter empolyee role');
+        var p4 = prompt('enter empolyee gender');
+        var p5 = prompt('enter empolyee bacsalary');
+        p5 = parseInt(p5)
+         var totalsal, hra, pf;
+         pf = (13*p5)/100;
+         hra = (25 * p5)/100;
+         totalsal = p5 + hra + pf;
+
+        console.log('enter empolyee name' + p1);
+        console.log('enter empolyee age' + p2);
+        console.log('enter empolyee role' + p3);
+        console.log('enter empolyee gender' + p4);
+        console.log('enter empolyee bacsalary' + p5);
+        console.log('pf is' + pf);
+        console.log('hra is' + hra);
+        console.log('totalsal is' + totalsal);
+
+    </script>
+</body>
+</html>

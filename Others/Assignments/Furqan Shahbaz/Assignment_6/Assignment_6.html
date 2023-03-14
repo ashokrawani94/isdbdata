@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 table</title>
+    <style>
+        td{
+            text-align: center;
+        }
+        .fail{
+            background-color: rgb(243, 146, 146);
+        
+        }
+        .fail:hover{
+            background-color: rgb(255, 58, 58);
+        }
+        .pass{
+            background-color: rgb(139, 241, 139);
+        }
+        .pass:hover{
+            background-color: green;
+        }
+        td{
+            background-color: rgb(246, 229, 205);
+        }
+        th{
+            background-color: rgb(244, 206, 153);
+        }
+        h2{ 
+            text-align: center;
+            text-decoration: underline rgb(89, 24, 1);
+        }
+        .imglogo{
+            display: block;
+            margin: 0px auto;
+        }
+        .table{
+            margin-left: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Muffakham Jah College Of Engineering and Technology</h1> <br>
+        <img src="mjlogo.jfif" class="imglogo" width="100px" height="100px"> <br>
+        <br>
+        <h3 style="text-align: center;">Test Results</h3>
+     <table border="1px solid" cellspacing="10" cellpadding="10" width="500px" class="table">
+       <thead>
+         <tr>
+            <th>S.no</th>
+            <th>Student Name</th>
+            <th>Age</th>
+            <th>Student Photo</th>
+            <th>Class</th>
+            <th>Stream</th>
+            <th>Location</th>
+            <th>Progrerss Card</th>
+         </tr>
+       </thead>
+    
+       <tbody>
+           <tr>
+              <td>1</td>
+              <td>Sahil</td>
+              <td>18</td>
+              <td><img src="StudentPic.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MPC</td>
+              <td rowspan="2">Hydeabad</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Mohit</td>
+              <td>18</td>
+              <td><img src="std2.jpg" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MPC</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td class="fail">fail</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+              <tr>
+              <td>3</td>
+              <td>Ahmed</td>
+              <td>18</td>
+              <td><img src="std3.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>BIPC</td>
+              <td>Chennai</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+             <tr>
+              <td>4</td>
+              <td>Akriti</td>
+              <td>18</td>
+              <td><img src="std4.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>BIPC</td>
+              <td>Delhi</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>87</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>78</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>95</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+              <tr>
+              <td>5</td>
+              <td>Suhana</td>
+              <td>18</td>
+              <td><img src="std5.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MPC</td>
+              <td>Mumbai</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>80</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>76</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>72</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+              <tr>
+              <td>6</td>
+              <td>Zara</td>
+              <td>18</td>
+              <td><img src="std6.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MBIPC</td>
+              <td>Hydeabad</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>79</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>83</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>78</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>66</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+              <td>7</td>
+              <td>Zain</td>
+              <td>18</td>
+              <td><img src="std7n.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>BIPC</td>
+              <td rowspan="2">Pune</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>58</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>49</td>
+                                <td class="fail">fail</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+
+              <td>8</td>
+              <td>Husna</td>
+              <td>18</td>
+              <td><img src="std8.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MPC</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>90</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>73</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+             
+              <tr>
+              <td>9</td>
+              <td>Sohail</td>
+              <td>18</td>
+              <td><img src="std9.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>MPC</td>
+              <td>Mumbai</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Maths</td>
+                                <td>100</td>
+                                <td>70</td>
+                                <td class="pass">pass</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>60</td>
+                                <td class="pass">pass</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>
+              <tr>
+              <td>10</td>
+              <td>Kartik</td>
+              <td>18</td>
+              <td><img src="std10.jfif" width="100px" height="100px"></td>
+              <td>12th</td>
+              <td>BIPC</td>
+              <td>Maharashtra</td>
+              <td>
+                <table border="1px solid">
+                    <thead>
+                        <tr>
+                            <th> Subject</th>
+                            <th>Max Marks</th>
+                            <th>Obt Marks</th>
+                            <th>Status</th>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Biology</td>
+                                <td>100</td>
+                                <td>43</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>100</td>
+                                <td>35</td>
+                                <td class="fail">fail</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>100</td>
+                                <td>40</td>
+                                <td class="fail">fail</td>
+                            </tr>
+
+                        </tbody>
+                    </thead>
+                </table>
+              </td>
+            </tr>     
+                    </thead>
+              </td>
+           </tr>
+       </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment_8_InputElements</title>
+  <link rel="icon" type="image/png" href="https://tse3.mm.bing.net/th?id=OIP.n6Pz-LIJDX_HFnFIg7QmKAHaHa&pid=Api&P=0">
+  <style>
+  .header{
+    border: 3px solid;
+    width: 1000px;
+     height: 50px ;
+     background-color:aqua;
+     text-decoration: solid;
+     text-align: center;
+     margin: 2px ;
+     padding: 2px;
+  }
+  .mainblock{
+    border: 3px solid;
+        height:1000px;
+        width: 1000px;
+        margin: 2px;
+        padding: 2px;
+      }
+      .innerblock1{
+        border: 2px solid;
+        height: 200px ;
+        width: 925px;
+       background-color: blanchedalmond;
+        margin-top: 30px;
+        margin-left: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      .AccountDetailsBlock{
+        border: 2px solid;
+        text-align: center;
+        position: absolute;
+        top: -12px;
+        left: 61px;
+        background-color:blue;
+      }
+      .innerblock2{
+        border: 2px solid;
+        height: 200px ;
+        width: 925px;
+       background-color: blanchedalmond;
+        margin-top: 30px;
+        margin-left: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      .EducationDetailsBlock{
+        border: 2px solid;
+        text-align: center;
+        position: absolute;
+        top: -12px;
+        left: 61px;
+        background-color:blue;
+      }
+      .innerblock3{
+        border: 2px solid;
+        height: 200px ;
+        width: 925px;
+       background-color: blanchedalmond;
+        margin-top: 30px;
+        margin-left: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      .AddressDetailsBlock{
+        border: 2px solid;
+        text-align: center;
+        position: absolute;
+        top: -12px;
+        left: 61px;
+        background-color:blue;
+      }
+      .innerblock4{
+        border: 2px solid;
+        height: 250px ;
+        width: 925px;
+       background-color: blanchedalmond;
+        margin-top: 30px;
+        margin-left: 15px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      .AboutDetailsBlock{
+        border: 2px solid;
+        text-align: center;
+        position: absolute;
+        top: -12px;
+        left: 61px;
+        background-color:blue;
+      }
+      .label{
+        float:left;
+        margin: 2px;
+        padding: 2px;
+        background-color:lightcyan; 
+      color:lightcoral;
+      }
+      li{
+        list-style: none;
+        margin: 4px;
+        padding: 1px;
+      }
+      .clg{
+        position: relative;
+        left: 500px;
+        bottom: 103px;
+        margin: 4px;
+        padding: 3px;
+      }
+      .abc{
+        margin: 45px;
+      }
+      .AboutYourSelf{
+      height: 149px;
+      width: 710px;
+      }
+      .content{
+      
+      margin:2px
+        padding: 2px;
+      }
+      .field{
+        margin: 2px;
+      }
+     .button{
+      position: relative;
+      left: 790px;
+      bottom: 39px;
+     }
+    
+  .footer{
+    border: 3px solid;
+    width: 1000px;
+     height: 50px ;
+     background-color:aqua;
+     text-decoration: solid;
+     text-align: center;
+     margin: 2px ;
+     padding: 2px;
+  }
+</style>
+</head>
+<body>
+  <header class="header"> Student Registration Page</header>
+  <div class="mainblock">
+  <div class="innerblock1">
+    <form >
+      <ul>
+         <li>
+          
+          <label for="UserName" class="label">Name:</label>
+          <div class="field">
+               <input type="text" class="content" class="UserNames" value="">
+              </div>
+            </li>
+                <li>
+                 
+                <lable for="Age" class="label">Age:</lable>
+                <div class="field">
+                <input type="text"  class="content" name="Age" value="">
+              </div>
+                </li>
+                <li>
+                 
+                  <lable for="Gender" class="label">Gender:</lable>
+                
+                  <input type="radio"  class="content" name="gender" value="male"> Male
+                  <input type="radio"  class="content" name="gender" value="female"> Female
+              
+                  </li>
+                  <li>
+                   
+                    <label for="Mail Id" class="label">Mail Id:</label>
+              
+                         <input type="text" class="content"  name="Mail Id" value="">
+                  
+                      </li>
+                      <li>
+                      
+                     <div class="clg">
+                        <label for="AccountId" class="label">Account Id:</label>
+                       
+                        <input type="text" class="content" name="Account Id" value="">
+                      
+                      </div>
+                          </li>
+                          <li>
+                            <div class="clg">
+                            <lable for="Account Type" class="label">Account Type:</lable>
+                            <select name="Account Type">
+                              <option>Real Account  </option>
+                              <option>Personal Account</option>
+                              <option>Nominal Account</option>
+                          </select>
+                        </div>
+                      </li>           
+      </ul>
+    </form>
+   <div class="AccountDetailsBlock"><u>Account Details</u></div>
+  </div>
+  <div class="innerblock2">
+    <form>
+     <ul>
+      <table>
+        
+        <tr>
+          <td>
+           
+            <li>
+            <lable for="Qualification" class="label">Qualification:</lable>
+          </li>
+          </td>
+             <td>
+              <select id="Qualification">
+              <option>M.sc Biology</option>
+              <option>M.sc Computer Science</option>
+              <option>M.sc Mathematics</option>
+              <option>M.sc Science</option>
+              </select>
+             </td>
+        </tr>
+        <tr>
+          <td>
+          <li>
+            <lable class="label">Languages Known:</lable>
+          </li>
+          </td>
+          <td>
+            <input type="checkbox">English </lable>
+            <input type="checkbox">Telugu </lable>
+            <input type="checkbox">Hindi</lable>
+            </td>
+           </tr>
+              <tr>
+              <td> 
+              <li>
+              <lable class="label">Course Opting For:</lable>
+            </li>
+              </td>
+              <td>
+                <select name="Course Opting For">
+                  <option> Biology</option>
+                  <option>Computer Science</option>
+                  <option> Mathematics</option>
+                  <option> Science</option>
+                  </select> 
+              </td>
+             </tr>
+             <tr>
+              <td>
+              <div class="clg">
+              <li>
+             <label class="label">College Name:</label> 
+            </div>
+            </li>
+             </td>
+             <td>
+              <div class="clg">
+             <input type="text"   name="College Name" value="">
+            </div>
+            </td>
+            </tr>
+            <tr>
+              <td >
+                <div class="clg">
+              <li>
+                
+                <lable class="label">Location: </lable>
+              </div>
+              </li>
+              </td>
+              <td >
+                <div class="clg">
+                <img src="Images/location.jpg" width="5px" hight="5px">  
+              <input type="text"  name="Location" value="" >
+              
+                </div >
+            </td>
+            </tr>
+      </table>
+    </ul>
+    </form>
+   <div class="EducationDetailsBlock">Education Details</div>
+  </div>
+  <div class="innerblock3">
+    <form>
+      <ul>
+        <li>
+          <label class="label">D.No:</label>
+         <input type="text" name="dno" value="">
+         </li>
+         <li>
+          <label class="label">StreetName:</label>
+          <input type="text" name="streetname" value="'">
+         </li> 
+         <li>
+          <label class="label">StateName:</label>
+          <input type="text" name="satename" value="">
+         </li>
+         <li>
+          <label class="label">State Code:</label>
+          <input type="statecode" name="statecode" value="">
+         </li>
+         <div class="clg">
+         <li>
+          <label class="label">Country Name:</label>
+          <input type="countryname" name="countryname" value="">
+        </div>
+         </li>
+         <div class="clg">
+         <li>
+          <label class="label">Country Code:</label>
+          <input type="countrycode" name="countrycode" value="">
+        </div>
+         </li>
+      </ul>
+  </form>
+        <div class="AddressDetailsBlock">Address Details</div>
+          </div>
+   <div class="innerblock4">
+    <div class="AboutDetailsBlock"  > About Your Self</div>
+    <div class="abc">
+   <label class="label">About Your Self:</label>
+   <textarea class="AboutYourSelf"  ></textarea> 
+   </div>
+    </div>
+    <input type="button"  class= "button" value="Register">
+   </div>
+   <footer class="footer">@Copy Rights--2023</footer>
+   </body>
+ </html>

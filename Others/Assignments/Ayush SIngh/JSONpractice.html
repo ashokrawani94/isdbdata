@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating salary using JSON</title>
+</head>
+<body>
+    <script>
+        var totalsalary;
+        totalsalary = parseInt(totalsalary);
+        var employeedata = {
+        }
+        employeedata.name = prompt("Enter name of Employee");
+        employeedata.age = prompt("Enter age of employee");
+        employeedata.salary = prompt("Enter salary of employee");
+        employeedata.gender = prompt("Enter Gender of employee");
+        employeedata.salary = parseInt(employeedata.salary);
+
+        if(employeedata.gender=='male'){
+        var pfa = (employeedata.salary * 14) / 100;
+        pfa = parseInt(pfa);
+        var hra = (employeedata.salary * 10) / 100;
+        hra = parseInt(hra);
+        totalsalary = employeedata.salary + pfa + hra;
+        console.log("Total salary is" + totalsalary);
+        } else{
+            var pfa = (employeedata.salary * 10) / 100;
+        pfa = parseInt(pfa);
+        var hra = (employeedata.salary * 5) / 100;
+        hra = parseInt(hra);
+        totalsalary = employeedata.salary + pfa + hra;
+        console.log("Total salary is" + totalsalary);
+        }
+    </script>
+</body>
+</html>

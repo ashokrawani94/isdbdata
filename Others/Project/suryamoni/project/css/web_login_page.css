@@ -1,0 +1,36 @@
+.regBlock {
+    border: 1px solid black;
+    width: 350px;
+    margin: 10px auto;
+   
+    padding: 10px;
+    position: relative;
+    left: 10px;
+    top: 50px;
+    z-index: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://wallpapercave.com/wp/wp7566451.jpg);
+    background-size: 300%;
+    background-repeat:repeat;
+    color: rgb(236, 231, 224);
+    font-size: x-large ;
+    border-radius: 1cm;
+    text-align: center;
+    border: 2px dashed whitesmoke;
+    box-shadow: 5px 5px rgb(18, 18, 29), 10px 10px rgb(88, 62, 62), 15px 15px rgb(187, 189, 187);
+   
+   
+
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+   
+    
+}

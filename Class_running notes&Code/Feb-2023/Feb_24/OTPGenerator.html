@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            OTP Generator
+        </title>
+        <style>
+            .otpCodeBlock {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Generate OTP" onclick="generateOTP()">
+        <div class="otpCodeBlock"></div>
+        <script>
+            var generateOTP = () => {
+                var totalLenghth = 10;
+                var otpValue = '';
+                for (var i = 0 ; i < totalLenghth; i++) {
+                    var randomNumber = getRandomNumber();
+                    otpValue += randomNumber;
+                }
+                document.querySelector(".otpCodeBlock").innerHTML = otpValue;
+            }
+
+            var getRandomNumber = () => {
+                var max = 10;
+                var randomNo = Math.floor(Math.random() * max);
+                return randomNo;
+            }
+        </script>
+    </body>
+</html>

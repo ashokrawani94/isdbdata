@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using conditional statements</title>
+</head>
+<body>
+    <script>
+        var name=prompt("employe name");
+        var age=prompt("employe age");
+        var dept=prompt("employe department");
+        var gender=prompt("employe gender");
+        var bsalary=prompt("basic salary :");
+        bsalary=parseInt(bsalary);
+        var pf=(bsalary*15)/100;
+        var hra=(bsalary*25)/100;
+        var totalsalary=bsalary+pf+hra;
+        var taxpercent=0;
+        console.log("employe name :"+name);
+        console.log("employe age :"+age);
+        console.log("employe department :"+dept);
+        console.log("employe gender :"+gender);
+        console.log("employe basic salary :"+bsalary);
+        console.log("total salary :"+totalsalary);
+        console.log("total pf is :"+pf);
+        console.log("total hra is :"+hra);
+
+        if(gender=='male'){
+            if(totalsalary>=100000){
+                taxpercent=(totalsalary*15)/100;
+            }else if(totalsalary>=50000){
+                taxpercent=(totalsalary*10)/100;
+
+            }else if(totalsalary>=25000){
+                taxpercent=(totalsalary*5)/100;
+            }else{
+                taxpercent=0;
+            }
+
+        }else{
+            if(totalsalary>=100000){
+                taxpercent=(totalsalary*10)/100;
+            }else if(totalsalary>=50000){
+                taxpercent=(totalsalary*5)/100;
+            }else{
+                taxpercent=0;
+            }
+
+        }
+        console.log("paid tax percent is : "+taxpercent);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Demonstrating js functions
+        </title>
+    </head>
+    <body>
+        <script>
+            // var a = 90;
+            // var b = 99;
+            // var msg = "Hi Boss";
+            // console.log(msg)
+            // console.log(msg[1])
+            // console.log(msg[4])
+            // var data = [12, 23, 45];
+            // var userInfo = ["Raj", 20, true];
+
+            var msg = "Hello every one, hope every one is doing good";
+
+            console.log(msg);
+            console.log(msg.length);
+            console.log(msg.charAt(7));
+            console.log(msg.charCodeAt(7));
+
+            console.log(msg.substring(3, 7)); // startindex, end index
+            console.log(msg.substr(3, 7)); // startindex, length of charcs
+            console.log(msg.slice(3, 7)); // startindex, length of charcs
+            // console.log(msg[7]);
+
+
+            //var msg2 = msg.replace(" ", '&');
+            // var msg2 = msg.replace(/ /g, '&');
+            var msg2 = msg.replace(/h/gi, '&');
+            console.log(msg2)
+
+            console.log(msg.indexOf("every"))
+
+            console.log(msg.split('e'))
+
+            console.log(msg.includes('hope12'))
+
+            console.log(msg.toUpperCase())
+            
+        </script>
+    </body>
+</html>

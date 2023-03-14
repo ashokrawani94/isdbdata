@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+             .title{
+                border:2px solid black;
+                background-color: bisque;
+                color: brown;
+                font-size: 25px;
+                text-align: center;
+                padding: 8px;
+                width:1200px;
+                position: relative;
+                left: 60px;
+            }
+            .container{
+                border:2px solid black;
+                width:1185px;
+                position: relative;
+                left: 60px;
+                padding: 15px;
+            }
+            .cont1{
+                border:2px solid black;
+                background-color: bisque;
+                width:1165px;
+                padding: 8px;
+            }
+            .cont2{
+                border:2px solid black;
+                background-color: bisque;
+                width:1165px;
+                height: 150px;
+                padding: 8px;
+            }
+            .cont3{
+                border:2px solid black;
+                background-color: bisque;
+                width:1165px;
+                height: Auto;
+                padding: 8px;
+            }
+            .cont4{
+                border:2px solid black;
+                background-color: bisque;
+                width:1165px;
+                height: Auto;
+                padding: 8px;
+            }
+            .ul1{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: left;
+                float: left;
+            }
+            .li1{
+                margin: 5px;
+                padding: 10px;
+            }
+            .ol1{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: right;
+            }
+            .ul2{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: left;
+                float: left;
+            }
+            .li2{
+                margin: 5px;
+                padding: 10px;
+            }
+            .ol2{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: right;
+            }
+            .ul3{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: left;
+                float: left;
+            }
+            .li3{
+                margin: 5px;
+                padding: 10px;
+            }
+            .ol3{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                text-align: right;
+            }
+            .cont4{
+                text-align: center;
+            }
+            .name{
+                position: absolute;
+                top: 640px;
+                left:100px;
+            }
+            .reset{
+                font-size: large;
+            }
+            .submit{
+                font-size: larger;
+            }
+            .submit{
+                text-align: center;
+                font-size: large;
+            }
+            .footer{
+                border:2px solid black;
+                background-color: bisque;
+                color: black;
+                font-size: 15px;
+                text-align: center;
+                padding: 8px;
+                width:1200px;
+                position: relative;
+                left: 60px;
+            }
+            label{
+                color: blue;
+            }
+            .Acc{
+                border: 2px solid black;
+                color:coral;
+                background-color: aquamarine;
+                position: absolute;
+                left:190px;
+                top:80px;
+                z-index: 1;
+            }
+            .Edu{
+                border: 2px solid black;
+                color:coral;
+                background-color: aquamarine;
+                position: absolute;
+                left:115px;
+                top:183px;
+                z-index: 1;
+            }
+            .Add{
+                border: 2px solid black;
+                color:coral;
+                background-color: aquamarine;
+                position: absolute;
+                left:150px;
+                top:373px;
+                z-index: 1;
+            }
+            .Abt{
+                border: 2px solid black;
+                color:coral;
+                background-color: aquamarine;
+                position: absolute;
+                left:115px;
+                top:554px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div Class="title">
+                 Student Registration
+            </div><br>
+                <div class="Acc">
+                    ACCOUNT DETAILS
+                </div>
+                <div class="container">
+                    <div class="cont1">
+                            <ul class="ul1">
+                                <li class="li1">
+                                    <label class="Name">Name:</label>
+                                    <input type="text" name="Name" placeholder="maximum length is 20" maxlength="20">
+                                </li>
+                                <li class="li1">
+                                    <label class="Age">Age:</label>
+                                    <input type="text" name="Age" placeholder="maximum length is 2" maxlength="2">
+                                </li>
+                                <li class="li1">
+                                    <label class="Gender">Gender:</label>
+                                    <input type="radio" name="Gender">male
+                                    <input type="radio" name="Gender">Female
+                                    <input type="radio" name="Gender">Others
+                                </li>
+                            </ul>
+                            <ol class="ol1">
+                                <li class="li1">
+                                    <label class="Mail">Mail ID:</label>
+                                    <input type="email"Mail ID" placeholder="Enter mail id">
+                                </li>
+                                <li class="li1">
+                                    <label>Account ID:</label>
+                                    <input type="text" name="Account ID" placeholder="Enter Student ID">
+                                </li>
+                                <li class="li1">
+                                    <label>Account type:</label>
+                                    <select>
+                                        <option>SELECT</option>
+                                        <option>Admin</option>
+                                        <option>Student</option>
+                                        <option>Faculty</option>
+                                    </select>
+                                </li>
+                            </ol>
+                            
+                    </div><br>
+                    <div class="Edu">
+                        EDUCATION DETAILS
+                    </div>
+                <div class="cont2">
+                        <ul class="ul2">
+                            <li class="li2">
+                            <label>Qualification:</label>
+                            <select>
+                                <option>SELECT</option>
+                                <option>MECH</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>CIVIL</option>
+                                <option>IT</option>
+                                <option>CSE</option>
+                            </select>
+                            </li>
+                            <li class="li2">
+                            <label>Languages Known:</label>
+                            <input type="checkbox" name="Language">English
+                            <input type="checkbox" name="Language">Telugu
+                            <input type="checkbox" name="Language">Hindi
+                            <input type="checkbox" name="Language">Others
+                            </li>
+                            <li class="li2">
+                                <label>Course Optioning For:</label>
+                                <input type="text" name="Course">
+                            </li>
+                        </ul>
+                        <ol class="ol2">
+                            <li class="li2">
+                                <label>College Name:</label>
+                                <input type="text" name="college">
+                            </li>
+                            <li class="li2">
+                                <label>Location:</label>
+                                <input type="location" name="location">
+                            </li>
+                        </ol>
+                </div><br>
+                <div class="Add">
+                    ADDRESS
+                </div>
+                <div class="cont3">
+                    <ul class="ul3">
+                        <li class="li3">
+                            <label>Door No:</label>
+                            <input type="text" name="DoorNo">
+                        </li>
+                        <li class="li3">
+                            <label>Street name:</label>
+                            <input type="text" name="Street">
+                        </li>
+                        <li class="li3">
+                            <label>District Name:</label>
+                            <input type="text" name="District">
+                        </li>
+                    </ul>
+                    <ol class="ol3">
+                        <li class="li3">
+                            <label>State Name:</label>
+                            <input type="text" name="State">
+                        </li>
+                        <li class="li3">
+                        <label>Country Name:</label>
+                        <input type="text" name="Country">
+                        </li>
+                        <li class="li3">
+                        <label>Pincode:</label>
+                        <input type="text" name="Pincode">  
+                    </ol>
+                </div><br>
+                <div class="Abt">
+                    ABOUT YOUR SELF
+                </div>
+                <div class="cont4"><br>
+                    <label class="name">about your self:</label>
+                    <textarea name="text" rows="10" cols="100"></textarea>
+                </div><br>
+                <div class="submit">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form><br>
+        <div class="footer">
+            @copyRights 2023
+        </div>
+    </body>
+</html>

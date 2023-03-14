@@ -1,0 +1,12 @@
+Position absolute:
+    1. Element is capable of moving to any position (it  considers top, left right and bottom properties)
+    2. when its moving from x and y axis to z axis it is not going to hold its original position
+    3. As it doesnt hold its original position, it always moves according to the position of its parent element
+    4. While depending on the parent element position, it only depends on the parent element whose position is non static
+    5. If parent or grand parent doesnt hold the position as non static, it depends on the body tag
+
+
+z-index - 
+    property, using we could control the z axis position of any dom elements which are rendering with in z axis
+        it always a numeric value
+            eg: z-index: 5;

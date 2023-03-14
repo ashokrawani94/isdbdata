@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>input elements</title>
+        <style>
+            h3{
+                border: 3px solid;
+                height: 20px;
+                width: 1000px;
+                margin: 3px;
+                padding: 3px;
+                text-align: center;
+                background-color: burlywood;
+            }
+            .mainblock{
+                border: 2px solid;
+                height: auto;
+                width: 1000px;
+                margin: 5px;
+                padding: 4px;
+            }
+            .block1{
+                border: 2px solid;
+                height: 180px;
+                width: 980px;
+                margin: 3px;
+                padding: 2px;
+                
+            }
+            .block2{
+                border: 2px solid;
+                height: 180px;
+                width: 980px;
+                margin: 3px;
+                padding: 2px;
+            }
+            .block3{
+                border: 2px solid;
+                height:190px;
+                width: 980px;
+                margin: 3px;
+                padding: 2px;
+            }
+            .block4{
+                border: 2px solid;
+                height: 250px;
+                width: 980px;
+                margin: 3px;
+                padding: 2px;
+            }
+            .footer{
+                border: 3px solid;
+                height: 20px;
+                width: 980px;
+                margin: 3px;
+                padding: 3px;
+                text-align: center;
+            }
+
+            .zzz{
+               border: 2px double;
+               height: 20px;
+               width: 200px;
+               margin: 3px;
+               padding: 2px;
+               left: 70px;
+               top: 20px; 
+               position: relative;
+               background-color: beige;
+               
+            }
+            .yyy{
+               border: 2px double;
+               height: 20px;
+               width: 200px;
+               margin: 3px;
+               padding: 2px; 
+               left: 70px;
+               top: 20px; 
+               position: relative;
+               background-color: bisque;
+            }
+            .xyz{
+               border: 2px double;
+               height: 20px;
+               width: 200px;
+               margin: 3px;
+               padding: 2px; 
+               left: 70px;
+               top: 20px; 
+               position: relative;
+               background-color: burlywood;
+            }
+            
+            .a{
+                color: cadetblue;
+            }
+            .b{
+                color: crimson;
+            }
+            .c{
+                color: darkgreen;
+            }
+            .d{
+                color: black;
+                
+            }
+            .e{
+                color: darkmagenta;
+                float: right;
+                position: relative;
+                top: -150px;
+                left: -60px;
+            }
+            .f{
+                color: darkblue;
+                float: right;
+                position: relative;
+                top: -130px;
+                right: -210px;
+            }
+            .g{
+                color: darkgoldenrod;
+            }
+            .h{
+                color: darkred;
+            }
+            .i{
+                color: indigo;
+                
+            }
+            .j{
+                color: dodgerblue;
+                float: right;
+                position: relative;
+                top: -110px;
+                left: -50px;
+            }
+            .k{
+                color: mediumvioletred;
+                float: right;
+                position: relative;
+                top: -90px;
+                right: -250px;
+            }
+            .l{
+                color: blue;
+            }
+            .m{
+                color: #00ff0d;
+            }
+            .n{
+                color: #ff0059;
+                
+            }
+            .o{
+                color: #ff00c8;
+                
+            }
+            .p{
+                color: #ff2600;
+                float: right;
+                position: relative;
+                top: -160px;
+                right: 30px;
+            }
+            .q{
+                color: #ffdd00;
+                float: right;
+                position: relative;
+                top: -140px;
+                right: -270px;
+
+            }
+            .r{
+                color: indianred;
+                
+            }
+            
+            .footer{
+                background-color: cyan;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>STUDENT REGISTRATION PAGE</h3>
+        <div class="mainblock">
+            <div class="zzz">ACCOUNT DETAILS</div>
+            <div class="block1">
+                <ul>
+                     <br>
+                    <ol>
+                        <div class="a">
+                            <label for="name">NAME</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="b">
+                            <label for="age">AGE</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="c">
+                            <label for="gender">GENDER</label>
+                            <input type="radio"name=xyz>Male
+                            <input type="radio"name=xyz>Female
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="d">
+                            <label for="mail">MAIL ID</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                      <br>
+                    <ol>
+                        <div class="e">
+                            <label for="acctid">ACCOUNT ID</label>
+                            <input type="password" maxlength="12">
+                        </div>
+                    </ol>
+                      <br>
+                    <ol>
+                        <div class="f">
+                            <label for="acttyp">ACCOUNT TYPE</label>
+                            <input type="text">
+                        
+                        </div>
+                    </ol>
+                </ul>
+            </div>
+            <div class="yyy">EDUCATION DETAILS</div>
+            <div class="block2">
+                <ul>
+                 <br>
+                  <ol>
+                    <div class="g">
+                        <label for="qua">QUALIFICATION</label>
+                        <select >
+                            <option></option>
+                            <option>BSC</option>
+                            <option>BCOM</option>
+                            <option>BA</option>
+                            <option>BHMS</option>
+                            <option>B.TECH</option>
+                            <option>MSC</option>
+                            <option>MCOM</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                            <option>MTECH</option>
+                            <option>MS</option>
+                            <option>NURSING</option>
+                        </select>
+                    </div>
+                  </ol>
+                
+                  <br>
+                    <ol>
+                        <div class="h">
+                            <label for="lang">LANGUAGES KNOWN</label>
+                            <input type="checkbox">ENGLISH
+                            <input type="checkbox">HINDI
+                            <input type="checkbox">TELUGU
+                        </div>
+                    </ol>
+                    <br>
+                    <ol>
+                        <div class="i">
+                            <label for="course">COURSE OPTING FOR</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                    <br>
+                    <ol>
+                        <div class="j">
+                            <label for="clg">COLLEGE NAME</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                    <br>
+                    <ol>
+                        <div class="k">
+                            <label for="loc">LOCATION</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                </ul>
+            </div>
+            <div class="xyz">ADDRESS</div>
+            <div class="block3">
+               <ul>
+                     <br>
+                    <ol>
+                        <div class="l">
+                            <label for="DNO">DNO.</label>
+                            <input type="text">
+                         </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="m">
+                            <label for="Street">STREET NAME</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="n">
+                            <label for="state">STATE NAME</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                      <br>
+                    <ol>
+                        <div class="o">
+                            <label for="CODE">STATE CODE</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="p">
+                            <label for="CNAME">COUNTRY NAME</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                     <br>
+                    <ol>
+                        <div class="q">
+                            <label for="CCODE">COUNTRY CODE</label>
+                            <input type="text">
+                        </div>
+                    </ol>
+                </ul> 
+               
+            </div>
+            <div class="block4">
+                <ul>
+                    <ol>
+                        <div class="r">
+                            <label for="abtyrslf">ABOUT YOURSELF</label>
+                            <textarea name="intro" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </ol>
+                    <br>
+                    <ol>
+                        <div class="s">
+                            <input type="submit"value="Register">
+                        </div>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+            <div class="footer">@copyrights 2023</div>
+    </body>
+</html>

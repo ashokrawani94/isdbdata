@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamically find smallest and largest num</title>
+    </head>
+    <body>
+        <h3>To find smallest and Largest number.</h3>
+        <script>
+             var arrLength = prompt("enter size of array");
+             var arrList = [];
+             var OriginalArray = [];
+             var smallNo, largeNo, temp, secondLargeNumber;
+       
+           //loop to prepare dynamic array
+             for(var i=0; i < arrLength; i++){
+                OriginalArray[i] = parseInt(prompt("enter number" + (i+1))); 
+             }       
+      
+             console.log("Original Array");
+             console.log(OriginalArray);
+      
+            //copying data to a new array for sorting
+             arrList = OriginalArray;
+
+             for(var i = 0; i < arrList.length; i++){
+                for(var j = 0; j < arrList.length; j++){
+                    if(arrList[j] > arrList[j+1]){
+                        temp = arrList[j];
+                        arrList[j] = arrList[j+1];
+                        arrList[j+1] = temp; 
+                    } 
+                }   
+             }
+
+             console.log("Sorted Array");
+             console.log(arrList);
+
+             smallNo = arrList[0];
+             largeNo = arrList[arrList.length-1];
+             secondLargeNumber = arrList[arrList.length-2];
+
+             console.log("Smallest Number is " + smallNo);
+             console.log("Largest number is " + largeNo);
+        </script>
+    </body>
+</html>

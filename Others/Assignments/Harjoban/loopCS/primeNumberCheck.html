@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check prime number</title>
+    </head>
+    <body>
+        <script>
+            // to check whether the number is a prime number or not
+            var number;
+            var n = prompt("Enter the number to be checked");
+            var count = 0;
+            for (number = 1; number <= n; number++) {
+                var rem = n % number;
+                if (rem == 0) {
+                    count++;
+                }
+            } 
+            console.log("The count of zero's is " + count);
+            console.log("The number enter for prime check is  " + n);
+
+
+            
+                if (count == 2) {
+                    console.log("It is a prime number");
+                
+                } 
+                else {
+                    console.log("It is not a prime number");
+
+                }
+        
+        </script>
+        
+    </body>
+</html>

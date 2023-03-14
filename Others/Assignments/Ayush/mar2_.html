@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execption Handeling</title>
+</head>
+<body>
+    <h3>Execption Handeling</h3>
+    <h4>try and catch error</h4>
+    /*
+    <script>
+        // console.log("hey there")
+        // a = 90                       // syntax error / compile error 
+        // b 99
+        // console.log("bye there")
+
+
+        // console.log("hey there")
+        // b = 90                       //  Reference Error / run time error
+        // a = b + c 
+        // console.log("bye there")
+
+        // catching error, using try and catch error
+
+        // console.log("hey there")
+        // b = 90                    
+        // try{
+        // a = b + c                         //  try and catch error
+        // }catch(error){
+        //     // console.log(error)
+        // }
+        // console.log("bye there")
+            
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstrating Run time Execption - Empolyee task Assigner</title>
+
+    <style>
+        h3 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .taskBlock {
+            border: 2px solid black;
+            width: 300px;
+            margin: 20px auto;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+
+        .welcomeBlock {
+            position: absolute;
+            bottom: 30px;
+            text-align: center;
+            background-color: grey;
+            padding: 10px;
+            left: 10px;
+            right: 10px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Empolyee Task Assigner Page</h3>
+    <input type="text" id="uname"> <input type="button" value="Save" onclick="saveName()">
+    <input type="button" value="Create Task Container" onclick="createTaskBlock()">
+    <input type="button" value="Show Task For Today" onclick="showTask()">
+    <div class="tcontainer"></div>
+    <div class="welcomeBlock"> @ Thanks For Using Our Application</div>
+
+    <script>
+
+        // var empolyeeList = [];
+        var uname;
+        var saveName = () => {
+            uname = document.querySelector("#uname").value
+            document.querySelector("#uname").value = '';  
+        }
+
+        var createTaskBlock = () => {
+            var divTag = document.createElement("div")
+            divTag.setAttribute('id', 'taskContainer')
+            divTag.setAttribute('class', 'taskBlock')
+            // div.classList.add("taskBlock")
+
+            document.querySelector(".tcontainer").append(divTag)
+
+        }
+
+        var showTask = () => {
+            var task = getRandomTask();
+            task = 'Mr. ' + uname + ' : ' + task
+
+            try {
+                document.querySelector("#taskContainer").innerHTML = task
+
+                // empolyeeList.push(task)
+                // console.log(empolyeeList)
+            } catch (error) {
+                alert("why did not you clicked create task container button")
+            } finally {
+                setTimeout(() => {
+                    document.querySelector(".welcomeBlock").style.display = 'block'
+                }, 3000)
+            }
+
+        }
+        var getRandomTask = () => {
+            var taskList = [
+                'Do your todays works',
+                'Do your remaining work',
+                'Ask your boss for project',
+                'You do not need to work today',
+                'Do whatever you want'
+            ]
+            var randomIndex = Math.floor(Math.random() * taskList.length)
+            return taskList[randomIndex]
+
+        }
+
+    </script>
+</body>
+
+</html>

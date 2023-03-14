@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Summation of all digits for A Given Number</title>
+    </head>
+    <body>
+     <script>
+        var number = prompt("enter the number");
+        n = parseInt(number);
+        var reminder=0, divident=0;
+        var sum = 0;
+
+        while(parseInt(n)!=0)
+        {
+            reminder = n%10; //finding last digit of a number
+            n = parseInt(n/10); //finding remaining digits
+            sum = sum + reminder;
+        }
+
+        console.log("Summation of digits for "+ number +" is :" +sum);
+        
+    </script>
+  </body>
+</html>

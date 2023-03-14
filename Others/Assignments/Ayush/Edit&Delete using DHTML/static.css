@@ -1,0 +1,42 @@
+#container{
+    border: 2px solid black;
+    margin: 7px;
+    padding: 7px;
+    text-align: center;
+    margin: auto;
+    width: 350px;
+}
+
+ul{
+    list-style: none;
+    margin: 4px;
+    padding: 4px;
+}
+
+li{
+    margin: 7px;
+}
+
+#btn{
+    border: 2px solid black;
+    margin-top: 7px;
+}
+
+table{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#sedit{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+#sdelete{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    margin-left: 15px;
+}

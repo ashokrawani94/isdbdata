@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="employeeapp.css">
+    <!-- <link rel="stylesheet" href="employeeData.js"> -->
+    <script src="employeeData.js"></script>
+</head>
+<body>
+   
+    <ul id="mainul">
+        <h3>Employee Details</h3>
+        <li>
+            Employee Name: <span class="detailsinputcon"><input type="text" id="name"></span>
+        </li>
+        <li>
+            Employee Age: <span class="detailsinputcon"><input type="text" id="age"></span>
+        </li>
+        <li>
+            Employee Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </li>
+        <li>
+            Employee Department: <span class="detailsinputcon"><input type="text" id="department"></span>
+        </li>
+        <li>
+            Employee Salary: <span class="detailsinputcon"><input type="text" id="salary"></span>
+        </li>
+        <li class="mainbutton">
+            <input type="button" value="Generate Pay Slip" onclick="getEmployeeData()">
+        </li>
+    </ul>
+     
+   
+    <ul class="employeepaydetails">
+        <h3>Employee Pay Slip</h3>
+        <li>
+            Employee Name: 
+            <span id="empname"></span>
+        </li>
+        <li>
+            Employee Age:
+            <span id="empage"></span>
+        </li>
+        <li>
+            Employee Gender:
+            <span id="empgender"></span>
+        </li>
+        <li>
+            Employee Department:
+            <span id="empdepartment"></span>
+        </li>
+        <li>
+            Employee Salary:
+            <span id="empsalary"></span>
+        </li>
+        <li>
+            Employee PF:
+            <span id="pf"></span>
+        </li>
+        <li>
+            Employee HRA:
+            <span id="hra"></span>
+        </li>
+        <li>
+            Employee TotalSalary:
+            <span id="totalsalary"></span>
+        </li>
+        <li>
+            Total Tax Cut:
+            <span id="totaltax"></span>
+        </li>
+
+    </ul>
+</body>
+</html>

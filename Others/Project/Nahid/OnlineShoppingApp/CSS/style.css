@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    height: 100vh;
+    width:100wh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.header, .footer{
+    background-color: rgb(95, 145, 252);
+}
+.bodyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginDiv{
+    /* border: 1px solid rgb(214, 17, 17); */
+    border-radius: 10px;
+    background-color: rgb(236, 226, 226);
+    width : 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.inputTypes{
+    padding: 5px;
+}
+
+.footer p{
+    text-align: center;
+    padding-top: 60px;
+}
